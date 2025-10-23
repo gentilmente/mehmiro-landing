@@ -12,7 +12,7 @@ const Index = () => {
     <div className="relative">
       <HeroSection />
 
-      <ParallaxContainer speed={0.3}>
+      <ParallaxContainer speed={-0.05}>
         <StorySection
           id="juan-story"
           title="Juan, un maestro con múltiples desafíos"
@@ -22,7 +22,7 @@ const Index = () => {
         />
       </ParallaxContainer>
 
-      <ParallaxContainer speed={0.5}>
+      <ParallaxContainer speed={-0.08}>
         <StorySection
           id="beatriz-story"
           title="Beatriz descubre una nueva forma de enseñar"
@@ -33,7 +33,7 @@ const Index = () => {
         />
       </ParallaxContainer>
 
-      <ParallaxContainer speed={0.2}>
+      <ParallaxContainer speed={-0.03}>
         <StorySection
           id="invitation-story"
           title="Tu turno de transformar la educación"
