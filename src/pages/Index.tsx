@@ -31,12 +31,14 @@ const Index = () => {
     <div className="relative">
       <HeroSection />
 
-      {/* Fixed phone mockup */}
-      <FixedPhoneMockup>
-        <div className="transition-all duration-700 ease-in-out">
-          {renderPhoneContent()}
-        </div>
-      </FixedPhoneMockup>
+      {/* Fixed phone mockup - only show when story begins */}
+      {currentStep > 0 && (
+        <FixedPhoneMockup>
+          <div className="transition-all duration-700 ease-in-out">
+            {renderPhoneContent()}
+          </div>
+        </FixedPhoneMockup>
+      )}
 
       {/* Story sections with scroll triggers */}
       <ScrollStorySection
