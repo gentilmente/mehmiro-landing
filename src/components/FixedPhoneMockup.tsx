@@ -6,7 +6,7 @@ interface FixedPhoneMockupProps {
 
 export const FixedPhoneMockup = ({ children }: FixedPhoneMockupProps) => {
   return (
-    <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 pointer-events-none">
+    <div className="fixed top-1/2 left-8 md:left-20 -translate-y-1/2 z-40 pointer-events-none">
       <div className="relative mx-auto w-[320px] md:w-[380px]">
         <div className="relative aspect-[9/19.5] bg-card rounded-[3rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
