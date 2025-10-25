@@ -32,13 +32,13 @@ const Index = () => {
       <HeroSection />
 
       {/* Fixed phone mockup - only show when story begins */}
-      {currentStep > 0 && (
+      <div className={`transition-opacity duration-700 ease-in-out ${currentStep > 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <FixedPhoneMockup>
           <div className="transition-all duration-700 ease-in-out">
             {renderPhoneContent()}
           </div>
         </FixedPhoneMockup>
-      )}
+      </div>
 
       {/* Story sections with scroll triggers */}
       <ScrollStorySection
