@@ -3,7 +3,7 @@ import { QrCode } from "lucide-react";
 
 export const CTASection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
+    <section id="cta-section" className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-section" />
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-hero" />

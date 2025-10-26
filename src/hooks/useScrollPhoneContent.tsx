@@ -6,14 +6,15 @@ export const useScrollPhoneContent = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("[data-step]");
-      const footer = document.querySelector("footer");
+      const ctaSection = document.getElementById("cta-section");
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
+      const scrollMidpoint = scrollPosition + windowHeight / 2;
 
-      // Check if we're in the footer area
-      if (footer) {
-        const footerTop = (footer as HTMLElement).offsetTop;
-        if (scrollPosition + windowHeight > footerTop + 100) {
+      // Check if we're in the CTA section
+      if (ctaSection) {
+        const ctaTop = (ctaSection as HTMLElement).offsetTop;
+        if (scrollMidpoint >= ctaTop) {
           setCurrentStep(0);
           return;
         }
@@ -22,7 +23,6 @@ export const useScrollPhoneContent = () => {
       // Check if we're before the first story section
       if (sections.length > 0) {
         const firstSection = sections[0] as HTMLElement;
-        const scrollMidpoint = scrollPosition + windowHeight / 2;
         if (scrollMidpoint < firstSection.offsetTop) {
           setCurrentStep(0);
           return;
@@ -30,7 +30,6 @@ export const useScrollPhoneContent = () => {
       }
 
       // Check which story section we're in
-      const scrollMidpoint = scrollPosition + windowHeight / 2;
       sections.forEach((section) => {
         const sectionTop = (section as HTMLElement).offsetTop;
         const sectionHeight = (section as HTMLElement).offsetHeight;
