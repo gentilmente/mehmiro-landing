@@ -22,7 +22,7 @@ export const CTASection = () => {
             </h2>
             <p className='text-xl text-muted-foreground max-w-2xl mx-auto'>
               Únete a cientos de docentes que ya están revolucionando la
-              educación con Mehmiro!!
+              educación con Mehmiro
             </p>
           </div>
 
