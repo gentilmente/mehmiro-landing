@@ -27,6 +27,7 @@ export const CTASection = () => {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-12 py-7"
+              onClick={() => window.open('https://app.mehmiro.com', '_blank')}
             >
               Comenzar gratis
             </Button>
