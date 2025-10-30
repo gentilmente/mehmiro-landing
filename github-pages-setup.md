@@ -1,41 +1,8 @@
-# GitHub Pages Deployment Setup - Complete
+# GitHub Pages Deployment
 
-## ✅ Issues Fixed
+## 🔄 Deploy Updates
 
-1. **Path Configuration**: Updated `vite.config.ts` with `base: "/mehmiro-landing/"` to handle GitHub Pages subdirectory deployment
-2. **Asset Paths**: Fixed absolute asset paths to use GitHub Pages compatible paths (now includes `/mehmiro-landing/` prefix)
-3. **Deployment Branch**: Successfully pushed `dist/` folder to `gh-pages` branch
-
-## 🔧 Next Steps Required
-
-### Enable GitHub Pages in Your Repository
-
-1. Go to your GitHub repository: https://github.com/gentilmente/mehmiro-landing
-2. Click on **Settings** tab
-3. Scroll down to **Pages** section (left sidebar)
-4. Under **Source**, select **Deploy from a branch**
-5. Choose **gh-pages** branch
-6. Select **/ (root)** folder
-7. Click **Save**
-
-### Your Site Will Be Available At
-
-- **URL**: https://gentilmente.github.io/mehmiro-landing/
-- **Alternative**: https://gentilmente.github.io/mehmiro-landing (both work)
-
-## 📝 Changes Made
-
-### vite.config.ts
-- Added `base: "/mehmiro-landing/"` configuration
-- This ensures all asset paths include the repository name for proper GitHub Pages deployment
-
-### Built Output
-- Asset paths now correctly reference `/mehmiro-landing/assets/...`
-- This was the main issue preventing your site from loading on GitHub Pages
-
-## 🔄 Future Updates
-
-To deploy updates:
+To deploy updates after making changes:
 
 1. Make your changes
 2. Run: `npm run build`
@@ -46,7 +13,48 @@ To deploy updates:
 
 ## 🧪 Testing
 
-After enabling GitHub Pages in your repository settings, wait 2-5 minutes for deployment, then visit:
+After deployment, wait 2-5 minutes for GitHub Pages to update, then visit:
 https://gentilmente.github.io/mehmiro-landing/
 
-The site should now load properly with all assets and styling working correctly.
+https://mehmiro.com
+
+## 🔧 Troubleshooting
+
+### Non-Fast-Forward Push Errors
+
+If you encounter errors like:
+
+```
+! [rejected] <commit> -> gh-pages (non-fast-forward)
+error: failed to push some refs to 'https://github.com/gentilmente/mehmiro-landing.git'
+hint: Updates were rejected because the remote contains work that you do not have locally.
+```
+
+This happens because GitHub Pages may add commits to the `gh-pages` branch (such as CNAME files for custom domains) that diverge from your local subtree history.
+
+**To resolve:**
+
+1. Fetch the latest remote changes:
+
+   ```bash
+   git fetch origin
+   ```
+
+2. Create a subtree split of your dist folder:
+
+   ```bash
+   git subtree split --prefix=dist --branch temp-gh-pages
+   ```
+
+3. Force push the subtree to overwrite the remote branch:
+
+   ```bash
+   git push origin temp-gh-pages:gh-pages --force
+   ```
+
+4. Clean up the temporary branch:
+   ```bash
+   git branch -D temp-gh-pages
+   ```
+
+This ensures the `gh-pages` branch contains only the build artifacts from your `dist/` directory, properly aligned with your deployment history.
