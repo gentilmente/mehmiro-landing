@@ -9,8 +9,8 @@ export const ShareScreen = () => {
         </div>
 
         <div>
-          <h3 className="font-bold text-lg mb-2 text-gray-900">Comparte Mehmiro</h3>
-          <p className="text-sm text-gray-600">
+          <h3 className="font-bold text-sm sm:text-lg mb-2 text-gray-900">Comparte Mehmiro</h3>
+          <p className="text-xs text-gray-600">
             Invita a otros docentes a transformar su forma de evaluar
           </p>
         </div>
@@ -19,12 +19,12 @@ export const ShareScreen = () => {
           <div className="flex items-center gap-3">
             <Users className="w-5 h-5 text-blue-500" />
             <div className="text-left flex-1">
-              <p className="text-sm font-medium text-gray-900">Beatriz García</p>
+              <p className="text-xs font-medium text-gray-900">Beatriz García</p>
               <p className="text-xs text-gray-500">Compartido</p>
             </div>
           </div>
 
-          <button className="w-full bg-blue-50 text-blue-600 py-2 rounded-lg text-sm font-medium border border-blue-200 hover:bg-blue-100">
+          <button className="w-full bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-medium border border-blue-200 hover:bg-blue-100">
             Invitar más colegas
           </button>
         </div>

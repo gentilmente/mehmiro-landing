@@ -46,22 +46,6 @@ export const CTASection = () => {
               </p>
             </div>
           </div>
-
-          {/* Demo embed placeholder */}
-          <div className='mt-16 animate-scale-in'>
-            <div className='bg-card rounded-3xl shadow-2xl border border-border overflow-hidden max-w-2xl mx-auto'>
-              <div className='aspect-video bg-muted flex items-center justify-center'>
-                <div className='text-center space-y-4 p-8'>
-                  <div className='w-16 h-16 bg-primary/20 rounded-full mx-auto flex items-center justify-center'>
-                    <div className='w-0 h-0 border-l-8 border-l-primary border-y-6 border-y-transparent ml-1' />
-                  </div>
-                  <p className='text-muted-foreground'>
-                    Demo interactivo de Mehmiro
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -6,13 +6,13 @@ export const AIResponseScreen = () => {
       <div className="space-y-4">
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-5 h-5 text-blue-500" />
-          <h3 className="font-bold text-sm text-gray-900">Propuesta de Evaluación</h3>
+          <h3 className="font-bold text-xs text-gray-900">Propuesta de Evaluación</h3>
         </div>
 
         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 space-y-3">
           <div>
             <p className="text-xs font-medium text-blue-600">Tema Principal</p>
-            <p className="text-sm text-gray-900">Fracciones y decimales</p>
+            <p className="text-xs text-gray-900">Fracciones y decimales</p>
           </div>
 
           <div>
@@ -32,7 +32,7 @@ export const AIResponseScreen = () => {
           </div>
         </div>
 
-        <button className="w-full bg-blue-500 text-white py-3 rounded-lg text-sm font-medium hover:bg-blue-600">
+        <button className="w-full bg-blue-500 text-white py-3 rounded-lg text-xs font-medium hover:bg-blue-600">
           Aceptar y personalizar
         </button>
       </div>

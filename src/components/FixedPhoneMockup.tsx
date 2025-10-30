@@ -19,7 +19,7 @@ export const FixedPhoneMockup = ({ children }: FixedPhoneMockupProps) => {
         </div>
         
         {/* Glow effect */}
-        <div className="absolute inset-0 bg-primary/20 blur-3xl -z-10 scale-90" />
+        <div className="absolute inset-0 bg-gray-200/50 blur-3xl -z-10 scale-90" />
       </div>
     </div>
   );
