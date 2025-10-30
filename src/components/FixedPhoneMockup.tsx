@@ -10,10 +10,10 @@ export const FixedPhoneMockup = ({ children }: FixedPhoneMockupProps) => {
       <div className="relative w-[182px] md:w-[334px]">
         <div className="relative aspect-[9/19.5] bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
-          <div className="w-full h-full overflow-hidden bg-background">
+          <div className="w-full h-full overflow-hidden bg-white">
             {children}
           </div>
-          
+
           {/* Screen notch */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-card rounded-b-3xl z-50" />
         </div>
