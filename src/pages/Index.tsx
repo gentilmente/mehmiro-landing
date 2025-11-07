@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { ScrollStorySection } from "@/components/ScrollStorySection";
 import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
 import { FixedPhoneMockup } from "@/components/FixedPhoneMockup";
 import { WelcomeScreen } from "@/components/PhoneScreens/WelcomeScreen";
 import { TeacherProfileScreen } from "@/components/PhoneScreens/TeacherProfileScreen";
@@ -81,31 +82,7 @@ const Index = () => {
 
       <CTASection />
 
-      <footer className="bg-card border-t border-border py-8">
-        <div className="container mx-auto px-6">
-          <div className="text-center text-muted-foreground space-y-4">
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
-              <a
-                href="mailto:egentilemontes@gmail.com"
-                className="text-sm hover:text-foreground transition-colors"
-              >
-                Contacto: egentilemontes@gmail.com
-              </a>
-              <a
-                href="http://mehmiro.com/docs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm hover:text-foreground transition-colors"
-              >
-                Documentación: mehmiro.com/docs
-              </a>
-            </div>
-            <p className="text-sm">
-              © 2025 Mehmiro. Transformando la educación con inteligencia artificial.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
