@@ -5,11 +5,11 @@
 To deploy updates after making changes:
 
 1. Make your changes
-2. Run: `npm run build`
-3. Run: `git add .`
-4. Run: `git commit -m "Update deployment"`
-5. Run: `git push origin main`
-6. Run: `git subtree push --prefix=dist origin gh-pages`
+2. Run: `git add .`
+3. Run: `git commit -m "Update deployment"`
+4. Run: `git push origin main`
+
+**Deployment is now automated!** GitHub Actions will automatically build your project and deploy to GitHub Pages when you push to the `main` branch. No more manual `npm run build` or `git subtree push` commands needed.
 
 ## 🧪 Testing
 
@@ -20,7 +20,26 @@ https://mehmiro.com
 
 ## 🔧 Troubleshooting
 
-### Non-Fast-Forward Push Errors
+### GitHub Actions Deployment Issues
+
+If the automated deployment fails:
+
+1. Check the Actions tab in your GitHub repository for error details
+2. Ensure your `package.json` has the correct build script (`npm run build`)
+3. Verify that the build outputs to a `dist/` directory
+4. Check that GitHub Pages is configured to deploy from the `gh-pages` branch
+
+### Manual Deployment (Fallback)
+
+If you need to deploy manually:
+
+1. Run: `npm run build`
+2. Run: `git add .`
+3. Run: `git commit -m "Update deployment"`
+4. Run: `git push origin main`
+5. Run: `git subtree push --prefix=dist origin gh-pages`
+
+### Non-Fast-Forward Push Errors (Legacy)
 
 If you encounter errors like:
 
