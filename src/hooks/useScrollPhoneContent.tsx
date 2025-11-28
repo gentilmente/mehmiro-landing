@@ -10,7 +10,7 @@ export const useScrollPhoneContent = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
       const phoneHeight = 334; // Approximate phone mockup height in pixels
-      const scrollMidpoint = scrollPosition + windowHeight / 2 + phoneHeight;
+      const scrollMidpoint = scrollPosition + windowHeight / 10 + phoneHeight;
 
       // Check if we're in the CTA section
       if (ctaSection) {
@@ -36,7 +36,10 @@ export const useScrollPhoneContent = () => {
         const sectionHeight = (section as HTMLElement).offsetHeight;
         const step = parseInt((section as HTMLElement).dataset.step || "0");
 
-        if (scrollMidpoint >= sectionTop && scrollMidpoint < sectionTop + sectionHeight) {
+        if (
+          scrollMidpoint >= sectionTop &&
+          scrollMidpoint < sectionTop + sectionHeight
+        ) {
           const progress = (scrollMidpoint - sectionTop) / sectionHeight;
           setScrollData({ step, progress });
         }

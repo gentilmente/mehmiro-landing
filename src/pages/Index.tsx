@@ -18,12 +18,14 @@ const Index = () => {
   const renderPhoneContent = () => {
     switch (currentStep) {
       case 1:
-        return <TeacherProfileScreen />;
+        return <WelcomeScreen />;
       case 2:
-        return <ContextInputScreen />;
+        return <TeacherProfileScreen />;
       case 3:
-        return <AIResponseScreen />;
+        return <ContextInputScreen />;
       case 4:
+        return <AIResponseScreen />;
+      case 5:
         return <ShareScreen />;
       default:
         return <WelcomeScreen />;
@@ -35,7 +37,11 @@ const Index = () => {
       <HeroSection />
 
       {/* Fixed phone mockup - only show when story begins */}
-      <div className={`transition-opacity duration-700 ease-in-out ${currentStep > 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+      <div
+        className={`transition-opacity duration-700 ease-in-out ${
+          currentStep > 0 ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
         <FixedPhoneMockup>
           <div className="transition-all duration-700 ease-in-out">
             {renderPhoneContent()}
