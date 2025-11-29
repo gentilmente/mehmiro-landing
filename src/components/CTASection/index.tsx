@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import frameImage from "@/assets/frame.png";
 
 export const CTASection = () => {
   return (
@@ -40,7 +41,7 @@ export const CTASection = () => {
             {/* Mobile: Hide QR, Desktop: Show only QR */}
             <div className="hidden sm:flex flex-col items-center gap-3">
               <div className="w-50 h-50 bg-white rounded-2xl shadow-xl p-4 flex items-center justify-center">
-                <img src="/src/assets/frame.png" alt="QR Code" />
+                <img src={frameImage} alt="QR Code" />
               </div>
               <p className="text-sm text-muted-foreground">
                 Escanea para probar en móvil
