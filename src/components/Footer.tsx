@@ -129,9 +129,7 @@ export const Footer = () => {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                   <Mail className="w-4 h-4 text-primary" />
-                  <a href="mailto:egentilemontes@gmail.com">
-                    egentilemontes@gmail.com
-                  </a>
+                  <a href="mailto:info@mehmiro.com">info@mehmiro.com</a>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="w-4 h-4 text-primary" />
@@ -176,7 +174,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="app.mehmiro.com"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -192,7 +190,7 @@ export const Footer = () => {
               <h4 className="font-semibold text-foreground">Recursos</h4>
               <nav className="space-y-3">
                 <a
-                  href="http://mehmiro.com/docs"
+                  href="http://docs.mehmiro.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
