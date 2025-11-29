@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import styles from "./ScrollStory.module.css";
 
 interface ScrollStorySectionProps {
   id: string;
@@ -36,9 +35,7 @@ export const ScrollStorySection = ({
       data-step={step}
       className="min-h-screen flex items-center py-20 relative"
     >
-      <div
-        className={`${styles.content} w-full px-6 md:px-12 flex items-center`}
-      >
+      <div className="w-full px-6 md:px-12 lg:pl-32 flex items-center">
         <div className="space-y-6 text-left max-w-xl">
           <div className="inline-block bg-primary/10 px-4 py-2 rounded-full">
             <span className="text-sm font-medium text-primary">

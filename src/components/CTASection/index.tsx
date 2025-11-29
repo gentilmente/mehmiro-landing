@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import styles from "./CTA.module.css";
 
 export const CTASection = () => {
   return (
@@ -27,9 +26,10 @@ export const CTASection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
+            {/* Mobile: Show only button, Desktop: Hide button */}
             <Button
               size="lg"
-              className={`${styles.button} bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-12 py-7`}
+              className="bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-12 py-7 sm:hidden"
               onClick={() =>
                 window.open("https://app.mehmiro.com/onboarding", "_blank")
               }
@@ -37,9 +37,8 @@ export const CTASection = () => {
               Comenzar gratis
             </Button>
 
-            <div
-              className={`${styles.qrcode} flex flex-col items-center gap-3`}
-            >
+            {/* Mobile: Hide QR, Desktop: Show only QR */}
+            <div className="hidden sm:flex flex-col items-center gap-3">
               <div className="w-40 h-40 bg-white rounded-2xl shadow-xl p-4 flex items-center justify-center">
                 <img src="/src/assets/mehmiro-qr.jpeg" />
               </div>
