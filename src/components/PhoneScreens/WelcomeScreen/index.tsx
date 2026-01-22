@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 export const WelcomeScreen = () => {
+  const [intro, setIntro] = useState('');
+
   return (
     <div className="text-black py-12 px-6">
       <h1 className="text-center text-xl mb-2">Bienvenido a Mehmiro</h1>
@@ -12,7 +16,8 @@ export const WelcomeScreen = () => {
         <textarea
           name=""
           placeholder="Hola Mehmiro, soy Juan, maestro de matemáticas en 4° grado de una escuela primaria rural de la provincia de Buenos Aires. Mis 8 estudiantes tienen dificultades con fracciones y vienen de familias con pocos recursos. ¿Puedes ayudarme?"
-          value=""
+          value={intro}
+          onChange={(e) => setIntro(e.target.value)}
           id=""
           className="w-full h-20 bg-white text-sm mt-2"
         ></textarea>
