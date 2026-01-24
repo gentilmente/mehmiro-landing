@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { ReactNode } from "react";
 import { useIsMobile } from "../../hooks/use-mobile";
 
 interface ScrollStorySectionProps {
@@ -21,15 +21,51 @@ export const ScrollStorySection = ({
   children,
 }: ScrollStorySectionProps) => {
   const isMobile = useIsMobile();
-  const isActive = currentStep >= step;
   const isPassed = currentStep > step;
   const progressInSection =
     currentStep === step ? scrollProgress : isPassed ? 1 : 0;
-  const [isPhoneVisible, setIsPhoneVisible] = useState(false);
-  const textRef = useRef<HTMLDivElement | null>(null);
-
-  const titleVisible = isMobile ? true : true;
-  const titleExpanded = isMobile ? true : isPassed;
+  const TITLE_REVEAL_END = 0.12;
+  const TITLE_PIN_END = 0.22;
+  const TEXT_PHASE_END = 0.52;
+  const PHONE_PHASE_END = 0.66;
+  const TOOLTIP_PHASE_END = 0.9;
+  const TOOLTIP_COUNT = 4;
+  const clampedProgress = Math.max(0, Math.min(progressInSection, 1));
+  const sectionRevealProgress = isPassed
+    ? 1
+    : Math.min(clampedProgress / TITLE_REVEAL_END, 1);
+  const titleRevealProgress = Math.min(clampedProgress / TITLE_REVEAL_END, 1);
+  const titlePinProgress = Math.max(
+    0,
+    Math.min(
+      (clampedProgress - TITLE_REVEAL_END) / (TITLE_PIN_END - TITLE_REVEAL_END),
+      1,
+    ),
+  );
+  const textPhaseStart = TITLE_PIN_END;
+  const textPhaseSpan = Math.max(0.0001, TEXT_PHASE_END - textPhaseStart);
+  const phonePhaseStart = TEXT_PHASE_END;
+  const phonePhaseProgress = Math.max(
+    0,
+    Math.min(
+      (clampedProgress - phonePhaseStart) / (PHONE_PHASE_END - phonePhaseStart),
+      1,
+    ),
+  );
+  const tooltipPhaseStart = PHONE_PHASE_END;
+  const tooltipPhaseProgress = Math.max(
+    0,
+    Math.min(
+      (clampedProgress - tooltipPhaseStart) /
+        (TOOLTIP_PHASE_END - tooltipPhaseStart),
+      1,
+    ),
+  );
+  const titleExpanded = isMobile ? true : isPassed || titlePinProgress >= 1;
+  const titleOpacity = isPassed ? 1 : titleRevealProgress;
+  const titleTranslateY = isPassed ? 0 : (1 - titlePinProgress) * 16;
+  const sectionTranslateY = (1 - sectionRevealProgress) * 100;
+  const SECTION_SPACER_VH = isMobile ? 240 : 260;
 
   // Split description into lines (by sentences)
   const lines = description
@@ -37,101 +73,111 @@ export const ScrollStorySection = ({
     .map((line) => line.trim())
     .filter((line) => line.length > 0);
 
-  useEffect(() => {
-    if (!isMobile) {
-      return undefined;
-    }
-
-    const handleScroll = () => {
-      const rect = textRef.current?.getBoundingClientRect();
-      if (!rect) {
-        return;
-      }
-      setIsPhoneVisible(rect.top <= 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-    };
-  }, [isMobile]);
-
   return (
-    <section
-      id={id}
-      data-step={step}
-      className={`min-h-screen py-20 relative ${isMobile ? "flex flex-col justify-start" : "flex items-center"}`}
-    >
+    <section id={id} data-step={step} className="relative w-full">
       <div
-        className={`w-full px-6 md:px-12 lg:pl-32 ${isMobile ? "" : "flex items-center"}`}
+        className="sticky top-0 h-screen bg-background flex flex-col transition-[opacity,transform] duration-500 ease-out"
+        style={{
+          zIndex: step,
+          opacity: sectionRevealProgress,
+          transform: `translateY(${sectionTranslateY}%)`,
+        }}
       >
-        <div
-          ref={textRef}
-          className={`space-y-6 text-left max-w-xl ${isMobile ? "" : ""}`}
-        >
-          <div className="inline-block bg-primary/10 px-4 py-2 rounded-full">
-            <span className="text-sm font-medium text-primary">
-              Paso {step}
-            </span>
+        <div className="w-full h-full px-6 md:px-12 lg:pl-32 py-16 md:py-20 flex flex-col">
+          <div className="space-y-6 text-left max-w-xl">
+            <div className="inline-block bg-primary/10 px-4 py-2 rounded-full">
+              <span className="text-sm font-medium text-primary">
+                Paso {step}
+              </span>
+            </div>
+            <h2
+              className={`text-4xl md:text-5xl font-bold leading-tight transition-all duration-700 ease-in-out ${
+                titleExpanded ? "w-full" : "w-1/2"
+              }`}
+              style={{
+                opacity: titleOpacity,
+                transform: `translateY(${titleTranslateY}px)`,
+              }}
+            >
+              {title}
+            </h2>
+            <div className="space-y-3">
+              {lines.map((line, index) => {
+                const lineCount = Math.max(lines.length, 1);
+                const lineSpan = textPhaseSpan / lineCount;
+                const lineStart = textPhaseStart + index * lineSpan;
+                const lineProgress = isPassed
+                  ? 1
+                  : Math.max(
+                      0,
+                      Math.min((clampedProgress - lineStart) / lineSpan, 1),
+                    );
+                return (
+                  <p
+                    key={index}
+                    className={`text-lg text-muted-foreground leading-relaxed transition-all duration-700 ease-in-out ${
+                      lineProgress > 0 ? "opacity-100" : "opacity-0"
+                    }`}
+                    style={{
+                      transform: `translateY(${(1 - lineProgress) * 12}px)`,
+                    }}
+                  >
+                    {line}
+                    {index < lines.length - 1 ? "." : ""}
+                  </p>
+                );
+              })}
+            </div>
           </div>
-          <h2
-            className={`text-4xl md:text-5xl font-bold leading-tight ${
-              isMobile
-                ? "opacity-100 translate-y-0 w-full"
-                : `transition-all duration-700 ease-in-out ${
-                    titleVisible
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-4"
-                  } ${titleExpanded ? "w-full" : "w-1/4"} sm:w-1/2 sm:opacity-100 sm:translate-y-0`
-            }`}
-          >
-            {title}
-          </h2>
-          <div className="space-y-3">
-            {lines.map((line, index) => {
-              const lineProgress = progressInSection - index * 0.1;
-              const isVisible = isMobile
-                ? true
-                : lineProgress > 0.3 && !isPassed;
-              const shouldExpand = isMobile ? true : isPassed;
-              return (
-                <p
-                  key={index}
-                  className={`text-lg text-muted-foreground leading-relaxed ${
-                    isMobile
-                      ? "opacity-100 translate-y-0 w-full"
-                      : `sm:transition-none sm:opacity-100 sm:translate-y-0 transition-all duration-700 ease-in-out ${
-                          isVisible
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-4"
-                        } sm:w-1/2 ${shouldExpand ? "w-full" : "w-1/2"}`
-                  }`}
+          {children ? (
+            <div className="mt-10">
+              <div className="relative flex w-full items-center justify-center min-h-[320px] md:min-h-[520px]">
+                <div
+                  className="relative z-10 transition-all duration-700 ease-in-out"
                   style={{
-                    transitionDelay:
-                      !isMobile && isVisible ? `${index * 400}ms` : "0ms",
+                    opacity: isPassed ? 1 : phonePhaseProgress,
+                    transform: `translateY(${(1 - phonePhaseProgress) * 16}px)`,
                   }}
                 >
-                  {line}
-                  {index < lines.length - 1 ? "." : ""}
-                </p>
-              );
-            })}
-          </div>
-          {isMobile && children ? (
-            <div
-              className={`mt-10 transition-opacity duration-700 ease-in-out ${
-                isPhoneVisible ? "opacity-100" : "opacity-0 pointer-events-none"
-              }`}
-            >
-              {children}
+                  {children}
+                </div>
+                {[
+                  "left-1/2 top-24 -translate-x-[calc(50%+120px)] md:left-1/2 md:top-32 md:-translate-x-[calc(50%+250px)]",
+                  "right-1/2 top-16 translate-x-[calc(50%+120px)] md:right-1/2 md:top-24 md:translate-x-[calc(50%+250px)]",
+                  "left-1/2 bottom-24 -translate-x-[calc(50%+120px)] md:left-1/2 md:bottom-32 md:-translate-x-[calc(50%+250px)]",
+                  "right-1/2 bottom-4 translate-x-[calc(50%+120px)] md:right-1/2 md:bottom-10 md:translate-x-[calc(50%+250px)]",
+                ].map((positionClasses, index) => {
+                  const tooltipStep = TOOLTIP_COUNT > 0 ? 1 / TOOLTIP_COUNT : 1;
+                  const tooltipStart = index * tooltipStep;
+                  const tooltipProgress = isPassed
+                    ? 1
+                    : Math.max(
+                        0,
+                        Math.min(
+                          (tooltipPhaseProgress - tooltipStart) / tooltipStep,
+                          1,
+                        ),
+                      );
+                  return (
+                    <div
+                      key={positionClasses}
+                      className={`pointer-events-none absolute ${positionClasses} z-20 rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-[11px] md:text-sm font-medium text-muted-foreground shadow-lg backdrop-blur transition-all duration-500 ease-in-out opacity-100`}
+                    >
+                      Tooltip {index + 1}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           ) : null}
         </div>
       </div>
+      <div
+        data-step-progress
+        data-step={step}
+        className="w-full"
+        style={{ height: `${SECTION_SPACER_VH}vh` }}
+      />
     </section>
   );
 };

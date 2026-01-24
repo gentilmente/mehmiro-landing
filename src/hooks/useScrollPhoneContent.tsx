@@ -7,19 +7,11 @@ export const useScrollPhoneContent = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll("[data-step]");
+      const sections = document.querySelectorAll("[data-step-progress]");
       const ctaSection = document.getElementById("cta-section");
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const phoneElement = document.getElementById(
-        "phone-mockup",
-      ) as HTMLElement;
-      let scrollMidpoint = scrollPosition + windowHeight / 2;
-      if (!isMobile && phoneElement) {
-        const rect = phoneElement.getBoundingClientRect();
-        const phoneCenter = rect.top + rect.height / 2;
-        scrollMidpoint = scrollPosition + phoneCenter;
-      }
+      const scrollMidpoint = scrollPosition + windowHeight / 2;
       // Check if we're in the CTA section
       if (ctaSection) {
         const ctaTop = (ctaSection as HTMLElement).offsetTop;
@@ -38,7 +30,8 @@ export const useScrollPhoneContent = () => {
         }
       }
 
-      // Check which story section we're in and calculate progress
+      let matched = false;
+
       sections.forEach((section) => {
         const sectionTop = (section as HTMLElement).offsetTop;
         const sectionHeight = (section as HTMLElement).offsetHeight;
@@ -50,8 +43,15 @@ export const useScrollPhoneContent = () => {
         ) {
           const progress = (scrollMidpoint - sectionTop) / sectionHeight;
           setScrollData({ step, progress });
+          matched = true;
         }
       });
+
+      if (!matched && sections.length > 0) {
+        const lastSection = sections[sections.length - 1] as HTMLElement;
+        const lastStep = parseInt(lastSection.dataset.step || "0");
+        setScrollData({ step: lastStep, progress: 1 });
+      }
     };
 
     window.addEventListener("scroll", handleScroll);

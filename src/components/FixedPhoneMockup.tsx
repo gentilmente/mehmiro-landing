@@ -18,7 +18,7 @@ export const FixedPhoneMockup = ({
     : `fixed z-40 pointer-events-none w-full sm:w-1/2 flex pr-6 sm:pr-12 transition-all duration-700 ease-in-out ${
         isCenteredMobile
           ? "top-1/2 -translate-y-1/2 justify-center items-center"
-          : "bottom-5 right-0 sm:top-1/2 sm:-translate-y-1/2 justify-end items-end sm:justify-center sm:items-center"
+          : "bottom-8 right-0 sm:top-1/2 sm:-translate-y-1/2 justify-end items-end sm:justify-center sm:items-center"
       }`;
 
   return (
