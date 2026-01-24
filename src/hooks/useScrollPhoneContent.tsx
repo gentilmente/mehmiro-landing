@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const useScrollPhoneContent = () => {
   const [scrollData, setScrollData] = useState({ step: 0, progress: 0 });
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -9,8 +11,15 @@ export const useScrollPhoneContent = () => {
       const ctaSection = document.getElementById("cta-section");
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const phoneHeight = 334; // Approximate phone mockup height in pixels
-      const scrollMidpoint = scrollPosition + windowHeight / 2;
+      const phoneElement = document.getElementById(
+        "phone-mockup",
+      ) as HTMLElement;
+      let scrollMidpoint = scrollPosition + windowHeight / 2;
+      if (!isMobile && phoneElement) {
+        const rect = phoneElement.getBoundingClientRect();
+        const phoneCenter = rect.top + rect.height / 2;
+        scrollMidpoint = scrollPosition + phoneCenter;
+      }
       // Check if we're in the CTA section
       if (ctaSection) {
         const ctaTop = (ctaSection as HTMLElement).offsetTop;
@@ -49,7 +58,7 @@ export const useScrollPhoneContent = () => {
     handleScroll(); // Initial check
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMobile]);
 
   return scrollData;
 };

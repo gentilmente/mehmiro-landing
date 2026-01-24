@@ -3,34 +3,14 @@ import { ScrollStorySection } from "@/components/ScrollStorySection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { FixedPhoneMockup } from "@/components/FixedPhoneMockup";
-import { WelcomeScreen } from "@/components/PhoneScreens/WelcomeScreen";
-import { TeacherProfileScreen } from "@/components/PhoneScreens/TeacherProfileScreen";
-import { ContextInputScreen } from "@/components/PhoneScreens/ContextInputScreen";
-import { AIResponseScreen } from "@/components/PhoneScreens/AIResponseScreen";
-import { ShareScreen } from "@/components/PhoneScreens/ShareScreen";
 import { useScrollPhoneContent } from "@/hooks/useScrollPhoneContent";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
   const scrollData = useScrollPhoneContent();
   const currentStep = scrollData.step;
   const scrollProgress = scrollData.progress;
-
-  const renderPhoneContent = () => {
-    switch (currentStep) {
-      case 1:
-        return <WelcomeScreen />;
-      case 2:
-        return <TeacherProfileScreen />;
-      case 3:
-        return <ContextInputScreen />;
-      case 4:
-        return <AIResponseScreen />;
-      case 5:
-        return <ShareScreen />;
-      default:
-        return <WelcomeScreen />;
-    }
-  };
+  const isMobile = useIsMobile();
 
   return (
     <div className="relative">
@@ -39,14 +19,12 @@ const Index = () => {
       {/* Fixed phone mockup - only show when story begins */}
       <div
         className={`transition-opacity duration-700 ease-in-out ${
-          currentStep > 0 ? "opacity-100" : "opacity-0 pointer-events-none"
+          currentStep > 0 && !isMobile
+            ? "opacity-100"
+            : "opacity-0 pointer-events-none"
         }`}
       >
-        <FixedPhoneMockup>
-          <div className="transition-all duration-700 ease-in-out">
-            {renderPhoneContent()}
-          </div>
-        </FixedPhoneMockup>
+        <FixedPhoneMockup isCenteredMobile={isMobile && scrollProgress > 0.3} />
       </div>
 
       {/* Story sections with scroll triggers */}
@@ -57,7 +35,9 @@ const Index = () => {
         scrollProgress={scrollProgress}
         title="Juan, un maestro con múltiples desafíos"
         description="Juan da clases en 4 escuelas diferentes, 3 materias distintas y múltiples grados. Desde escuelas públicas con recursos limitados hasta colegios privados de zonas ABC1."
-      />
+      >
+        <FixedPhoneMockup variant="inline" withId={false} />
+      </ScrollStorySection>
 
       <ScrollStorySection
         id="juan-context"
