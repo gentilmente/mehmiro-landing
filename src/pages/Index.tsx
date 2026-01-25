@@ -17,7 +17,7 @@ const Index = () => {
         id="juan-intro"
         step={1}
         title="Juan, un maestro con múltiples desafíos"
-        description="Juan da clases en 4 escuelas diferentes, 3 materias distintas y múltiples grados. Desde escuelas públicas con recursos limitados hasta colegios privados de zonas ABC1. Juan da clases en 4 escuelas diferentes, 3 materias distintas y múltiples grados."
+        description="Juan da clases en 2 escuelas diferentes, misma materia pero otro grado. Una escuela con recursos limitados de zona rural y en un colegio privados del centro de la ciudad."
       >
         <FixedPhoneMockup variant="inline" withId={false} />
       </ScrollStorySection>

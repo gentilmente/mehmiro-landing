@@ -146,7 +146,7 @@ export const ScrollStorySection = ({
         }
       }
 
-      pinTl.to({}, { duration: 1.5 });
+      pinTl.to({}, { duration: 1.2 });
       pinTimelines.push(pinTl);
     });
 
@@ -170,7 +170,7 @@ export const ScrollStorySection = ({
       className="relative w-full"
       ref={sectionRef}
     >
-      <div className="relative w-full h-[250vh]" data-panel="text">
+      <div className="relative w-full h-[150vh]" data-panel="text">
         <div
           className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
           style={{ zIndex: step }}
@@ -210,7 +210,7 @@ export const ScrollStorySection = ({
       </div>
 
       {hasPhone ? (
-        <div className="relative w-full h-[250vh]" data-panel="phone">
+        <div className="relative w-full h-[150vh]" data-panel="phone">
           <div
             className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
             style={{ zIndex: step + 1 }}
@@ -222,35 +222,21 @@ export const ScrollStorySection = ({
                   {children}
                 </div>
                 <div
-                  className="absolute left-1/2 top-16 -translate-x-[calc(50%+180px)] md:top-24 md:-translate-x-[calc(50%+350px)]"
+                  className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-24 md:-translate-x-[calc(50%+300px)] z-20"
                   data-reveal
                 >
                   <div className="rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-[11px] md:text-sm font-medium text-muted-foreground shadow-lg backdrop-blur">
-                    Tooltip 1
+                    Haz una introducción sobre ti, tu escuela y tus estudiantes,
+                    cuanto mas detalles mejor. Mira el ejemplo
                   </div>
                 </div>
                 <div
-                  className="absolute right-1/2 top-10 translate-x-[calc(50%+180px)] md:top-20 md:translate-x-[calc(50%+350px)]"
+                  className="absolute right-1/2 bottom-10 translate-x-[calc(50%+180px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
                   data-reveal
                 >
                   <div className="rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-[11px] md:text-sm font-medium text-muted-foreground shadow-lg backdrop-blur">
-                    Tooltip 2
-                  </div>
-                </div>
-                <div
-                  className="absolute left-1/2 bottom-20 -translate-x-[calc(50%+180px)] md:bottom-28 md:-translate-x-[calc(50%+350px)]"
-                  data-reveal
-                >
-                  <div className="rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-[11px] md:text-sm font-medium text-muted-foreground shadow-lg backdrop-blur">
-                    Tooltip 3
-                  </div>
-                </div>
-                <div
-                  className="absolute right-1/2 bottom-10 translate-x-[calc(50%+180px)] md:bottom-16 md:translate-x-[calc(50%+350px)]"
-                  data-reveal
-                >
-                  <div className="rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-[11px] md:text-sm font-medium text-muted-foreground shadow-lg backdrop-blur">
-                    Tooltip 4
+                    Ahora envía tu presentación para que el sistema pueda
+                    generar la tu perfil el de tu clase con los estudiantes
                   </div>
                 </div>
               </div>
