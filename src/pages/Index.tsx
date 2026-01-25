@@ -21,7 +21,7 @@ const Index = () => {
         currentStep={currentStep}
         scrollProgress={scrollProgress}
         title="Juan, un maestro con múltiples desafíos"
-        description="Juan da clases en 4 escuelas diferentes, 3 materias distintas y múltiples grados. Desde escuelas públicas con recursos limitados hasta colegios privados de zonas ABC1."
+        description="Juan da clases en 4 escuelas diferentes, 3 materias distintas y múltiples grados. Desde escuelas públicas con recursos limitados hasta colegios privados de zonas ABC1. Juan da clases en 4 escuelas diferentes, 3 materias distintas y múltiples grados."
       >
         <FixedPhoneMockup variant="inline" withId={false} />
       </ScrollStorySection>
