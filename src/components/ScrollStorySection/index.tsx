@@ -7,8 +7,6 @@ interface ScrollStorySectionProps {
   title: string;
   description: string;
   step: number;
-  currentStep: number;
-  scrollProgress: number;
   children?: ReactNode;
 }
 
@@ -17,15 +15,10 @@ export const ScrollStorySection = ({
   title,
   description,
   step,
-  currentStep,
-  scrollProgress,
   children,
 }: ScrollStorySectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const hasPhone = Boolean(children);
-
-  void currentStep;
-  void scrollProgress;
 
   const lines = description
     .split(". ")
