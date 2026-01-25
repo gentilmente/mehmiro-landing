@@ -170,7 +170,7 @@ export const ScrollStorySection = ({
       className="relative w-full"
       ref={sectionRef}
     >
-      <div className="relative w-full h-[150vh]" data-panel="text">
+      <div className="relative w-full h-[250vh]" data-panel="text">
         <div
           className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
           style={{ zIndex: step }}
@@ -210,7 +210,7 @@ export const ScrollStorySection = ({
       </div>
 
       {hasPhone ? (
-        <div className="relative w-full h-[150vh]" data-panel="phone">
+        <div className="relative w-full h-[250vh]" data-panel="phone">
           <div
             className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
             style={{ zIndex: step + 1 }}
@@ -225,18 +225,20 @@ export const ScrollStorySection = ({
                   className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-24 md:-translate-x-[calc(50%+300px)] z-20"
                   data-reveal
                 >
-                  <div className="rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-[11px] md:text-sm font-medium text-muted-foreground shadow-lg backdrop-blur">
+                  <div className="relative rounded-lg border border-primary/20 bg-background/90 px-4 py-2 text-sm md:text-base font-medium text-muted-foreground shadow-lg backdrop-blur">
                     Haz una introducción sobre ti, tu escuela y tus estudiantes,
                     cuanto mas detalles mejor. Mira el ejemplo
+                    <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-l-[10px] border-l-primary/20 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
                   </div>
                 </div>
                 <div
-                  className="absolute right-1/2 bottom-10 translate-x-[calc(50%+180px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
+                  className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
                   data-reveal
                 >
-                  <div className="rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-[11px] md:text-sm font-medium text-muted-foreground shadow-lg backdrop-blur">
+                  <div className="relative rounded-lg border border-primary/20 bg-background/90 px-4 py-2 text-sm md:text-base font-medium text-muted-foreground shadow-lg backdrop-blur">
                     Ahora envía tu presentación para que el sistema pueda
                     generar la tu perfil el de tu clase con los estudiantes
+                    <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-primary/20 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
                   </div>
                 </div>
               </div>

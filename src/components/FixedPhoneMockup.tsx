@@ -5,12 +5,14 @@ interface FixedPhoneMockupProps {
   isCenteredMobile?: boolean;
   variant?: "fixed" | "inline";
   withId?: boolean;
+  imageSrc?: string;
 }
 
 export const FixedPhoneMockup = ({
   isCenteredMobile = false,
   variant = "fixed",
   withId = variant === "fixed",
+  imageSrc,
 }: FixedPhoneMockupProps) => {
   const isInline = variant === "inline";
   const containerClasses = isInline
@@ -25,14 +27,22 @@ export const FixedPhoneMockup = ({
     <div className={containerClasses}>
       <div
         id={withId ? "phone-mockup" : undefined}
-        className="relative w-[176px] md:w-[334px]"
+        className="relative w-[264px] md:w-[501px]"
       >
         <div className="relative aspect-[9/19.5] bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
           <div className="w-full h-full overflow-hidden bg-white">
-            <div className="flex h-full w-full items-center justify-center bg-gray-100 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-              Screencast placeholder
-            </div>
+            {imageSrc ? (
+              <img
+                src={imageSrc}
+                alt="Phone screen content"
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-gray-100 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                Screencast placeholder
+              </div>
+            )}
           </div>
 
           {/* Screen notch */}

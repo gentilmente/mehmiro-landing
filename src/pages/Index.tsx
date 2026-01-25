@@ -4,6 +4,7 @@ import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { useScrollPhoneContent } from "@/hooks/useScrollPhoneContent";
 import { FixedPhoneMockup } from "@/components/FixedPhoneMockup";
+import onboardingImage from "@/assets/onboarding.png";
 
 const Index = () => {
   useScrollPhoneContent();
@@ -19,7 +20,11 @@ const Index = () => {
         title="Juan, un maestro con múltiples desafíos"
         description="Juan da clases en 2 escuelas diferentes, misma materia pero otro grado. Una escuela con recursos limitados de zona rural y en un colegio privados del centro de la ciudad."
       >
-        <FixedPhoneMockup variant="inline" withId={false} />
+        <FixedPhoneMockup
+          variant="inline"
+          withId={false}
+          imageSrc={onboardingImage}
+        />
       </ScrollStorySection>
 
       <ScrollStorySection
