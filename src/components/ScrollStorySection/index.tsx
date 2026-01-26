@@ -287,29 +287,75 @@ export const ScrollStorySection = ({
                 <div className="relative z-10" data-reveal-immediate>
                   {children}
                 </div>
-                <div
-                  className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-24 md:-translate-x-[calc(50%+300px)] z-20"
-                  data-reveal
-                  data-tooltip
-                >
-                  <div className="relative rounded-lg border border-primary/20 bg-background/90 px-4 py-2 text-sm md:text-base font-medium text-muted-foreground shadow-lg backdrop-blur">
-                    Haz una introducción sobre ti, tu escuela y tus estudiantes,
-                    cuanto mas detalles mejor. Mira el ejemplo
-                    <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-l-[10px] border-l-primary/20 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
-                  </div>
-                </div>
-                <div
-                  className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
-                  data-reveal
-                  data-tooltip
-                >
-                  <div className="relative rounded-lg border border-primary/20 bg-background/90 px-4 py-2 text-sm md:text-base font-medium text-muted-foreground shadow-lg backdrop-blur">
-                    Ahora envía tu presentación para que el sistema pueda
-                    generar tu perfil y el de tu clase con tus estudiantes.
-                    Sigue deslizando para ver que rápido es el proceso.
-                    <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-primary/20 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
-                  </div>
-                </div>
+                {/* Step 1 tooltips */}
+                {step === 1 && (
+                  <>
+                    <div
+                      className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-24 md:-translate-x-[calc(50%+300px)] z-20"
+                      data-reveal
+                      data-tooltip
+                    >
+                      <div className="relative rounded-lg border border-blue-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
+                        Haz una introducción sobre ti, tu escuela y tus
+                        estudiantes, cuanto mas detalles mejor. Mira el ejemplo
+                        <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-l-[10px] border-l-blue-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
+                      </div>
+                    </div>
+                    <div
+                      className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
+                      data-reveal
+                      data-tooltip
+                    >
+                      <div className="relative rounded-lg border border-green-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
+                        Ahora envía tu presentación para que el sistema pueda
+                        generar tu perfil y el de tu clase con tus estudiantes.
+                        Sigue deslizando para ver que rápido es el proceso.
+                        <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-green-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
+                      </div>
+                    </div>
+                  </>
+                )}
+                {/* Step 2 tooltips */}
+                {step === 2 && (
+                  <>
+                    <div
+                      className="absolute left-1/2 top-12 -translate-x-1/2 z-20"
+                      data-reveal
+                      data-tooltip
+                    >
+                      <div className="relative rounded-lg border border-blue-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
+                        En el perfil del estudiante tienes las variables de
+                        evaluación que cargamos al principio, mediante un
+                        comentario que puedes grabar al verlo trabajar, quedan
+                        registros frecuentes.
+                        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-t-[10px] border-t-blue-400 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent"></div>
+                      </div>
+                    </div>
+                    <div
+                      className="absolute right-1/2 top-40 translate-x-[calc(50%+120px)] md:top-56 md:translate-x-[calc(50%+300px)] z-20"
+                      data-reveal
+                      data-tooltip
+                    >
+                      <div className="relative rounded-lg border border-green-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
+                        Este es el asistente para convertir tu observación en
+                        datos numéricos.
+                        <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-green-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
+                      </div>
+                    </div>
+                    <div
+                      className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
+                      data-reveal
+                      data-tooltip
+                    >
+                      <div className="relative rounded-lg border border-purple-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
+                        En cualquier momento puedes aplicar el análisis de IA y
+                        te dará un informe de su estado general con ayudas para
+                        mejorar las zonas flojas de su aprendizaje.
+                        <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-purple-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>
