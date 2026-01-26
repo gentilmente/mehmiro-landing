@@ -10,6 +10,7 @@ interface ScrollStorySectionProps {
   children?: ReactNode;
   completionImageSrc?: string;
   completionVideoSrc?: string;
+  backgroundImageSrc?: string;
 }
 
 export const ScrollStorySection = ({
@@ -20,6 +21,7 @@ export const ScrollStorySection = ({
   children,
   completionImageSrc,
   completionVideoSrc,
+  backgroundImageSrc,
 }: ScrollStorySectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const hasPhone = Boolean(children);
@@ -216,11 +218,22 @@ export const ScrollStorySection = ({
       <div className="relative w-full h-[250vh]" data-panel="text">
         <div
           className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
-          style={{ zIndex: step }}
+          style={{
+            zIndex: step,
+            ...(backgroundImageSrc && {
+              backgroundImage: `url(${backgroundImageSrc})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }),
+          }}
           data-slide
         >
-          <div className="w-full min-h-screen px-6 md:px-12 lg:px-24 pt-24 pb-12 flex flex-col items-center justify-start text-center md:items-start md:text-left">
-            <div className="space-y-6 max-w-2xl">
+          {backgroundImageSrc && (
+            <div className="absolute inset-0 bg-black/30 z-0"></div>
+          )}
+          <div className="relative z-10 w-full min-h-screen px-6 md:px-12 lg:px-24 pt-24 pb-24 flex flex-col items-center justify-end text-center md:items-start md:text-left">
+            <div className="space-y-6 max-w-2xl p-6 md:p-8 bg-black/30 rounded-xl backdrop-blur-sm">
               <div
                 className="inline-flex items-center justify-center bg-primary/10 px-4 py-2 rounded-full"
                 data-reveal-immediate
