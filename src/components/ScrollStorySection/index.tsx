@@ -8,6 +8,8 @@ interface ScrollStorySectionProps {
   description: string;
   step: number;
   children?: ReactNode;
+  completionImageSrc?: string;
+  completionVideoSrc?: string;
 }
 
 export const ScrollStorySection = ({
@@ -16,6 +18,8 @@ export const ScrollStorySection = ({
   description,
   step,
   children,
+  completionImageSrc,
+  completionVideoSrc,
 }: ScrollStorySectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const hasPhone = Boolean(children);
@@ -144,6 +148,45 @@ export const ScrollStorySection = ({
             immediateElements.length > 0 ? "-=0.2" : 0,
           );
         }
+
+        if (completionImageSrc || completionVideoSrc) {
+          pinTl.call(
+            () => {
+              const img = slide.querySelector<HTMLImageElement>(
+                `#phone-screen-img-${step}`,
+              );
+              const video = slide.querySelector<HTMLVideoElement>(
+                `#phone-screen-video-${step}`,
+              );
+              const tooltips = Array.from(
+                slide.querySelectorAll<HTMLElement>("[data-tooltip]"),
+              );
+
+              if (
+                (img && img.dataset.completionApplied === "true") ||
+                (video && video.dataset.completionApplied === "true")
+              ) {
+                return;
+              }
+
+              if (completionVideoSrc && video) {
+                video.src = completionVideoSrc;
+                video.dataset.completionApplied = "true";
+                video.currentTime = 0;
+                video.play().catch(() => undefined);
+                gsap.set(video, { autoAlpha: 1 });
+                gsap.set(img, { autoAlpha: 0 });
+              } else if (completionImageSrc && img) {
+                img.src = completionImageSrc;
+                img.dataset.completionApplied = "true";
+              }
+
+              gsap.set(tooltips, { autoAlpha: 0 });
+            },
+            undefined,
+            ">",
+          );
+        }
       }
 
       pinTl.to({}, { duration: 1.2 });
@@ -160,7 +203,7 @@ export const ScrollStorySection = ({
         timeline.kill();
       });
     };
-  }, [lines, hasPhone]);
+  }, [lines, hasPhone, completionImageSrc, completionVideoSrc, step]);
 
   return (
     <section
@@ -210,7 +253,10 @@ export const ScrollStorySection = ({
       </div>
 
       {hasPhone ? (
-        <div className="relative w-full h-[250vh]" data-panel="phone">
+        <div
+          className={`relative w-full ${step === 1 ? "h-[400vh]" : "h-[250vh]"}`}
+          data-panel="phone"
+        >
           <div
             className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
             style={{ zIndex: step + 1 }}
@@ -224,6 +270,7 @@ export const ScrollStorySection = ({
                 <div
                   className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-24 md:-translate-x-[calc(50%+300px)] z-20"
                   data-reveal
+                  data-tooltip
                 >
                   <div className="relative rounded-lg border border-primary/20 bg-background/90 px-4 py-2 text-sm md:text-base font-medium text-muted-foreground shadow-lg backdrop-blur">
                     Haz una introducción sobre ti, tu escuela y tus estudiantes,
@@ -234,10 +281,12 @@ export const ScrollStorySection = ({
                 <div
                   className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
                   data-reveal
+                  data-tooltip
                 >
                   <div className="relative rounded-lg border border-primary/20 bg-background/90 px-4 py-2 text-sm md:text-base font-medium text-muted-foreground shadow-lg backdrop-blur">
                     Ahora envía tu presentación para que el sistema pueda
-                    generar la tu perfil el de tu clase con los estudiantes
+                    generar tu perfil y el de tu clase con tus estudiantes.
+                    Sigue deslizando para ver que rápido es el proceso.
                     <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-primary/20 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
                   </div>
                 </div>

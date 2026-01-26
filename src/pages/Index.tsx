@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { useScrollPhoneContent } from "@/hooks/useScrollPhoneContent";
 import { FixedPhoneMockup } from "@/components/FixedPhoneMockup";
 import onboardingImage from "@/assets/onboarding.png";
+import onboardingCompleteVideo from "@/assets/onboarding-complete.mp4";
 
 const Index = () => {
   useScrollPhoneContent();
@@ -19,11 +20,14 @@ const Index = () => {
         step={1}
         title="Juan, un maestro con múltiples desafíos"
         description="Juan da clases en 2 escuelas diferentes, misma materia pero otro grado. Una escuela con recursos limitados de zona rural y en un colegio privados del centro de la ciudad."
+        completionVideoSrc={onboardingCompleteVideo}
       >
         <FixedPhoneMockup
           variant="inline"
           withId={false}
           imageSrc={onboardingImage}
+          step={1}
+          completionVideoSrc={onboardingCompleteVideo}
         />
       </ScrollStorySection>
 

@@ -6,6 +6,8 @@ interface FixedPhoneMockupProps {
   variant?: "fixed" | "inline";
   withId?: boolean;
   imageSrc?: string;
+  step?: number;
+  completionVideoSrc?: string;
 }
 
 export const FixedPhoneMockup = ({
@@ -13,6 +15,8 @@ export const FixedPhoneMockup = ({
   variant = "fixed",
   withId = variant === "fixed",
   imageSrc,
+  step,
+  completionVideoSrc,
 }: FixedPhoneMockupProps) => {
   const isInline = variant === "inline";
   const containerClasses = isInline
@@ -31,9 +35,10 @@ export const FixedPhoneMockup = ({
       >
         <div className="relative aspect-[9/19.5] bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
-          <div className="w-full h-full overflow-hidden bg-white">
+          <div className="relative w-full h-full overflow-hidden bg-white">
             {imageSrc ? (
               <img
+                id={`phone-screen-img${step ? `-${step}` : ""}`}
                 src={imageSrc}
                 alt="Phone screen content"
                 className="w-full h-full object-cover"
@@ -43,6 +48,16 @@ export const FixedPhoneMockup = ({
                 Screencast placeholder
               </div>
             )}
+            {completionVideoSrc ? (
+              <video
+                id={`phone-screen-video${step ? `-${step}` : ""}`}
+                src={completionVideoSrc}
+                className="absolute inset-0 h-full w-full object-cover opacity-0"
+                muted
+                playsInline
+                preload="auto"
+              />
+            ) : null}
           </div>
 
           {/* Screen notch */}
