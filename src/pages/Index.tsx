@@ -8,6 +8,7 @@ import onboardingImage from "@/assets/onboarding.png";
 import onboardingCompleteVideo from "@/assets/onboarding-complete.mp4";
 import juanSchool from "@/assets/juan-school.jpg";
 import beatrizJuan from "@/assets/beatriz-juan.jpg";
+import studentProfile from "@/assets/student-profile.png";
 
 const Index = () => {
   useScrollPhoneContent();
@@ -41,7 +42,12 @@ const Index = () => {
         description="Juan le muestra a Beatriz cómo Mehmiro le quita la carga de tareas tediosas, para que ambos puedan enfocarse en lo que realmente importa: enseñar. ¿Qué puede hacer por mí?"
         backgroundImageSrc={beatrizJuan}
       >
-        <FixedPhoneMockup variant="inline" withId={false} />
+        <FixedPhoneMockup
+          variant="inline"
+          withId={false}
+          imageSrc={studentProfile}
+          step={2}
+        />
       </ScrollStorySection>
 
       <ScrollStorySection
