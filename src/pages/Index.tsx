@@ -7,6 +7,7 @@ import { FixedPhoneMockup } from "@/components/FixedPhoneMockup";
 import onboardingImage from "@/assets/onboarding.png";
 import onboardingCompleteVideo from "@/assets/onboarding-complete.mp4";
 import juanSchool from "@/assets/juan-school.jpg";
+import beatrizJuan from "@/assets/beatriz-juan.jpg";
 
 const Index = () => {
   useScrollPhoneContent();
@@ -36,8 +37,9 @@ const Index = () => {
       <ScrollStorySection
         id="juan-context"
         step={2}
-        title="Mehmiro entiende su contexto"
-        description="Con Mehmiro, Juan simplemente habla con el agente de IA. Le cuenta sobre su escuela, sus estudiantes, sus necesidades. El agente comprende el contexto único de cada grupo."
+        title="Beatriz y Juan se encuentran en el pasillo del colegio"
+        description="Juan le muestra a Beatriz cómo Mehmiro le quita la carga de tareas tediosas, para que ambos puedan enfocarse en lo que realmente importa: enseñar. ¿Qué puede hacer por mí?"
+        backgroundImageSrc={beatrizJuan}
       >
         <FixedPhoneMockup variant="inline" withId={false} />
       </ScrollStorySection>

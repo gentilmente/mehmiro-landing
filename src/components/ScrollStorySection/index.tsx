@@ -31,6 +31,9 @@ export const ScrollStorySection = ({
     .map((line) => line.trim())
     .filter((line) => line.length > 0);
 
+  const isQuestion = (line: string) =>
+    line.startsWith("¿") && line.endsWith("?");
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.config({ ignoreMobileResize: true, limitCallbacks: true });
@@ -232,8 +235,8 @@ export const ScrollStorySection = ({
           {backgroundImageSrc && (
             <div className="absolute inset-0 bg-black/30 z-0"></div>
           )}
-          <div className="relative z-10 w-full min-h-screen px-6 md:px-12 lg:px-24 pt-24 pb-24 flex flex-col items-center justify-end text-center md:items-start md:text-left">
-            <div className="space-y-6 max-w-2xl p-6 md:p-8 bg-black/30 rounded-xl backdrop-blur-sm">
+          <div className="relative z-10 w-full min-h-screen px-6 md:px-12 lg:px-24 pt-32 pb-32 flex flex-col items-center justify-end text-center md:items-start md:text-left">
+            <div className="space-y-8 max-w-2xl p-8 md:p-12 bg-black/30 rounded-xl backdrop-blur-sm">
               <div
                 className="inline-flex items-center justify-center bg-primary/10 px-4 py-2 rounded-full"
                 data-reveal-immediate
@@ -248,15 +251,19 @@ export const ScrollStorySection = ({
               >
                 {title}
               </h2>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {lines.map((line, index) => (
                   <p
                     key={index}
-                    className="text-lg text-muted-foreground leading-relaxed"
+                    className={`leading-relaxed ${
+                      isQuestion(line)
+                        ? "text-2xl md:text-3xl font-semibold"
+                        : "text-lg text-muted-foreground"
+                    }`}
                     data-reveal
                   >
                     {line}
-                    {index < lines.length - 1 ? "." : ""}
+                    {index < lines.length - 1 && !isQuestion(line) ? "." : ""}
                   </p>
                 ))}
               </div>
