@@ -49,252 +49,278 @@ export const ScrollStorySection = ({
     const panels = Array.from(
       section.querySelectorAll<HTMLElement>("[data-panel]"),
     );
-    const pinTimelines: gsap.core.Timeline[] = [];
-    const revealTimelines: gsap.core.Timeline[] = [];
 
-    panels.forEach((panel) => {
-      const panelType = panel.dataset.panel ?? "text";
-      const slide = panel.querySelector<HTMLElement>("[data-slide]");
+    const setupPanels = (isMobileView: boolean) => {
+      const pinTimelines: gsap.core.Timeline[] = [];
+      const revealTimelines: gsap.core.Timeline[] = [];
 
-      if (!slide) {
-        return;
-      }
+      panels.forEach((panel) => {
+        const panelType = panel.dataset.panel ?? "text";
+        const slide = panel.querySelector<HTMLElement>("[data-slide]");
 
-      const img = slide.querySelector<HTMLImageElement>(
-        `#phone-screen-img-${step}`,
-      );
-      const video = slide.querySelector<HTMLVideoElement>(
-        `#phone-screen-video-${step}`,
-      );
-      const phoneAnchor = slide.querySelector<HTMLElement>("[data-phone-anchor]");
-      const videoOverlay = slide.querySelector<HTMLElement>(
-        "[data-video-overlay]",
-      );
-      const videoPlayButton = slide.querySelector<HTMLButtonElement>(
-        "[data-video-play]",
-      );
-      const tooltips = Array.from(
-        slide.querySelectorAll<HTMLElement>("[data-tooltip]"),
-      );
-      const originalImgSrc = img?.dataset.originalSrc;
+        if (!slide) {
+          return;
+        }
 
-      if (video && videoPlayButton && videoOverlay) {
-        const handlePlay = () => {
-          video.muted = true;
-          video.play().catch(() => undefined);
-          gsap.set(videoOverlay, { autoAlpha: 0 });
-        };
-        videoPlayButton.addEventListener("click", handlePlay);
-        revealTimelines.push({
-          kill: () => videoPlayButton.removeEventListener("click", handlePlay),
-        } as gsap.core.Timeline);
-      }
+        const img = slide.querySelector<HTMLImageElement>(
+          `#phone-screen-img-${step}`,
+        );
+        const video = slide.querySelector<HTMLVideoElement>(
+          `#phone-screen-video-${step}`,
+        );
+        const tooltips = Array.from(
+          slide.querySelectorAll<HTMLElement>("[data-tooltip]"),
+        );
+        const originalImgSrc = img?.dataset.originalSrc;
+        if (video) {
+          video.controls = true;
+          if (completionVideoSrc) {
+            gsap.set(video, { autoAlpha: 0, pointerEvents: "none" });
+          }
+        }
+        if (img) {
+          gsap.set(img, { pointerEvents: "none" });
+        }
+        if (tooltips.length > 0) {
+          gsap.set(tooltips, { pointerEvents: "none" });
+        }
 
-      const revealElements = Array.from(
-        panel.querySelectorAll<HTMLElement>("[data-reveal]"),
-      );
-      const immediateElements = Array.from(
-        panel.querySelectorAll<HTMLElement>("[data-reveal-immediate]"),
-      );
-
-      if (immediateElements.length > 0) {
-        gsap.set(immediateElements, {
-          opacity: 0,
-          y: 20,
-          willChange: "opacity, transform",
-        });
-      }
-
-      if (revealElements.length > 0) {
-        gsap.set(revealElements, {
-          opacity: 0,
-          y: 30,
-          willChange: "opacity, transform",
-        });
-      }
-
-      if (panelType === "text") {
-        const revealTl = gsap.timeline({
-          scrollTrigger: {
-            trigger: panel,
-            start: "top 85%",
-            end: isMobile ? "bottom 80%" : "bottom top",
-            scrub: isMobile ? 0.2 : 1,
-          },
-          defaults: {
-            ease: "power2.out",
-          },
-        });
+        const revealElements = Array.from(
+          panel.querySelectorAll<HTMLElement>("[data-reveal]"),
+        );
+        const immediateElements = Array.from(
+          panel.querySelectorAll<HTMLElement>("[data-reveal-immediate]"),
+        );
 
         if (immediateElements.length > 0) {
-          revealTl.to(immediateElements, {
-            opacity: 1,
-            y: 0,
-            duration: isMobile ? 0.3 : 0.6,
+          gsap.set(immediateElements, {
+            opacity: 0,
+            y: panelType === "phone" ? 0 : 20,
+            willChange: "opacity, transform",
           });
         }
 
         if (revealElements.length > 0) {
-          revealTl.to(
-            revealElements,
-            {
-              opacity: 1,
-              y: 0,
-              stagger: isMobile ? 0.2 : 0.6,
-              duration: isMobile ? 0.4 : 1.2,
-            },
-            immediateElements.length > 0 ? "-=0.2" : 0,
-          );
+          gsap.set(revealElements, {
+            opacity: 0,
+            y: 30,
+            willChange: "opacity, transform",
+          });
         }
 
-        revealTimelines.push(revealTl);
-      }
-
-      const isTextPanel = panelType === "text";
-      const shouldPin = !isMobile || panelType === "phone";
-      let completionApplied = false;
-      const applyCompletion = (showCompletion: boolean) => {
-        if (!completionImageSrc && !completionVideoSrc) {
-          return;
-        }
-
-        if (showCompletion && !completionApplied) {
-          completionApplied = true;
-          if (completionVideoSrc && video) {
-            video.currentTime = 0;
-            gsap.set(video, { autoAlpha: 1 });
-            if (img) {
-              gsap.set(img, { autoAlpha: 0 });
-            }
-            if (videoOverlay) {
-              gsap.set(videoOverlay, { autoAlpha: 1 });
-            }
-          } else if (completionImageSrc && img) {
-            img.src = completionImageSrc;
-          }
-          gsap.set(tooltips, { autoAlpha: 0 });
-        } else if (!showCompletion && completionApplied) {
-          completionApplied = false;
-          if (completionVideoSrc && video) {
-            video.pause();
-            video.currentTime = 0;
-            gsap.set(video, { autoAlpha: 0 });
-            if (videoOverlay) {
-              gsap.set(videoOverlay, { autoAlpha: 0 });
-            }
-          }
-          if (img) {
-            if (originalImgSrc) {
-              img.src = originalImgSrc;
-            }
-            gsap.set(img, { autoAlpha: 1 });
-          }
-          gsap.set(tooltips, { autoAlpha: 1 });
-        }
-      };
-
-      const isPhonePanel = panelType === "phone";
-      const pinStart =
-        isMobile && isPhonePanel ? "top top" : "top top";
-      const pinEnd =
-        isMobile && isPhonePanel ? "+=80%" : "bottom top";
-      const completionThreshold = isMobile ? 0.7 : 0.8;
-      const pinTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: panel,
-          start: pinStart,
-          end: pinEnd,
-          scrub: isMobile ? 0.6 : 1,
-          pin: shouldPin,
-          pinSpacing: shouldPin && !(isMobile && isPhonePanel),
-          anticipatePin: 1,
-          onUpdate: (self) => {
-            if (panelType !== "phone") {
-              return;
-            }
-            if (!completionImageSrc && !completionVideoSrc) {
-              return;
-            }
-            if (self.progress >= completionThreshold) {
-              applyCompletion(true);
-            } else {
-              applyCompletion(false);
-            }
-          },
-          onLeaveBack: () => {
-            applyCompletion(false);
-            if (tooltips.length > 0) {
-              gsap.set(tooltips, { autoAlpha: 1 });
-            }
-          },
-        },
-        defaults: {
-          ease: "power2.out",
-        },
-      });
-
-      if (panelType !== "text") {
-        if (immediateElements.length > 0 && isMobile) {
-          const phoneIntroTl = gsap.timeline({
+        if (panelType === "text") {
+          const revealTl = gsap.timeline({
             scrollTrigger: {
               trigger: panel,
               start: "top 85%",
-              end: "top center",
-              scrub: true,
+              end: isMobileView ? "bottom 80%" : "bottom top",
+              scrub: isMobileView ? 0.2 : 1,
             },
             defaults: {
               ease: "power2.out",
             },
           });
 
-          phoneIntroTl.to(immediateElements, {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-          });
-
-          revealTimelines.push(phoneIntroTl);
-        }
-
-        if (immediateElements.length > 0 && !isMobile) {
-          pinTl.to(immediateElements, {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-          });
-        }
-
-        if (revealElements.length > 0) {
-          pinTl.to(
-            revealElements,
-            {
+          if (immediateElements.length > 0) {
+            revealTl.to(immediateElements, {
               opacity: 1,
               y: 0,
-              stagger: 0.3,
-              duration: 1,
-            },
-            immediateElements.length > 0 ? "-=0.2" : 0,
-          );
+              duration: isMobileView ? 0.3 : 0.6,
+            });
+          }
+
+          if (revealElements.length > 0) {
+            revealTl.to(
+              revealElements,
+              {
+                opacity: 1,
+                y: 0,
+                stagger: isMobileView ? 0.2 : 0.6,
+                duration: isMobileView ? 0.4 : 1.2,
+              },
+              immediateElements.length > 0 ? "-=0.2" : 0,
+            );
+          }
+
+          revealTimelines.push(revealTl);
         }
 
-        // completion is tied to scroll progress via onUpdate
-      }
+        let completionApplied = false;
+        const applyCompletion = (showCompletion: boolean) => {
+          if (!completionImageSrc && !completionVideoSrc) {
+            return;
+          }
 
-      pinTl.to({}, { duration: 1.2 });
-      pinTimelines.push(pinTl);
-    });
+          if (showCompletion && !completionApplied) {
+            completionApplied = true;
+            if (completionImageSrc && img) {
+              img.src = completionImageSrc;
+            }
+            gsap.set(tooltips, { autoAlpha: 0 });
+          } else if (!showCompletion && completionApplied) {
+            completionApplied = false;
+            if (img) {
+              if (originalImgSrc) {
+                img.src = originalImgSrc;
+              }
+              gsap.set(img, { autoAlpha: 1, display: "block" });
+            }
+            gsap.set(tooltips, { autoAlpha: 1 });
+          }
+        };
+
+        const isPhonePanel = panelType === "phone";
+        if (isPhonePanel) {
+          if (!isMobileView) {
+            const desktopPhoneTl = gsap.timeline({
+              scrollTrigger: {
+                trigger: panel,
+                start: "top top",
+                end: "+=100%",
+                scrub: true,
+                pin: true,
+                pinSpacing: false,
+                anticipatePin: 1,
+              },
+              defaults: {
+                ease: "power2.out",
+              },
+            });
+
+            if (immediateElements.length > 0) {
+              desktopPhoneTl.to(immediateElements, {
+                opacity: 1,
+                duration: 0.2,
+              });
+            }
+
+            if (revealElements.length > 0) {
+              desktopPhoneTl.to(
+                revealElements,
+                {
+                  opacity: 1,
+                  y: 0,
+                  stagger: 0.35,
+                  duration: 0.7,
+                },
+                immediateElements.length > 0 ? "+=0.15" : 0.15,
+              );
+            }
+
+            if (completionVideoSrc && video) {
+              desktopPhoneTl.to(
+                tooltips,
+                { autoAlpha: 0, duration: 0.2 },
+                ">",
+              );
+              if (img) {
+                desktopPhoneTl.to(img, { autoAlpha: 0, duration: 0.3 }, "<");
+              }
+              desktopPhoneTl.to(
+                video,
+                { autoAlpha: 1, pointerEvents: "auto", duration: 0.3 },
+                "<",
+              );
+            }
+
+            revealTimelines.push(desktopPhoneTl);
+            return;
+          }
+
+          const shouldPin = isMobileView;
+          const pinEnd = isMobileView ? "+=80%" : "bottom top";
+          const pinTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: panel,
+              start: "top top",
+              end: pinEnd,
+              scrub: isMobileView ? 0.6 : 1,
+              pin: shouldPin,
+              pinSpacing: shouldPin ? false : true,
+              anticipatePin: 1,
+              onLeaveBack: () => {
+                applyCompletion(false);
+                if (tooltips.length > 0) {
+                  gsap.set(tooltips, { autoAlpha: 1 });
+                }
+              },
+            },
+            defaults: {
+              ease: "power2.out",
+            },
+          });
+
+            if (immediateElements.length > 0 && isMobileView) {
+              const phoneIntroTl = gsap.timeline({
+                scrollTrigger: {
+                  trigger: panel,
+                  start: "top 85%",
+                  end: "top center",
+                  scrub: true,
+                },
+                defaults: {
+                  ease: "power2.out",
+                },
+              });
+
+              phoneIntroTl.to(immediateElements, {
+                opacity: 1,
+                duration: 1,
+              });
+
+            revealTimelines.push(phoneIntroTl);
+          }
+
+          if (revealElements.length > 0 && isMobileView) {
+            pinTl.to(
+              revealElements,
+              {
+                opacity: 1,
+                y: 0,
+                stagger: 0.3,
+                duration: 1,
+              },
+              immediateElements.length > 0 ? "-=0.2" : 0,
+            );
+          }
+
+          if (completionVideoSrc && video) {
+            pinTl.to(tooltips, { autoAlpha: 0, duration: 0.2 }, ">");
+            if (img) {
+              pinTl.to(img, { autoAlpha: 0, duration: 0.3 }, "<");
+            }
+            pinTl.to(
+              video,
+              { autoAlpha: 1, pointerEvents: "auto", duration: 0.3 },
+              "<",
+            );
+          }
+
+          pinTl.to({}, { duration: 1.2 });
+          pinTimelines.push(pinTl);
+        }
+      });
+
+      return () => {
+        pinTimelines.forEach((timeline) => {
+          timeline.scrollTrigger?.kill();
+          timeline.kill();
+        });
+        revealTimelines.forEach((timeline) => {
+          timeline.scrollTrigger?.kill();
+          timeline.kill();
+        });
+      };
+    };
+
+    const mm = gsap.matchMedia();
+    mm.add("(max-width: 767px)", () => setupPanels(true));
+    mm.add("(min-width: 768px)", () => setupPanels(false));
 
     return () => {
-      pinTimelines.forEach((timeline) => {
-        timeline.scrollTrigger?.kill();
-        timeline.kill();
-      });
-      revealTimelines.forEach((timeline) => {
-        timeline.scrollTrigger?.kill();
-        timeline.kill();
-      });
+      mm.revert();
     };
-  }, [lines, hasPhone, completionImageSrc, completionVideoSrc, step, isMobile]);
+  }, [lines, hasPhone, completionImageSrc, completionVideoSrc, step]);
 
   return (
     <section
@@ -305,11 +331,11 @@ export const ScrollStorySection = ({
       ref={sectionRef}
     >
       <div
-        className={`relative w-full ${isMobile ? "h-[110vh]" : "h-[250vh]"}`}
+        className={`relative w-full ${isMobile ? "h-[110vh]" : "h-screen"}`}
         data-panel="text"
       >
         <div
-          className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
+          className="relative h-screen w-full bg-background flex items-center justify-center overflow-hidden"
           style={{
             zIndex: step,
             ...(backgroundImageSrc && {
@@ -322,7 +348,7 @@ export const ScrollStorySection = ({
           data-slide
         >
           {backgroundImageSrc && (
-            <div className="absolute inset-0 bg-black/30 z-0"></div>
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none"></div>
           )}
           <div className="relative z-10 w-full min-h-screen px-6 md:px-12 lg:px-24 pt-20 pb-20 flex flex-col items-center justify-end text-center md:items-start md:text-left">
             <div className="space-y-6 max-w-2xl p-6 md:p-12 bg-black/30 rounded-xl backdrop-blur-sm">
@@ -363,9 +389,12 @@ export const ScrollStorySection = ({
 
       {hasPhone ? (
         <>
-          <div className="relative w-full h-screen" data-panel="phone">
+          <div
+            className="relative w-full h-screen md:h-screen"
+            data-panel="phone"
+          >
             <div
-              className="h-screen w-full bg-background flex items-center justify-center overflow-hidden"
+              className="h-screen w-full bg-background flex items-center justify-center overflow-hidden md:overflow-visible"
               style={{ zIndex: step + 10 }}
               data-slide
             >
@@ -381,7 +410,7 @@ export const ScrollStorySection = ({
                   {step === 1 && (
                     <>
                       <div
-                        className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-24 md:-translate-x-[calc(50%+300px)] z-20"
+                        className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-60 md:-translate-x-[calc(50%+400px)] z-20"
                         data-reveal
                         data-tooltip
                       >
@@ -393,7 +422,7 @@ export const ScrollStorySection = ({
                         </div>
                       </div>
                       <div
-                        className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-16 md:translate-x-[calc(50%+300px)] z-20"
+                        className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-10 md:translate-x-[calc(50%+400px)] z-20"
                         data-reveal
                         data-tooltip
                       >
@@ -453,6 +482,10 @@ export const ScrollStorySection = ({
             </div>
           </div>
           <div className="h-[80vh] w-full md:hidden" aria-hidden="true" />
+          <div
+            className="hidden md:block h-[100vh] w-full"
+            aria-hidden="true"
+          />
         </>
       ) : null}
     </section>

@@ -31,9 +31,9 @@ export const FixedPhoneMockup = ({
     <div className={containerClasses}>
       <div
         id={withId ? "phone-mockup" : undefined}
-        className="relative w-[220px] sm:w-[260px] md:w-[420px] lg:w-[501px]"
+        className="relative w-[220px] sm:w-[260px] md:w-auto md:h-[70vh] md:max-h-[70vh]"
       >
-        <div className="relative aspect-[9/19.5] bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
+        <div className="relative aspect-[9/19.5] w-full md:h-full md:w-auto bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
           <div className="relative w-full h-full overflow-hidden bg-white">
             {imageSrc ? (
@@ -50,35 +50,15 @@ export const FixedPhoneMockup = ({
               </div>
             )}
             {completionVideoSrc ? (
-              <>
-                <video
-                  id={`phone-screen-video${step ? `-${step}` : ""}`}
-                  src={completionVideoSrc}
-                  className="absolute inset-0 h-full w-full object-cover opacity-0"
-                  muted
-                  playsInline
-                  preload="auto"
-                />
-                <div
-                  className="absolute inset-0 flex items-center justify-center opacity-0"
-                  data-video-overlay
-                >
-                  <button
-                    type="button"
-                    aria-label="Reproducir demo"
-                    className="flex h-16 w-16 items-center justify-center rounded-full border border-white/80 bg-black/40 text-white shadow-lg backdrop-blur"
-                    data-video-play
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      className="ml-1 h-7 w-7 fill-current"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </button>
-                </div>
-              </>
+              <video
+                id={`phone-screen-video${step ? `-${step}` : ""}`}
+                src={completionVideoSrc}
+                className="absolute inset-0 h-full w-full object-cover opacity-0 pointer-events-none"
+                controls
+                playsInline
+                preload="metadata"
+                poster={imageSrc}
+              />
             ) : null}
           </div>
 

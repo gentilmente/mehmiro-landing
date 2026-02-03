@@ -8,6 +8,7 @@ import onboardingImage from "@/assets/onboarding.png";
 import onboardingCompleteVideo from "@/assets/onboarding-complete.mp4";
 import juanSchool from "@/assets/juan-school.jpg";
 import beatrizJuan from "@/assets/beatriz-juan.jpg";
+import beatrizInvite from "@/assets/beatriz-invite.jpg";
 import studentProfile from "@/assets/student-profile.png";
 
 const Index = () => {
@@ -51,19 +52,11 @@ const Index = () => {
       </ScrollStorySection>
 
       <ScrollStorySection
-        id="mehmiro-response"
-        step={3}
-        title="Evaluaciones personalizadas al instante"
-        description="En segundos, Mehmiro genera evaluaciones adaptadas: desde escuelas con recursos limitados hasta colegios ABC1. Cada evaluación respeta el contexto y potencia el aprendizaje."
-      >
-        <FixedPhoneMockup variant="inline" withId={false} />
-      </ScrollStorySection>
-
-      <ScrollStorySection
         id="beatriz-shares"
-        step={4}
+        step={3}
         title="Beatriz descubre el potencial"
-        description="En el pasillo del colegio, Juan le muestra Mehmiro a Beatriz. Ella comprende de inmediato: evaluaciones que realmente entienden a sus estudiantes, sin barreras culturales ni contextuales."
+        description="Beatriz se da cuenta de que Mehmiro no solo ayuda a Juan, sino que también puede transformar su propia forma de enseñar y conectar con sus estudiantes."
+        backgroundImageSrc={beatrizInvite}
       >
         <FixedPhoneMockup variant="inline" withId={false} />
       </ScrollStorySection>
