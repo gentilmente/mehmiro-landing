@@ -22,7 +22,7 @@ export const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            El agente de IA pedagógico que transforma las evaluaciones formativas
+            El asistente que revoluciona la enseñanza y el aprendizaje. Diseñado para maestros, adaptado a cada contexto.
           </p>
 
         </div>

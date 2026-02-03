@@ -31,7 +31,7 @@ export const FixedPhoneMockup = ({
     <div className={containerClasses}>
       <div
         id={withId ? "phone-mockup" : undefined}
-        className="relative w-[264px] md:w-[501px]"
+        className="relative w-[220px] sm:w-[260px] md:w-[420px] lg:w-[501px]"
       >
         <div className="relative aspect-[9/19.5] bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
@@ -41,6 +41,7 @@ export const FixedPhoneMockup = ({
                 id={`phone-screen-img${step ? `-${step}` : ""}`}
                 src={imageSrc}
                 alt="Phone screen content"
+                data-original-src={imageSrc}
                 className="w-full h-full object-cover"
               />
             ) : (
@@ -49,14 +50,35 @@ export const FixedPhoneMockup = ({
               </div>
             )}
             {completionVideoSrc ? (
-              <video
-                id={`phone-screen-video${step ? `-${step}` : ""}`}
-                src={completionVideoSrc}
-                className="absolute inset-0 h-full w-full object-cover opacity-0"
-                muted
-                playsInline
-                preload="auto"
-              />
+              <>
+                <video
+                  id={`phone-screen-video${step ? `-${step}` : ""}`}
+                  src={completionVideoSrc}
+                  className="absolute inset-0 h-full w-full object-cover opacity-0"
+                  muted
+                  playsInline
+                  preload="auto"
+                />
+                <div
+                  className="absolute inset-0 flex items-center justify-center opacity-0"
+                  data-video-overlay
+                >
+                  <button
+                    type="button"
+                    aria-label="Reproducir demo"
+                    className="flex h-16 w-16 items-center justify-center rounded-full border border-white/80 bg-black/40 text-white shadow-lg backdrop-blur"
+                    data-video-play
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      className="ml-1 h-7 w-7 fill-current"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </button>
+                </div>
+              </>
             ) : null}
           </div>
 
