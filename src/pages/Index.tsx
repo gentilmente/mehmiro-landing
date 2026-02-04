@@ -58,7 +58,6 @@ const Index = () => {
         description="Beatriz se da cuenta de que Mehmiro no solo ayuda a Juan, sino que también puede transformar su propia forma de enseñar y conectar con sus estudiantes."
         backgroundImageSrc={beatrizInvite}
       >
-        <FixedPhoneMockup variant="inline" withId={false} />
       </ScrollStorySection>
 
       <CTASection />
