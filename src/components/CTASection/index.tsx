@@ -35,7 +35,7 @@ export const CTASection = () => {
                 window.open("https://app.mehmiro.com/onboarding", "_blank")
               }
             >
-              Comenzar gratis
+              Comenzar
             </Button>
 
             {/* Mobile: Hide QR, Desktop: Show only QR */}

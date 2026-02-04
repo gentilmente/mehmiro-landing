@@ -351,22 +351,17 @@ export const ScrollStorySection = ({
           {backgroundImageSrc && (
             <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none"></div>
           )}
-          <div className="relative z-10 w-full min-h-screen px-6 md:px-12 lg:px-24 pt-20 pb-20 flex flex-col items-center justify-end text-center md:items-start md:text-left">
-            <div className="space-y-6 max-w-2xl p-6 md:p-12 bg-black/30 rounded-xl backdrop-blur-sm">
-              <div
-                className="inline-flex items-center justify-center bg-primary/10 px-4 py-2 rounded-full"
-                data-reveal-immediate
-              >
-                <span className="text-sm font-medium text-primary">
-                  Paso {step}
-                </span>
-              </div>
+          <div className="relative z-10 w-full min-h-screen px-6 md:px-1 lg:px-24 pt-20 pb-20 flex flex-col items-center justify-end text-center md:text-left">
+            <div className="space-y-6 md:w-full p-6 md:p-12 bg-black/30 rounded-xl backdrop-blur-sm">
               <h2
                 className="text-4xl md:text-5xl font-bold leading-tight"
                 data-reveal-immediate
               >
-                {title}
+                <span className="bg-gradient-hero bg-clip-text text-transparent">
+                  {title}
+                </span>
               </h2>
+
               <div className="space-y-4">
                 {lines.map((line, index) => (
                   <p
@@ -416,9 +411,9 @@ export const ScrollStorySection = ({
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-blue-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          Haz una introducción sobre ti, tu escuela y tus
-                          estudiantes, cuanto mas detalles mejor. Mira el
-                          ejemplo
+                          Habla de ti, tu escuela y tus estudiantes. Tu nombre,
+                          el de la materia, el de la institución, cuántos
+                          estudiantes tienes y el grado.
                           <div className="absolute -left-2 top-2/3 -translate-y-1/2 w-0 h-0 border-r-[10px] border-r-blue-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
                         </div>
                       </div>
@@ -428,10 +423,9 @@ export const ScrollStorySection = ({
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-green-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          Ahora envía tu introducción para que el sistema pueda
-                          generar tu perfil y el de tu clase con tus
-                          estudiantes. Sigue deslizando para ver que rápido es
-                          el proceso.
+                          Al enviar se genera tu perfil y el de tu clase con tus
+                          estudiantes. Sigue deslizando para ver el video del
+                          proceso.
                           <div className="absolute -right-2 top-1/2 md:top-1/3 -translate-y-1/2 w-0 h-0 border-l-[10px] border-l-green-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
                         </div>
                       </div>
@@ -441,39 +435,38 @@ export const ScrollStorySection = ({
                   {step === 2 && (
                     <>
                       <div
-                        className="absolute md:max-w-96 md:inset-x bottom-0 z-20"
+                        className="absolute md:max-w-96 md:inset-x bottom-10 z-20"
                         data-reveal
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-blue-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          En el perfil del estudiante están las variables de
-                          evaluación que Mehmiro entendió son las que importan
-                          en tu materia. Puedes editarlas si lo deseas.
+                          Variables de evaluación, aspectos que Mehmiro extrae
+                          de tus observaciones. Puedes editarlas si lo deseas.
                           <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-0 h-0 border-b-[10px] border-b-blue-400 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent"></div>
                         </div>
                       </div>
 
                       <div
-                        className="absolute top-0 max-w-64 right-20 md:max-w-60 md:right-52 md:top-5 z-20"
+                        className="absolute top-0 max-w-64 right-20 md:max-w-52 md:right-60 md:top-5 z-20"
                         data-reveal
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-green-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          Este es el asistente para convertir tu observación en
-                          datos numéricos.
+                          Aquí grabas tu observación sobre el trabajo del
+                          estudiante.
                           <div className="absolute -right-3 md:-left-2 top-1/2 md:top-1/3 -translate-y-1/2 w-0 h-0 border-l-[10px] border-l-green-400 md:border-l-0 md:border-r-[10px] md:border-r-green-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
                         </div>
                       </div>
 
                       <div
-                        className="absolute top-28 max-w-52 right-28 md:max-w-72 md:top-44 md:right-40 z-20"
+                        className="absolute top-28 max-w-52 right-28 md:max-w-96 md:top-44 md:right-16 z-20"
                         data-reveal
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-purple-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          En cualquier momento puedes aplicar el análisis de IA
-                          y te dará un informe de su estado general con ayudas
-                          para mejorar las zonas flojas de su aprendizaje.
+                          Aquí Mehmiro analiza el historial del estudiante, te
+                          dará un informe de su estado general con ayudas para
+                          mejorar las zonas flojas de su aprendizaje.
                           <div className="absolute -right-3 md:-left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-l-[10px] border-l-purple-400 md:border-l-0 md:border-r-[10px] md:border-r-purple-400 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent"></div>
                         </div>
                       </div>

@@ -22,8 +22,8 @@ const Index = () => {
       <ScrollStorySection
         id="juan-intro"
         step={1}
-        title="Juan, un maestro como vos"
-        description="Juan da la misma materia pero en distintos grados en 2 escuelas. Mismos contenidos, diferentes contextos. Un compañero le presentó Mehmiro y decidió probarlo."
+        title="Juan, un docente como vos"
+        description="Misma materia pero en distintos grados en 2 escuelas. Mismos contenidos, diferentes contextos. Un compañero le presentó Mehmiro y decidió probarlo."
         backgroundImageSrc={juanSchool}
         completionVideoSrc={onboardingCompleteVideo}
       >
@@ -55,7 +55,7 @@ const Index = () => {
         id="beatriz-shares"
         step={3}
         title="Beatriz descubre el potencial"
-        description="Beatriz se da cuenta de que Mehmiro no solo ayuda a Juan, sino que también puede transformar su propia forma de enseñar y conectar con sus estudiantes."
+        description="Se da cuenta de que Mehmiro no solo ayuda a Juan, sino que también puede transformar su propia forma de enseñar y conectar con sus estudiantes."
         backgroundImageSrc={beatrizInvite}
       >
       </ScrollStorySection>

@@ -120,9 +120,9 @@ export const Footer = () => {
                   Mehmiro
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-md">
-                  El agente de IA pedagógico que revoluciona las evaluaciones
-                  formativas, adaptándose al contexto único de cada aula y
-                  estudiante.
+                  Mehmiro es el asistente de IA pedagógico que transforma las
+                  evaluaciones formativas. Analiza las observaciones del docente
+                  según el contexto único de cada estudiante.
                 </p>
               </div>
 
