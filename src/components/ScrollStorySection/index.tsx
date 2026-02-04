@@ -27,6 +27,16 @@ export const ScrollStorySection = ({
   const sectionRef = useRef<HTMLDivElement>(null);
   const hasPhone = Boolean(children);
   const isMobile = useIsMobile();
+  const textZIndex = step;
+  const phoneZIndex = step + 10;
+  const backgroundStyle = backgroundImageSrc
+    ? {
+        backgroundImage: `url(${backgroundImageSrc})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }
+    : undefined;
 
   const lines = description
     .split(". ")
@@ -337,13 +347,8 @@ export const ScrollStorySection = ({
         <div
           className="relative h-screen w-full bg-background flex items-center justify-center overflow-hidden"
           style={{
-            zIndex: step,
-            ...(backgroundImageSrc && {
-              backgroundImage: `url(${backgroundImageSrc})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }),
+            zIndex: textZIndex,
+            ...(backgroundStyle ?? {}),
           }}
           data-slide
         >
@@ -395,7 +400,7 @@ export const ScrollStorySection = ({
           >
             <div
               className="h-screen w-full bg-background flex items-center justify-center overflow-hidden md:overflow-visible"
-              style={{ zIndex: step + 10 }}
+              style={{ zIndex: phoneZIndex }}
               data-slide
             >
               <div className="w-full min-h-screen px-6 md:px-12 lg:px-24 py-16 flex flex-col items-center justify-center text-center">
@@ -440,12 +445,12 @@ export const ScrollStorySection = ({
                   {step === 2 && (
                     <>
                       <div
-                        className="absolute inset-x-0 top-0 z-20"
+                        className="absolute inset-x-0 bottom-0 z-20"
                         data-reveal
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-blue-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          En el perfil del estudiante tienes las variables de evaluación que Mehmiro entendió son las que importan en tu materia. Puedes editarlas si lo deseas.
+                          En el perfil del estudiante están las variables de evaluación que Mehmiro entendió son las que importan en tu materia. Puedes editarlas si lo deseas.
                           <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-t-[10px] border-t-blue-400 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent"></div>
                         </div>
                       </div>

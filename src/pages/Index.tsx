@@ -22,7 +22,7 @@ const Index = () => {
       <ScrollStorySection
         id="juan-intro"
         step={1}
-        title="Juan, un maestro con múltiples desafíos"
+        title="Juan, un maestro como vos"
         description="Juan da la misma materia pero en distintos grados en 2 escuelas. Mismos contenidos, diferentes contextos. Un compañero le presentó Mehmiro y decidió probarlo."
         backgroundImageSrc={juanSchool}
         completionVideoSrc={onboardingCompleteVideo}

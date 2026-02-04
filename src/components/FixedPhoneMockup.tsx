@@ -31,7 +31,7 @@ export const FixedPhoneMockup = ({
     <div className={containerClasses}>
       <div
         id={withId ? "phone-mockup" : undefined}
-        className="relative w-[220px] sm:w-[260px] md:w-auto md:h-[70vh] md:max-h-[70vh]"
+        className="relative w-[286px] sm:w-[338px] md:w-auto md:h-[90vh] md:max-h-[90vh]"
       >
         <div className="relative aspect-[9/19.5] w-full md:h-full md:w-auto bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
