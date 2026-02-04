@@ -23,7 +23,7 @@ const Index = () => {
         id="juan-intro"
         step={1}
         title="Juan, un maestro con múltiples desafíos"
-        description="Juan da clases en 2 escuelas diferentes, misma materia pero otro grado. Una escuela con recursos limitados de zona rural y en un colegio privados del centro de la ciudad."
+        description="Juan da la misma materia pero en distintos grados en 2 escuelas. Mismos contenidos, diferentes contextos. Un compañero le presentó Mehmiro y decidió probarlo."
         backgroundImageSrc={juanSchool}
         completionVideoSrc={onboardingCompleteVideo}
       >
@@ -40,7 +40,7 @@ const Index = () => {
         id="juan-context"
         step={2}
         title="Beatriz y Juan se encuentran en el pasillo del colegio"
-        description="Juan le muestra a Beatriz cómo Mehmiro le quita la carga de tareas tediosas, para que ambos puedan enfocarse en lo que realmente importa: enseñar. ¿Qué puede hacer por mí?"
+        description="Juan le muestra cómo Mehmiro analiza lo que él observa de cada estudiante mientras trabajan. Esto permite a Mehmiro ofrecer apoyo y andamiaje para cada dificultad que atravieza cada estudiante. Beatriz quiere saber mas y Juan entra al perfil de un estudiante."
         backgroundImageSrc={beatrizJuan}
       >
         <FixedPhoneMockup

@@ -410,7 +410,7 @@ export const ScrollStorySection = ({
                   {step === 1 && (
                     <>
                       <div
-                        className="absolute left-1/2 top-16 -translate-x-[calc(50%+120px)] md:top-60 md:-translate-x-[calc(50%+400px)] z-20"
+                        className="absolute left-1/2 top-48 -translate-x-[calc(50%+120px)] md:top-60 md:-translate-x-[calc(50%+400px)] z-20"
                         data-reveal
                         data-tooltip
                       >
@@ -422,12 +422,12 @@ export const ScrollStorySection = ({
                         </div>
                       </div>
                       <div
-                        className="absolute right-1/2 bottom-10 translate-x-[calc(50%+120px)] md:bottom-10 md:translate-x-[calc(50%+400px)] z-20"
+                        className="absolute right-1/2 -bottom-10 translate-x-[calc(50%+120px)] md:bottom-10 md:translate-x-[calc(50%+400px)] z-20"
                         data-reveal
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-green-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          Ahora envía tu presentación para que el sistema pueda
+                          Ahora envía tu introducción para que el sistema pueda
                           generar tu perfil y el de tu clase con tus
                           estudiantes. Sigue deslizando para ver que rápido es
                           el proceso.
@@ -440,15 +440,12 @@ export const ScrollStorySection = ({
                   {step === 2 && (
                     <>
                       <div
-                        className="absolute left-1/2 top-12 -translate-x-1/2 z-20"
+                        className="absolute inset-x-0 top-0 z-20"
                         data-reveal
                         data-tooltip
                       >
                         <div className="relative rounded-lg border border-blue-400 bg-white/95 px-4 py-2 text-sm md:text-base font-medium text-gray-800 shadow-lg backdrop-blur">
-                          En el perfil del estudiante tienes las variables de
-                          evaluación que cargamos al principio, mediante un
-                          comentario que puedes grabar al verlo trabajar, quedan
-                          registros frecuentes.
+                          En el perfil del estudiante tienes las variables de evaluación que Mehmiro entendió son las que importan en tu materia. Puedes editarlas si lo deseas.
                           <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-t-[10px] border-t-blue-400 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent"></div>
                         </div>
                       </div>
