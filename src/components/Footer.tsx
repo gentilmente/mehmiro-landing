@@ -16,7 +16,6 @@ import {
   Globe,
   Heart,
   CheckCircle,
-  AlertCircle,
 } from "lucide-react";
 import { useForm, ValidationError } from "@formspree/react";
 
