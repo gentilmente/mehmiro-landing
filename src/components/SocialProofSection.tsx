@@ -67,7 +67,7 @@ export const SocialProofSection = ({
     },
     {
       quote:
-        "No suma carga de trabajo, se integra naturalmente a mi práctica. Los insights me ayudan a reflexionar sobre mi propia enseñanza.",
+        "No suma carga de trabajo, se integra naturalmente a mi práctica. Los reportes me ayudan a reflexionar sobre mi propia enseñanza.",
       author: "Ana Martínez",
       role: "Coordinadora pedagógica",
       school: "Colegio Norte",
@@ -76,7 +76,7 @@ export const SocialProofSection = ({
 
   const stats = [
     { icon: Users, value: "500+", label: "Docentes activos" },
-    { icon: School, value: "50+", label: "Instituciones" },
+    { icon: School, value: "10+", label: "Instituciones" },
     { icon: Award, value: "10K+", label: "Observaciones procesadas" },
     { icon: CheckCircle, value: "98%", label: "Satisfacción docente" },
   ];
@@ -103,7 +103,7 @@ export const SocialProofSection = ({
 
           <h2
             ref={addToRefs}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
           >
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               Únete a escuelas que ya lo usan
@@ -112,7 +112,7 @@ export const SocialProofSection = ({
 
           <p
             ref={addToRefs}
-            className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4"
           >
             Docentes y escuelas de Argentina ya están transformando su
             observación pedagógica con Mehmiro.
@@ -132,7 +132,7 @@ export const SocialProofSection = ({
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
                 <stat.icon className="w-6 h-6 text-primary" />
               </div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                 {stat.value}
               </div>
               <div className="text-sm text-muted-foreground mt-1">

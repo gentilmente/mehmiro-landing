@@ -5,8 +5,13 @@ import { SocialProofSection } from "@/components/SocialProofSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
+import { useEffect } from "react";
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="relative">
       {/* Hero Section - Emotional Hook */}
@@ -33,4 +38,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

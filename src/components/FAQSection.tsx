@@ -30,13 +30,13 @@ export const FAQSection = ({ id = "faq" }: FAQSectionProps) => {
     {
       question: "¿Mehmiro controla o evalúa a los docentes?",
       answer:
-        "No. Mehmiro es una herramienta de acompañamiento pedagógico que respeta tu autonomía profesional. No取代 tu criterio: lo potencia. La IA analiza tus observaciones para ayudarte a ver patrones, no para juzgar tu trabajo.",
+        "No. Mehmiro es una herramienta de acompañamiento pedagógico que respeta tu autonomía profesional. No, tu criterio lo potencia. La IA analiza tus observaciones para ayudarte a ver patrones, no para juzgar tu trabajo.",
       icon: <Shield className="w-5 h-5 text-primary" />,
     },
     {
       question: "¿Cuánto tiempo toma implementar Mehmiro?",
       answer:
-        "Podés empezar a ver insights en las primeras 24 horas. La plataforma se integra naturalmente a tu flujo de trabajo actual sin sumar carga administrativa significativa.",
+        "Podés empezar a ver resultados en las primeras 24 horas. La plataforma se integra naturalmente a tu flujo de trabajo actual sin sumar carga administrativa significativa.",
       icon: <Clock className="w-5 h-5 text-primary" />,
     },
     {
@@ -114,13 +114,13 @@ export const FAQSection = ({ id = "faq" }: FAQSectionProps) => {
             <span>Preguntas frecuentes</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               Respuestas a tus dudas
             </span>
           </h2>
 
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground px-4">
             Abordamos las principales preocupaciones de los docentes e
             instituciones.
           </p>
@@ -142,7 +142,7 @@ export const FAQSection = ({ id = "faq" }: FAQSectionProps) => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 sm:gap-4">
                   {faq.icon && <div className="flex-shrink-0">{faq.icon}</div>}
                   <span className="font-medium text-lg">{faq.question}</span>
                 </div>
@@ -161,7 +161,7 @@ export const FAQSection = ({ id = "faq" }: FAQSectionProps) => {
                     : "max-h-0 opacity-0",
                 )}
               >
-                <div className="px-6 pb-6 pl-[3.5rem] text-muted-foreground leading-relaxed">
+                <div className="pl-12 sm:pl-[3.5rem] pr-6 pb-6 text-muted-foreground leading-relaxed">
                   {faq.answer}
                 </div>
               </div>

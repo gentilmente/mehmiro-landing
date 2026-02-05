@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Brain, Eye, Sparkles } from "lucide-react";
+import { Heart, Brain, Eye, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -71,61 +70,42 @@ export const HeroSection = () => {
           </div>
 
           {/* Headline - Emotional hook */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight">
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               Tu mirada importa.
               <br />
-              <span className="text-4xl md:text-5xl lg:text-6xl">
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 Mehmiro la amplifica.
               </span>
             </span>
           </h1>
 
           {/* Subheadline - Value proposition */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
             La tecnología que acompaña tu labor docente sin reemplazarla.
             Organizá observaciones, detectá patrones y actuá a tiempo.
           </p>
 
           {/* Value props */}
-          <div className="flex flex-wrap justify-center gap-6 pt-4">
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 pt-4 px-2">
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
               <Eye className="w-4 h-4 text-primary" />
               <span>Sin reemplazar tu criterio</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
               <Brain className="w-4 h-4 text-primary" />
               <span>IA que interpreta, no evalúa</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
               <Sparkles className="w-4 h-4 text-primary" />
               <span>Sin sumar carga administrativa</span>
             </div>
-          </div>
-
-          {/* CTA */}
-          <div className="pt-6">
-            <Button
-              size="lg"
-              className="text-lg px-10 py-7 rounded-full shadow-lg hover:shadow-xl transition-all"
-              onClick={() =>
-                document
-                  .getElementById("cta-section")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Agendar demostración
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Sin compromiso · Demo personalizada en 24-48h
-            </p>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <div className="pb-5 text-sm text-muted-foreground text-center">
           Descubrí cómo funciona
         </div>

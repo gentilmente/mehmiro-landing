@@ -30,11 +30,11 @@ export const Footer = () => {
 
       <div className="relative">
         {/* Lead Capture Section */}
-        <div className="border-b border-border/50">
+        <div id="lead-capture" className="border-b border-border/50">
           <div className="container mx-auto px-6 py-12">
-            <div className="max-w-2xl mx-auto text-center space-y-6">
+            <div className="max-w-2xl mx-auto text-center space-y-6 px-4">
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                <h3 className="text-xl sm:text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                   ¿Quieres saber más sobre Mehmiro?
                 </h3>
                 <p className="text-muted-foreground">
@@ -110,11 +110,11 @@ export const Footer = () => {
 
         {/* Main Footer Content */}
         <div className="container mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 px-4 lg:px-0">
             {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                   Mehmiro
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -176,12 +176,12 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="app.mehmiro.com"
+                  href="https://app.mehmiro.com"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Demo gratuita
+                    Demo
                   </div>
                 </a>
               </nav>

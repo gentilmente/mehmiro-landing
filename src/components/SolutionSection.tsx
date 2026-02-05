@@ -102,7 +102,7 @@ export const SolutionSection = ({
       icon: TrendingUp,
       title: "Metacognición docente",
       description:
-        "Reflexioná sobre tu propia práctica con insights generados desde tus registros.",
+        "Reflexioná sobre tu propia práctica con informes generados desde tus registros.",
     },
     {
       icon: Shield,
@@ -114,12 +114,12 @@ export const SolutionSection = ({
       icon: Heart,
       title: "Sin sumar carga",
       description:
-        "Se integra naturalmente a tu flujo de trabajo. Menos paperwork, más Teaching.",
+        "Se integra naturalmente a tu flujo de trabajo. Menos papeleo, más enseñanza.",
     },
   ];
 
   const stats = [
-    { value: "24h", label: "Tiempo para primeros insights" },
+    { value: "24h", label: "Tiempo para las primeras percepciones" },
     { value: "100%", label: "Respeto a tu autonomía" },
     { value: "∞", label: "Capacidad de observación" },
   ];
@@ -141,20 +141,20 @@ export const SolutionSection = ({
             <span>La solución</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               Conoce a Mehmiro
             </span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
             La mirada que acompaña la enseñanza. Tecnología como escucha para
             docentes, no como control.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto mb-16">
           {stats.map((stat, index) => (
             <div
               key={index}

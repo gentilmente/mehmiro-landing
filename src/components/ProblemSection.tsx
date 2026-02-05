@@ -110,7 +110,7 @@ export const ProblemSection = ({
 
           <h2
             ref={addToRefs}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
           >
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               Cada docente conoce esta sensación
@@ -119,7 +119,7 @@ export const ProblemSection = ({
 
           <p
             ref={addToRefs}
-            className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4"
           >
             Mirás a tu clase y sabés que algo no está funcionando para algunos
             estudiantes, pero cuando lo detectás, ya es tarde para actuar a
