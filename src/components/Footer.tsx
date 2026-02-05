@@ -39,9 +39,8 @@ export const Footer = () => {
                   ¿Quieres saber más sobre Mehmiro?
                 </h3>
                 <p className="text-muted-foreground">
-                  Déjanos tu email y nos pondremos en contacto contigo para
-                  resolver todas tus dudas sobre nuestra IA pedagógicamente
-                  inteligente.
+                  ¿Querés conocer cómo Mehmiro puede acompañar tu labor docente?
+                  Dejanos tus datos y te contactamos para contarte más.
                 </p>
               </div>
 
@@ -120,9 +119,9 @@ export const Footer = () => {
                   Mehmiro
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-md">
-                  Mehmiro es el asistente de IA pedagógico que transforma las
-                  evaluaciones formativas. Analiza las observaciones del docente
-                  según el contexto único de cada estudiante.
+                  Herramienta de evaluación formativa diseñada para acompañar el
+                  trabajo docente. Facilitamos el análisis de cada estudiante
+                  para fortalecer los procesos de aprendizaje.
                 </p>
               </div>
 
@@ -137,7 +136,11 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Globe className="w-4 h-4 text-primary" />
-                  <span>Disponible en todo Latinoamérica</span>
+                  <span>Disponible en Argentina y Latinoamérica</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <Shield className="w-4 h-4 text-primary" />
+                  <span>Diseñado para instituciones educativas</span>
                 </div>
               </div>
             </div>
@@ -156,7 +159,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="/como-funciona"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -281,8 +284,8 @@ export const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               {/* Copyright */}
               <div className="text-sm text-muted-foreground">
-                © {currentYear} Mehmiro. Transformando la educación con
-                inteligencia artificial.
+                © {currentYear} Mehmiro. Acompañando la evaluación formativa en
+                Argentina y Latinoamérica.
               </div>
 
               {/* Social Links */}

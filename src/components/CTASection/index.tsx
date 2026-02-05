@@ -15,14 +15,10 @@ export const CTASection = () => {
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6 animate-fade-in-up">
             <h2 className="text-5xl md:text-6xl font-bold">
-              ¿Listo para transformar{" "}
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
-                tu forma de evaluar?
-              </span>
+              ¿Querés transformar cómo observás el aprendizaje?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Únete a cientos de docentes que ya están revolucionando la
-              educación con Mehmiro
+              Sumate a la innovación. La academia ya validó el marco teórico.
             </p>
           </div>
 
@@ -35,7 +31,7 @@ export const CTASection = () => {
                 window.open("https://app.mehmiro.com/onboarding", "_blank")
               }
             >
-              Comenzar
+              Agendar demostración
             </Button>
 
             {/* Mobile: Hide QR, Desktop: Show only QR */}
@@ -44,7 +40,7 @@ export const CTASection = () => {
                 <img src={frameImage} alt="QR Code" />
               </div>
               <p className="text-sm text-muted-foreground">
-                Escanea para probar en móvil
+                Escaneá para agendar tu demostración sin compromiso
               </p>
             </div>
           </div>
