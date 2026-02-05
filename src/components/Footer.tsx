@@ -16,7 +16,6 @@ import {
   Globe,
   Heart,
   CheckCircle,
-  AlertCircle,
 } from "lucide-react";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -31,17 +30,16 @@ export const Footer = () => {
 
       <div className="relative">
         {/* Lead Capture Section */}
-        <div className="border-b border-border/50">
+        <div id="lead-capture" className="border-b border-border/50">
           <div className="container mx-auto px-6 py-12">
-            <div className="max-w-2xl mx-auto text-center space-y-6">
+            <div className="max-w-2xl mx-auto text-center space-y-6 px-4">
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                <h3 className="text-xl sm:text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                   ¿Quieres saber más sobre Mehmiro?
                 </h3>
                 <p className="text-muted-foreground">
-                  Déjanos tu email y nos pondremos en contacto contigo para
-                  resolver todas tus dudas sobre nuestra IA pedagógicamente
-                  inteligente.
+                  ¿Querés conocer cómo Mehmiro puede acompañar tu labor docente?
+                  Dejanos tus datos y te contactamos para contarte más.
                 </p>
               </div>
 
@@ -112,17 +110,17 @@ export const Footer = () => {
 
         {/* Main Footer Content */}
         <div className="container mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 px-4 lg:px-0">
             {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                   Mehmiro
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-md">
-                  Mehmiro es el asistente de IA pedagógico que transforma las
-                  evaluaciones formativas. Analiza las observaciones del docente
-                  según el contexto único de cada estudiante.
+                  Herramienta de evaluación formativa diseñada para acompañar el
+                  trabajo docente. Facilitamos el análisis de cada estudiante
+                  para fortalecer los procesos de aprendizaje.
                 </p>
               </div>
 
@@ -137,7 +135,11 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Globe className="w-4 h-4 text-primary" />
-                  <span>Disponible en todo Latinoamérica</span>
+                  <span>Disponible en Argentina y Latinoamérica</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <Shield className="w-4 h-4 text-primary" />
+                  <span>Diseñado para instituciones educativas</span>
                 </div>
               </div>
             </div>
@@ -156,7 +158,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="/como-funciona"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -174,12 +176,12 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="app.mehmiro.com"
+                  href="https://app.mehmiro.com"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Demo gratuita
+                    Demo
                   </div>
                 </a>
               </nav>
@@ -281,8 +283,8 @@ export const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               {/* Copyright */}
               <div className="text-sm text-muted-foreground">
-                © {currentYear} Mehmiro. Transformando la educación con
-                inteligencia artificial.
+                © {currentYear} Mehmiro. Acompañando la evaluación formativa en
+                Argentina y Latinoamérica.
               </div>
 
               {/* Social Links */}

@@ -10,14 +10,17 @@ import juanSchool from "@/assets/juan-school.jpg";
 import beatrizJuan from "@/assets/beatriz-juan.jpg";
 import beatrizInvite from "@/assets/beatriz-invite.jpg";
 import studentProfile from "@/assets/student-profile.png";
+import { useEffect } from "react";
 
 const Index = () => {
   useScrollPhoneContent();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="relative">
-      <HeroSection />
-
       {/* Story sections with scroll triggers */}
       <ScrollStorySection
         id="juan-intro"
@@ -57,8 +60,7 @@ const Index = () => {
         title="Beatriz descubre el potencial"
         description="Se da cuenta de que Mehmiro no solo ayuda a Juan, sino que también puede transformar su propia forma de enseñar y conectar con sus estudiantes."
         backgroundImageSrc={beatrizInvite}
-      >
-      </ScrollStorySection>
+      ></ScrollStorySection>
 
       <CTASection />
 

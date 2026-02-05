@@ -14,15 +14,11 @@ export const CTASection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6 animate-fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-bold">
-              ¿Listo para transformar{" "}
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
-                tu forma de evaluar?
-              </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+              ¿Querés transformar cómo observás el aprendizaje?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Únete a cientos de docentes que ya están revolucionando la
-              educación con Mehmiro
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+              Sumate a la innovación. La academia ya validó el marco teórico.
             </p>
           </div>
 
@@ -32,19 +28,21 @@ export const CTASection = () => {
               size="lg"
               className="bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-12 py-7 sm:hidden"
               onClick={() =>
-                window.open("https://app.mehmiro.com/onboarding", "_blank")
+                document
+                  .getElementById("lead-capture")
+                  ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Comenzar
+              Agendar demostración
             </Button>
 
             {/* Mobile: Hide QR, Desktop: Show only QR */}
             <div className="hidden sm:flex flex-col items-center gap-3">
-              <div className="w-50 h-50 bg-white rounded-2xl shadow-xl p-4 flex items-center justify-center">
+              <div className="w-48 h-48 bg-white rounded-2xl shadow-xl p-4 flex items-center justify-center">
                 <img src={frameImage} alt="QR Code" />
               </div>
               <p className="text-sm text-muted-foreground">
-                Escanea para probar en móvil
+                Escaneá para agendar tu demostración sin compromiso
               </p>
             </div>
           </div>
