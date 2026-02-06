@@ -51,15 +51,6 @@ const Navigation = () => {
           >
             Cómo funciona
           </Link>
-          <a
-            href="https://app.mehmiro.com/onboarding"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-xl font-medium bg-primary text-primary-foreground px-6 py-3 rounded-full hover:bg-primary/90 transition-colors"
-          >
-            Demo
-          </a>
         </div>
       )}
 
