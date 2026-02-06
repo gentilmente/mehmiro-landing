@@ -43,7 +43,7 @@ const Index = () => {
         id="juan-context"
         step={2}
         title="Beatriz y Juan se encuentran en el pasillo del colegio"
-        description="Juan le muestra cómo Mehmiro analiza lo que él observa de cada estudiante mientras trabajan. Esto permite a Mehmiro ofrecer apoyo y andamiaje para cada dificultad que atravieza cada estudiante. Beatriz quiere saber mas y Juan entra al perfil de un estudiante."
+        description="Juan le muestra cómo Mehmiro analiza lo que él observa de cada estudiante mientras trabajan. Esto permite a Mehmiro ofrecer apoyo y andamiaje para cada dificultad que atraviesa cada estudiante. Beatriz quiere saber mas y Juan entra al perfil de un estudiante."
         backgroundImageSrc={beatrizJuan}
       >
         <FixedPhoneMockup
