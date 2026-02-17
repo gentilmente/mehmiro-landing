@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTranslation } from "react-i18next";
+import ircaiBanner from "@/assets/TOP 100 Promising Project Banner.png";
 
 export const HeroSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -90,6 +91,27 @@ export const HeroSection = () => {
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
             {t("hero.subheadline")}
           </p>
+
+          {/* Recognition banner */}
+          <div className="pt-2">
+            <p className="text-xs sm:text-sm text-muted-foreground mb-3">
+              {t("hero.recognitionLabel")}
+            </p>
+            <a
+              href="https://ircai.org/top100/entry/mehmiro/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center"
+              aria-label={t("hero.recognitionAria")}
+            >
+              <img
+                src={ircaiBanner}
+                alt={t("hero.recognitionAlt")}
+                className="w-full max-w-3xl rounded-lg border border-primary/10 shadow-sm"
+                loading="lazy"
+              />
+            </a>
+          </div>
 
           {/* Value props */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 pt-4 px-2">
