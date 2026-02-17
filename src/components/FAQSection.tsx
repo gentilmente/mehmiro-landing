@@ -10,6 +10,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 interface FAQSectionProps {
   id?: string;
@@ -25,45 +26,23 @@ export const FAQSection = ({ id = "faq" }: FAQSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const { t } = useTranslation();
 
-  const faqs: FAQItem[] = [
-    {
-      question: "¿Mehmiro controla o evalúa a los docentes?",
-      answer:
-        "No. Mehmiro es una herramienta de acompañamiento pedagógico que respeta tu autonomía profesional. No, tu criterio lo potencia. La IA analiza tus observaciones para ayudarte a ver patrones, no para juzgar tu trabajo.",
-      icon: <Shield className="w-5 h-5 text-primary" />,
-    },
-    {
-      question: "¿Cuánto tiempo toma implementar Mehmiro?",
-      answer:
-        "Podés empezar a ver resultados en las primeras 24 horas. La plataforma se integra naturalmente a tu flujo de trabajo actual sin sumar carga administrativa significativa.",
-      icon: <Clock className="w-5 h-5 text-primary" />,
-    },
-    {
-      question: "¿Reemplaza el criterio profesional del docente?",
-      answer:
-        "Todo lo contrario. Mehmiro está diseñado para potenciar tu mirada pedagógica. Vos seguís siendo el centro de la evaluación. La tecnología es una herramienta que amplifica tu capacidad de observación, no la reemplaza.",
-      icon: <Brain className="w-5 h-5 text-primary" />,
-    },
-    {
-      question: "¿Qué pasa con los datos de los estudiantes?",
-      answer:
-        "La privacidad y seguridad de los datos son nuestra prioridad. Cumplimos con todas las normativas de protección de datos en Argentina. Los datos son propiedad de la institución y se almacenan de forma segura.",
-      icon: <Shield className="w-5 h-5 text-primary" />,
-    },
-    {
-      question: "¿Para qué tipo de instituciones es Mehmiro?",
-      answer:
-        "Mehmiro está diseñado para escuelas de todos los niveles educativos, desde primaria hasta secundaria y formación docente. Se adapta a diferentes contextos y necesidades pedagógicas.",
-      icon: <CheckCircle className="w-5 h-5 text-primary" />,
-    },
-    {
-      question: "¿Necesito capacitación para usarlo?",
-      answer:
-        "No. Mehmiro está diseñado para ser intuitivo y fácil de usar. Podés comenzar a registrar observaciones desde el primer día sin necesidad de capacitación previa.",
-      icon: <HelpCircle className="w-5 h-5 text-primary" />,
-    },
+  const faqItems = t("faq.items", {
+    returnObjects: true,
+  }) as { question: string; answer: string }[];
+  const faqIcons = [
+    <Clock className="w-5 h-5 text-primary" />,
+    <Brain className="w-5 h-5 text-primary" />,
+    <Shield className="w-5 h-5 text-primary" />,
+    <CheckCircle className="w-5 h-5 text-primary" />,
+    <HelpCircle className="w-5 h-5 text-primary" />,
+    <Shield className="w-5 h-5 text-primary" />,
   ];
+  const faqs: FAQItem[] = faqItems.map((item, index) => ({
+    ...item,
+    icon: faqIcons[index],
+  }));
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -111,18 +90,17 @@ export const FAQSection = ({ id = "faq" }: FAQSectionProps) => {
         <div ref={headerRef} className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <HelpCircle className="w-4 h-4" />
-            <span>Preguntas frecuentes</span>
+            <span>{t("faq.badge")}</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Respuestas a tus dudas
+              {t("faq.title")}
             </span>
           </h2>
 
           <p className="text-base sm:text-lg text-muted-foreground px-4">
-            Abordamos las principales preocupaciones de los docentes e
-            instituciones.
+            {t("faq.description")}
           </p>
         </div>
 

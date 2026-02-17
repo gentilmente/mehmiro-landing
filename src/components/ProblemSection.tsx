@@ -13,6 +13,7 @@ import {
   School,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 interface ProblemSectionProps {
   id?: string;
@@ -23,6 +24,7 @@ export const ProblemSection = ({
 }: ProblemSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -61,32 +63,14 @@ export const ProblemSection = ({
     }
   };
 
-  const problems = [
-    {
-      icon: Eye,
-      title: "Observaciones dispersas",
-      description:
-        "Las observaciones valiosas quedan en notas aisladas, conversaciones de pasillo o recuerdos difusos.",
-    },
-    {
-      icon: Clock,
-      title: "Intervenciones tardías",
-      description:
-        "Cuando un estudiante se queda atrás, muchas veces no lo notás a tiempo para ayudar.",
-    },
-    {
-      icon: AlertCircle,
-      title: "Puntos ciegos",
-      description:
-        "Sin un registro sistemático, se pierden patrones importantes en el progreso de cada estudiante.",
-    },
-    {
-      icon: Brain,
-      title: "Carga mental",
-      description:
-        "Intentás recordar todo mientras dás clase, pero la memoria tiene límites.",
-    },
-  ];
+  const problemItems = t("problem.items", {
+    returnObjects: true,
+  }) as { title: string; description: string }[];
+  const icons = [Eye, Clock, AlertCircle, Brain];
+  const problems = problemItems.map((item, index) => ({
+    ...item,
+    icon: icons[index],
+  }));
 
   return (
     <section
@@ -105,7 +89,7 @@ export const ProblemSection = ({
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
           >
             <Heart className="w-4 h-4" />
-            <span>Para docentes</span>
+            <span>{t("problem.badge")}</span>
           </div>
 
           <h2
@@ -113,7 +97,7 @@ export const ProblemSection = ({
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
           >
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Cada docente conoce esta sensación
+              {t("problem.title")}
             </span>
           </h2>
 
@@ -121,9 +105,7 @@ export const ProblemSection = ({
             ref={addToRefs}
             className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4"
           >
-            Mirás a tu clase y sabés que algo no está funcionando para algunos
-            estudiantes, pero cuando lo detectás, ya es tarde para actuar a
-            tiempo.
+            {t("problem.description")}
           </p>
         </div>
 
@@ -153,10 +135,9 @@ export const ProblemSection = ({
         <div ref={addToRefs} className="mt-16 text-center">
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             <span className="font-medium text-foreground">
-              No estás solo en esto.
+              {t("problem.closing.lead")}
             </span>{" "}
-            Mehmiro existe para que nunca más pierdas una observación
-            importante.
+            {t("problem.closing.rest")}
           </p>
         </div>
       </div>

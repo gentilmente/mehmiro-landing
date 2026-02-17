@@ -2,10 +2,16 @@ import { Heart, Brain, Eye, Sparkles } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 
 export const HeroSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
+
+  const valueProps = t("hero.valueProps", {
+    returnObjects: true,
+  }) as string[];
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -66,39 +72,38 @@ export const HeroSection = () => {
           {/* Emotional hook */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
             <Heart className="w-4 h-4" />
-            <span>Para docentes que aman enseñar</span>
+            <span>{t("hero.badge")}</span>
           </div>
 
           {/* Headline - Emotional hook */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight">
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Tu mirada importa.
+              {t("hero.headlinePrimary")}
               <br />
               <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-                Mehmiro la amplifica.
+                {t("hero.headlineSecondary")}
               </span>
             </span>
           </h1>
 
           {/* Subheadline - Value proposition */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-            La tecnología que acompaña tu labor docente sin reemplazarla.
-            Organizá observaciones, detectá patrones y actuá a tiempo.
+            {t("hero.subheadline")}
           </p>
 
           {/* Value props */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 pt-4 px-2">
             <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
               <Eye className="w-4 h-4 text-primary" />
-              <span>Sin reemplazar tu criterio</span>
+              <span>{valueProps[0]}</span>
             </div>
             <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
               <Brain className="w-4 h-4 text-primary" />
-              <span>IA que interpreta, no evalúa</span>
+              <span>{valueProps[1]}</span>
             </div>
             <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span>Sin sumar carga administrativa</span>
+              <span>{valueProps[2]}</span>
             </div>
           </div>
         </div>
@@ -107,7 +112,7 @@ export const HeroSection = () => {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <div className="pb-5 text-sm text-muted-foreground text-center">
-          Descubrí cómo funciona
+          {t("hero.scrollIndicator")}
         </div>
         <div className="animate-bounce">
           <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">

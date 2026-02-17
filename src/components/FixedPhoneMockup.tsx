@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 interface FixedPhoneMockupProps {
   children?: ReactNode;
@@ -18,6 +19,7 @@ export const FixedPhoneMockup = ({
   step,
   completionVideoSrc,
 }: FixedPhoneMockupProps) => {
+  const { t } = useTranslation();
   const isInline = variant === "inline";
   const containerClasses = isInline
     ? "relative z-10 w-full flex justify-center items-center"
@@ -40,13 +42,13 @@ export const FixedPhoneMockup = ({
               <img
                 id={`phone-screen-img${step ? `-${step}` : ""}`}
                 src={imageSrc}
-                alt="Phone screen content"
+                alt={t("fixedPhone.alt")}
                 data-original-src={imageSrc}
                 className="w-full h-full object-cover"
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center bg-gray-100 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                Screencast placeholder
+                {t("fixedPhone.placeholder")}
               </div>
             )}
             {completionVideoSrc ? (

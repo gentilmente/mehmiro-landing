@@ -1,0 +1,243 @@
+{
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How it works",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageToggle": "Change language to {{language}}"
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Spanish",
+    "toggleShort": {
+      "en": "EN",
+      "es": "ES"
+    }
+  },
+  "hero": {
+    "badge": "For teachers who love teaching",
+    "headlinePrimary": "Your gaze matters.",
+    "headlineSecondary": "Mehmiro amplifies it.",
+    "subheadline": "Technology that supports your teaching without replacing it. Organize observations, spot patterns, and act in time.",
+    "valueProps": [
+      "Without replacing your judgment",
+      "AI that interprets, not evaluates",
+      "No added administrative load"
+    ],
+    "scrollIndicator": "See how it works"
+  },
+  "problem": {
+    "badge": "For teachers",
+    "title": "Every teacher knows this feeling",
+    "description": "You look at your class and you know something isn't working for some students, but when you detect it, it's already too late to act in time.",
+    "items": [
+      {
+        "title": "Scattered observations",
+        "description": "Valuable observations end up in isolated notes, hallway conversations, or fuzzy memories."
+      },
+      {
+        "title": "Late interventions",
+        "description": "When a student falls behind, you often don't notice in time to help."
+      },
+      {
+        "title": "Blind spots",
+        "description": "Without a systematic record, important patterns in each student's progress are lost."
+      },
+      {
+        "title": "Mental load",
+        "description": "You try to remember everything while teaching, but memory has limits."
+      }
+    ],
+    "closing": {
+      "lead": "You're not alone in this.",
+      "rest": "Mehmiro exists so you never lose an important observation again."
+    }
+  },
+  "solution": {
+    "badge": "The solution",
+    "title": "Meet Mehmiro",
+    "description": "The lens that accompanies teaching. Technology as listening for teachers, not control.",
+    "stats": [
+      { "value": "24h", "label": "Time to first insights" },
+      { "value": "100%", "label": "Respect for your autonomy" },
+      { "value": "∞", "label": "Observation capacity" }
+    ],
+    "features": [
+      {
+        "title": "Your judgment is the foundation",
+        "description": "Mehmiro doesn't evaluate: it interprets. It amplifies your pedagogical lens without replacing it."
+      },
+      {
+        "title": "AI as a tool",
+        "description": "An intelligent agent that organizes and analyzes your observations to reveal hidden patterns."
+      },
+      {
+        "title": "Early detection",
+        "description": "Identify students who need attention before it's too late."
+      },
+      {
+        "title": "Teacher metacognition",
+        "description": "Reflect on your own practice with reports generated from your records."
+      },
+      {
+        "title": "Professionalize observation",
+        "description": "Turn valuable intuitions into systematic, actionable evidence."
+      },
+      {
+        "title": "No added load",
+        "description": "It integrates naturally into your workflow. Less paperwork, more teaching."
+      }
+    ],
+    "valueProposition": "It doesn't evaluate: it interprets. Your judgment is the base."
+  },
+  "socialProof": {
+    "badge": "Educational community",
+    "title": "Join schools already using it",
+    "description": "Teachers and schools in Argentina are already transforming their pedagogical observation with Mehmiro.",
+    "stats": [
+      { "value": "500+", "label": "Active teachers" },
+      { "value": "10+", "label": "Institutions" },
+      { "value": "10K+", "label": "Observations processed" },
+      { "value": "98%", "label": "Teacher satisfaction" }
+    ],
+    "testimonials": [
+      {
+        "quote": "Mehmiro helps me see patterns I used to miss. It's like having an assistant who never forgets anything I observe.",
+        "author": "María González",
+        "role": "Elementary teacher",
+        "school": "Escuela San José"
+      },
+      {
+        "quote": "For the first time I have systematic evidence of each student's progress. Family meetings are now more productive.",
+        "author": "Carlos Rodríguez",
+        "role": "Math teacher",
+        "school": "Instituto América"
+      },
+      {
+        "quote": "It doesn't add workload, it integrates naturally into my practice. The reports help me reflect on my own teaching.",
+        "author": "Ana Martínez",
+        "role": "Pedagogical coordinator",
+        "school": "Colegio Norte"
+      }
+    ],
+    "validation": "Theoretical framework validated by academia"
+  },
+  "faq": {
+    "badge": "Frequently asked questions",
+    "title": "Answers to your questions",
+    "description": "We address the main concerns of teachers and institutions.",
+    "items": [
+      {
+        "question": "How long does it take to implement Mehmiro?",
+        "answer": "You can start seeing results within the first 24 hours. The platform integrates naturally into your current workflow without adding significant administrative load."
+      },
+      {
+        "question": "Does it replace a teacher's professional judgment?",
+        "answer": "Quite the opposite. Mehmiro is designed to strengthen your pedagogical lens. You remain at the center of the evaluation. Technology is a tool that amplifies your observation capacity, not replaces it."
+      },
+      {
+        "question": "What happens to student data?",
+        "answer": "Privacy and data security are our priority. We comply with all data protection regulations in Argentina. Data belongs to the institution and is stored securely."
+      },
+      {
+        "question": "What types of institutions is Mehmiro for?",
+        "answer": "Mehmiro is designed for schools at all educational levels, from primary to secondary and teacher training. It adapts to different contexts and pedagogical needs."
+      },
+      {
+        "question": "Do I need training to use it?",
+        "answer": "No. Mehmiro is designed to be intuitive and easy to use. You can start recording observations from day one without prior training."
+      },
+      {
+        "question": "Does Mehmiro monitor or evaluate teachers?",
+        "answer": "No. Mehmiro is a pedagogical support tool that respects your professional autonomy. It doesn't judge your work; it strengthens your judgment. The AI analyzes your observations to help you see patterns, not to evaluate you."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Want to transform how you observe learning?",
+    "description": "Join the innovation. The academic framework is already validated.",
+    "button": "Try the free demo",
+    "qrCaption": "Scan to try the free demo on your mobile device"
+  },
+  "footer": {
+    "lead": {
+      "title": "Want to learn more about Mehmiro?",
+      "description": "Do you want to see how Mehmiro can support your teaching? Leave your details and we'll contact you to share more.",
+      "successTitle": "Thank you! We'll be in touch soon.",
+      "successDescription": "Your request was sent successfully. We'll reply within 24–48 hours.",
+      "submitting": "Sending...",
+      "submit": "Contact us",
+      "notice": "We'll contact you within 24–48 hours to answer your questions.",
+      "placeholder": "you@email.com"
+    },
+    "company": {
+      "description": "Formative assessment tool designed to support teaching work. We facilitate the analysis of each student to strengthen learning processes."
+    },
+    "contact": {
+      "location": "Buenos Aires, Argentina",
+      "availability": "Available worldwide",
+      "institutions": "Designed for educational institutions"
+    },
+    "sections": {
+      "product": "Product",
+      "resources": "Resources",
+      "company": "Company"
+    },
+    "links": {
+      "features": "Features",
+      "howItWorks": "How it works",
+      "forEducators": "For educators",
+      "demo": "Demo",
+      "docs": "Documentation",
+      "blog": "Blog",
+      "community": "Community",
+      "support": "Support",
+      "about": "About us",
+      "team": "Team",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "bottom": {
+      "copyright": "© {{year}} Mehmiro. Supporting formative assessment in Argentina and Latin America.",
+      "follow": "Follow us:"
+    }
+  },
+  "story": {
+    "steps": [
+      {
+        "title": "Juan, a teacher like you",
+        "description": "Same subject but different grades across two schools. Same content, different contexts. A colleague introduced him to Mehmiro and he decided to try it."
+      },
+      {
+        "title": "Beatriz and Juan meet in the school hallway",
+        "description": "Juan shows her how Mehmiro analyzes what he observes about each student while they work. This allows Mehmiro to offer support and scaffolding for each difficulty each student faces. Beatriz wants to know more and Juan opens a student's profile."
+      },
+      {
+        "title": "Beatriz discovers the potential",
+        "description": "She realizes that Mehmiro doesn't just help Juan, it can also transform her own way of teaching and connecting with her students."
+      }
+    ]
+  },
+  "scrollStory": {
+    "tooltips": {
+      "step1": {
+        "intro": "Tell us about you, your school, and your students. Your name, subject, institution, how many students you have, and the grade.",
+        "submit": "When you submit, your profile and your class are created with your students. Keep scrolling to see the process video."
+      },
+      "step2": {
+        "variables": "Assessment variables, aspects that Mehmiro extracts from your observations. You can edit them if you want.",
+        "observation": "Here you record your observation about the student's work.",
+        "analysis": "Here Mehmiro analyzes the student's history and will provide a report on their overall status with support to improve weaker areas of learning."
+      }
+    }
+  },
+  "fixedPhone": {
+    "alt": "Phone screen content",
+    "placeholder": "Screencast placeholder"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "action": "Return to Home"
+  }
+}

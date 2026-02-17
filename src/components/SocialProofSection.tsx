@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Star, Quote, Users, School, Award, CheckCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface SocialProofSectionProps {
   id?: string;
@@ -12,6 +13,7 @@ export const SocialProofSection = ({
 }: SocialProofSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const itemsRef = useRef<HTMLDivElement[]>([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -50,36 +52,23 @@ export const SocialProofSection = ({
     }
   };
 
-  const testimonials = [
-    {
-      quote:
-        "Mehmiro me ayuda a ver patrones que antes me pasaban desapercibidos. Es como tener un asistente que nunca olvida nada de lo que observo.",
-      author: "María González",
-      role: "Maestra de primaria",
-      school: "Escuela San José",
-    },
-    {
-      quote:
-        "Por primera vez tengo evidencia sistemática del progreso de cada estudiante. Las reuniones con familias ahora son más productivas.",
-      author: "Carlos Rodríguez",
-      role: "Profesor de matemáticas",
-      school: "Instituto América",
-    },
-    {
-      quote:
-        "No suma carga de trabajo, se integra naturalmente a mi práctica. Los reportes me ayudan a reflexionar sobre mi propia enseñanza.",
-      author: "Ana Martínez",
-      role: "Coordinadora pedagógica",
-      school: "Colegio Norte",
-    },
-  ];
+  const testimonials = t("socialProof.testimonials", {
+    returnObjects: true,
+  }) as {
+    quote: string;
+    author: string;
+    role: string;
+    school: string;
+  }[];
 
-  const stats = [
-    { icon: Users, value: "500+", label: "Docentes activos" },
-    { icon: School, value: "10+", label: "Instituciones" },
-    { icon: Award, value: "10K+", label: "Observaciones procesadas" },
-    { icon: CheckCircle, value: "98%", label: "Satisfacción docente" },
-  ];
+  const statItems = t("socialProof.stats", {
+    returnObjects: true,
+  }) as { value: string; label: string }[];
+  const statIcons = [Users, School, Award, CheckCircle];
+  const stats = statItems.map((item, index) => ({
+    ...item,
+    icon: statIcons[index],
+  }));
 
   return (
     <section
@@ -98,7 +87,7 @@ export const SocialProofSection = ({
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
           >
             <Users className="w-4 h-4" />
-            <span>Comunidad educativa</span>
+            <span>{t("socialProof.badge")}</span>
           </div>
 
           <h2
@@ -106,7 +95,7 @@ export const SocialProofSection = ({
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
           >
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Únete a escuelas que ya lo usan
+              {t("socialProof.title")}
             </span>
           </h2>
 
@@ -114,8 +103,7 @@ export const SocialProofSection = ({
             ref={addToRefs}
             className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4"
           >
-            Docentes y escuelas de Argentina ya están transformando su
-            observación pedagógica con Mehmiro.
+            {t("socialProof.description")}
           </p>
         </div>
 
@@ -174,7 +162,7 @@ export const SocialProofSection = ({
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-secondary/10 border border-secondary/20">
             <Award className="w-5 h-5 text-secondary" />
             <span className="text-sm text-muted-foreground">
-              Marco teórico validado por la academia
+              {t("socialProof.validation")}
             </span>
           </div>
         </div>

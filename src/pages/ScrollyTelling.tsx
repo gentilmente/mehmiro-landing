@@ -11,9 +11,11 @@ import beatrizJuan from "@/assets/beatriz-juan.jpg";
 import beatrizInvite from "@/assets/beatriz-invite.jpg";
 import studentProfile from "@/assets/student-profile.png";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Index = () => {
   useScrollPhoneContent();
+  const { t } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,8 +27,8 @@ const Index = () => {
       <ScrollStorySection
         id="juan-intro"
         step={1}
-        title="Juan, un docente como vos"
-        description="Misma materia pero en distintos grados en 2 escuelas. Mismos contenidos, diferentes contextos. Un compañero le presentó Mehmiro y decidió probarlo."
+        title={t("story.steps.0.title")}
+        description={t("story.steps.0.description")}
         backgroundImageSrc={juanSchool}
         completionVideoSrc={onboardingCompleteVideo}
       >
@@ -42,8 +44,8 @@ const Index = () => {
       <ScrollStorySection
         id="juan-context"
         step={2}
-        title="Beatriz y Juan se encuentran en el pasillo del colegio"
-        description="Juan le muestra cómo Mehmiro analiza lo que él observa de cada estudiante mientras trabajan. Esto permite a Mehmiro ofrecer apoyo y andamiaje para cada dificultad que atraviesa cada estudiante. Beatriz quiere saber mas y Juan entra al perfil de un estudiante."
+        title={t("story.steps.1.title")}
+        description={t("story.steps.1.description")}
         backgroundImageSrc={beatrizJuan}
       >
         <FixedPhoneMockup
@@ -57,8 +59,8 @@ const Index = () => {
       <ScrollStorySection
         id="beatriz-shares"
         step={3}
-        title="Beatriz descubre el potencial"
-        description="Se da cuenta de que Mehmiro no solo ayuda a Juan, sino que también puede transformar su propia forma de enseñar y conectar con sus estudiantes."
+        title={t("story.steps.2.title")}
+        description={t("story.steps.2.description")}
         backgroundImageSrc={beatrizInvite}
       ></ScrollStorySection>
 

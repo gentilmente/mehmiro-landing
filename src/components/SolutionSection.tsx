@@ -12,6 +12,7 @@ import {
   Target,
   Zap,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface SolutionSectionProps {
   id?: string;
@@ -23,6 +24,7 @@ export const SolutionSection = ({
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const featuresRef = useRef<HTMLDivElement[]>([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -79,50 +81,18 @@ export const SolutionSection = ({
     }
   };
 
-  const features = [
-    {
-      icon: Eye,
-      title: "Tu criterio es la base",
-      description:
-        "Mehmiro no evalúa: interpreta. Amplifica tu mirada pedagógica sin reemplazarla.",
-    },
-    {
-      icon: Brain,
-      title: "IA como herramienta",
-      description:
-        "Un agente inteligente que organiza y analiza tus observaciones para mostrar patrones invisibles.",
-    },
-    {
-      icon: Target,
-      title: "Detección temprana",
-      description:
-        "Identificá estudiantes que necesitan atención antes de que sea tarde.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Metacognición docente",
-      description:
-        "Reflexioná sobre tu propia práctica con informes generados desde tus registros.",
-    },
-    {
-      icon: Shield,
-      title: "Profesionalizar la observación",
-      description:
-        "Transformá intuiciones valiosas en evidencia sistemática y accionable.",
-    },
-    {
-      icon: Heart,
-      title: "Sin sumar carga",
-      description:
-        "Se integra naturalmente a tu flujo de trabajo. Menos papeleo, más enseñanza.",
-    },
-  ];
+  const featureItems = t("solution.features", {
+    returnObjects: true,
+  }) as { title: string; description: string }[];
+  const featureIcons = [Eye, Brain, Target, TrendingUp, Shield, Heart];
+  const features = featureItems.map((item, index) => ({
+    ...item,
+    icon: featureIcons[index],
+  }));
 
-  const stats = [
-    { value: "24h", label: "Tiempo para las primeras percepciones" },
-    { value: "100%", label: "Respeto a tu autonomía" },
-    { value: "∞", label: "Capacidad de observación" },
-  ];
+  const stats = t("solution.stats", {
+    returnObjects: true,
+  }) as { value: string; label: string }[];
 
   return (
     <section
@@ -138,18 +108,17 @@ export const SolutionSection = ({
         <div ref={contentRef} className="max-w-4xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            <span>La solución</span>
+            <span>{t("solution.badge")}</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Conoce a Mehmiro
+              {t("solution.title")}
             </span>
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
-            La mirada que acompaña la enseñanza. Tecnología como escucha para
-            docentes, no como control.
+            {t("solution.description")}
           </p>
         </div>
 
@@ -196,7 +165,7 @@ export const SolutionSection = ({
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
             <Zap className="w-5 h-5 text-primary" />
             <span className="text-lg font-medium">
-              No evalúa: interpreta. Tu criterio es la base.
+              {t("solution.valueProposition")}
             </span>
           </div>
         </div>

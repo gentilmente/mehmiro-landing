@@ -6,12 +6,60 @@ import NotFound from "./pages/NotFound";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const queryClient = new QueryClient();
+
+const LanguageFlag = ({ language }: { language: string }) => {
+  const isEnglish = language.startsWith("en");
+
+  if (isEnglish) {
+    return (
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 24 16"
+        className="h-3 w-4 rounded-sm border border-border/60"
+      >
+        <rect width="24" height="16" fill="#ffffff" />
+        <rect y="0" width="24" height="2" fill="#B22234" />
+        <rect y="4" width="24" height="2" fill="#B22234" />
+        <rect y="8" width="24" height="2" fill="#B22234" />
+        <rect y="12" width="24" height="2" fill="#B22234" />
+        <rect x="0" y="0" width="10" height="7" fill="#3C3B6E" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 16"
+      className="h-3 w-4 rounded-sm border border-border/60"
+    >
+      <rect width="24" height="16" fill="#ffffff" />
+      <rect y="0" width="24" height="5.33" fill="#74ACDF" />
+      <rect y="10.67" width="24" height="5.33" fill="#74ACDF" />
+    </svg>
+  );
+};
 
 const Navigation = () => {
   const isMobile = useIsMobile();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const isEnglish = i18n.resolvedLanguage?.startsWith("en");
+  const nextLanguage = isEnglish ? "es-AR" : "en";
+  const nextLanguageLabel = isEnglish
+    ? t("language.spanish")
+    : t("language.english");
+  const nextLanguageShort = isEnglish
+    ? t("language.toggleShort.es")
+    : t("language.toggleShort.en");
+
+  const handleLanguageToggle = () => {
+    void i18n.changeLanguage(nextLanguage);
+  };
 
   return (
     <>
@@ -20,7 +68,7 @@ const Navigation = () => {
         <button
           onClick={() => setMobileMenuOpen(true)}
           className="fixed top-0 right-0 z-50 p-3 sm:p-4"
-          aria-label="Abrir menú"
+          aria-label={t("nav.openMenu")}
         >
           <Menu className="w-6 h-6 sm:w-5 sm:h-5" />
         </button>
@@ -32,7 +80,7 @@ const Navigation = () => {
           <button
             onClick={() => setMobileMenuOpen(false)}
             className="absolute top-4 right-4 p-2"
-            aria-label="Cerrar menú"
+            aria-label={t("nav.closeMenu")}
           >
             <X className="w-6 h-6" />
           </button>
@@ -42,15 +90,25 @@ const Navigation = () => {
             onClick={() => setMobileMenuOpen(false)}
             className="text-xl font-medium text-foreground hover:text-primary transition-colors"
           >
-            Inicio
+            {t("nav.home")}
           </Link>
           <Link
             to="/como-funciona"
             onClick={() => setMobileMenuOpen(false)}
             className="text-xl font-medium text-foreground hover:text-primary transition-colors"
           >
-            Cómo funciona
+            {t("nav.howItWorks")}
           </Link>
+          <button
+            onClick={handleLanguageToggle}
+            className="mt-2 inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/80 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-foreground hover:border-primary/40 hover:text-primary transition-colors"
+            aria-label={t("nav.languageToggle", {
+              language: nextLanguageLabel,
+            })}
+          >
+            <LanguageFlag language={nextLanguage} />
+            {nextLanguageShort}
+          </button>
         </div>
       )}
 
@@ -62,15 +120,26 @@ const Navigation = () => {
               to="/"
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"
             >
-              Inicio
+              {t("nav.home")}
             </Link>
             <div className="w-px h-4 bg-border" />
             <Link
               to="/como-funciona"
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"
             >
-              Cómo funciona
+              {t("nav.howItWorks")}
             </Link>
+            <div className="w-px h-4 bg-border" />
+            <button
+              onClick={handleLanguageToggle}
+              className="px-3 py-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted inline-flex items-center gap-2"
+              aria-label={t("nav.languageToggle", {
+                language: nextLanguageLabel,
+              })}
+            >
+              <LanguageFlag language={nextLanguage} />
+              {nextLanguageShort}
+            </button>
           </div>
         </nav>
       )}

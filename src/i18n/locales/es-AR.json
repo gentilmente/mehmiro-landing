@@ -1,0 +1,243 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "howItWorks": "Cómo funciona",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "languageToggle": "Cambiar idioma a {{language}}"
+  },
+  "language": {
+    "english": "Inglés",
+    "spanish": "Español",
+    "toggleShort": {
+      "en": "EN",
+      "es": "ES"
+    }
+  },
+  "hero": {
+    "badge": "Para docentes que aman enseñar",
+    "headlinePrimary": "Tu mirada importa.",
+    "headlineSecondary": "Mehmiro la amplifica.",
+    "subheadline": "La tecnología que acompaña tu labor docente sin reemplazarla. Organizá observaciones, detectá patrones y actuá a tiempo.",
+    "valueProps": [
+      "Sin reemplazar tu criterio",
+      "IA que interpreta, no evalúa",
+      "Sin sumar carga administrativa"
+    ],
+    "scrollIndicator": "Descubrí cómo funciona"
+  },
+  "problem": {
+    "badge": "Para docentes",
+    "title": "Cada docente conoce esta sensación",
+    "description": "Mirás a tu clase y sabés que algo no está funcionando para algunos estudiantes, pero cuando lo detectás, ya es tarde para actuar a tiempo.",
+    "items": [
+      {
+        "title": "Observaciones dispersas",
+        "description": "Las observaciones valiosas quedan en notas aisladas, conversaciones de pasillo o recuerdos difusos."
+      },
+      {
+        "title": "Intervenciones tardías",
+        "description": "Cuando un estudiante se queda atrás, muchas veces no lo notás a tiempo para ayudar."
+      },
+      {
+        "title": "Puntos ciegos",
+        "description": "Sin un registro sistemático, se pierden patrones importantes en el progreso de cada estudiante."
+      },
+      {
+        "title": "Carga mental",
+        "description": "Intentás recordar todo mientras dás clase, pero la memoria tiene límites."
+      }
+    ],
+    "closing": {
+      "lead": "No estás solo en esto.",
+      "rest": "Mehmiro existe para que nunca más pierdas una observación importante."
+    }
+  },
+  "solution": {
+    "badge": "La solución",
+    "title": "Conoce a Mehmiro",
+    "description": "La mirada que acompaña la enseñanza. Tecnología como escucha para docentes, no como control.",
+    "stats": [
+      { "value": "24h", "label": "Tiempo para las primeras percepciones" },
+      { "value": "100%", "label": "Respeto a tu autonomía" },
+      { "value": "∞", "label": "Capacidad de observación" }
+    ],
+    "features": [
+      {
+        "title": "Tu criterio es la base",
+        "description": "Mehmiro no evalúa: interpreta. Amplifica tu mirada pedagógica sin reemplazarla."
+      },
+      {
+        "title": "IA como herramienta",
+        "description": "Un agente inteligente que organiza y analiza tus observaciones para mostrar patrones invisibles."
+      },
+      {
+        "title": "Detección temprana",
+        "description": "Identificá estudiantes que necesitan atención antes de que sea tarde."
+      },
+      {
+        "title": "Metacognición docente",
+        "description": "Reflexioná sobre tu propia práctica con informes generados desde tus registros."
+      },
+      {
+        "title": "Profesionalizar la observación",
+        "description": "Transformá intuiciones valiosas en evidencia sistemática y accionable."
+      },
+      {
+        "title": "Sin sumar carga",
+        "description": "Se integra naturalmente a tu flujo de trabajo. Menos papeleo, más enseñanza."
+      }
+    ],
+    "valueProposition": "No evalúa: interpreta. Tu criterio es la base."
+  },
+  "socialProof": {
+    "badge": "Comunidad educativa",
+    "title": "Únete a escuelas que ya lo usan",
+    "description": "Docentes y escuelas de Argentina ya están transformando su observación pedagógica con Mehmiro.",
+    "stats": [
+      { "value": "500+", "label": "Docentes activos" },
+      { "value": "10+", "label": "Instituciones" },
+      { "value": "10K+", "label": "Observaciones procesadas" },
+      { "value": "98%", "label": "Satisfacción docente" }
+    ],
+    "testimonials": [
+      {
+        "quote": "Mehmiro me ayuda a ver patrones que antes me pasaban desapercibidos. Es como tener un asistente que nunca olvida nada de lo que observo.",
+        "author": "María González",
+        "role": "Maestra de primaria",
+        "school": "Escuela San José"
+      },
+      {
+        "quote": "Por primera vez tengo evidencia sistemática del progreso de cada estudiante. Las reuniones con familias ahora son más productivas.",
+        "author": "Carlos Rodríguez",
+        "role": "Profesor de matemáticas",
+        "school": "Instituto América"
+      },
+      {
+        "quote": "No suma carga de trabajo, se integra naturalmente a mi práctica. Los reportes me ayudan a reflexionar sobre mi propia enseñanza.",
+        "author": "Ana Martínez",
+        "role": "Coordinadora pedagógica",
+        "school": "Colegio Norte"
+      }
+    ],
+    "validation": "Marco teórico validado por la academia"
+  },
+  "faq": {
+    "badge": "Preguntas frecuentes",
+    "title": "Respuestas a tus dudas",
+    "description": "Abordamos las principales preocupaciones de los docentes e instituciones.",
+    "items": [
+      {
+        "question": "¿Cuánto tiempo toma implementar Mehmiro?",
+        "answer": "Podés empezar a ver resultados en las primeras 24 horas. La plataforma se integra naturalmente a tu flujo de trabajo actual sin sumar carga administrativa significativa."
+      },
+      {
+        "question": "¿Reemplaza el criterio profesional del docente?",
+        "answer": "Todo lo contrario. Mehmiro está diseñado para potenciar tu mirada pedagógica. Vos seguís siendo el centro de la evaluación. La tecnología es una herramienta que amplifica tu capacidad de observación, no la reemplaza."
+      },
+      {
+        "question": "¿Qué pasa con los datos de los estudiantes?",
+        "answer": "La privacidad y seguridad de los datos son nuestra prioridad. Cumplimos con todas las normativas de protección de datos en Argentina. Los datos son propiedad de la institución y se almacenan de forma segura."
+      },
+      {
+        "question": "¿Para qué tipo de instituciones es Mehmiro?",
+        "answer": "Mehmiro está diseñado para escuelas de todos los niveles educativos, desde primaria hasta secundaria y formación docente. Se adapta a diferentes contextos y necesidades pedagógicas."
+      },
+      {
+        "question": "¿Necesito capacitación para usarlo?",
+        "answer": "No. Mehmiro está diseñado para ser intuitivo y fácil de usar. Podés comenzar a registrar observaciones desde el primer día sin necesidad de capacitación previa."
+      },
+      {
+        "question": "¿Mehmiro controla o evalúa a los docentes?",
+        "answer": "No. Mehmiro es una herramienta de acompañamiento pedagógico que respeta tu autonomía profesional. No, tu criterio lo potencia. La IA analiza tus observaciones para ayudarte a ver patrones, no para juzgar tu trabajo."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Querés transformar cómo observás el aprendizaje?",
+    "description": "Sumate a la innovación. La academia ya validó el marco teórico.",
+    "button": "Probar demo gratis",
+    "qrCaption": "Escaneá para probar demo gratis en tu dispositivo móvil"
+  },
+  "footer": {
+    "lead": {
+      "title": "¿Quieres saber más sobre Mehmiro?",
+      "description": "¿Querés conocer cómo Mehmiro puede acompañar tu labor docente? Dejanos tus datos y te contactamos para contarte más.",
+      "successTitle": "¡Gracias! Nos pondremos en contacto contigo pronto.",
+      "successDescription": "Tu solicitud ha sido enviada exitosamente. Te responderemos en 24-48 horas.",
+      "submitting": "Enviando...",
+      "submit": "Contactar",
+      "notice": "Nos pondremos en contacto en 24-48 horas para resolver tus dudas",
+      "placeholder": "tu@email.com"
+    },
+    "company": {
+      "description": "Herramienta de evaluación formativa diseñada para acompañar el trabajo docente. Facilitamos el análisis de cada estudiante para fortalecer los procesos de aprendizaje."
+    },
+    "contact": {
+      "location": "Buenos Aires, Argentina",
+      "availability": "Disponible a nivel mundial",
+      "institutions": "Diseñado para instituciones educativas"
+    },
+    "sections": {
+      "product": "Producto",
+      "resources": "Recursos",
+      "company": "Empresa"
+    },
+    "links": {
+      "features": "Características",
+      "howItWorks": "Cómo funciona",
+      "forEducators": "Para educadores",
+      "demo": "Demo",
+      "docs": "Documentación",
+      "blog": "Blog",
+      "community": "Comunidad",
+      "support": "Soporte",
+      "about": "Nosotros",
+      "team": "Equipo",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    },
+    "bottom": {
+      "copyright": "© {{year}} Mehmiro. Acompañando la evaluación formativa en Argentina y Latinoamérica.",
+      "follow": "Síguenos:"
+    }
+  },
+  "story": {
+    "steps": [
+      {
+        "title": "Juan, un docente como vos",
+        "description": "Misma materia pero en distintos grados en 2 escuelas. Mismos contenidos, diferentes contextos. Un compañero le presentó Mehmiro y decidió probarlo."
+      },
+      {
+        "title": "Beatriz y Juan se encuentran en el pasillo del colegio",
+        "description": "Juan le muestra cómo Mehmiro analiza lo que él observa de cada estudiante mientras trabajan. Esto permite a Mehmiro ofrecer apoyo y andamiaje para cada dificultad que atraviesa cada estudiante. Beatriz quiere saber mas y Juan entra al perfil de un estudiante."
+      },
+      {
+        "title": "Beatriz descubre el potencial",
+        "description": "Se da cuenta de que Mehmiro no solo ayuda a Juan, sino que también puede transformar su propia forma de enseñar y conectar con sus estudiantes."
+      }
+    ]
+  },
+  "scrollStory": {
+    "tooltips": {
+      "step1": {
+        "intro": "Habla de ti, tu escuela y tus estudiantes. Tu nombre, el de la materia, el de la institución, cuántos estudiantes tienes y el grado.",
+        "submit": "Al enviar se genera tu perfil y el de tu clase con tus estudiantes. Sigue deslizando para ver el video del proceso."
+      },
+      "step2": {
+        "variables": "Variables de evaluación, aspectos que Mehmiro extrae de tus observaciones. Puedes editarlas si lo deseas.",
+        "observation": "Aquí grabas tu observación sobre el trabajo del estudiante.",
+        "analysis": "Aquí Mehmiro analiza el historial del estudiante, te dará un informe de su estado general con ayudas para mejorar las zonas flojas de su aprendizaje."
+      }
+    }
+  },
+  "fixedPhone": {
+    "alt": "Contenido de la pantalla del teléfono",
+    "placeholder": "Marcador de screencast"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Página no encontrada",
+    "action": "Volver al inicio"
+  }
+}

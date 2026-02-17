@@ -18,10 +18,12 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { useForm, ValidationError } from "@formspree/react";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [state, handleSubmit] = useForm("xldyzdnz");
+  const { t } = useTranslation();
 
   return (
     <footer className="relative bg-card border-t border-border">
@@ -35,11 +37,10 @@ export const Footer = () => {
             <div className="max-w-2xl mx-auto text-center space-y-6 px-4">
               <div className="space-y-3">
                 <h3 className="text-xl sm:text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                  ¿Quieres saber más sobre Mehmiro?
+                  {t("footer.lead.title")}
                 </h3>
                 <p className="text-muted-foreground">
-                  ¿Querés conocer cómo Mehmiro puede acompañar tu labor docente?
-                  Dejanos tus datos y te contactamos para contarte más.
+                  {t("footer.lead.description")}
                 </p>
               </div>
 
@@ -48,12 +49,11 @@ export const Footer = () => {
                   <div className="flex items-center justify-center gap-2 text-green-600">
                     <CheckCircle className="w-6 h-6" />
                     <p className="text-lg font-medium">
-                      ¡Gracias! Nos pondremos en contacto contigo pronto.
+                      {t("footer.lead.successTitle")}
                     </p>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Tu solicitud ha sido enviada exitosamente. Te responderemos
-                    en 24-48 horas.
+                    {t("footer.lead.successDescription")}
                   </p>
                 </div>
               ) : (
@@ -63,7 +63,7 @@ export const Footer = () => {
                       id="email"
                       type="email"
                       name="email"
-                      placeholder="tu@email.com"
+                      placeholder={t("footer.lead.placeholder")}
                       disabled={state.submitting}
                       className="flex-1 bg-background/50 backdrop-blur-sm border-border/50 focus:border-primary/50"
                       required
@@ -78,7 +78,9 @@ export const Footer = () => {
                       ) : (
                         <Mail className="w-4 h-4 mr-2" />
                       )}
-                      {state.submitting ? "Enviando..." : "Contactar"}
+                      {state.submitting
+                        ? t("footer.lead.submitting")
+                        : t("footer.lead.submit")}
                     </Button>
                   </div>
 
@@ -102,7 +104,7 @@ export const Footer = () => {
               )}
 
               <p className="text-xs text-muted-foreground/70">
-                Nos pondremos en contacto en 24-48 horas para resolver tus dudas
+                {t("footer.lead.notice")}
               </p>
             </div>
           </div>
@@ -118,9 +120,7 @@ export const Footer = () => {
                   Mehmiro
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-md">
-                  Herramienta de evaluación formativa diseñada para acompañar el
-                  trabajo docente. Facilitamos el análisis de cada estudiante
-                  para fortalecer los procesos de aprendizaje.
+                  {t("footer.company.description")}
                 </p>
               </div>
 
@@ -131,22 +131,24 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span>Buenos Aires, Argentina</span>
+                  <span>{t("footer.contact.location")}</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Globe className="w-4 h-4 text-primary" />
-                  <span>Disponible en Argentina y Latinoamérica</span>
+                  <span>{t("footer.contact.availability")}</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Shield className="w-4 h-4 text-primary" />
-                  <span>Diseñado para instituciones educativas</span>
+                  <span>{t("footer.contact.institutions")}</span>
                 </div>
               </div>
             </div>
 
             {/* Product */}
             <div className="space-y-6">
-              <h4 className="font-semibold text-foreground">Producto</h4>
+              <h4 className="font-semibold text-foreground">
+                {t("footer.sections.product")}
+              </h4>
               <nav className="space-y-3">
                 <a
                   href="#"
@@ -154,7 +156,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <Zap className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Características
+                    {t("footer.links.features")}
                   </div>
                 </a>
                 <a
@@ -163,7 +165,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Cómo funciona
+                    {t("footer.links.howItWorks")}
                   </div>
                 </a>
                 <a
@@ -172,16 +174,16 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Para educadores
+                    {t("footer.links.forEducators")}
                   </div>
                 </a>
                 <a
-                  href="https://app.mehmiro.com"
+                  href="https://app.mehmiro.com/onboarding"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Demo
+                    {t("footer.links.demo")}
                   </div>
                 </a>
               </nav>
@@ -189,7 +191,9 @@ export const Footer = () => {
 
             {/* Resources */}
             <div className="space-y-6">
-              <h4 className="font-semibold text-foreground">Recursos</h4>
+              <h4 className="font-semibold text-foreground">
+                {t("footer.sections.resources")}
+              </h4>
               <nav className="space-y-3">
                 <a
                   href="http://docs.mehmiro.com"
@@ -199,7 +203,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Documentación
+                    {t("footer.links.docs")}
                   </div>
                 </a>
                 <a
@@ -208,7 +212,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <FileText className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Blog
+                    {t("footer.links.blog")}
                   </div>
                 </a>
                 <a
@@ -217,7 +221,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Comunidad
+                    {t("footer.links.community")}
                   </div>
                 </a>
                 <a
@@ -226,7 +230,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <Phone className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Soporte
+                    {t("footer.links.support")}
                   </div>
                 </a>
               </nav>
@@ -234,7 +238,9 @@ export const Footer = () => {
 
             {/* Company & Legal */}
             <div className="space-y-6">
-              <h4 className="font-semibold text-foreground">Empresa</h4>
+              <h4 className="font-semibold text-foreground">
+                {t("footer.sections.company")}
+              </h4>
               <nav className="space-y-3">
                 <a
                   href="#"
@@ -242,7 +248,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <Heart className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Nosotros
+                    {t("footer.links.about")}
                   </div>
                 </a>
                 <a
@@ -251,7 +257,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Equipo
+                    {t("footer.links.team")}
                   </div>
                 </a>
                 <a
@@ -260,7 +266,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <Shield className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Privacidad
+                    {t("footer.links.privacy")}
                   </div>
                 </a>
                 <a
@@ -269,7 +275,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <FileText className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    Términos
+                    {t("footer.links.terms")}
                   </div>
                 </a>
               </nav>
@@ -283,14 +289,13 @@ export const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               {/* Copyright */}
               <div className="text-sm text-muted-foreground">
-                © {currentYear} Mehmiro. Acompañando la evaluación formativa en
-                Argentina y Latinoamérica.
+                {t("footer.bottom.copyright", { year: currentYear })}
               </div>
 
               {/* Social Links */}
               <div className="flex items-center gap-4">
                 <span className="text-sm text-muted-foreground mr-2">
-                  Síguenos:
+                  {t("footer.bottom.follow")}
                 </span>
                 <div className="flex gap-3">
                   <a
