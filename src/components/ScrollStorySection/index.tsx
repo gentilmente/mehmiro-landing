@@ -85,6 +85,7 @@ export const ScrollStorySection = ({
         const originalImgSrc = img?.dataset.originalSrc;
         if (video) {
           video.controls = true;
+          video.playbackRate = 2;
           if (completionVideoSrc) {
             gsap.set(video, { autoAlpha: 0, pointerEvents: "none" });
           }
