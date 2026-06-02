@@ -2,6 +2,15 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Index from "./pages";
 import ScrollyTelling from "./pages/ScrollyTelling";
+import Features from "./pages/Features";
+import ForEducators from "./pages/ForEducators";
+import Blog from "./pages/Blog";
+import Community from "./pages/Community";
+import Support from "./pages/Support";
+import About from "./pages/About";
+// import Team from "./pages/Team";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -156,6 +165,15 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/como-funciona" element={<ScrollyTelling />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/for-educators" element={<ForEducators />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/team" element={<Team />} /> */}
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

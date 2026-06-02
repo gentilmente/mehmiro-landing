@@ -61,9 +61,18 @@
     "title": "Conoce a Mehmiro",
     "description": "La mirada que acompaña la enseñanza. Tecnología como escucha para docentes, no como control.",
     "stats": [
-      { "value": "24h", "label": "Tiempo para las primeras percepciones" },
-      { "value": "100%", "label": "Respeto a tu autonomía" },
-      { "value": "∞", "label": "Capacidad de observación" }
+      {
+        "value": "24h",
+        "label": "Tiempo para las primeras percepciones"
+      },
+      {
+        "value": "100%",
+        "label": "Respeto a tu autonomía"
+      },
+      {
+        "value": "∞",
+        "label": "Capacidad de observación"
+      }
     ],
     "features": [
       {
@@ -98,10 +107,22 @@
     "title": "Únete a escuelas que ya lo usan",
     "description": "Docentes y escuelas de Argentina ya están transformando su observación pedagógica con Mehmiro.",
     "stats": [
-      { "value": "500+", "label": "Docentes activos" },
-      { "value": "10+", "label": "Instituciones" },
-      { "value": "10K+", "label": "Observaciones procesadas" },
-      { "value": "98%", "label": "Satisfacción docente" }
+      {
+        "value": "500+",
+        "label": "Docentes activos"
+      },
+      {
+        "value": "10+",
+        "label": "Instituciones"
+      },
+      {
+        "value": "10K+",
+        "label": "Observaciones procesadas"
+      },
+      {
+        "value": "98%",
+        "label": "Satisfacción docente"
+      }
     ],
     "testimonials": [
       {
@@ -203,6 +224,685 @@
     "bottom": {
       "copyright": "© {{year}} Mehmiro. Acompañando la evaluación formativa en Argentina y Latinoamérica.",
       "follow": "Síguenos:"
+    }
+  },
+  "pages": {
+    "features": {
+      "title": "Características",
+      "description": "Descubrí las herramientas de Mehmiro que amplifican tu mirada pedagógica: organización de observaciones, detección de patrones y reportes accionables."
+    },
+    "forEducators": {
+      "title": "Para educadores",
+      "description": "Recursos y guías pensadas para docentes: cómo integrar Mehmiro en la práctica diaria y ejemplos de uso en el aula.",
+      "heroDescription": "Recursos y guías pensadas para docentes: cómo integrar Mehmiro en la práctica diaria y ejemplos de uso en el aula.",
+      "quickStats": [
+        {
+          "value": "24h",
+          "label": "Tiempo para primeras percepciones"
+        },
+        {
+          "value": "100%",
+          "label": "Respeto a tu autonomía"
+        },
+        {
+          "value": "∞",
+          "label": "Capacidad de observación"
+        },
+        {
+          "value": "0",
+          "label": "Carga administrativa"
+        }
+      ],
+      "guidesTitle": "Guías y Tutoriales",
+      "guides": [
+        {
+          "title": "Guía de Inicio Rápido",
+          "description": "Empezá a usar Mehmiro en menos de 10 minutos. Paso a paso.",
+          "level": "Principiante",
+          "duration": "10 min"
+        },
+        {
+          "title": "Cómo Registrar Observaciones",
+          "description": "Aprendé a capturar observaciones pedagógicas de forma efectiva.",
+          "level": "Principiante",
+          "duration": "15 min"
+        },
+        {
+          "title": "Detección Temprana en Práctica",
+          "description": "Estrategias para identificar estudiantes que necesitan más apoyo.",
+          "level": "Intermedio",
+          "duration": "20 min"
+        },
+        {
+          "title": "Feedback Efectivo",
+          "description": "Cómo usar los análisis de Mehmiro para mejorar tu feedback.",
+          "level": "Intermedio",
+          "duration": "25 min"
+        },
+        {
+          "title": "Colaboración en Equipo",
+          "description": "Coordiná con otros docentes y orientadores para acompañar mejor.",
+          "level": "Avanzado",
+          "duration": "30 min"
+        },
+        {
+          "title": "Reportes para Familias",
+          "description": "Creá comunicaciones claras y productivas con las familias.",
+          "level": "Todos",
+          "duration": "20 min"
+        }
+      ],
+      "videoSection": {
+        "title": "Videos Tutoriales",
+        "description": "Aprendé a usar Mehmiro viendo cómo otros docentes lo integran en su día a día. Nuestra biblioteca de videos incluye:",
+        "items": [
+          "Primeros pasos con la plataforma",
+          "Registro de observaciones paso a paso",
+          "Cómo interpretar los análisis",
+          "Casos de uso reales en el aula",
+          "Tips y tricks de usuarios avanzados"
+        ],
+        "button": "Ver todos los videos",
+        "featured": "Video tutorial destacado"
+      },
+      "tipsTitle": "Tips para Observaciones Efectivas",
+      "tipsDescription": "Consejos prácticos de docentes que ya usan Mehmiro efectivamente",
+      "tips": [
+        {
+          "title": "Registrá en el momento",
+          "description": "Las observaciones son más precisas cuando las registrás inmediatamente después de ocurridas. Usá la función de notas de voz si no podés escribir en el momento."
+        },
+        {
+          "title": "Sé específico pero conciso",
+          "description": "Evitá generalizaciones como 'bien' o 'mal'. Descripción qué exactamente hizo o dijo el estudiante. 'Completó 3 de 5 ejercicios' es más útil que 'trabajó bien'."
+        },
+        {
+          "title": "Usá las categorías",
+          "description": "Las categorías de Mehmiro están diseñadas para cubrir los aspectos más importantes del desarrollo. Intentá usar al menos 2-3 categorías por observación."
+        },
+        {
+          "title": "Revisá los patrones",
+          "description": "No te quedes solo con observaciones individuales. Semanalmente, revisá los patrones que Mehmiro detecta. Son invaluables para entender el progreso real."
+        },
+        {
+          "title": "Actuá a tiempo",
+          "description": "Las alertas de detección temprana son herramientas, no diagnósticos. Usalas como punto de partida para conversar, intervenir y acompañar."
+        },
+        {
+          "title": "Compartí con el equipo",
+          "description": "La colaboración multiplica el impacto. Compartí observaciones relevantes con tutores, orientadores y otros docentes que trabajen con el mismo estudiante."
+        }
+      ],
+      "downloads": {
+        "title": "Descargables Gratuitos",
+        "description": "Materiales que podés imprimir y usar en tu escuela",
+        "items": [
+          {
+            "title": "Plantilla de Observación",
+            "description": "PDF • 2 páginas"
+          },
+          {
+            "title": "Indicadores de Alerta",
+            "description": "PDF • 1 página"
+          },
+          {
+            "title": "Guía para Reuniones con Familias",
+            "description": "PDF • 3 páginas"
+          }
+        ]
+      },
+      "testimonialsTitle": "Lo que dicen los docentes",
+      "cta": {
+        "title": "¿Listo para empezar?",
+        "description": "Unite a los más de 500 docentes que ya están transformando su manera de observar y acompañar el aprendizaje.",
+        "button": "Comenzar gratis"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Artículos, casos de estudio y novedades sobre evaluación formativa y tecnología educativa.",
+      "heroDescription": "Artículos, casos de estudio y reflexiones sobre evaluación formativa, tecnología educativa y la labor docente en Argentina.",
+      "featured": {
+        "badge": "Artículo destacado",
+        "title": "La evaluación formativa: más que calificar, acompañar",
+        "description": "En el sistema educativo actual, solemos pensar en la evaluación como una medida del conocimiento adquirido. Pero la evaluación formativa va mucho más allá: se trata de acompañar el proceso de aprendizaje de cada estudiante, detectando a tiempo cuándo necesita más apoyo.",
+        "link": "Leer artículo completo"
+      },
+      "categories": [
+        {
+          "name": "Todos",
+          "count": 24
+        },
+        {
+          "name": "Educación",
+          "count": 8
+        },
+        {
+          "name": "Casos de éxito",
+          "count": 5
+        },
+        {
+          "name": "Comunidad",
+          "count": 6
+        },
+        {
+          "name": "Recursos",
+          "count": 7
+        },
+        {
+          "name": "Tecnología",
+          "count": 4
+        }
+      ],
+      "posts": [
+        {
+          "title": "La evaluación formativa en el siglo XXI",
+          "excerpt": "Cómo la tecnología está transformando la manera en que los docentes observan y acompañan el aprendizaje de sus estudiantes.",
+          "category": "Educación",
+          "date": "15 de Febrero, 2026",
+          "readTime": "8 min"
+        },
+        {
+          "title": "Detectando a tiempo: la importancia de la intervención temprana",
+          "excerpt": "Casos reales de docentes que lograron cambiar el destino académico de sus estudiantes gracias a la detección temprana.",
+          "category": "Casos de éxito",
+          "date": "10 de Febrero, 2026",
+          "readTime": "6 min"
+        },
+        {
+          "title": "Comunidad Mehmiro: historias que inspiran",
+          "excerpt": "Conectamos con docentes de todo Argentina que comparten su experiencia transformando la observación pedagógica.",
+          "category": "Comunidad",
+          "date": "5 de Febrero, 2026",
+          "readTime": "5 min"
+        },
+        {
+          "title": "5 estrategias para observaciones más efectivas",
+          "excerpt": "Técnicas prácticas que todo docente puede implementar para registrar observaciones significativas sin sumar carga de trabajo.",
+          "category": "Recursos",
+          "date": "1 de Febrero, 2026",
+          "readTime": "7 min"
+        },
+        {
+          "title": "El rol del docente en la era de la IA",
+          "excerpt": "Reflexiones sobre cómo la inteligencia artificial puede potenciar (no reemplazar) el criterio profesional docente.",
+          "category": "Tecnología",
+          "date": "28 de Enero, 2026",
+          "readTime": "10 min"
+        },
+        {
+          "title": "Planificación académica 2026: tendencias y herramientas",
+          "excerpt": "Las instituciones educativas están adoptando nuevas herramientas para mejorar los procesos de evaluación formativa.",
+          "category": "Educación",
+          "date": "20 de Enero, 2026",
+          "readTime": "6 min"
+        }
+      ],
+      "readTime": "de lectura",
+      "newsletter": {
+        "title": "Suscribite a nuestro newsletter",
+        "description": "Recibí artículos exclusivos, casos de éxito y recursos directamente en tu correo. Sin spam, solo contenido valioso para docentes.",
+        "placeholder": "tu@email.com",
+        "button": "Suscribirse",
+        "footer": "Más de 2.000 docentes ya reciben nuestro newsletter"
+      }
+    },
+    "community": {
+      "title": "Comunidad",
+      "description": "Conectate con otras escuelas y docentes que usan Mehmiro: eventos, foros y grupos de trabajo.",
+      "heroDescription": "Un espacio para conectar, aprender y crecer juntos. Porque la educación mejora cuando los docentes trabajan en comunidad.",
+      "stats": [
+        {
+          "value": "500+",
+          "label": "Docentes activos"
+        },
+        {
+          "value": "10+",
+          "label": "Instituciones"
+        },
+        {
+          "value": "50+",
+          "label": "Escuelas conectadas"
+        },
+        {
+          "value": "100+",
+          "label": "Historias compartidas"
+        }
+      ],
+      "events": {
+        "title": "Próximos Eventos",
+        "description": "Participá de encuentros, talleres y webinars diseñados para vos",
+        "viewAll": "Ver todos los eventos",
+        "participants": "participantes"
+      },
+      "eventList": [
+        {
+          "title": "Encuentro de Docentes Mehmiro 2026",
+          "description": "El evento anual más importante de nuestra comunidad. Comparte experiencias con cientos de docentes de todo el país.",
+          "date": "15 de Marzo, 2026",
+          "type": "Presencial",
+          "location": "Buenos Aires",
+          "participants": "200+"
+        },
+        {
+          "title": "Webinar: Evaluación Formativa en Acción",
+          "description": "Aprende de la mano de docentes que ya transformaron su práctica pedagógica con Mehmiro.",
+          "date": "28 de Febrero, 2026",
+          "type": "Online",
+          "location": "Virtual",
+          "participants": "500+"
+        },
+        {
+          "title": "Taller: Detección Temprana en el Aula",
+          "description": "Taller práctico sobre estrategias prácticas para identificar estudiantes que necesitan más apoyo.",
+          "date": "10 de Marzo, 2026",
+          "type": "Híbrido",
+          "location": "Córdoba",
+          "participants": "50"
+        }
+      ],
+      "forum": {
+        "title": "Foro de Discusión",
+        "description": "Un espacio seguro para hacer preguntas, compartir experiencias y aprender de colegas de todo Argentina. Los temas del foro incluyen:",
+        "topics": [
+          "Estrategias de observación en el aula",
+          "Cómo manejar situaciones difíciles",
+          "Evaluación formativa y feedback",
+          "Integración tecnológica en clase"
+        ],
+        "button": "Unirse al foro",
+        "replies": "respuestas"
+      },
+      "forumPreview": [
+        {
+          "quote": "¿Cómo manejáis la observación de estudiantes con necesidades especiales en clases con muchos alumnos?",
+          "author": "María G.",
+          "replies": 12
+        },
+        {
+          "quote": "Les comparto mi experiencia con el registro de observaciones. Al principio me costaba, pero con Mehmiro...",
+          "author": "Carlos R.",
+          "replies": 8
+        }
+      ],
+      "testimonials": {
+        "title": "Voces de Nuestra Comunidad"
+      },
+      "testimonialsList": [
+        {
+          "quote": "Encontré en la comunidad Mehmiro un espacio donde mis colegas entienden los desafíos diarios. No me siento más solo.",
+          "author": "Roberto Martínez",
+          "role": "Profesor de Historia",
+          "school": "Escuela Normal"
+        },
+        {
+          "quote": "Los webinars me ayudaron a mejorar mi práctica docente. Ahora tengo herramientas concretas para acompañar a mis estudiantes.",
+          "author": "Laura Sánchez",
+          "role": "Maestra de 5° grado",
+          "school": "Colegio San Miguel"
+        }
+      ],
+      "ambassador": {
+        "title": "Convertite en Embajador Mehmiro",
+        "description": "¿Te apasiona la educación y querés ayudar a más docentes? Unite a nuestro programa de embajadores y difundí la palabra sobre la evaluación formativa efectiva.",
+        "benefits": "Los beneficios incluyen: formación gratuita, eventos exclusivos y más"
+      }
+    },
+    "support": {
+      "title": "Soporte",
+      "description": "Accedé a ayuda técnica, guías rápidas y recursos para resolver dudas sobre la plataforma.",
+      "heroDescription": "¿Tenés dudas? Encontrá respuestas a las preguntas más frecuentes o contactá nuestro equipo de soporte.",
+      "faqCategories": [
+        {
+          "category": "Cuenta y Acceso",
+          "questions": [
+            {
+              "q": "¿Cómo creo una cuenta en Mehmiro?",
+              "a": "Simplemente hacé clic en 'Comenzar gratis' en nuestra página principal y seguí los pasos. Solo necesitás un correo electrónico y los datos de tu institución."
+            },
+            {
+              "q": "¿Qué hago si olvidé mi contraseña?",
+              "a": "Hacé clic en 'Olvidé mi contraseña' en la página de inicio de sesión. Te enviaremos un correo para restablecer tu contraseña."
+            },
+            {
+              "q": "¿Puedo usar Mehmiro en varios dispositivos?",
+              "a": "Sí, Mehmiro es una aplicación web progresiva. Podés acceder desde tu computadora, tablet o celular, y tus datos se sincronizarán automáticamente."
+            }
+          ]
+        },
+        {
+          "category": "Uso de la Plataforma",
+          "questions": [
+            {
+              "q": "¿Cuánto tiempo toma registrar una observación?",
+              "a": "El registro de una observación básica toma entre 2-3 minutos. Podés usar notas de voz que se convierten automáticamente a texto, lo cual agiliza el proceso."
+            },
+            {
+              "q": "¿Qué son las alertas de detección temprana?",
+              "a": "Son notificaciones que el sistema genera cuando detecta patrones que podrían indicar que un estudiante necesita más atención. Estas alertas se basan en tus observaciones y te ayudan a intervenir a tiempo."
+            },
+            {
+              "q": "¿Cómo personalizo las categorías de observación?",
+              "a": "Podés acceder a Configuración > Categorías desde tu panel. Allí podés crear, editar o eliminar categorías según las necesidades de tu institución."
+            },
+            {
+              "q": "¿Puedo exportar mis observaciones?",
+              "a": "Sí, podés exportar tus datos en formato PDF o Excel desde la sección de Reportes. También podés generar informes específicos para compartir con familias."
+            }
+          ]
+        },
+        {
+          "category": "Privacidad y Seguridad",
+          "questions": [
+            {
+              "q": "¿Son seguros los datos de mis estudiantes?",
+              "a": "Absolutamente. Usamos encriptación de extremo a extremo y cumplimos con la Ley Argentina de Protección de Datos Personales. Los datos pertenecen a tu institución."
+            },
+            {
+              "q": "¿Quién puede ver las observaciones que registro?",
+              "a": "Por defecto, solo vos y los usuarios de tu institución que tengan permisos asignados. Podés configurar permisos granulares desde el panel de administración."
+            },
+            {
+              "q": "¿Qué pasa si quiero eliminar mi cuenta?",
+              "a": "Podés solicitar la eliminación de tu cuenta y todos los datos asociados en cualquier momento. Contáctanos a soporte@mehmiro.com."
+            }
+          ]
+        },
+        {
+          "category": "Facturación y Planes",
+          "questions": [
+            {
+              "q": "¿Cuánto cuesta Mehmiro?",
+              "a": "Tenemos un plan gratuito con funcionalidades básicas y planes pagos para instituciones que necesitan más capacidad. Visitá nuestra página de precios para más detalles."
+            },
+            {
+              "q": "¿Hay descuento para instituciones educativas públicas?",
+              "a": "Sí, ofrecemos condiciones especiales para escuelas públicas y sin fines de lucro. Contactanos para discutir las opciones."
+            },
+            {
+              "q": "¿Puedo cambiar de plan en cualquier momento?",
+              "a": "Sí, podés actualizar o degradar tu plan en cualquier momento. Los cambios se aplicarán en el próximo ciclo de facturación."
+            }
+          ]
+        }
+      ],
+      "contactOptions": [
+        {
+          "title": "Chat en vivo",
+          "description": "Chateá con nuestro equipo de soporte",
+          "availability": "Lunes a viernes, 9h a 18h",
+          "action": "Iniciar chat"
+        },
+        {
+          "title": "Email",
+          "description": "Escribinos y te respondemos en 24-48h",
+          "availability": "support@mehmiro.com",
+          "action": "Enviar email"
+        },
+        {
+          "title": "Teléfono",
+          "description": "Llamanos para soporte urgente",
+          "availability": "Lunes a viernes, 9h a 18h",
+          "action": "Llamar ahora"
+        }
+      ],
+      "resourcesTitle": "Recursos Disponibles",
+      "resourcesDescription": "Documentación, guías y tutoriales para aprovechar al máximo Mehmiro",
+      "resources": [
+        {
+          "title": "Guía de Inicio Rápido",
+          "description": "Empezá a usar Mehmiro en 10 minutos",
+          "type": "PDF"
+        },
+        {
+          "title": "Manual de Usuario",
+          "description": "Documentación completa de todas las funciones",
+          "type": "Documento"
+        },
+        {
+          "title": "Videos Tutoriales",
+          "description": "Aprendé viendo cómo otros docentes lo usan",
+          "type": "Video"
+        },
+        {
+          "title": "Preguntas Frecuentes",
+          "description": "Respuestas a las dudas más comunes",
+          "type": "FAQ"
+        }
+      ],
+      "faqTitle": "Preguntas Frecuentes",
+      "stillNeedHelp": {
+        "title": "¿Aún necesitás ayuda?",
+        "description": "Nuestro equipo está listo para ayudarte. Escribinos y te respondemos lo antes posible.",
+        "button": "Contactar soporte",
+        "secondaryButton": "Ver documentación"
+      },
+      "responseTimes": [
+        {
+          "value": "< 1h",
+          "label": "Tiempo de respuesta en chat"
+        },
+        {
+          "value": "24-48h",
+          "label": "Tiempo de respuesta por email"
+        },
+        {
+          "value": "98%",
+          "label": "Satisfacción de usuarios"
+        }
+      ]
+    },
+    "about": {
+      "title": "Nosotros",
+      "description": "Conocé al equipo detrás de Mehmiro y nuestra misión de acompañar la evaluación formativa en las escuelas.",
+      "mission": {
+        "title": "Nuestra Misión",
+        "description": "Democratizar el acceso a herramientas de evaluación formativa de calidad para todas las escuelas de Argentina y Latinoamérica. Queremos que cada docente tenga la capacidad de detectar a tiempo cuando un estudiante necesita más apoyo, sin sumar carga administrativa a su trabajo."
+      },
+      "vision": {
+        "title": "Nuestra Visión",
+        "description": "Imaginar un futuro donde la tecnología potencie la labor docente, donde cada educator pueda confiar en su intuición respaldada por evidencia. Un ecosistema educativo donde ningún estudiante quede atrás por falta de detección temprana."
+      },
+      "valuesSection": {
+        "title": "Nuestros Valores"
+      },
+      "values": [
+        {
+          "title": "Respeto al Docente",
+          "description": "El docente es el protagonista. Nuestra tecnología está diseñada para amplificar su mirada, nunca para reemplazarla. Su criterio profesional es el centro de todo lo que hacemos."
+        },
+        {
+          "title": "Enfoque Humanista",
+          "description": "Detrás de cada dato hay un estudiante con potencial. Diseñamos pensando en personas, no en números. Cada feature responde a una necesidad real del aula."
+        },
+        {
+          "title": "Privacidad y Seguridad",
+          "description": "Los datos de los estudiantes son sagrados. Cumplimos con todas las normativas de protección de datos en Argentina y priorizamos la seguridad por encima de todo."
+        }
+      ],
+      "story": {
+        "title": "Nuestra Historia",
+        "author": "Equipo Mehmiro",
+        "authorTitle": "Equipo",
+        "paragraphs": [
+          "Mehmiro nació después de años atravesando las tensiones del sistema educativo desde múltiples roles: primero como estudiante, luego como docente, más tarde como formador y también participando en equipos de diseño e implementación de políticas públicas educativas innovadoras.",
+          "En todos esos espacios un problema recurrente: la evidencia académica sobre cómo aprenden las personas, rara vez logra traducirse en herramientas simples y utilizables en el aula real.",
+          "La startup surge como un puente entre la investigación en ciencias del aprendizaje y la práctica cotidiana del docente. Mehmiro busca convertir teoría en acción concreta, sin imponer metodologías externas ni aumentar la carga laboral, sino potenciando el criterio profesional con tecnología que ordena, hace visible y escala lo que el buen docente ya hace intuitivamente."
+        ]
+      },
+      "stats": [
+        {
+          "value": "500+",
+          "label": "Docentes activos"
+        },
+        {
+          "value": "10+",
+          "label": "Instituciones"
+        },
+        {
+          "value": "10K+",
+          "label": "Observaciones"
+        },
+        {
+          "value": "98%",
+          "label": "Satisfacción"
+        }
+      ]
+    },
+    "team": {
+      "title": "Equipo",
+      "description": "Presentación del equipo interdisciplinario: investigación, diseño y desarrollo educativo."
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "description": "Información sobre cómo recogemos, utilizamos y protegemos los datos de las instituciones y estudiantes.",
+      "highlights": [
+        {
+          "title": "Tus datos son tuyos",
+          "description": "No vendemos tu información. Los datos pertenecen a tu institución."
+        },
+        {
+          "title": "Encriptación de extremo a extremo",
+          "description": "Tus observaciones y análisis están protegidos con los más altos estándares."
+        },
+        {
+          "title": "Control total",
+          "description": "Tenés acceso, rectificación y eliminación de tus datos cuando quieras."
+        },
+        {
+          "title": "Cumplimiento legal",
+          "description": "Cumplimos con la Ley Argentina de Protección de Datos Personales (ley 25.326)."
+        }
+      ],
+      "sections": [
+        {
+          "title": "1. Introducción",
+          "content": "En Mehmiro (\"nosotros\", \"nuestra plataforma\"), nos comprometemos a proteger la privacidad y seguridad de los datos de nuestros usuarios, especialmente los datos de estudiantes menores de edad que son tratados con el máximo cuidado y protección.\n\nEsta Política de Privacidad describe cómo recopilamos, usamos, almacenamos y protegemos tu información personal y la de los estudiantes de tu institución. Al usar Mehmiro, aceptas las prácticas descritas en esta política."
+        },
+        {
+          "title": "2. Información que recopilamos",
+          "content": "Recopilamos diferentes tipos de información para proporcionar y mejorar nuestros servicios:\n\n• **Información de registro**: Cuando creas una cuenta, recopilamos tu nombre, correo electrónico, institución educativa y rol (docente, coordinador, director, etc.).\n\n• **Datos de estudiantes**: Para usar la plataforma, podés registrar información sobre estudiantes incluyendo: nombre (o identificador anónimo), edad, año/grado, observaciones pedagógicas, evaluaciones de progreso y notas de desarrollo.\n\n• **Observaciones pedagógicas**: Todas las notas, grabaciones de voz convertidas a texto, fotos, videos y análisis que realizás sobre estudiantes.\n\n• **Datos de uso**: Información sobre cómo interactúas con la plataforma, incluyendo métricas de uso, preferencias y configuraciones.\n\n• **Información del dispositivo**: Datos técnicos sobre el dispositivo que usás para acceder a Mehmiro."
+        },
+        {
+          "title": "3. Cómo usamos tu información",
+          "content": "Usamos la información recopilada para los siguientes propósitos:\n\n• **Proveer el servicio**: Gestionar tu cuenta, permitir el registro de observaciones y generar análisis y reportes.\n\n• **Análisis con IA**: Nuestro sistema de inteligencia artificial analiza tus observaciones para identificar patrones, detectar estudiantes que pueden necesitar atención y ofrecer sugerencias de intervención.\n\n• **Personalización**: Adaptar la experiencia de usuario según tus preferencias y necesidades.\n\n• **Comunicación**: Enviarte notificaciones sobre alertas de detección temprana, actualizaciones de la plataforma y soporte técnico.\n\n• **Mejora del servicio**: Analizar datos agregados y anonimizados para mejorar las funcionalidades de Mehmiro.\n\n• **Cumplimiento legal**: Responder a requerimientos legales y proteger nuestros derechos y los de nuestros usuarios."
+        },
+        {
+          "title": "4. Almacenamiento y seguridad de datos",
+          "content": "La seguridad de tus datos es nuestra prioridad absoluta:\n\n• **Encriptación**: Todos los datos se encriptan en tránsito (TLS/SSL) y en reposo (AES-256) para garantizar que solo vos y tu institución puedan acceder a ellos.\n\n• **Servidores seguros**: Nuestros servidores están ubicados en Argentina y cumplen con las mejores prácticas de seguridad física y digital.\n\n• **Control de acceso**: Implementamos controles de acceso estrictos. Solo personal autorizado puede acceder a los datos, y siempre bajo protocolos de seguridad.\n\n• **Respaldo**: Realizamos respaldos automáticos regulares para garantizar la disponibilidad de tus datos.\n\n• **Retención**: Mantenemos los datos mientras tu cuenta esté activa o según sea necesario para proporcionar servicios. Podés solicitar la eliminación de datos en cualquier momento."
+        },
+        {
+          "title": "5. Compartición de datos",
+          "content": "Tus datos son tuyos. No los vendemos bajo ninguna circunstancia:\n\n• **Institución**: Los datos de tu institución están disponibles para otros usuarios autorizados de la misma institución según los permisos que configurés.\n\n• **Proveedores de servicios**: Compartimos datos con proveedores que nos ayudan a operar la plataforma (alojamiento, análisis, soporte técnico), quienes están obligados a mantener la confidencialidad.\n\n• **Legal**: Podemos revelar información cuando sea requerido por ley o en respuesta a solicitudes legales válidas.\n\n• **Transferencias**: En caso de fusión o venta de la empresa, los datos podrían ser transferidos, pero te notificaremos y solicitaremos tu consentimiento si fuera requerido."
+        },
+        {
+          "title": "6. Derechos de los usuarios",
+          "content": "Tenés los siguientes derechos sobre tus datos:\n\n• **Acceso**: Podés solicitar una copia de todos los datos que tenemos sobre vos y los estudiantes de tu institución.\n\n• **Rectificación**: Podés corregir información inexacta o incompleta.\n\n• **Eliminación**: Podés solicitar la eliminación de tus datos y los de estudiantes (excepto cuando la ley requiera retención).\n\n• **Portabilidad**: Podés exportar tus datos en un formato legible por máquina.\n\n• **Revocación de consentimiento**: Podés revocar tu consentimiento para el procesamiento de datos en cualquier momento.\n\n• **Limitación**: Podés solicitar que limitemos el procesamiento de ciertos datos.\n\nPara ejercer estos derechos, contactanos a través de los canales indicados al final de esta política."
+        },
+        {
+          "title": "7. Datos de menores",
+          "content": "Mehmiro está diseñado para uso educativo y frecuentemente involucra datos de estudiantes menores de edad:\n\n• **Consentimiento parental**: Recomendamos que las instituciones obtengan el consentimiento apropiado de padres o tutores antes de registrar datos de estudiantes.\n\n• **Protección especial**: Aplicamos medidas adicionales de protección a los datos de menores.\n\n• **Limitaciones**: No recopilamos intencionalmente información de menores más allá de la necesaria para el propósito educativo acordado.\n\n• **Derechos de tutores**: Los padres o tutores legales pueden ejercer los derechos de acceso, rectificación y eliminación en nombre de sus hijos menores."
+        },
+        {
+          "title": "8. Cookies y tecnologías similares",
+          "content": "Usamos cookies y tecnologías similares para:\n\n• **Funcionamiento esencial**: Mantener tu sesión activa y recordar tus preferencias.\n\n• **Análisis**: Entender cómo se usa la plataforma para mejorarla.\n\n• **Seguridad**: Detectar y prevenir actividades fraudulentas.\n\nPodés configurar tu navegador para rechazar cookies, pero esto puede afectar la funcionalidad de la plataforma."
+        },
+        {
+          "title": "9. Cambios a esta política",
+          "content": "Podemos actualizar esta Política de Privacidad ocasionalmente. Notificaremos cualquier cambio significativo a través de:\n\n• Notificaciones en la plataforma\n• Correo electrónico a usuarios registrados\n• Publicación de la nueva versión en nuestro sitio\n\nLa fecha de última actualización se indica al final de este documento. Te recomendamos revisar periódicamente esta política."
+        },
+        {
+          "title": "10. Contacto",
+          "content": "Si tenés preguntas, preocupaciones o solicitudes relacionadas con esta Política de Privacidad o el tratamiento de tus datos, podés contactarnos:\n\n• **Email**: privacidad@mehmiro.com\n• **Dirección**: Buenos Aires, Argentina\n\nResponderemos tu consulta dentro de los 30 días hábiles."
+        }
+      ],
+      "compliance": {
+        "title": "Cumplimiento Normativo",
+        "description": "Mehmiro cumple con la Ley Argentina de Protección de Datos Personales (Ley 25.326) y sus modificaciones, así como con las mejores prácticas internacionales de privacidad y protección de datos de menores."
+      },
+      "lastUpdate": "Última actualización: 27 de Febrero de 2026"
+    },
+    "terms": {
+      "title": "Términos y condiciones",
+      "description": "Términos legales de uso de la plataforma Mehmiro para instituciones y docentes.",
+      "highlights": [
+        {
+          "title": "Tus Datos están Seguros",
+          "description": "Cumplimos con la Ley 25.326"
+        },
+        {
+          "title": "Plataforma Disponible",
+          "description": "Accesible desde cualquier dispositivo"
+        },
+        {
+          "title": "Propiedad Intelectual",
+          "description": "Tus observaciones te pertenecen"
+        }
+      ],
+      "sections": [
+        {
+          "title": "1. Aceptación de los Términos",
+          "content": "Al acceder y utilizar Mehmiro (\"la Plataforma\"), usted (\"Usuario\", \"Institución\" o \"Docente\") acepta cumplir con los presentes Términos y Condiciones (\"Términos\").\n\nSi no está de acuerdo con estos Términos, no debe acceder ni utilizar la Plataforma.\n\nMehmiro se reserva el derecho de modificar estos Términos en cualquier momento. Las modificaciones entrarán en vigor desde su publicación en la Plataforma. El uso continuo de Mehmiro después de las modificaciones constituye la aceptación de los nuevos Términos."
+        },
+        {
+          "title": "2. Descripción del Servicio",
+          "content": "Mehmiro es una plataforma digital de evaluación formativa diseñada para acompañar la labor docente. El servicio incluye:\n\n• Registro y organización de observaciones pedagógicas\n• Análisis de patrones mediante inteligencia artificial\n• Detección temprana de estudiantes que requieren atención\n• Generación de reportes y documentación\n• Colaboración entre docentes e instituciones\n\nMehmiro es una herramienta de acompañamiento pedagógico. No reemplaza el criterio profesional del docente ni constituye evaluación institucional formal."
+        },
+        {
+          "title": "3. Elegibilidad y Registro",
+          "content": "Para utilizar Mehmiro, el Usuario debe:\n\n• Ser mayor de 18 años o tener autorización de un tutor legal\n• Ser docente, coordinador, director u otro personal educativo\n• Proporcionar información veraz y actualizada durante el registro\n• Mantener la confidencialidad de sus credenciales de acceso\n\nLas instituciones educativas pueden crear cuentas institucionales. El representante autorizado de la institución declara tener autoridad para vincular a la institución a estos Términos."
+        },
+        {
+          "title": "4. Cuentas de Usuario y Seguridad",
+          "content": "El Usuario es responsable de:\n\n• Mantener la confidencialidad de su contraseña y datos de acceso\n• Todas las actividades que ocurran bajo su cuenta\n• Notificar inmediatamente cualquier uso no autorizado\n• Proporcionar información precisa y actualizada\n\nMehmiro no será responsable por pérdidas o daños derivados del incumplimiento de estas obligaciones.\n\nLa Plataforma puede usar autenticación de dos factores para mayor seguridad."
+        },
+        {
+          "title": "5. Datos de Estudiantes",
+          "content": "El Usuario reconoce y acepta que:\n\n• Es responsable de obtener los consentimientos necesarios de padres/tutores para el tratamiento de datos de estudiantes menores de edad\n• Debe cumplir con la Ley 25.326 de Protección de Datos Personales y sus modificaciones\n• Los datos de estudiantes son propiedad de la institución educativa\n• Debe usar los datos únicamente para fines educativos legítimos\n\nMehmiro actúa como procesador de datos en nombre de las instituciones. Los datos de estudiantes no serán utilizados para entrenamiento de modelos de IA más allá de lo necesario para prestar el servicio."
+        },
+        {
+          "title": "6. Uso Aceptable",
+          "content": "El Usuario se compromete a NO usar Mehmiro para:\n\n• Actividades ilegales o que infrinjan derechos de terceros\n• Registrar información falsa, difamatoria o violenta\n• Compartir contenido adulto, ofensivo o discriminatorio\n• Intentar acceder a cuentas de otros usuarios\n• Interferir con el funcionamiento de la Plataforma\n• Usar la Plataforma de manera que pueda dañar, desactivar o sobrecargar servidores\n\nMehmiro se reserva el derecho de suspender o cancelar cuentas que violen estos términos."
+        },
+        {
+          "title": "7. Propiedad Intelectual",
+          "content": "Mehmiro y todo su contenido, incluyendo pero no limitando a:\n\n• Código fuente, algoritmos y tecnología\n• Diseños, gráficos e interfaces\n• Marcas comerciales y logos\n• Documentación y materiales de marketing\n\nSon propiedad de Mehmiro y están protegidos por leyes de propiedad intelectual argentina e internacionales.\n\nEl Usuario conserva la propiedad de las observaciones y contenido que registra, pero otorga a Mehmiro una licencia limitada para operar la Plataforma y mejorar el Servicio."
+        },
+        {
+          "title": "8. Privacidad y Protección de Datos",
+          "content": "El procesamiento de datos personales en Mehmiro se rige por nuestra Política de Privacidad, que forma parte integrante de estos Términos.\n\nAl usar Mehmiro, el Usuario consiente el tratamiento de sus datos personales y los de los estudiantes según lo descrito en la Política de Privacidad.\n\nMehmiro implementa medidas de seguridad apropiadas para proteger los datos, pero no puede garantizar seguridad absoluta. El Usuario debe tomar sus propias precauciones."
+        },
+        {
+          "title": "9. Planes y Pagos",
+          "content": "Mehmiro ofrece planes gratuitos y pagos:\n\n• **Plan Gratuito**: Funcionalidades básicas con limitaciones de usuarios y almacenamiento.\n• **Planes Pagos**: Acceso completo según el plan seleccionado.\n\nLos precios de los planes pagos se indican en la Plataforma y pueden cambiar con previo aviso. Los cambios no afectan suscripciones ya pagadas hasta su renovación.\n\nEl pago se realiza por período (mensual o anual). La suscripción se renueva automáticamente salvo cancelación.\n\nEl Usuario puede cancelar su suscripción en cualquier momento desde su panel de cuenta."
+        },
+        {
+          "title": "10. Limitación de Responsabilidad",
+          "content": "Mehmiro se proporciona \"tal cual\" y \"según disponibilidad\".\n\nMehmiro no garantiza que:\n• El servicio será ininterrumpido, seguro o libre de errores\n• Los resultados obtenidos serán exactos o confiables\n• La calidad satisfará las expectativas del Usuario\n\nEn la medida máxima permitida por la ley, Mehmiro no será responsable por:\n• Daños indirectos, incidentales o consecuenciales\n• Pérdida de datos, oportunidades o ingresos\n• Costos de adquisición de bienes sustitutos\n\nLa responsabilidad total de Mehmiro no excederá el monto pagado por el Usuario en los últimos 12 meses."
+        },
+        {
+          "title": "11. Indemnización",
+          "content": "El Usuario acepta indemnizar y mantener indemne a Mehmiro, sus directores, empleados y agentes de cualquier reclamo, demanda, pérdida o gasto (incluyendo honorarios legales) derivado de:\n\n• El uso de la Plataforma por el Usuario\n• La violación de estos Términos\n• El contenido que el Usuario registre en la Plataforma\n• Los datos de estudiantes bajo su responsabilidad"
+        },
+        {
+          "title": "12. Terminación",
+          "content": "Mehmiro puede terminar estos Términos y cancelar el acceso al Usuario:\n\n• Por conveniencia, con aviso previo\n• Inmediatamente por violación grave de los Términos\n• Por requerimiento legal\n\nAl terminar:\n• El acceso a la Plataforma será desactivado\n• Los datos podrán ser eliminados según la Política de Retención\n• Las obligaciones pendientes (pagos) permanecerán en vigor\n\nEl Usuario puede solicitar eliminación de su cuenta y datos en cualquier momento."
+        },
+        {
+          "title": "13. Ley Aplicable y Resolución de Conflictos",
+          "content": "Estos Términos se rigen por las leyes de la República Argentina.\n\nCualquier disputa derivada de estos Términos será resuelta exclusivamente por los tribunales ordinarios de la Ciudad de Buenos Aires, renunciando a cualquier otro fuero que pudiera corresponder.\n\nAntes de iniciar un litigio, las partes intentarán resolver el conflicto de buena fe mediante negociación directa."
+        },
+        {
+          "title": "14. Disposiciones Generales",
+          "content": "• **Integridad del acuerdo**: Estos Términos, junto con la Política de Privacidad, constituyen el acuerdo completo entre las partes.\n\n• **Divisibilidad**: Si alguna disposición es declarada inválida, las demás permanecerán en vigor.\n\n• **Renuncia**: El hecho de que Mehmiro no ejercite un derecho no constituye renuncia a ejercerlo en el futuro.\n\n• **Cesión**: El Usuario no puede ceder sus derechos bajo estos Términos sin consentimiento escrito de Mehmiro.\n\n• **Notificaciones**: Las notificaciones se considerarán válidas cuando se envíen al email registrado o se publiquen en la Plataforma."
+        },
+        {
+          "title": "15. Contacto",
+          "content": "Para cualquier consulta sobre estos Términos:\n\n• **Email**: legal@mehmiro.com\n• **Dirección**: Buenos Aires, Argentina\n• **Formulario de contacto**: mehmiro.com/contacto\n\nResponderemos tu consulta dentro de los 10 días hábiles."
+        }
+      ],
+      "lastUpdate": "Última actualización: 27 de Febrero de 2026",
+      "privacyLink": "Ver Política de Privacidad"
     }
   },
   "story": {
