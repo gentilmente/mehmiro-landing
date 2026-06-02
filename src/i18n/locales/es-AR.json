@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Inicio",
-    "howItWorks": "Cómo funciona",
+    "howItWorks": "Aprendé",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
     "languageToggle": "Cambiar idioma a {{language}}"
@@ -230,6 +230,386 @@
     "features": {
       "title": "Características",
       "description": "Descubrí las herramientas de Mehmiro que amplifican tu mirada pedagógica: organización de observaciones, detección de patrones y reportes accionables."
+    },
+    "learn": {
+      "title": "Aprendé Mehmiro",
+      "description": "Guías paso a paso para dominar cada función. Desde el primer paso hasta la evaluación avanzada con IA.",
+      "coursesTitle": "Cursos Disponibles",
+      "startCourse": "Comenzar",
+      "courseObjectives": "Qué vas a aprender",
+      "courseSteps": {
+        "title": "Pasos del curso"
+      },
+      "courseNotFound": "Curso no encontrado",
+      "backToLearn": "Volver a cursos",
+      "quickStats": [
+        { "value": "3h", "label": "Contenido total" },
+        { "value": "100%", "label": "Gratuito" },
+        { "value": "∞", "label": "Acceso ilimitado" }
+      ],
+      "categories": [
+        { "name": "Primeros pasos", "count": 2 },
+        { "name": "Gestión", "count": 2 },
+        { "name": "Evaluación", "count": 3 },
+        { "name": "IA", "count": 2 }
+      ],
+      "courses": [
+        {
+          "id": "getting-started",
+          "title": "Primeros Pasos",
+          "description": "Creá tu trial anónimo, completá el onboarding con IA y descubrí el dashboard inteligente.",
+          "level": "Principiante",
+          "duration": "10 min",
+          "category": "Primeros pasos"
+        },
+        {
+          "id": "institutions",
+          "title": "Gestión Institucional",
+          "description": "Creá instituciones, asigná roles y gestioná invitaciones para profesores.",
+          "level": "Intermedio",
+          "duration": "15 min",
+          "category": "Gestión"
+        },
+        {
+          "id": "roster",
+          "title": "Lista de Alumnos",
+          "description": "Agregá alumnos manualmente, pegá una lista, subí CSV y personalizá avatares.",
+          "level": "Principiante",
+          "duration": "10 min",
+          "category": "Gestión"
+        },
+        {
+          "id": "schedule",
+          "title": "Horario y Sesiones",
+          "description": "Navegá el calendario diario, creá sesiones y vinculá lecciones.",
+          "level": "Principiante",
+          "duration": "15 min",
+          "category": "Primeros pasos"
+        },
+        {
+          "id": "lessons",
+          "title": "Lecciones con IA",
+          "description": "Creá lecciones manualmente o con IA, editá, programá y gestioná el banco de lecciones.",
+          "level": "Intermedio",
+          "duration": "20 min",
+          "category": "IA"
+        },
+        {
+          "id": "yearly-plan",
+          "title": "Plan Anual",
+          "description": "Cargá el plan curricular anual y generá borradores con IA.",
+          "level": "Intermedio",
+          "duration": "15 min",
+          "category": "IA"
+        },
+        {
+          "id": "rubrics",
+          "title": "Sistema de Rúbricas",
+          "description": "Lentes de evaluación, dimensiones, escalas y criterios por lección.",
+          "level": "Avanzado",
+          "duration": "30 min",
+          "category": "Evaluación"
+        },
+        {
+          "id": "observation",
+          "title": "Observación con IA",
+          "description": "El flujo de 3 etapas: narrativa libre, extracción de alumnos y análisis con IA.",
+          "level": "Avanzado",
+          "duration": "25 min",
+          "category": "Evaluación"
+        },
+        {
+          "id": "student-profiles",
+          "title": "Perfiles de Alumnos",
+          "description": "Gráficos interactivos, historial de evaluaciones y análisis individual con IA.",
+          "level": "Intermedio",
+          "duration": "15 min",
+          "category": "Evaluación"
+        }
+      ],
+      "nextSteps": {
+        "title": "¿Seguís explorando?",
+        "description": "Completá un curso y descubrí más funcionalidades",
+        "browseCourses": "Ver todos los cursos",
+        "tryMehmiro": "Probar Mehmiro gratis"
+      },
+      "cta": {
+        "title": "¿Listo para transformar tu práctica docente?",
+        "description": "Unite a los más de 500 docentes que ya están usando Mehmiro para acompañar el aprendizaje de sus estudiantes.",
+        "button": "Comenzar gratis"
+      },
+      "courseSteps": {
+        "getting-started": {
+          "objectives": [
+            "Crear un trial anónimo de 7 días",
+            "Completar el onboarding asistido por IA",
+            "Navegar el dashboard inteligente",
+            "Entender cómo reclamar tu progreso"
+          ],
+          "steps": [
+            {
+              "title": "Accedé sin registrarte",
+              "description": "Mehmiro te permite probar la app sin crear una cuenta. Hacé clic en 'Probar demo gratis' y accedés a un trial anónimo de 7 días. Podés leer y escribir libremente.",
+              "tip": "Si ya tenés cuenta de Google, podés iniciar sesión directamente y saltarte el trial."
+            },
+            {
+              "title": "Onboarding con IA",
+              "description": "La IA te guía para configurar tu primera clase. Describí tu materia, grado y escuela en lenguaje natural. La IA genera un borrador de lista de alumnos, variables de evaluación y preferencias pedagógicas.",
+              "tip": "Sé lo más específico posible: la IA usa el contexto para personalizar todo el flujo."
+            },
+            {
+              "title": "Explorá el dashboard",
+              "description": "El dashboard agrupa tus clases por institución, muestra el estado de configuración y te redirige al horario del día como punto de entrada principal.",
+              "tip": "Si pertenecés a varias instituciones, vas a ver cada una separada con sus clases."
+            },
+            {
+              "title": "Reclamá tu progreso",
+              "description": "Cuando el trial de 7 días expira, podés seguir leyendo evaluaciones pero no escribir. Si te registrás con una cuenta, recuperás todo lo que hiciste durante el trial.",
+              "tip": "Registrate antes de que expire el trial para no perder nada."
+            }
+          ]
+        },
+        "institutions": {
+          "objectives": [
+            "Crear y configurar una institución",
+            "Asignar roles (owner, admin, teacher, assistant)",
+            "Gestionar invitaciones por email",
+            "Entender la visibilidad institucional"
+          ],
+          "steps": [
+            {
+              "title": "Creá tu institución",
+              "description": "Las clases ya no se crean con texto libre de escuela. Ahora se vinculan a una institución real con membresías. Cada institución tiene su propio espacio con logo, preferencias pedagógicas y lista de emails permitidos.",
+              "tip": "Si ya te invitaron a una institución, no necesitás crear una nueva."
+            },
+            {
+              "title": "Roles y permisos",
+              "description": "Hay cuatro roles: principal/owner (control total), admin/administrator (gestión de clases y profesores), teacher (docente de clase) y assistant (ayudante). Cada rol tiene permisos distintos.",
+              "tip": "El rol de principal puede ver todas las clases de la institución, incluso sin ser profesor directo."
+            },
+            {
+              "title": "Invitá profesores por email",
+              "description": "Desde la info de la escuela, gestioná una lista de emails permitidos. Un principal puede crear una clase y asignarla al email de un profesor. Si el profesor ya aceptó la invitación, se crea la membresía; si no, queda pendiente.",
+              "tip": "El profesor debe iniciar sesión con el mismo email con el que fue invitado."
+            },
+            {
+              "title": "Info de la escuela",
+              "description": "Los roles administrativos editan preferencias pedagógicas, suben el logo y gestionan emails permitidos. Estas preferencias se usan como contexto para las sugerencias de IA en toda la institución.",
+              "tip": "Configurar bien las preferencias mejora la calidad de las sugerencias de IA."
+            }
+          ]
+        },
+        "roster": {
+          "objectives": [
+            "Agregar alumnos manualmente",
+            "Pegar una lista de nombres",
+            "Subir un archivo CSV",
+            "Gestionar avatares y colores"
+          ],
+          "steps": [
+            {
+              "title": "Agregar un alumno manualmente",
+              "description": "Desde la Lista de alumnos, hacé clic en 'Agregar alumno'. Completá nombre, color de avatar y tipo de personalidad. Cada alumno tiene un avatar visual con color personalizable.",
+              "tip": "El tipo de personalidad ayuda a la IA a contextualizar mejor las observaciones."
+            },
+            {
+              "title": "Pegar lista de alumnos",
+              "description": "Si tenés una lista de nombres en un documento, pegala en el textarea. Mehmiro parsea cada línea, previsualiza las filas y detecta duplicados antes de confirmar la creación masiva.",
+              "tip": "Un nombre por línea. Si un alumno tiene nombre y apellido, escribilos en la misma línea."
+            },
+            {
+              "title": "Subir CSV",
+              "description": "Subí un archivo CSV con columnas: name, dob, personalityType, avatarColor. Mehmiro muestra una previsualización con validación antes de confirmar la creación masiva.",
+              "tip": "La columna 'name' es obligatoria. Las demás son opcionales."
+            },
+            {
+              "title": "Editar y archivar",
+              "description": "Podés editar el nombre directamente desde la lista (edición inline). Desde el perfil del estudiante, podés archivar alumnos: se oculta de la lista pero se preserva todo el historial de evaluaciones.",
+              "tip": "Archivar no elimina datos. El historial se conserva para siempre."
+            }
+          ]
+        },
+        "schedule": {
+          "objectives": [
+            "Navegar la vista diaria del calendario",
+            "Crear sesiones de clase manualmente",
+            "Vincular lecciones a sesiones",
+            "Usar el selector de fecha compartido"
+          ],
+          "steps": [
+            {
+              "title": "Vista diaria del calendario",
+              "description": "El horario muestra las sesiones de clase del día seleccionado. Cada evento puede tener una lección/contenido asociada. Hacé clic en un evento para ver el resumen con datos de la sesión y la lección vinculada.",
+              "tip": "El horario es la entrada por defecto del dashboard y del onboarding."
+            },
+            {
+              "title": "Selector de fecha compartido",
+              "description": "La barra de navegación de fecha se reutiliza entre lista, contenidos, observaciones y perfiles de alumnos. La fecha vive en la URL (date=YYYY-MM-DD), así que podés compartir links directos.",
+              "tip": "Cambiá la fecha desde cualquier página y se sincroniza en toda la clase."
+            },
+            {
+              "title": "Crear sesión manualmente",
+              "description": "Desde el horario, hacé clic en crear sesión. Completá fecha, hora y datos de la clase. Desde el mismo diálogo podés crear una lección nueva en el mismo flujo.",
+              "tip": "Crear una lección junto con la sesión ahorra tiempo."
+            },
+            {
+              "title": "Profundizar en sesiones",
+              "description": "Al hacer clic en un evento del horario, se abre un diálogo con datos de la sesión y la lección vinculada, con deep-link directo a la tarjeta de la lección.",
+              "tip": "Los deep-links te permiten compartir sesiones específicas con colegas."
+            }
+          ]
+        },
+        "lessons": {
+          "objectives": [
+            "Crear lecciones manualmente y con IA",
+            "Navegar entre vista Día y vista Banco",
+            "Programar lecciones desde el banco",
+            "Editar y eliminar lecciones"
+          ],
+          "steps": [
+            {
+              "title": "Lista de lecciones",
+              "description": "Las lecciones se muestran en interfaz de tarjetas deslizables. Hay dos vistas: Día (contenido planificado para la fecha seleccionada) y Banco (lecciones huérfanas/candidatas que no están vinculadas a ninguna sesión).",
+              "tip": "El Banco es útil para crear contenido con anticipación y programarlo después."
+            },
+            {
+              "title": "Crear lección manualmente",
+              "description": "Completá un formulario con título, fecha, descripción, objetivos y actividades. La lección queda disponible en el banco o vinculada a una sesión si elegiste una fecha con evento.",
+              "tip": "Los objetivos bien definidos ayudan a la IA a generar mejores rúbricas."
+            },
+            {
+              "title": "Crear lección con IA",
+              "description": "La IA genera dos opciones usando la fecha seleccionada, el contexto de la clase, el plan anual y las preferencias institucionales. El profesor elige una, revisa el formulario y guarda.",
+              "tip": "La IA se vuelve más precisa cuantas más preferencias tenga configuradas la institución."
+            },
+            {
+              "title": "Programar desde el banco",
+              "description": "Una lección huérfana se puede vincular directamente a una sesión de clase desde el horario o desde el banco. También podés editar y eliminar lecciones desde la tarjeta activa.",
+              "tip": "Programar con anticipación te permite tener todo listo antes de la clase."
+            }
+          ]
+        },
+        "yearly-plan": {
+          "objectives": [
+            "Cargar el plan curricular anual",
+            "Generar un borrador con IA",
+            "Entender cómo el plan afecta las sugerencias de IA",
+            "Editar y actualizar el plan"
+          ],
+          "steps": [
+            {
+              "title": "Acceder al plan anual",
+              "description": "El plan anual vive en /class/:id/yearly-plan. Es el espacio para cargar el plan curricular anual de la clase, con título, contenido, notas del profesor, tipo de fuente y estado.",
+              "tip": "El plan anual es opcional pero mejora mucho las sugerencias de IA."
+            },
+            {
+              "title": "Borrador con IA",
+              "description": "La IA puede generar un plan anual a partir del contenido existente y notas de ajuste del profesor. El borrador es solo lectura hasta que el profesor lo acepta y guarda.",
+              "tip": "Proporcioná notas de ajuste para que la IA personalice el plan a tu contexto."
+            },
+            {
+              "title": "Contexto para lecciones",
+              "description": "Las sugerencias de IA para lecciones ahora incluyen el plan anual guardado como contexto del prompt. Esto significa que las lecciones sugeridas son coherentes con tu planificación.",
+              "tip": "Un plan anual detallado produce lecciones más precisas y relevantes."
+            },
+            {
+              "title": "Editar y actualizar",
+              "description": "El plan anual no es estático. Podés actualizarlo en cualquier momento a medida que avanza el año lectivo. Los cambios afectan las futuras sugerencias de IA.",
+              "tip": "Revisá el plan periódicamente para mantenerlo actualizado."
+            }
+          ]
+        },
+        "rubrics": {
+          "objectives": [
+            "Entender el modelo de datos de rúbricas",
+            "Crear rúbricas por lección/sesión",
+            "Usar lentes de evaluación reutilizables",
+            "Interpretar los gráficos de evaluación"
+          ],
+          "steps": [
+            {
+              "title": "Modelo de datos",
+              "description": "El sistema de rúbricas incluye: assessment_lenses (arquetipos reutilizables), assessment_dimensions (dimensiones de desarrollo estudiantil), assessment_dimension_sets (grupos de dimensiones), assessment_scales (escalas de puntuación), rubrics, rubric_criteria, rubric_level_descriptors y rubric_assessment_results.",
+              "tip": "No necesitás entender todo el modelo para empezar. La IA te ayuda a crear rúbricas automáticamente."
+            },
+            {
+              "title": "Separación de dimensiones",
+              "description": "Hay dos tipos de dimensiones: institucionales/globales (convivencia, comportamiento, autonomía, colaboración) y propias de la materia (conocimiento técnico, metodológico, procedimental).",
+              "tip": "Las dimensiones institucionales son compartidas entre todas las clases de la institución."
+            },
+            {
+              "title": "Rúbricas por lección",
+              "description": "Cada lección puede tener su propia rúbrica que combina dimensiones institucionales con criterios específicos de la actividad. El espacio de trabajo /class/:id/rubrics reemplaza la superficie legacy de Variables.",
+              "tip": "Crear una rúbrica por lección permite evaluaciones más específicas y relevantes."
+            },
+            {
+              "title": "Lentes de evaluación reutilizables",
+              "description": "La IA puede razonar sobre evidencia usando arquetipos como transferencia, fluidez procedimental, comunicación, colaboración, autorregulación y creatividad. Los gráficos consumen valores normalizados preservando criterio, escala, descriptor, profesor fuente, clase, lección, sesión y evidencia textual.",
+              "tip": "Los lentes te permiten evaluar el mismo aspecto en diferentes contextos."
+            }
+          ]
+        },
+        "observation": {
+          "objectives": [
+            "Completar el flujo de 3 etapas de observación",
+            "Entender la detección inteligente de nombres",
+            "Resolver ambigüedades de alumnos",
+            "Aplicar o rechazar sugerencias de IA"
+          ],
+          "steps": [
+            {
+              "title": "Etapa 1: Narrativa libre",
+              "description": "Escribí lo que pasó en la clase en lenguaje natural. No hay formato requerido. Escribí como si le contaras a un colega qué observaste. Podés ser tan detallado o conciso como quieras.",
+              "tip": "Incluir nombres de alumnos y descripciones específicas de comportamientos ayuda a la IA."
+            },
+            {
+              "title": "Etapa 2: Revisión de extracción",
+              "description": "La IA identifica qué alumnos fueron mencionados (matching contra la lista), extrae un fragmento de observación por alumno, y marca si es analizable para evaluación. Podés editar fragmentos, quitar alumnos mal identificados o resolver ambigüedades.",
+              "tip": "La IA entiende referencias informales, apodos e iniciales. Si hay ambigüedad, te pide que resuelvas."
+            },
+            {
+              "title": "Etapa 3: Análisis por alumno",
+              "description": "Para cada par aprobado, la IA sugiere valores de evaluación según la rúbrica de la lección/sesión. El profesor aplica o rechaza por alumno. Nada se guarda automáticamente hasta que explícitamente lo aplicás.",
+              "tip": "Podés rechazar sugerencias que no reflejen tu criterio. La IA es una herramienta, no un juez."
+            },
+            {
+              "title": "Manejo de errores y recuperación",
+              "description": "Si hay límite de cuota (429) o error de IA, se informa al profesor, se detienen las llamadas restantes y se guarda el estado para reintentar. La narrativa, filas extraídas y resultados parciales se guardan en session storage para no perder el trabajo si se cierra el modal.",
+              "tip": "Si algo falla, podés cerrar y volver a abrir sin perder lo que ya hiciste."
+            }
+          ]
+        },
+        "student-profiles": {
+          "objectives": [
+            "Acceder al perfil individual de un alumno",
+            "Interpretar los gráficos de evaluación",
+            "Generar análisis con IA",
+            "Exportar historial de insights"
+          ],
+          "steps": [
+            {
+              "title": "Página del perfil",
+              "description": "Cada alumno tiene una página /student/:id con su perfil completo. Incluye datos personales, avatar, historial de evaluaciones y gráficos interactivos.",
+              "tip": "Accedé al perfil desde la lista de alumnos o desde cualquier link de alumno."
+            },
+            {
+              "title": "Gráficos interactivos",
+              "description": "Los gráficos incluyen polar, radar y línea con Chart.js mostrando el historial de evaluaciones. Podés filtrar por fecha, lección, dimensión y profesor fuente.",
+              "tip": "El gráfico radar es ideal para ver fortalezas y debilidades de un alumno de un vistazo."
+            },
+            {
+              "title": "Análisis con IA",
+              "description": "El botón de análisis con IA genera un informe individual del alumno basado en su historial de evaluaciones y la observación del profesor. El flujo incluye aprobación y exportación.",
+              "tip": "El análisis IA es un punto de partida, no un diagnóstico. Tu criterio siempre prevalece."
+            },
+            {
+              "title": "Historial de insights",
+              "description": "Los reportes escritos por el profesor tienen un flujo de aprobación/exportación. Podés generar informes para compartir con familias, orientadores u otros docentes.",
+              "tip": "Los insights aprobados se pueden exportar como PDF para reuniones con familias."
+            }
+          ]
+        }
+      }
     },
     "forEducators": {
       "title": "Para educadores",

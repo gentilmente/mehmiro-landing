@@ -160,7 +160,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="/como-funciona"
+                  href="/learn"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">

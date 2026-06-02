@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "howItWorks": "How it works",
+    "howItWorks": "Learn",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "languageToggle": "Change language to {{language}}"
@@ -230,6 +230,387 @@
     "features": {
       "title": "Features",
       "description": "Discover Mehmiro's tools that amplify your pedagogical gaze: observation organization, pattern detection and actionable reports."
+    },
+    "learn": {
+      "title": "Learn Mehmiro",
+      "description": "Step-by-step guides to master every feature. From first steps to advanced AI-powered evaluation.",
+      "coursesTitle": "Available Courses",
+      "startCourse": "Start",
+      "courseObjectives": "What you'll learn",
+      "courseSteps": {
+        "title": "Course steps"
+      },
+      "courseNotFound": "Course not found",
+      "backToLearn": "Back to courses",
+      "quickStats": [
+        { "value": "9", "label": "Available courses" },
+        { "value": "3h", "label": "Total content" },
+        { "value": "100%", "label": "Free" },
+        { "value": "∞", "label": "Unlimited access" }
+      ],
+      "categories": [
+        { "name": "Getting started", "count": 2 },
+        { "name": "Management", "count": 2 },
+        { "name": "Evaluation", "count": 3 },
+        { "name": "AI", "count": 2 }
+      ],
+      "courses": [
+        {
+          "id": "getting-started",
+          "title": "Getting Started",
+          "description": "Create your anonymous trial, complete AI onboarding and discover the smart dashboard.",
+          "level": "Beginner",
+          "duration": "10 min",
+          "category": "Getting started"
+        },
+        {
+          "id": "institutions",
+          "title": "Institutional Management",
+          "description": "Create institutions, assign roles and manage teacher invitations.",
+          "level": "Intermediate",
+          "duration": "15 min",
+          "category": "Management"
+        },
+        {
+          "id": "roster",
+          "title": "Student Roster",
+          "description": "Add students manually, paste a list, upload CSV and customize avatars.",
+          "level": "Beginner",
+          "duration": "10 min",
+          "category": "Management"
+        },
+        {
+          "id": "schedule",
+          "title": "Schedule & Sessions",
+          "description": "Navigate the daily calendar, create class sessions and link lessons.",
+          "level": "Beginner",
+          "duration": "15 min",
+          "category": "Getting started"
+        },
+        {
+          "id": "lessons",
+          "title": "AI-Powered Lessons",
+          "description": "Create lessons manually or with AI, edit, schedule and manage the lesson bank.",
+          "level": "Intermediate",
+          "duration": "20 min",
+          "category": "AI"
+        },
+        {
+          "id": "yearly-plan",
+          "title": "Yearly Plan",
+          "description": "Load the yearly curriculum plan and generate AI drafts.",
+          "level": "Intermediate",
+          "duration": "15 min",
+          "category": "AI"
+        },
+        {
+          "id": "rubrics",
+          "title": "Rubric System",
+          "description": "Assessment lenses, dimensions, scales and criteria per lesson.",
+          "level": "Advanced",
+          "duration": "30 min",
+          "category": "Evaluation"
+        },
+        {
+          "id": "observation",
+          "title": "AI Observation",
+          "description": "The 3-stage flow: free narrative, student extraction and AI analysis.",
+          "level": "Advanced",
+          "duration": "25 min",
+          "category": "Evaluation"
+        },
+        {
+          "id": "student-profiles",
+          "title": "Student Profiles",
+          "description": "Interactive charts, evaluation history and individual AI analysis.",
+          "level": "Intermediate",
+          "duration": "15 min",
+          "category": "Evaluation"
+        }
+      ],
+      "nextSteps": {
+        "title": "Keep exploring?",
+        "description": "Complete a course and discover more features",
+        "browseCourses": "Browse all courses",
+        "tryMehmiro": "Try Mehmiro free"
+      },
+      "cta": {
+        "title": "Ready to transform your teaching practice?",
+        "description": "Join over 500 teachers already using Mehmiro to support their students' learning.",
+        "button": "Start for free"
+      },
+      "courseSteps": {
+        "getting-started": {
+          "objectives": [
+            "Create an anonymous 7-day trial",
+            "Complete AI-assisted onboarding",
+            "Navigate the smart dashboard",
+            "Understand how to claim your progress"
+          ],
+          "steps": [
+            {
+              "title": "Access without signing up",
+              "description": "Mehmiro lets you try the app without creating an account. Click 'Try the free demo' and you get an anonymous 7-day trial. You can read and write freely.",
+              "tip": "If you already have a Google account, you can sign in directly and skip the trial."
+            },
+            {
+              "title": "AI onboarding",
+              "description": "The AI guides you to set up your first class. Describe your subject, grade and school in natural language. The AI generates a draft student list, assessment variables and pedagogical preferences.",
+              "tip": "Be as specific as possible: the AI uses context to personalize the entire flow."
+            },
+            {
+              "title": "Explore the dashboard",
+              "description": "The dashboard groups your classes by institution, shows configuration status and redirects you to the daily schedule as the main entry point.",
+              "tip": "If you belong to multiple institutions, you'll see each one separately with its classes."
+            },
+            {
+              "title": "Claim your progress",
+              "description": "When the 7-day trial expires, you can still read evaluations but not write. If you register with an account, you recover everything you did during the trial.",
+              "tip": "Register before the trial expires so you don't lose anything."
+            }
+          ]
+        },
+        "institutions": {
+          "objectives": [
+            "Create and configure an institution",
+            "Assign roles (owner, admin, teacher, assistant)",
+            "Manage email invitations",
+            "Understand institutional visibility"
+          ],
+          "steps": [
+            {
+              "title": "Create your institution",
+              "description": "Classes are no longer created with free-text school names. They're now linked to a real institution with memberships. Each institution has its own space with logo, pedagogical preferences and allowed email list.",
+              "tip": "If you've already been invited to an institution, you don't need to create a new one."
+            },
+            {
+              "title": "Roles and permissions",
+              "description": "There are four roles: principal/owner (full control), admin/administrator (class and teacher management), teacher (class teacher) and assistant (helper). Each role has different permissions.",
+              "tip": "The principal role can see all classes in the institution, even without being a direct teacher."
+            },
+            {
+              "title": "Invite teachers by email",
+              "description": "From the school info, manage a list of allowed emails. A principal can create a class and assign it to a teacher's email. If the teacher already accepted the invitation, the membership is created; if not, it stays pending.",
+              "tip": "The teacher must sign in with the same email they were invited with."
+            },
+            {
+              "title": "School info",
+              "description": "Administrative roles edit pedagogical preferences, upload the logo and manage allowed emails. These preferences are used as context for AI suggestions across the institution.",
+              "tip": "Setting up preferences well improves the quality of AI suggestions."
+            }
+          ]
+        },
+        "roster": {
+          "objectives": [
+            "Add students manually",
+            "Paste a list of names",
+            "Upload a CSV file",
+            "Manage avatars and colors"
+          ],
+          "steps": [
+            {
+              "title": "Add a student manually",
+              "description": "From the Student List, click 'Add student'. Fill in name, avatar color and personality type. Each student has a visual avatar with customizable color.",
+              "tip": "Personality type helps the AI better contextualize observations."
+            },
+            {
+              "title": "Paste student list",
+              "description": "If you have a list of names in a document, paste it into the textarea. Mehmiro parses each line, previews the rows and detects duplicates before confirming bulk creation.",
+              "tip": "One name per line. If a student has first and last name, write them on the same line."
+            },
+            {
+              "title": "Upload CSV",
+              "description": "Upload a CSV file with columns: name, dob, personalityType, avatarColor. Mehmiro shows a preview with validation before confirming bulk creation.",
+              "tip": "The 'name' column is required. The others are optional."
+            },
+            {
+              "title": "Edit and archive",
+              "description": "You can edit the name directly from the list (inline editing). From the student profile, you can archive students: it hides them from the list but preserves all evaluation history.",
+              "tip": "Archiving doesn't delete data. History is preserved forever."
+            }
+          ]
+        },
+        "schedule": {
+          "objectives": [
+            "Navigate the daily calendar view",
+            "Create class sessions manually",
+            "Link lessons to sessions",
+            "Use the shared date selector"
+          ],
+          "steps": [
+            {
+              "title": "Daily calendar view",
+              "description": "The schedule shows class sessions for the selected day. Each event can have an associated lesson/content. Click on an event to see the summary with session data and the linked lesson.",
+              "tip": "The schedule is the default entry point from the dashboard and onboarding."
+            },
+            {
+              "title": "Shared date selector",
+              "description": "The date navigation bar is reused across roster, content, observations and student profiles. The date lives in the URL (date=YYYY-MM-DD), so you can share direct links.",
+              "tip": "Change the date from any page and it syncs across the entire class."
+            },
+            {
+              "title": "Create session manually",
+              "description": "From the schedule, click to create a session. Fill in date, time and class data. From the same dialog you can create a new lesson in the same flow.",
+              "tip": "Creating a lesson alongside a session saves time."
+            },
+            {
+              "title": "Deep-dive into sessions",
+              "description": "Clicking a schedule event opens a dialog with session data and the linked lesson, with a deep-link directly to the lesson card.",
+              "tip": "Deep-links let you share specific sessions with colleagues."
+            }
+          ]
+        },
+        "lessons": {
+          "objectives": [
+            "Create lessons manually and with AI",
+            "Navigate between Day view and Bank view",
+            "Schedule lessons from the bank",
+            "Edit and delete lessons"
+          ],
+          "steps": [
+            {
+              "title": "Lesson list",
+              "description": "Lessons are displayed as a swipable card interface. There are two views: Day (content planned for the selected date) and Bank (orphan/candidate lessons not linked to any class session).",
+              "tip": "The Bank is useful for creating content in advance and scheduling it later."
+            },
+            {
+              "title": "Create a lesson manually",
+              "description": "Fill out a form with title, date, description, objectives and activities. The lesson becomes available in the bank or linked to a session if you chose a date with an event.",
+              "tip": "Well-defined objectives help the AI generate better rubrics."
+            },
+            {
+              "title": "Create a lesson with AI",
+              "description": "The AI generates two options using the selected date, class context, yearly plan and institutional preferences. The teacher chooses one, reviews the form and saves.",
+              "tip": "The AI becomes more accurate the more preferences the institution has configured."
+            },
+            {
+              "title": "Schedule from the bank",
+              "description": "An orphan lesson can be linked directly to a class session from the schedule or from the bank. You can also edit and delete lessons from the active card.",
+              "tip": "Scheduling in advance lets you have everything ready before class."
+            }
+          ]
+        },
+        "yearly-plan": {
+          "objectives": [
+            "Load the yearly curriculum plan",
+            "Generate an AI draft",
+            "Understand how the plan affects AI suggestions",
+            "Edit and update the plan"
+          ],
+          "steps": [
+            {
+              "title": "Access the yearly plan",
+              "description": "The yearly plan lives at /class/:id/yearly-plan. It's the space to load the yearly curriculum plan for the class, with title, content, teacher notes, source type and status.",
+              "tip": "The yearly plan is optional but greatly improves AI suggestions."
+            },
+            {
+              "title": "AI draft",
+              "description": "The AI can generate a yearly plan from existing content and teacher adjustment notes. The draft is read-only until the teacher accepts and saves it.",
+              "tip": "Provide adjustment notes so the AI personalizes the plan to your context."
+            },
+            {
+              "title": "Context for lessons",
+              "description": "AI suggestions for lessons now include the saved yearly plan as prompt context. This means suggested lessons are coherent with your planning.",
+              "tip": "A detailed yearly plan produces more accurate and relevant lessons."
+            },
+            {
+              "title": "Edit and update",
+              "description": "The yearly plan isn't static. You can update it at any time as the school year progresses. Changes affect future AI suggestions.",
+              "tip": "Review the plan periodically to keep it current."
+            }
+          ]
+        },
+        "rubrics": {
+          "objectives": [
+            "Understand the rubric data model",
+            "Create rubrics per lesson/session",
+            "Use reusable assessment lenses",
+            "Interpret evaluation charts"
+          ],
+          "steps": [
+            {
+              "title": "Data model",
+              "description": "The rubric system includes: assessment_lenses (reusable archetypes), assessment_dimensions (student development dimensions), assessment_dimension_sets (dimension groups), assessment_scales (scoring scales), rubrics, rubric_criteria, rubric_level_descriptors and rubric_assessment_results.",
+              "tip": "You don't need to understand the entire model to get started. The AI helps you create rubrics automatically."
+            },
+            {
+              "title": "Dimension separation",
+              "description": "There are two types of dimensions: institutional/global (coexistence, behavior, autonomy, collaboration) and subject-specific (technical knowledge, methodological, procedural).",
+              "tip": "Institutional dimensions are shared across all classes in the institution."
+            },
+            {
+              "title": "Rubrics per lesson",
+              "description": "Each lesson can have its own rubric combining institutional dimensions with activity-specific criteria. The /class/:id/rubrics workspace replaces the legacy Variables surface.",
+              "tip": "Creating a rubric per lesson enables more specific and relevant evaluations."
+            },
+            {
+              "title": "Reusable assessment lenses",
+              "description": "The AI can reason about evidence using archetypes like transfer, procedural fluency, communication, collaboration, self-regulation and creativity. Charts consume normalized values preserving criterion, scale, descriptor, source teacher, class, lesson, session and textual evidence.",
+              "tip": "Lenses let you evaluate the same aspect in different contexts."
+            }
+          ]
+        },
+        "observation": {
+          "objectives": [
+            "Complete the 3-stage observation flow",
+            "Understand intelligent name detection",
+            "Resolve student ambiguities",
+            "Apply or reject AI suggestions"
+          ],
+          "steps": [
+            {
+              "title": "Stage 1: Free narrative",
+              "description": "Write what happened in class in natural language. No format required. Write as if you were telling a colleague what you observed. You can be as detailed or concise as you want.",
+              "tip": "Including student names and specific behavior descriptions helps the AI."
+            },
+            {
+              "title": "Stage 2: Extraction review",
+              "description": "The AI identifies which students were mentioned (matching against the roster), extracts an observation fragment per student, and marks if it's analyzable for evaluation. You can edit fragments, remove misidentified students or resolve ambiguities.",
+              "tip": "The AI understands informal references, nicknames and initials. If there's ambiguity, it asks you to resolve."
+            },
+            {
+              "title": "Stage 3: Per-student analysis",
+              "description": "For each approved pair, the AI suggests evaluation values according to the lesson/session rubric. The teacher applies or rejects per student. Nothing is saved automatically until you explicitly apply it.",
+              "tip": "You can reject suggestions that don't reflect your judgment. The AI is a tool, not a judge."
+            },
+            {
+              "title": "Error handling and recovery",
+              "description": "If there's a quota limit (429) or AI error, the teacher is informed, remaining calls are stopped and state is saved for retry. The narrative, extracted rows and partial results are saved in session storage so you don't lose work if the modal closes.",
+              "tip": "If something fails, you can close and reopen without losing what you've already done."
+            }
+          ]
+        },
+        "student-profiles": {
+          "objectives": [
+            "Access an individual student profile",
+            "Interpret evaluation charts",
+            "Generate AI analysis",
+            "Export insight history"
+          ],
+          "steps": [
+            {
+              "title": "Profile page",
+              "description": "Each student has a page at /student/:id with their complete profile. Includes personal data, avatar, evaluation history and interactive charts.",
+              "tip": "Access the profile from the student list or from any student link."
+            },
+            {
+              "title": "Interactive charts",
+              "description": "Charts include polar, radar and line with Chart.js showing evaluation history. You can filter by date, lesson, dimension and source teacher.",
+              "tip": "The radar chart is ideal for seeing a student's strengths and weaknesses at a glance."
+            },
+            {
+              "title": "AI analysis",
+              "description": "The AI analysis button generates an individual report for the student based on their evaluation history and the teacher's observation. The flow includes approval and export.",
+              "tip": "AI analysis is a starting point, not a diagnosis. Your judgment always prevails."
+            },
+            {
+              "title": "Insight history",
+              "description": "Reports written by the teacher have an approval/export flow. You can generate reports to share with families, counselors or other teachers.",
+              "tip": "Approved insights can be exported as PDF for family meetings."
+            }
+          ]
+        }
+      }
     },
     "forEducators": {
       "title": "For educators",

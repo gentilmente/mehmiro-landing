@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Index from "./pages";
-import ScrollyTelling from "./pages/ScrollyTelling";
+import Learn, { LearnCourse } from "./pages/Learn";
 import Features from "./pages/Features";
 import ForEducators from "./pages/ForEducators";
 import Blog from "./pages/Blog";
@@ -102,7 +102,7 @@ const Navigation = () => {
             {t("nav.home")}
           </Link>
           <Link
-            to="/como-funciona"
+            to="/learn"
             onClick={() => setMobileMenuOpen(false)}
             className="text-xl font-medium text-foreground hover:text-primary transition-colors"
           >
@@ -133,7 +133,7 @@ const Navigation = () => {
             </Link>
             <div className="w-px h-4 bg-border" />
             <Link
-              to="/como-funciona"
+              to="/learn"
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"
             >
               {t("nav.howItWorks")}
@@ -164,7 +164,8 @@ const App = () => (
       <Navigation />
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/como-funciona" element={<ScrollyTelling />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/learn/:courseId" element={<LearnCourse />} />
         <Route path="/features" element={<Features />} />
         <Route path="/for-educators" element={<ForEducators />} />
         <Route path="/blog" element={<Blog />} />
