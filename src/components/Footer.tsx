@@ -151,7 +151,7 @@ export const Footer = () => {
               </h4>
               <nav className="space-y-3">
                 <a
-                  href="#"
+                  href="/features"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -169,7 +169,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="/for-educators"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -207,7 +207,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="/blog"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -216,7 +216,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="/community"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -225,7 +225,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="/support"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -243,7 +243,7 @@ export const Footer = () => {
               </h4>
               <nav className="space-y-3">
                 <a
-                  href="#"
+                  href="/about"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -251,17 +251,17 @@ export const Footer = () => {
                     {t("footer.links.about")}
                   </div>
                 </a>
-                <a
-                  href="#"
+                {/* <a
+                  href="/team"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.team")}
                   </div>
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="/privacy"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -270,7 +270,7 @@ export const Footer = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="/terms"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -292,7 +292,7 @@ export const Footer = () => {
                 {t("footer.bottom.copyright", { year: currentYear })}
               </div>
 
-              {/* Social Links */}
+              {/* Social Links 
               <div className="flex items-center gap-4">
                 <span className="text-sm text-muted-foreground mr-2">
                   {t("footer.bottom.follow")}
@@ -320,7 +320,7 @@ export const Footer = () => {
                     <Github className="w-4 h-4 group-hover:scale-110 transition-transform" />
                   </a>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

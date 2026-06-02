@@ -61,9 +61,18 @@
     "title": "Meet Mehmiro",
     "description": "The lens that accompanies teaching. Technology as listening for teachers, not control.",
     "stats": [
-      { "value": "24h", "label": "Time to first insights" },
-      { "value": "100%", "label": "Respect for your autonomy" },
-      { "value": "∞", "label": "Observation capacity" }
+      {
+        "value": "24h",
+        "label": "Time to first insights"
+      },
+      {
+        "value": "100%",
+        "label": "Respect for your autonomy"
+      },
+      {
+        "value": "∞",
+        "label": "Observation capacity"
+      }
     ],
     "features": [
       {
@@ -98,10 +107,22 @@
     "title": "Join schools already using it",
     "description": "Teachers and schools in Argentina are already transforming their pedagogical observation with Mehmiro.",
     "stats": [
-      { "value": "500+", "label": "Active teachers" },
-      { "value": "10+", "label": "Institutions" },
-      { "value": "10K+", "label": "Observations processed" },
-      { "value": "98%", "label": "Teacher satisfaction" }
+      {
+        "value": "500+",
+        "label": "Active teachers"
+      },
+      {
+        "value": "10+",
+        "label": "Institutions"
+      },
+      {
+        "value": "10K+",
+        "label": "Observations processed"
+      },
+      {
+        "value": "98%",
+        "label": "Teacher satisfaction"
+      }
     ],
     "testimonials": [
       {
@@ -203,6 +224,690 @@
     "bottom": {
       "copyright": "© {{year}} Mehmiro. Supporting formative assessment in Argentina and Latin America.",
       "follow": "Follow us:"
+    }
+  },
+  "pages": {
+    "features": {
+      "title": "Features",
+      "description": "Discover Mehmiro's tools that amplify your pedagogical gaze: observation organization, pattern detection and actionable reports."
+    },
+    "forEducators": {
+      "title": "For educators",
+      "description": "Resources and guides designed for teachers: how to integrate Mehmiro into daily practice and classroom examples.",
+      "heroDescription": "Resources and guides designed for teachers: how to integrate Mehmiro into daily practice and classroom examples.",
+      "quickStats": [
+        {
+          "value": "24h",
+          "label": "Time to first insights"
+        },
+        {
+          "value": "100%",
+          "label": "Respect for your autonomy"
+        },
+        {
+          "value": "∞",
+          "label": "Observation capacity"
+        },
+        {
+          "value": "0",
+          "label": "Administrative load"
+        }
+      ],
+      "guidesTitle": "Guides & Tutorials",
+      "guides": [
+        {
+          "title": "Quick Start Guide",
+          "description": "Start using Mehmiro in less than 10 minutes. Step by step.",
+          "level": "Beginner",
+          "duration": "10 min"
+        },
+        {
+          "title": "How to Record Observations",
+          "description": "Learn to capture pedagogical observations effectively.",
+          "level": "Beginner",
+          "duration": "15 min"
+        },
+        {
+          "title": "Early Detection in Practice",
+          "description": "Strategies to identify students who need more support.",
+          "level": "Intermediate",
+          "duration": "20 min"
+        },
+        {
+          "title": "Effective Feedback",
+          "description": "How to use Mehmiro's analysis to improve your feedback.",
+          "level": "Intermediate",
+          "duration": "25 min"
+        },
+        {
+          "title": "Team Collaboration",
+          "description": "Coordinate with other teachers and counselors to better support students.",
+          "level": "Advanced",
+          "duration": "30 min"
+        },
+        {
+          "title": "Reports for Families",
+          "description": "Create clear and productive communications with families.",
+          "level": "All levels",
+          "duration": "20 min"
+        }
+      ],
+      "videoSection": {
+        "title": "Tutorial Videos",
+        "description": "Learn to use Mehmiro by watching how other teachers integrate it into their daily routine. Our video library includes:",
+        "items": [
+          "Getting started with the platform",
+          "Step-by-step observation recording",
+          "How to interpret analyses",
+          "Real classroom use cases",
+          "Tips and tricks from advanced users"
+        ],
+        "button": "View all videos",
+        "featured": "Featured tutorial video"
+      },
+      "tipsTitle": "Tips for Effective Observations",
+      "tipsDescription": "Practical tips from teachers who already use Mehmiro effectively",
+      "tips": [
+        {
+          "title": "Record in the moment",
+          "description": "Observations are more accurate when you record them immediately after they occur. Use the voice notes feature if you can't write at the moment."
+        },
+        {
+          "title": "Be specific but concise",
+          "description": "Avoid generalizations like 'good' or 'bad'. Describe exactly what the student did or said. 'Completed 3 of 5 exercises' is more useful than 'worked well'."
+        },
+        {
+          "title": "Use the categories",
+          "description": "Mehmiro's categories are designed to cover the most important aspects of development. Try to use at least 2-3 categories per observation."
+        },
+        {
+          "title": "Review patterns",
+          "description": "Don't just look at individual observations. Weekly, review the patterns that Mehmiro detects. They are invaluable for understanding real progress."
+        },
+        {
+          "title": "Act in time",
+          "description": "Early detection alerts are tools, not diagnoses. Use them as a starting point to converse, intervene and support."
+        },
+        {
+          "title": "Share with the team",
+          "description": "Collaboration multiplies the impact. Share relevant observations with tutors, counselors and other teachers working with the same student."
+        }
+      ],
+      "downloads": {
+        "title": "Free Downloads",
+        "description": "Materials you can print and use in your school",
+        "items": [
+          {
+            "title": "Observation Template",
+            "description": "PDF • 2 pages"
+          },
+          {
+            "title": "Alert Indicators",
+            "description": "PDF • 1 page"
+          },
+          {
+            "title": "Guide for Family Meetings",
+            "description": "PDF • 3 pages"
+          }
+        ]
+      },
+      "testimonialsTitle": "What teachers say",
+      "cta": {
+        "title": "Ready to get started?",
+        "description": "Join the more than 500 teachers who are already transforming how they observe and support learning.",
+        "button": "Start for free"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Articles, case studies and news about formative assessment and educational technology.",
+      "heroDescription": "Articles, case studies and reflections on formative assessment, educational technology and teaching in Argentina.",
+      "featured": {
+        "badge": "Featured article",
+        "title": "Formative assessment: more than grading, accompanying",
+        "description": "In the current educational system, we tend to think of assessment as a measure of acquired knowledge. But formative assessment goes much further: it's about accompanying each student's learning process, detecting in time when they need more support.",
+        "link": "Read full article"
+      },
+      "categories": [
+        {
+          "name": "All",
+          "count": 24
+        },
+        {
+          "name": "Education",
+          "count": 8
+        },
+        {
+          "name": "Success stories",
+          "count": 5
+        },
+        {
+          "name": "Community",
+          "count": 6
+        },
+        {
+          "name": "Resources",
+          "count": 7
+        },
+        {
+          "name": "Technology",
+          "count": 4
+        }
+      ],
+      "posts": [
+        {
+          "title": "Formative assessment in the 21st century",
+          "excerpt": "How technology is transforming the way teachers observe and accompany student learning.",
+          "category": "Education",
+          "date": "February 15, 2026",
+          "readTime": "8 min"
+        },
+        {
+          "title": "Detecting in time: the importance of early intervention",
+          "excerpt": "Real cases of teachers who managed to change the academic destiny of their students thanks to early detection.",
+          "category": "Success stories",
+          "date": "February 10, 2026",
+          "readTime": "6 min"
+        },
+        {
+          "title": "Mehmiro Community: inspiring stories",
+          "excerpt": "We connect with teachers from across Argentina who share their experience transforming pedagogical observation.",
+          "category": "Community",
+          "date": "February 5, 2026",
+          "readTime": "5 min"
+        },
+        {
+          "title": "5 strategies for more effective observations",
+          "excerpt": "Practical techniques that every teacher can implement to record meaningful observations without adding workload.",
+          "category": "Resources",
+          "date": "February 1, 2026",
+          "readTime": "7 min"
+        },
+        {
+          "title": "The teacher's role in the AI era",
+          "excerpt": "Reflections on how artificial intelligence can enhance (not replace) teacher professional judgment.",
+          "category": "Technology",
+          "date": "January 28, 2026",
+          "readTime": "10 min"
+        },
+        {
+          "title": "Academic planning 2026: trends and tools",
+          "excerpt": "Educational institutions are adopting new tools to improve formative assessment processes.",
+          "category": "Education",
+          "date": "January 20, 2026",
+          "readTime": "6 min"
+        }
+      ],
+      "readTime": "min read",
+      "newsletter": {
+        "title": "Subscribe to our newsletter",
+        "description": "Get exclusive articles, success stories and resources directly in your inbox. No spam, just valuable content for teachers.",
+        "placeholder": "your@email.com",
+        "button": "Subscribe",
+        "footer": "Over 2,000 teachers already receive our newsletter"
+      }
+    },
+    "community": {
+      "title": "Community",
+      "description": "Connect with other schools and teachers using Mehmiro: events, forums and working groups.",
+      "heroDescription": "A space to connect, learn and grow together. Because education improves when teachers work in community.",
+      "stats": [
+        {
+          "value": "500+",
+          "label": "Active teachers"
+        },
+        {
+          "value": "10+",
+          "label": "Institutions"
+        },
+        {
+          "value": "50+",
+          "label": "Connected schools"
+        },
+        {
+          "value": "100+",
+          "label": "Shared stories"
+        }
+      ],
+      "events": {
+        "title": "Upcoming Events",
+        "description": "Join events, workshops and webinars designed for you",
+        "viewAll": "View all events",
+        "participants": "participants"
+      },
+      "eventList": [
+        {
+          "title": "Mehmiro Teachers Meeting 2026",
+          "description": "The most important annual event of our community. Share experiences with hundreds of teachers from across the country.",
+          "date": "March 15, 2026",
+          "type": "In-person",
+          "location": "Buenos Aires",
+          "participants": "200+"
+        },
+        {
+          "title": "Webinar: Formative Assessment in Action",
+          "description": "Learn from teachers who have already transformed their pedagogical practice with Mehmiro.",
+          "date": "February 28, 2026",
+          "type": "Online",
+          "location": "Virtual",
+          "participants": "500+"
+        },
+        {
+          "title": "Workshop: Early Detection in the Classroom",
+          "description": "Practical workshop on strategies to identify students who need more support.",
+          "date": "March 10, 2026",
+          "type": "Hybrid",
+          "location": "Córdoba",
+          "participants": "50"
+        }
+      ],
+      "forum": {
+        "title": "Discussion Forum",
+        "description": "A safe space to ask questions, share experiences and learn from colleagues across Argentina. Forum topics include:",
+        "topics": [
+          "Classroom observation strategies",
+          "How to handle difficult situations",
+          "Formative assessment and feedback",
+          "Technology integration in class"
+        ],
+        "button": "Join the forum",
+        "replies": "replies"
+      },
+      "forumPreview": [
+        {
+          "quote": "How do you handle observing students with special needs in classes with many students?",
+          "author": "María G.",
+          "replies": 12
+        },
+        {
+          "quote": "I share my experience with observation recording. At first it was difficult, but with Mehmiro...",
+          "author": "Carlos R.",
+          "replies": 8
+        }
+      ],
+      "testimonials": {
+        "title": "Voices from Our Community"
+      },
+      "testimonialsList": [
+        {
+          "quote": "I found in the Mehmiro community a space where my colleagues understand the daily challenges. I no longer feel alone.",
+          "author": "Roberto Martínez",
+          "role": "History Teacher",
+          "school": "Escuela Normal"
+        },
+        {
+          "quote": "The webinars helped me improve my teaching practice. Now I have concrete tools to support my students.",
+          "author": "Laura Sánchez",
+          "role": "5th Grade Teacher",
+          "school": "Colegio San Miguel"
+        }
+      ],
+      "ambassador": {
+        "title": "Become a Mehmiro Ambassador",
+        "description": "Are you passionate about education and want to help more teachers? Join our ambassador program and spread the word about effective formative assessment.",
+        "benefits": "Benefits include: free training, exclusive events and more"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "description": "Access technical help, quick guides and resources to resolve platform questions.",
+      "heroDescription": "Have questions? Find answers to the most common questions or contact our support team.",
+      "faqCategories": [
+        {
+          "category": "Account & Access",
+          "questions": [
+            {
+              "q": "How do I create an account on Mehmiro?",
+              "a": "Simply click 'Start for free' on our main page and follow the steps. You only need an email and your institution's details."
+            },
+            {
+              "q": "What if I forgot my password?",
+              "a": "Click 'Forgot my password' on the login page. We'll send you an email to reset your password."
+            },
+            {
+              "q": "Can I use Mehmiro on multiple devices?",
+              "a": "Yes, Mehmiro is a progressive web app. You can access it from your computer, tablet or phone, and your data will sync automatically."
+            }
+          ]
+        },
+        {
+          "category": "Using the Platform",
+          "questions": [
+            {
+              "q": "How long does it take to record an observation?",
+              "a": "Recording a basic observation takes between 2-3 minutes. You can use voice notes that automatically convert to text, which speeds up the process."
+            },
+            {
+              "q": "What are early detection alerts?",
+              "a": "These are notifications the system generates when it detects patterns that could indicate a student needs more attention. These alerts are based on your observations and help you intervene in time."
+            },
+            {
+              "q": "How do I customize observation categories?",
+              "a": "You can access Settings > Categories from your dashboard. There you can create, edit or delete categories according to your institution's needs."
+            },
+            {
+              "q": "Can I export my observations?",
+              "a": "Yes, you can export your data in PDF or Excel format from the Reports section. You can also generate specific reports to share with families."
+            }
+          ]
+        },
+        {
+          "category": "Privacy & Security",
+          "questions": [
+            {
+              "q": "Is my students' data secure?",
+              "a": "Absolutely. We use end-to-end encryption and comply with the Argentine Personal Data Protection Law. The data belongs to your institution."
+            },
+            {
+              "q": "Who can see the observations I record?",
+              "a": "By default, only you and users from your institution with assigned permissions. You can configure granular permissions from the admin panel."
+            },
+            {
+              "q": "What if I want to delete my account?",
+              "a": "You can request deletion of your account and all associated data at any time. Contact us at support@mehmiro.com."
+            }
+          ]
+        },
+        {
+          "category": "Billing & Plans",
+          "questions": [
+            {
+              "q": "How much does Mehmiro cost?",
+              "a": "We have a free plan with basic features and paid plans for institutions that need more capacity. Visit our pricing page for more details."
+            },
+            {
+              "q": "Is there a discount for public educational institutions?",
+              "a": "Yes, we offer special terms for public schools and non-profits. Contact us to discuss the options."
+            },
+            {
+              "q": "Can I change plans at any time?",
+              "a": "Yes, you can upgrade or downgrade your plan at any time. Changes will apply on the next billing cycle."
+            }
+          ]
+        }
+      ],
+      "contactOptions": [
+        {
+          "title": "Live Chat",
+          "description": "Chat with our support team",
+          "availability": "Monday to Friday, 9am to 6pm",
+          "action": "Start chat"
+        },
+        {
+          "title": "Email",
+          "description": "Write to us and we'll respond in 24-48h",
+          "availability": "support@mehmiro.com",
+          "action": "Send email"
+        },
+        {
+          "title": "Phone",
+          "description": "Call us for urgent support",
+          "availability": "Monday to Friday, 9am to 6pm",
+          "action": "Call now"
+        }
+      ],
+      "resourcesTitle": "Available Resources",
+      "resourcesDescription": "Documentation, guides and tutorials to get the most out of Mehmiro",
+      "resources": [
+        {
+          "title": "Quick Start Guide",
+          "description": "Start using Mehmiro in 10 minutes",
+          "type": "PDF"
+        },
+        {
+          "title": "User Manual",
+          "description": "Complete documentation of all features",
+          "type": "Document"
+        },
+        {
+          "title": "Tutorial Videos",
+          "description": "Learn by watching how other teachers use it",
+          "type": "Video"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "description": "Answers to the most common questions",
+          "type": "FAQ"
+        }
+      ],
+      "faqTitle": "Frequently Asked Questions",
+      "stillNeedHelp": {
+        "title": "Still need help?",
+        "description": "Our team is ready to help you. Write to us and we'll respond as soon as possible.",
+        "button": "Contact support",
+        "secondaryButton": "View documentation"
+      },
+      "responseTimes": [
+        {
+          "value": "< 1h",
+          "label": "Chat response time"
+        },
+        {
+          "value": "24-48h",
+          "label": "Email response time"
+        },
+        {
+          "value": "98%",
+          "label": "User satisfaction"
+        }
+      ]
+    },
+    "about": {
+      "title": "About us",
+      "description": "Meet the team behind Mehmiro and our mission to support formative assessment in schools.",
+      "mission": {
+        "title": "Our Mission",
+        "description": "Democratize access to quality formative assessment tools for all schools in Argentina and Latin America. We want every teacher to have the ability to detect in time when a student needs more support, without adding administrative burden to their work."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "Imagine a future where technology enhances teaching, where every educator can trust their intuition backed by evidence. An educational ecosystem where no student falls behind due to lack of early detection."
+      },
+      "valuesSection": {
+        "title": "Our Values"
+      },
+      "values": [
+        {
+          "title": "Respect for Teachers",
+          "description": "The teacher is the protagonist. Our technology is designed to amplify their gaze, never to replace it. Their professional judgment is the center of everything we do."
+        },
+        {
+          "title": "Human-Centered Approach",
+          "description": "Behind every data point is a student with potential. We design thinking about people, not numbers. Each feature responds to a real classroom need."
+        },
+        {
+          "title": "Privacy and Security",
+          "description": "Your students' data is sacred. We comply with all data protection regulations in Argentina and prioritize security above all."
+        }
+      ],
+      "story": {
+        "title": "Our Story",
+        "author": "Mehmiro team",
+        "authorTitle": "Team",
+        "paragraphs": [
+          "Mehmiro was born after years of living through the tensions of the educational system from multiple roles: first as a student, then as a teacher, later as a trainer, and also participating in teams designing and implementing innovative educational public policies.",
+          "In all these spaces, a recurring problem: academic evidence about how people learn rarely manages to translate into simple and usable tools in the real classroom.",
+          "The startup emerges as a bridge between learning science research and the daily practice of teachers. Mehmiro seeks to turn theory into concrete action, without imposing external methodologies or increasing workload, but rather enhancing professional judgment with technology that organizes, makes visible, and scales what good teachers already do intuitively."
+        ]
+      },
+      "stats": [
+        {
+          "value": "500+",
+          "label": "Active teachers"
+        },
+        {
+          "value": "10+",
+          "label": "Institutions"
+        },
+        {
+          "value": "10K+",
+          "label": "Observations"
+        },
+        {
+          "value": "98%",
+          "label": "Satisfaction"
+        }
+      ],
+      "cta": {
+        "title": "Want to be part of our story?",
+        "description": "Join the teachers who are already transforming their pedagogical practice with Mehmiro.",
+        "button": "Start for free"
+      }
+    },
+    "team": {
+      "title": "Team",
+      "description": "Introducing the interdisciplinary team: research, design and educational development."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Information about how we collect, use and protect institution and student data.",
+      "highlights": [
+        {
+          "title": "Your data is yours",
+          "description": "We don't sell your information. The data belongs to your institution."
+        },
+        {
+          "title": "End-to-end encryption",
+          "description": "Your observations and analysis are protected with the highest standards."
+        },
+        {
+          "title": "Full control",
+          "description": "You have access, rectification and deletion of your data whenever you want."
+        },
+        {
+          "title": "Legal compliance",
+          "description": "We comply with the Argentine Personal Data Protection Law (Law 25.326)."
+        }
+      ],
+      "sections": [
+        {
+          "title": "1. Introduction",
+          "content": "At Mehmiro (\"we\", \"our platform\"), we are committed to protecting the privacy and security of our users' data, especially data of minor students which is treated with maximum care and protection.\n\nThis Privacy Policy describes how we collect, use, store and protect your personal information and that of the students at your institution. By using Mehmiro, you accept the practices described in this policy."
+        },
+        {
+          "title": "2. Information we collect",
+          "content": "We collect different types of information to provide and improve our services:\n\n• **Registration information**: When you create an account, we collect your name, email, educational institution and role (teacher, coordinator, director, etc.).\n\n• **Student data**: To use the platform, you can register information about students including: name (or anonymous identifier), age, grade, pedagogical observations, progress evaluations and development notes.\n\n• **Pedagogical observations**: All notes, voice recordings converted to text, photos, videos and analysis you make about students.\n\n• **Usage data**: Information about how you interact with the platform, including usage metrics, preferences and settings.\n\n• **Device information**: Technical data about the device you use to access Mehmiro."
+        },
+        {
+          "title": "3. How we use your information",
+          "content": "We use the collected information for the following purposes:\n\n• **Provide the service**: Manage your account, allow observation recording and generate analysis and reports.\n\n• **AI analysis**: Our artificial intelligence system analyzes your observations to identify patterns, detect students who may need attention and offer intervention suggestions.\n\n• **Personalization**: Adapt the user experience according to your preferences and needs.\n\n• **Communication**: Send you notifications about early detection alerts, platform updates and technical support.\n\n• **Service improvement**: Analyze aggregated and anonymized data to improve Mehmiro's functionalities.\n\n• **Legal compliance**: Respond to legal requests and protect our rights and those of our users."
+        },
+        {
+          "title": "4. Data storage and security",
+          "content": "The security of your data is our absolute priority:\n\n• **Encryption**: All data is encrypted in transit (TLS/SSL) and at rest (AES-256) to guarantee that only you and your institution can access it.\n\n• **Secure servers**: Our servers are located in Argentina and comply with the best physical and digital security practices.\n\n• **Access control**: We implement strict access controls. Only authorized personnel can access the data, and always under security protocols.\n\n• **Backup**: We perform regular automatic backups to guarantee the availability of your data.\n\n• **Retention**: We keep data while your account is active or as necessary to provide services. You can request data deletion at any time."
+        },
+        {
+          "title": "5. Data sharing",
+          "content": "Your data is yours. We don't sell it under any circumstances:\n\n• **Institution**: Your institution's data is available to other authorized users of the same institution according to the permissions you set.\n\n• **Service providers**: We share data with providers who help us operate the platform (hosting, analysis, technical support), who are obligated to maintain confidentiality.\n\n• **Legal**: We may disclose information when required by law or in response to valid legal requests.\n\n• **Transfers**: In the event of a merger or sale of the company, data could be transferred, but we will notify you and request your consent if required."
+        },
+        {
+          "title": "6. User rights",
+          "content": "You have the following rights over your data:\n\n• **Access**: You can request a copy of all data we have about you and your institution's students.\n\n• **Rectification**: You can correct inaccurate or incomplete information.\n\n• **Deletion**: You can request deletion of your data and student data (except when law requires retention).\n\n• **Portability**: You can export your data in a machine-readable format.\n\n• **Withdrawal of consent**: You can withdraw your consent for data processing at any time.\n\n• **Limitation**: You can request that we limit the processing of certain data.\n\nTo exercise these rights, contact us through the channels indicated at the end of this policy."
+        },
+        {
+          "title": "7. Minor data",
+          "content": "Mehmiro is designed for educational use and frequently involves data of minor students:\n\n• **Parental consent**: We recommend that institutions obtain appropriate consent from parents or guardians before registering student data.\n\n• **Special protection**: We apply additional protection measures to minor data.\n\n• **Limitations**: We do not intentionally collect minor information beyond what's necessary for the agreed educational purpose.\n\n• **Guardian rights**: Parents or legal guardians can exercise access, rectification and deletion rights on behalf of their minor children."
+        },
+        {
+          "title": "8. Cookies and similar technologies",
+          "content": "We use cookies and similar technologies for:\n\n• **Essential operation**: Keep your session active and remember your preferences.\n\n• **Analytics**: Understand how the platform is used to improve it.\n\n• **Security**: Detect and prevent fraudulent activities.\n\nYou can configure your browser to reject cookies, but this may affect platform functionality."
+        },
+        {
+          "title": "9. Changes to this policy",
+          "content": "We may occasionally update this Privacy Policy. We will notify you of any significant changes through:\n\n• Platform notifications\n• Email to registered users\n• Publishing the new version on our site\n\nThe last update date is indicated at the end of this document. We recommend reviewing this policy periodically."
+        },
+        {
+          "title": "10. Contact",
+          "content": "If you have questions, concerns or requests related to this Privacy Policy or the processing of your data, you can contact us:\n\n• **Email**: privacidad@mehmiro.com\n• **Address**: Buenos Aires, Argentina\n\nWe will respond to your inquiry within 30 business days."
+        }
+      ],
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Mehmiro complies with the Argentine Personal Data Protection Law (Law 25.326) and its amendments, as well as with international best practices for privacy and minor data protection."
+      },
+      "lastUpdate": "Last updated: February 27, 2026"
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "description": "Legal terms for using the Mehmiro platform for institutions and teachers.",
+      "highlights": [
+        {
+          "title": "Your Data is Secure",
+          "description": "We comply with Law 25.326"
+        },
+        {
+          "title": "Platform Available",
+          "description": "Accessible from any device"
+        },
+        {
+          "title": "Intellectual Property",
+          "description": "Your observations belong to you"
+        }
+      ],
+      "sections": [
+        {
+          "title": "1. Acceptance of Terms",
+          "content": "By accessing and using Mehmiro (\"the Platform\"), you (\"User\", \"Institution\" or \"Teacher\") agree to comply with these Terms and Conditions (\"Terms\").\n\nIf you do not agree to these Terms, you should not access or use the Platform.\n\nMehmiro reserves the right to modify these Terms at any time. Modifications will take effect upon publication on the Platform. Continued use of Mehmiro after modifications constitutes acceptance of the new Terms."
+        },
+        {
+          "title": "2. Service Description",
+          "content": "Mehmiro is a digital formative assessment platform designed to support teaching work. The service includes:\n\n• Registration and organization of pedagogical observations\n• Pattern analysis through artificial intelligence\n• Early detection of students requiring attention\n• Report and documentation generation\n• Collaboration between teachers and institutions\n\nMehmiro is a pedagogical support tool. It does not replace the teacher's professional judgment or constitute formal institutional assessment."
+        },
+        {
+          "title": "3. Eligibility and Registration",
+          "content": "To use Mehmiro, the User must:\n\n• Be over 18 years old or have legal guardian authorization\n• Be a teacher, coordinator, director or other educational staff\n• Provide truthful and updated information during registration\n• Maintain confidentiality of their access credentials\n\nEducational institutions can create institutional accounts. The authorized representative of the institution declares they have authority to bind the institution to these Terms."
+        },
+        {
+          "title": "4. User Accounts and Security",
+          "content": "The User is responsible for:\n\n• Maintaining confidentiality of their password and access data\n• All activities occurring under their account\n• Immediately notifying any unauthorized use\n• Providing accurate and updated information\n\nMehmiro will not be liable for losses or damages arising from failure to comply with these obligations.\n\nThe Platform may use two-factor authentication for added security."
+        },
+        {
+          "title": "5. Student Data",
+          "content": "The User acknowledges and agrees that:\n\n• They are responsible for obtaining necessary consents from parents/guardians for processing minor student data\n• They must comply with Law 25.326 on Personal Data Protection and its amendments\n• Student data is the property of the educational institution\n• They must use data only for legitimate educational purposes\n\nMehmiro acts as a data processor on behalf of institutions. Student data will not be used for AI model training beyond what is necessary to provide the service."
+        },
+        {
+          "title": "6. Acceptable Use",
+          "content": "The User agrees NOT to use Mehmiro for:\n\n• Illegal activities or those that infringe third-party rights\n• Registering false, defamatory or violent information\n• Sharing adult, offensive or discriminatory content\n• Attempting to access other users' accounts\n• Interfering with the Platform's operation\n• Using the Platform in a way that may damage, disable or overload servers\n\nMehmiro reserves the right to suspend or cancel accounts that violate these terms."
+        },
+        {
+          "title": "7. Intellectual Property",
+          "content": "Mehmiro and all its content, including but not limited to:\n\n• Source code, algorithms and technology\n• Designs, graphics and interfaces\n• Trademarks and logos\n• Documentation and marketing materials\n\nAre property of Mehmiro and are protected by Argentine and international intellectual property laws.\n\nThe User retains ownership of the observations and content they register, but grants Mehmiro a limited license to operate the Platform and improve the Service."
+        },
+        {
+          "title": "8. Privacy and Data Protection",
+          "content": "Personal data processing in Mehmiro is governed by our Privacy Policy, which is an integral part of these Terms.\n\nBy using Mehmiro, the User consents to the processing of their personal data and that of students as described in the Privacy Policy.\n\nMehmiro implements appropriate security measures to protect data, but cannot guarantee absolute security. The User must take their own precautions."
+        },
+        {
+          "title": "9. Plans and Payments",
+          "content": "Mehmiro offers free and paid plans:\n\n• **Free Plan**: Basic functionalities with user and storage limitations.\n• **Paid Plans**: Full access according to the selected plan.\n\nPaid plan prices are indicated on the Platform and may change with prior notice. Changes do not affect already paid subscriptions until renewal.\n\nPayment is made per period (monthly or annual). Subscription renews automatically unless cancelled.\n\nThe User can cancel their subscription at any time from their account panel."
+        },
+        {
+          "title": "10. Limitation of Liability",
+          "content": "Mehmiro is provided \"as is\" and \"as available\".\n\nMehmiro does not guarantee that:\n• The service will be uninterrupted, secure or error-free\n• The results obtained will be accurate or reliable\n• The quality will meet User expectations\n\nTo the maximum extent permitted by law, Mehmiro will not be liable for:\n• Indirect, incidental or consequential damages\n• Loss of data, opportunities or income\n• Costs of acquiring substitute goods\n\nMehmiro's total liability will not exceed the amount paid by the User in the last 12 months."
+        },
+        {
+          "title": "11. Indemnification",
+          "content": "The User agrees to indemnify and hold harmless Mehmiro, its directors, employees and agents from any claim, demand, loss or expense (including legal fees) arising from:\n\n• The User's use of the Platform\n• Violation of these Terms\n• Content the User registers on the Platform\n• Student data under their responsibility"
+        },
+        {
+          "title": "12. Termination",
+          "content": "Mehmiro may terminate these Terms and cancel User access:\n\n• For convenience, with prior notice\n• Immediately for serious violation of the Terms\n• By legal requirement\n\nUpon termination:\n• Platform access will be deactivated\n• Data may be deleted according to the Retention Policy\n• Outstanding obligations (payments) will remain in force\n\nThe User can request deletion of their account and data at any time."
+        },
+        {
+          "title": "13. Applicable Law and Dispute Resolution",
+          "content": "These Terms are governed by the laws of the Argentine Republic.\n\nAny dispute arising from these Terms will be resolved exclusively by the ordinary courts of the City of Buenos Aires, waiving any other jurisdiction that may correspond.\n\nBefore initiating litigation, the parties will attempt to resolve the conflict in good faith through direct negotiation."
+        },
+        {
+          "title": "14. General Provisions",
+          "content": "• **Agreement integrity**: These Terms, together with the Privacy Policy, constitute the complete agreement between the parties.\n\n• **Severability**: If any provision is declared invalid, the others will remain in force.\n\n• **Waiver**: Mehmiro's failure to exercise a right does not constitute waiver to exercise it in the future.\n\n• **Assignment**: The User cannot assign their rights under these Terms without Mehmiro's written consent.\n\n• **Notifications**: Notifications will be considered valid when sent to the registered email or published on the Platform."
+        },
+        {
+          "title": "15. Contact",
+          "content": "For any inquiries about these Terms:\n\n• **Email**: legal@mehmiro.com\n• **Address**: Buenos Aires, Argentina\n• **Contact form**: mehmiro.com/contacto\n\nWe will respond to your inquiry within 10 business days."
+        }
+      ],
+      "lastUpdate": "Last updated: February 27, 2026",
+      "privacyLink": "View Privacy Policy"
     }
   },
   "story": {
