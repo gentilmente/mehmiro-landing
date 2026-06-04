@@ -338,7 +338,7 @@
         "description": "Unite a los más de 500 docentes que ya están usando Mehmiro para acompañar el aprendizaje de sus estudiantes.",
         "button": "Comenzar gratis"
       },
-      "courseSteps": {
+      "courseContent": {
         "getting-started": {
           "objectives": [
             "Crear un trial anónimo de 7 días",

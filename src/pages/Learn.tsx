@@ -200,7 +200,7 @@ const LearnCourse = () => {
     );
   }
 
-  const steps = t(`pages.learn.courseSteps.${courseId}.steps`, {
+  const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
     returnObjects: true,
     defaultValue: [],
   }) as Array<{
@@ -209,7 +209,7 @@ const LearnCourse = () => {
     tip?: string;
   }>;
 
-  const objectives = t(`pages.learn.courseSteps.${courseId}.objectives`, {
+  const objectives = t(`pages.learn.courseContent.${courseId}.objectives`, {
     returnObjects: true,
     defaultValue: [],
   }) as string[];
