@@ -240,6 +240,10 @@
       "courseSteps": {
         "title": "Course steps"
       },
+      "filters": {
+        "all": "All",
+        "level": "Level"
+      },
       "courseNotFound": "Course not found",
       "backToLearn": "Back to courses",
       "quickStats": [
@@ -337,9 +341,12 @@
       "cta": {
         "title": "Ready to transform your teaching practice?",
         "description": "Join over 500 teachers already using Mehmiro to support their students' learning.",
-        "button": "Start for free"
+"button": "Start for free"
       },
       "courseSteps": {
+        "title": "Course steps"
+      },
+      "courseContent": {
         "getting-started": {
           "objectives": [
             "Create an anonymous 7-day trial",
@@ -349,24 +356,28 @@
           ],
           "steps": [
             {
-              "title": "Access without signing up",
-              "description": "Mehmiro lets you try the app without creating an account. Click 'Try the free demo' and you get an anonymous 7-day trial. You can read and write freely.",
-              "tip": "If you already have a Google account, you can sign in directly and skip the trial."
+              "embedUrl": "https://drive.google.com/file/d/1igIh1xgwcd5B1wmUWOYhQCiC_Q48joIp/preview",
+              "tip": "Use the phone keyboard microphone to record your presentation.",
+              "mergedSteps": [
+                {
+                  "title": "Access without signing up",
+                  "description": "Mehmiro lets you try the app without creating an account. Click 'Try the free demo' and get an anonymous 7-day trial. You can read and write freely."
+                },
+                {
+                  "title": "AI onboarding",
+                  "description": "The AI guides you to set up your first class. Describe your subject, grade and school in natural language. The AI generates the necessary environment with your data, suggested lessons, and a fictional student list."
+                },
+                {
+                  "title": "Explore class tools",
+                  "description": "Creating your environment redirects you to the daily schedule as the main entry point. Explore each section freely: student roster, lesson bank, student profiles and the observation flow. All content is editable so you can try different scenarios."
+                }
+              ]
             },
             {
-              "title": "AI onboarding",
-              "description": "The AI guides you to set up your first class. Describe your subject, grade and school in natural language. The AI generates a draft student list, assessment variables and pedagogical preferences.",
-              "tip": "Be as specific as possible: the AI uses context to personalize the entire flow."
-            },
-            {
-              "title": "Explore the dashboard",
-              "description": "The dashboard groups your classes by institution, shows configuration status and redirects you to the daily schedule as the main entry point.",
-              "tip": "If you belong to multiple institutions, you'll see each one separately with its classes."
-            },
-            {
-              "title": "Claim your progress",
+              "title": "Register your email to save your progress",
               "description": "When the 7-day trial expires, you can still read evaluations but not write. If you register with an account, you recover everything you did during the trial.",
-              "tip": "Register before the trial expires so you don't lose anything."
+              "tip": "Register before the trial expires so you don't lose anything.",
+              "embedUrl": "https://drive.google.com/file/d/PLACEHOLDER_STEP4/preview"
             }
           ]
         },
@@ -433,30 +444,43 @@
         "schedule": {
           "objectives": [
             "Navigate the daily calendar view",
-            "Create class sessions manually",
+            "Create recurring class sessions",
+            "Use the shared date selector",
             "Link lessons to sessions",
-            "Use the shared date selector"
+            "Create lessons manually or with AI assistance"
           ],
           "steps": [
             {
-              "title": "Daily calendar view",
-              "description": "The schedule shows class sessions for the selected day. Each event can have an associated lesson/content. Click on an event to see the summary with session data and the linked lesson.",
-              "tip": "The schedule is the default entry point from the dashboard and onboarding."
+              "tip": "The schedule is the default entry point for the dashboard and onboarding.",
+              "embedUrl": "https://drive.google.com/file/d/1kVCZgwG1lK_Fce9ftlsYQZyEfPFbSy0k/preview",
+              "mergedSteps": [
+                {
+                  "title": "Daily calendar view",
+                  "description": "The schedule shows the class sessions for the selected day. Each event can have an associated lesson/content. Click an event to see the summary with session details and the linked lesson."
+                },
+                {
+                  "title": "Create recurring classes",
+                  "description": "From the calendar, click Weekly Schedule. Fill in the date, time and class details. From the same dialog, you can create a new lesson in the same flow."
+                }
+              ]
             },
             {
-              "title": "Shared date selector",
-              "description": "The date navigation bar is reused across roster, content, observations and student profiles. The date lives in the URL (date=YYYY-MM-DD), so you can share direct links.",
-              "tip": "Change the date from any page and it syncs across the entire class."
-            },
-            {
-              "title": "Create session manually",
-              "description": "From the schedule, click to create a session. Fill in date, time and class data. From the same dialog you can create a new lesson in the same flow.",
-              "tip": "Creating a lesson alongside a session saves time."
-            },
-            {
-              "title": "Deep-dive into sessions",
-              "description": "Clicking a schedule event opens a dialog with session data and the linked lesson, with a deep-link directly to the lesson card.",
-              "tip": "Deep-links let you share specific sessions with colleagues."
+              "tip": "Evaluation rubrics have criteria and scales based on institutional pedagogical preferences and your yearly plan.",
+              "embedUrl": "https://drive.google.com/file/d/1OJzWPVv58FcvCsaYM6Fqmv6nodW6qHVI/preview",
+              "mergedSteps": [
+                {
+                  "title": "Date selector",
+                  "description": "The date navigation bar is reused across the roster, content, observations and student profiles."
+                },
+                {
+                  "title": "Scheduled class for the day with its lesson (linked session and lesson)",
+                  "description": "Clicking a schedule event opens a dialog with the session details and linked lesson. If there is no lesson, you can create it directly from the dialog. If there is already a lesson, you can edit it."
+                },
+                {
+                  "title": "Create a lesson together with the session",
+                  "description": "You can create it manually or ask the AI using keywords or your own ideas. Review the AI-generated form before saving to make sure it matches what you want to teach. The AI suggests objectives, activities and rubrics based on the institutional and class context."
+                }
+              ]
             }
           ]
         },

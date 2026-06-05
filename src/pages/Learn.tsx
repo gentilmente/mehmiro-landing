@@ -1,3 +1,4 @@
+import { useMemo, useState, type ElementType } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useParams } from "react-router-dom";
 import {
@@ -19,21 +20,24 @@ import {
   MessageSquare,
 } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { FixedPhoneMockup } from "@/components/FixedPhoneMockup";
 
-const courseIcons: Record<string, React.ElementType> = {
-  gettingStarted: BookOpen,
+const courseIcons: Record<string, ElementType> = {
+  "getting-started": BookOpen,
   institutions: Users,
   roster: FileText,
   schedule: Calendar,
   lessons: Lightbulb,
-  yearlyPlan: Target,
+  "yearly-plan": Target,
   rubrics: BarChart3,
   observation: Eye,
-  studentProfiles: MessageSquare,
+  "student-profiles": MessageSquare,
 };
 
 const Learn = () => {
   const { t } = useTranslation();
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedLevel, setSelectedLevel] = useState<string>("all");
   const categories = t("pages.learn.categories", {
     returnObjects: true,
   }) as Array<{ name: string; count: number }>;
@@ -49,6 +53,17 @@ const Learn = () => {
     value: string;
     label: string;
   }>;
+  const levels = useMemo(
+    () => Array.from(new Set(courses.map((course) => course.level))),
+    [courses]
+  );
+  const filteredCourses = courses.filter((course) => {
+    const matchesCategory =
+      selectedCategory === "all" || course.category === selectedCategory;
+    const matchesLevel = selectedLevel === "all" || course.level === selectedLevel;
+
+    return matchesCategory && matchesLevel;
+  });
 
   const getLevelColor = (level: string) => {
     if (level === "Principiante" || level === "Beginner")
@@ -74,14 +89,65 @@ const Learn = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             {t("pages.learn.description")}
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => setSelectedCategory("all")}
+              className={`px-4 py-2 border rounded-full text-sm font-medium transition-colors ${
+                selectedCategory === "all"
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-card hover:bg-muted"
+              }`}
+            >
+              {t("pages.learn.filters.all")}
+            </button>
             {categories.map((cat, index) => (
-              <span
+              <button
                 key={index}
-                className="px-4 py-2 bg-card border rounded-full text-sm font-medium"
+                type="button"
+                onClick={() =>
+                  setSelectedCategory((current) =>
+                    current === cat.name ? "all" : cat.name
+                  )
+                }
+                className={`px-4 py-2 border rounded-full text-sm font-medium transition-colors ${
+                  selectedCategory === cat.name
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-card hover:bg-muted"
+                }`}
               >
                 {cat.name} ({cat.count})
-              </span>
+              </button>
+            ))}
+          </div>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <span className="text-sm font-medium text-muted-foreground">
+              {t("pages.learn.filters.level")}
+            </span>
+            <button
+              type="button"
+              onClick={() => setSelectedLevel("all")}
+              className={`px-3 py-1.5 border rounded-full text-sm font-medium transition-colors ${
+                selectedLevel === "all"
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-card hover:bg-muted"
+              }`}
+            >
+              {t("pages.learn.filters.all")}
+            </button>
+            {levels.map((level) => (
+              <button
+                key={level}
+                type="button"
+                onClick={() => setSelectedLevel(level)}
+                className={`px-3 py-1.5 border rounded-full text-sm font-medium transition-colors ${
+                  selectedLevel === level
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-card hover:bg-muted"
+                }`}
+              >
+                {level}
+              </button>
             ))}
           </div>
         </div>
@@ -110,9 +176,9 @@ const Learn = () => {
             {t("pages.learn.coursesTitle")}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {courses.map((course, index) => {
+            {filteredCourses.map((course, index) => {
               const IconComponent =
-                courseIcons[course.id] || courseIcons.gettingStarted;
+                courseIcons[course.id] || courseIcons["getting-started"];
               return (
                 <Link
                   key={index}
@@ -200,21 +266,110 @@ const LearnCourse = () => {
     );
   }
 
-  const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
+const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
     returnObjects: true,
     defaultValue: [],
   }) as Array<{
     title: string;
     description: string;
     tip?: string;
+    embedUrl?: string;
+    mergedSteps?: Array<{
+      title: string;
+      description: string;
+    }>;
   }>;
+
+  const renderSteps = () => {
+    const rendered: JSX.Element[] = [];
+    let stepCounter = 0;
+    
+    steps.forEach((step, dataIndex) => {
+      stepCounter++;
+      const stepNumber = stepCounter;
+      
+      if (step.mergedSteps && step.mergedSteps.length > 0) {
+        stepCounter += step.mergedSteps.length - 1;
+      }
+      
+      rendered.push(
+        <div key={dataIndex} className="border rounded-xl bg-card overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-0">
+            {/* Phone mockup */}
+            <div className="lg:order-first relative p-6 bg-muted/30 min-h-[400px] flex items-center justify-center">
+              <FixedPhoneMockup
+                variant="inline"
+                withId={false}
+                embedUrl={step.embedUrl}
+              />
+            </div>
+            {/* Step content */}
+            <div className="p-6 lg:p-8 flex flex-col justify-center">
+              {step.mergedSteps && step.mergedSteps.length > 0 ? (
+                // Merged steps - show all content in one card
+                <>
+                  {step.mergedSteps.map((merged, mergedIndex) => {
+                    const currentStepNum = stepNumber + mergedIndex;
+                    return (
+                      <div key={mergedIndex} className={mergedIndex > 0 ? 'mt-6 pt-6 border-t' : ''}>
+                        <div className="flex items-start gap-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span className="text-primary font-bold">{currentStepNum}</span>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="text-xl font-bold mb-2">{merged.title}</h3>
+                            <p className="text-muted-foreground mb-4">{merged.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  {step.tip && (
+                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-4">
+                      <div className="flex items-start gap-2">
+                        <Star className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
+                        <p className="text-sm text-yellow-800">{step.tip}</p>
+                      </div>
+                    </div>
+                  )}
+                </>
+              ) : (
+                // Regular single step
+                <>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-primary font-bold">{stepNumber}</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                      <p className="text-muted-foreground mb-4">{step.description}</p>
+                      {step.tip && (
+                        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                          <div className="flex items-start gap-2">
+                            <Star className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
+                            <p className="text-sm text-yellow-800">{step.tip}</p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    });
+    
+    return rendered;
+  };
 
   const objectives = t(`pages.learn.courseContent.${courseId}.objectives`, {
     returnObjects: true,
     defaultValue: [],
   }) as string[];
 
-  const IconComponent = courseIcons[course.id] || courseIcons.gettingStarted;
+  const IconComponent = courseIcons[course.id] || courseIcons["getting-started"];
 
   const getLevelColor = (level: string) => {
     if (level === "Principiante" || level === "Beginner")
@@ -280,36 +435,14 @@ const LearnCourse = () => {
         </section>
       )}
 
-      {/* Steps */}
+{/* Steps */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-3xl">
+        <div className="container mx-auto max-w-5xl">
           <h2 className="text-2xl font-bold mb-8">
             {t("pages.learn.courseSteps.title")}
           </h2>
-          <div className="space-y-8">
-            {steps.map((step, index) => (
-              <div key={index} className="border rounded-xl bg-card p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary font-bold">{index + 1}</span>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                    <p className="text-muted-foreground mb-4">
-                      {step.description}
-                    </p>
-                    {step.tip && (
-                      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                        <div className="flex items-start gap-2">
-                          <Star className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
-                          <p className="text-sm text-yellow-800">{step.tip}</p>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="space-y-12">
+            {renderSteps()}
           </div>
         </div>
       </section>
