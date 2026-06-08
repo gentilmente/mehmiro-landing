@@ -134,18 +134,36 @@ export const ScrollStorySection = ({
           });
 
           if (immediateElements.length > 0) {
+            // faster opacity, keep original movement timing
             revealTl.to(immediateElements, {
               opacity: 1,
-              y: 0,
-              duration: isMobileView ? 0.3 : 0.6,
+              duration: isMobileView ? 0.12 : 0.15,
+              stagger: 0,
             });
+            revealTl.to(
+              immediateElements,
+              {
+                y: 0,
+                duration: isMobileView ? 0.3 : 0.6,
+              },
+              "<",
+            );
           }
 
           if (revealElements.length > 0) {
+            // quick opacity reveal, then move with original (slower) duration
             revealTl.to(
               revealElements,
               {
                 opacity: 1,
+                stagger: isMobileView ? 0.08 : 0.2,
+                duration: isMobileView ? 0.12 : 0.25,
+              },
+              immediateElements.length > 0 ? "-=0.12" : 0,
+            );
+            revealTl.to(
+              revealElements,
+              {
                 y: 0,
                 stagger: isMobileView ? 0.2 : 0.6,
                 duration: isMobileView ? 0.4 : 1.2,
@@ -202,31 +220,44 @@ export const ScrollStorySection = ({
             if (immediateElements.length > 0) {
               desktopPhoneTl.to(immediateElements, {
                 opacity: 1,
-                duration: 0.2,
+                duration: 0.12,
               });
             }
 
             if (revealElements.length > 0) {
+              // quick opacity, then slower movement
               desktopPhoneTl.to(
                 revealElements,
                 {
                   opacity: 1,
+                  stagger: 0.09,
+                  duration: 0.12,
+                },
+                immediateElements.length > 0 ? "+=0.12" : 0.12,
+              );
+              desktopPhoneTl.to(
+                revealElements,
+                {
                   y: 0,
                   stagger: 0.35,
                   duration: 0.7,
                 },
-                immediateElements.length > 0 ? "+=0.15" : 0.15,
+                immediateElements.length > 0 ? "+=0.06" : 0.06,
               );
             }
 
             if (completionVideoSrc && video) {
-              desktopPhoneTl.to(tooltips, { autoAlpha: 0, duration: 0.2 }, ">");
+              desktopPhoneTl.to(
+                tooltips,
+                { autoAlpha: 0, duration: 0.12 },
+                ">",
+              );
               if (img) {
-                desktopPhoneTl.to(img, { autoAlpha: 0, duration: 0.3 }, "<");
+                desktopPhoneTl.to(img, { autoAlpha: 0, duration: 0.2 }, "<");
               }
               desktopPhoneTl.to(
                 video,
-                { autoAlpha: 1, pointerEvents: "auto", duration: 0.3 },
+                { autoAlpha: 1, pointerEvents: "auto", duration: 0.2 },
                 "<",
               );
             }
@@ -273,38 +304,47 @@ export const ScrollStorySection = ({
 
             phoneIntroTl.to(immediateElements, {
               opacity: 1,
-              duration: 1,
+              duration: 0.4,
             });
 
             revealTimelines.push(phoneIntroTl);
           }
 
           if (revealElements.length > 0 && isMobileView) {
+            // fast opacity, keep original movement duration
             pinTl.to(
               revealElements,
               {
                 opacity: 1,
+                stagger: 0.08,
+                duration: 0.12,
+              },
+              immediateElements.length > 0 ? "-=0.12" : 0,
+            );
+            pinTl.to(
+              revealElements,
+              {
                 y: 0,
                 stagger: 0.3,
                 duration: 1,
               },
-              immediateElements.length > 0 ? "-=0.2" : 0,
+              immediateElements.length > 0 ? "-=0.18" : 0,
             );
           }
 
           if (completionVideoSrc && video) {
-            pinTl.to(tooltips, { autoAlpha: 0, duration: 0.2 }, ">");
+            pinTl.to(tooltips, { autoAlpha: 0, duration: 0.12 }, ">");
             if (img) {
-              pinTl.to(img, { autoAlpha: 0, duration: 0.3 }, "<");
+              pinTl.to(img, { autoAlpha: 0, duration: 0.2 }, "<");
             }
             pinTl.to(
               video,
-              { autoAlpha: 1, pointerEvents: "auto", duration: 0.3 },
+              { autoAlpha: 1, pointerEvents: "auto", duration: 0.2 },
               "<",
             );
           }
 
-          pinTl.to({}, { duration: 1.2 });
+          pinTl.to({}, { duration: 0.6 });
           pinTimelines.push(pinTl);
         }
       });
