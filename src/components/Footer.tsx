@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { useForm, ValidationError } from "@formspree/react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -150,33 +151,33 @@ export const Footer = () => {
                 {t("footer.sections.product")}
               </h4>
               <nav className="space-y-3">
-                <a
-                  href="/features"
+                <Link
+                  to="/features"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Zap className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.features")}
                   </div>
-                </a>
-                <a
-                  href="/learn"
+                </Link>
+                <Link
+                  to="/learn"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.howItWorks")}
                   </div>
-                </a>
-                <a
-                  href="/for-educators"
+                </Link>
+                <Link
+                  to="/for-educators"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.forEducators")}
                   </div>
-                </a>
+                </Link>
                 <a
                   href="https://app.mehmiro.com/onboarding"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
@@ -206,33 +207,33 @@ export const Footer = () => {
                     {t("footer.links.docs")}
                   </div>
                 </a>
-                <a
-                  href="/blog"
+                <Link
+                  to="/blog"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <FileText className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.blog")}
                   </div>
-                </a>
-                <a
-                  href="/community"
+                </Link>
+                <Link
+                  to="/community"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.community")}
                   </div>
-                </a>
-                <a
-                  href="/support"
+                </Link>
+                <Link
+                  to="/support"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Phone className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.support")}
                   </div>
-                </a>
+                </Link>
               </nav>
             </div>
 
@@ -242,42 +243,42 @@ export const Footer = () => {
                 {t("footer.sections.company")}
               </h4>
               <nav className="space-y-3">
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Heart className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.about")}
                   </div>
-                </a>
-                {/* <a
-                  href="/team"
+                </Link>
+                {/* <Link
+                  to="/team"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.team")}
                   </div>
-                </a> */}
-                <a
-                  href="/privacy"
+                </Link> */}
+                <Link
+                  to="/privacy"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Shield className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.privacy")}
                   </div>
-                </a>
-                <a
-                  href="/terms"
+                </Link>
+                <Link
+                  to="/terms"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <FileText className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.terms")}
                   </div>
-                </a>
+                </Link>
               </nav>
             </div>
           </div>

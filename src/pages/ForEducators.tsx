@@ -78,7 +78,6 @@ const ForEducators = () => {
           </p>
         </div>
       </section>
-
       {/* Quick Stats */}
       <section className="py-12 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto">
@@ -94,7 +93,6 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
-
       {/* Guides Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto">
@@ -133,7 +131,6 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
-
       {/* Video Section */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto">
@@ -172,7 +169,6 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
-
       {/* Tips Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto">
@@ -205,7 +201,7 @@ const ForEducators = () => {
         </div>
       </section>
 
-      {/* Download Resources */}
+      {/* Download Resources 
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto text-center">
           <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6">
@@ -236,7 +232,7 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
-
+      */}
       {/* CTA */}
       <section className="py-20 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto text-center">
@@ -254,7 +250,6 @@ const ForEducators = () => {
           </a>
         </div>
       </section>
-
       <Footer />
     </div>
   );
