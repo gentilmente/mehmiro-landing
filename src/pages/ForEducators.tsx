@@ -1,4 +1,6 @@
+import { useMemo, useState, type ElementType } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import {
   GraduationCap,
   BookOpen,
@@ -11,6 +13,11 @@ import {
   Users,
   Target,
   Star,
+  FileText,
+  Calendar,
+  BarChart3,
+  Eye,
+  MessageSquare,
 } from "lucide-react";
 import { Footer } from "@/components/Footer";
 
@@ -38,6 +45,38 @@ const ForEducators = () => {
     label: string;
   }>;
 
+  const categories = t("pages.learn.categories", {
+    returnObjects: true,
+  }) as Array<{ name: string; count: number }>;
+
+  const courses = t("pages.learn.courses", {
+    returnObjects: true,
+  }) as Array<{
+    id: string;
+    title: string;
+    description: string;
+    level: string;
+    duration: string;
+    category: string;
+  }>;
+
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedLevel, setSelectedLevel] = useState<string>("all");
+
+  const levels = useMemo(
+    () => Array.from(new Set(courses.map((course) => course.level))),
+    [courses],
+  );
+
+  const filteredCourses = courses.filter((course) => {
+    const matchesCategory =
+      selectedCategory === "all" || course.category === selectedCategory;
+    const matchesLevel =
+      selectedLevel === "all" || course.level === selectedLevel;
+
+    return matchesCategory && matchesLevel;
+  });
+
   const videoItems = t("pages.forEducators.videoSection.items", {
     returnObjects: true,
   }) as string[];
@@ -51,6 +90,18 @@ const ForEducators = () => {
 
   const guideIcons = [Clock, BookOpen, Target, Lightbulb, Users, GraduationCap];
   const downloadIcons = [BookOpen, Target, Users];
+
+  const courseIcons: Record<string, ElementType> = {
+    "getting-started": BookOpen,
+    institutions: Users,
+    roster: FileText,
+    schedule: Calendar,
+    lessons: Lightbulb,
+    "yearly-plan": Target,
+    rubrics: BarChart3,
+    observation: Eye,
+    "student-profiles": MessageSquare,
+  };
 
   const getLevelColor = (level: string) => {
     if (level === "Principiante" || level === "Beginner")
@@ -78,7 +129,6 @@ const ForEducators = () => {
           </p>
         </div>
       </section>
-
       {/* Quick Stats */}
       <section className="py-12 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto">
@@ -94,7 +144,6 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
-
       {/* Guides Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto">
@@ -133,7 +182,116 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
+      {/* Tutorials Section */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold">
+              {t("pages.learn.coursesTitle")}
+            </h2>
+          </div>
 
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+            <button
+              type="button"
+              onClick={() => setSelectedCategory("all")}
+              className={`px-4 py-2 border rounded-full text-sm font-medium transition-colors ${
+                selectedCategory === "all"
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-card hover:bg-muted"
+              }`}
+            >
+              {t("pages.learn.filters.all")}
+            </button>
+            {categories.map((cat, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() =>
+                  setSelectedCategory((current) =>
+                    current === cat.name ? "all" : cat.name,
+                  )
+                }
+                className={`px-4 py-2 border rounded-full text-sm font-medium transition-colors ${
+                  selectedCategory === cat.name
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-card hover:bg-muted"
+                }`}
+              >
+                {cat.name} ({cat.count})
+              </button>
+            ))}
+          </div>
+
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3 mb-12">
+            <span className="text-sm font-medium text-muted-foreground">
+              {t("pages.learn.filters.level")}
+            </span>
+            <button
+              type="button"
+              onClick={() => setSelectedLevel("all")}
+              className={`px-3 py-1.5 border rounded-full text-sm font-medium transition-colors ${
+                selectedLevel === "all"
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-card hover:bg-muted"
+              }`}
+            >
+              {t("pages.learn.filters.all")}
+            </button>
+            {levels.map((level) => (
+              <button
+                key={level}
+                type="button"
+                onClick={() => setSelectedLevel(level)}
+                className={`px-3 py-1.5 border rounded-full text-sm font-medium transition-colors ${
+                  selectedLevel === level
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-card hover:bg-muted"
+                }`}
+              >
+                {level}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredCourses.map((course, index) => {
+              const IconComponent =
+                courseIcons[course.id] || courseIcons["getting-started"];
+              return (
+                <Link
+                  key={index}
+                  to={`/learn/${course.id}`}
+                  className="border rounded-xl bg-card hover:shadow-lg transition-all p-6 group cursor-pointer block"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <span
+                      className={`px-2 py-1 text-xs rounded-full ${getLevelColor(course.level)}`}
+                    >
+                      {course.level}
+                    </span>
+                    <span className="text-xs text-muted-foreground flex items-center">
+                      <Clock className="w-3 h-3 mr-1" />
+                      {course.duration}
+                    </span>
+                  </div>
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
+                    <IconComponent className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">{course.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {course.description}
+                  </p>
+                  <div className="flex items-center text-primary text-sm font-medium">
+                    {t("pages.learn.startCourse")}{" "}
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
       {/* Video Section */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto">
@@ -172,7 +330,6 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
-
       {/* Tips Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto">
@@ -205,7 +362,7 @@ const ForEducators = () => {
         </div>
       </section>
 
-      {/* Download Resources */}
+      {/* Download Resources 
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto text-center">
           <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6">
@@ -236,7 +393,7 @@ const ForEducators = () => {
           </div>
         </div>
       </section>
-
+      */}
       {/* CTA */}
       <section className="py-20 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto text-center">
@@ -254,7 +411,6 @@ const ForEducators = () => {
           </a>
         </div>
       </section>
-
       <Footer />
     </div>
   );

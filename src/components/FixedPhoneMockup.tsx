@@ -9,6 +9,7 @@ interface FixedPhoneMockupProps {
   imageSrc?: string;
   step?: number;
   completionVideoSrc?: string;
+  embedUrl?: string;
 }
 
 export const FixedPhoneMockup = ({
@@ -18,6 +19,7 @@ export const FixedPhoneMockup = ({
   imageSrc,
   step,
   completionVideoSrc,
+  embedUrl,
 }: FixedPhoneMockupProps) => {
   const { t } = useTranslation();
   const isInline = variant === "inline";
@@ -38,7 +40,16 @@ export const FixedPhoneMockup = ({
         <div className="relative aspect-[700/1370] w-full md:h-full bg-card rounded-[2rem] shadow-2xl border-8 border-muted overflow-hidden">
           {/* Screen content */}
           <div className="relative w-full h-full overflow-hidden bg-white rounded-[1.5rem]">
-            {imageSrc ? (
+            {embedUrl ? (
+              <iframe
+                id={`phone-screen-iframe${step ? `-${step}` : ""}`}
+                src={embedUrl}
+                className="absolute inset-0 h-full w-full border-0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title="Video tutorial"
+              />
+            ) : imageSrc ? (
               <img
                 id={`phone-screen-img${step ? `-${step}` : ""}`}
                 src={imageSrc}
