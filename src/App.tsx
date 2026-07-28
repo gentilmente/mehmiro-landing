@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useState } from "react";
@@ -158,11 +159,12 @@ const Navigation = () => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <BrowserRouter
-      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-    >
-      <Navigation />
-      <Routes>
+      <BrowserRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
+        <ScrollToTop />
+        <Navigation />
+        <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/learn/:courseId" element={<LearnCourse />} />
