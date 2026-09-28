@@ -1,6 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Index from "./pages";
+import IndexExample from "./pages/IndexExample";
 import Learn, { LearnCourse } from "./pages/Learn";
 import Features from "./pages/Features";
 import ForEducators from "./pages/ForEducators";
@@ -166,6 +167,7 @@ const App = () => (
         <Navigation />
         <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/ejemplo" element={<IndexExample />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/learn/:courseId" element={<LearnCourse />} />
         <Route path="/features" element={<Features />} />
