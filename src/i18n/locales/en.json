@@ -15,6 +15,7 @@
     }
   },
   "hero": {
+    "imageAlt": "Teaching team in a school",
     "badge": "For teachers who love teaching",
     "headlinePrimary": "Your gaze matters.",
     "headlineSecondary": "Mehmiro amplifies it.",
@@ -147,6 +148,10 @@
     "validation": "Theoretical framework validated by academia"
   },
   "faq": {
+    "scrollHint": "Keep scrolling for the next answer",
+    "previous": "Previous question",
+    "next": "Next question",
+    "position": "Question {{current}} of {{total}}",
     "badge": "Frequently asked questions",
     "title": "Answers to your questions",
     "description": "We address the main concerns of teachers and institutions.",
@@ -180,7 +185,7 @@
   "cta": {
     "title": "Want to transform how you observe learning?",
     "description": "Join the innovation. The academic framework is already validated.",
-    "button": "Try the free demo",
+    "button": "Start for free",
     "qrCaption": "Scan to try the free demo on your mobile device"
   },
   "footer": {

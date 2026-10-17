@@ -1,3 +1,4 @@
+import { StartButton } from "@/components/StartButton";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Index from "./pages";
@@ -74,11 +75,15 @@ const Navigation = () => {
 
   return (
     <>
+      <header className="site-header">
+        <Link to="/" className="site-wordmark" aria-label="Mehmiro"><span aria-hidden="true">✳</span> mehmiro</Link>
+        <div className="header-start"><StartButton /></div>
+      </header>
       {/* Mobile menu button */}
       {isMobile && !mobileMenuOpen && (
         <button
           onClick={() => setMobileMenuOpen(true)}
-          className="fixed top-0 right-0 z-50 p-3 sm:p-4"
+          className="fixed top-5 right-4 z-50 p-2 rounded-full bg-background"
           aria-label={t("nav.openMenu")}
         >
           <Menu className="w-6 h-6 sm:w-5 sm:h-5" />
@@ -110,6 +115,7 @@ const Navigation = () => {
           >
             {t("nav.howItWorks")}
           </Link>
+          <StartButton />
           <button
             onClick={handleLanguageToggle}
             className="mt-2 inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/80 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-foreground hover:border-primary/40 hover:text-primary transition-colors"
@@ -125,8 +131,8 @@ const Navigation = () => {
 
       {/* Desktop navbar */}
       {!isMobile && (
-        <nav className="fixed top-4 right-4 z-50">
-          <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/50 rounded-full px-4 py-2 shadow-lg">
+        <nav aria-label={t("nav.home")} className="desktop-navigation fixed top-5 z-50">
+          <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/50 rounded-full px-2 py-1">
             <Link
               to="/"
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"

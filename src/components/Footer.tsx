@@ -27,7 +27,7 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="relative bg-card border-t border-border">
+    <footer className="site-footer relative bg-card border-t border-border">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
 
@@ -112,10 +112,10 @@ export const Footer = () => {
         </div>
 
         {/* Main Footer Content */}
-        <div className="container mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 px-4 lg:px-0">
+        <div className="footer-main container mx-auto px-6 py-16">
+          <div className="footer-grid">
             {/* Company Info */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="footer-company space-y-6">
               <div className="space-y-4">
                 <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                   Mehmiro
@@ -125,7 +125,7 @@ export const Footer = () => {
                 </p>
               </div>
 
-              <div className="space-y-3 text-sm">
+              <div className="footer-contact text-sm">
                 <div className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                   <Mail className="w-4 h-4 text-primary" />
                   <a href="mailto:info@mehmiro.com">info@mehmiro.com</a>
@@ -146,11 +146,11 @@ export const Footer = () => {
             </div>
 
             {/* Product */}
-            <div className="space-y-6">
+            <div className="footer-links">
               <h4 className="font-semibold text-foreground">
                 {t("footer.sections.product")}
               </h4>
-              <nav className="space-y-3">
+              <nav className="footer-link-list">
                 <Link
                   to="/features"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
@@ -191,11 +191,11 @@ export const Footer = () => {
             </div>
 
             {/* Resources */}
-            <div className="space-y-6">
+            <div className="footer-links">
               <h4 className="font-semibold text-foreground">
                 {t("footer.sections.resources")}
               </h4>
-              <nav className="space-y-3">
+              <nav className="footer-link-list">
                 <a
                   href="http://docs.mehmiro.com"
                   target="_blank"
@@ -238,11 +238,11 @@ export const Footer = () => {
             </div>
 
             {/* Company & Legal */}
-            <div className="space-y-6">
+            <div className="footer-links">
               <h4 className="font-semibold text-foreground">
                 {t("footer.sections.company")}
               </h4>
-              <nav className="space-y-3">
+              <nav className="footer-link-list">
                 <Link
                   to="/about"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"

@@ -5,6 +5,7 @@ import { SocialProofSection } from "@/components/SocialProofSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
+import { StackCard } from "@/components/StackCard";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -13,24 +14,28 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="landing-page">
+      <main>
       {/* Hero Section - Emotional Hook */}
       <HeroSection />
 
       {/* Problem Section - "Every teacher knows this feeling" */}
-      <ProblemSection id="el-desafio" />
+      <div className="section-stack">
+      <StackCard tone="peach"><ProblemSection id="el-desafio" /></StackCard>
 
       {/* Solution Section - "Meet Mehmiro" */}
-      <SolutionSection id="mehmiro" />
+      <StackCard tone="sage"><SolutionSection id="mehmiro" /></StackCard>
 
       {/* Social Proof - "Join schools already using it" */}
-      <SocialProofSection id="comunidad" />
+      <StackCard tone="butter"><SocialProofSection id="comunidad" /></StackCard>
+      </div>
 
       {/* FAQ - Address concerns directly */}
       <FAQSection id="preguntas-frecuentes" />
 
       {/* Final CTA */}
       <CTASection />
+      </main>
 
       {/* Footer */}
       <Footer />

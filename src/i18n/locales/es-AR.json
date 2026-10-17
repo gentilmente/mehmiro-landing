@@ -15,6 +15,7 @@
     }
   },
   "hero": {
+    "imageAlt": "Equipo docente en una escuela",
     "badge": "Para docentes que aman enseñar",
     "headlinePrimary": "Tu mirada importa.",
     "headlineSecondary": "Mehmiro la amplifica.",
@@ -147,6 +148,10 @@
     "validation": "Marco teórico validado por la academia"
   },
   "faq": {
+    "scrollHint": "Seguí deslizando para ver la próxima respuesta",
+    "previous": "Pregunta anterior",
+    "next": "Pregunta siguiente",
+    "position": "Pregunta {{current}} de {{total}}",
     "badge": "Preguntas frecuentes",
     "title": "Respuestas a tus dudas",
     "description": "Abordamos las principales preocupaciones de los docentes e instituciones.",
@@ -180,7 +185,7 @@
   "cta": {
     "title": "¿Querés transformar cómo observás el aprendizaje?",
     "description": "Sumate a la innovación. La academia ya validó el marco teórico.",
-    "button": "Probar demo gratis",
+    "button": "Comenzar gratis",
     "qrCaption": "Escaneá para probar demo gratis en tu dispositivo móvil"
   },
   "footer": {

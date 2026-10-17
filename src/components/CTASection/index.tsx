@@ -1,53 +1,20 @@
-import { Button } from "@/components/ui/button";
 import frameImage from "@/assets/frame.png";
 import { useTranslation } from "react-i18next";
+import { StartButton } from "@/components/StartButton";
 
 export const CTASection = () => {
   const { t } = useTranslation();
-
   return (
-    <section
-      id="cta-section"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden py-20"
-    >
-      {/* Background effects */}
-      <div className="absolute inset-0 bg-gradient-section" />
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-hero" />
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
-          <div className="space-y-6 animate-fade-in-up">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-              {t("cta.title")}
-            </h2>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-              {t("cta.description")}
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-            {/* Mobile: Show only button, Desktop: Hide button */}
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-12 py-7 sm:hidden"
-              onClick={() => {
-                window.location.href = "https://app.mehmiro.com/onboarding";
-              }}
-            >
-              {t("cta.button")}
-            </Button>
-
-            {/* Mobile: Hide QR, Desktop: Show only QR */}
-            <div className="hidden sm:flex flex-col items-center gap-3">
-              <div className="w-48 h-48 bg-white rounded-2xl shadow-xl p-4 flex items-center justify-center">
-                <img src={frameImage} alt="QR Code" />
-              </div>
-              <p className="text-sm text-muted-foreground">
-                {t("cta.qrCaption")}
-              </p>
-            </div>
-          </div>
-        </div>
+    <section id="cta-section" className="final-cta">
+      <div className="final-cta-copy">
+        <span className="cta-flower" aria-hidden="true">✳</span>
+        <h2>{t("cta.title")}</h2>
+        <p>{t("cta.description")}</p>
+        <StartButton />
+      </div>
+      <div className="final-qr">
+        <img src={frameImage} alt={t("cta.qrCaption")} loading="lazy" />
+        <p>{t("cta.qrCaption")}</p>
       </div>
     </section>
   );
