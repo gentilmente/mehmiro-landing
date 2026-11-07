@@ -218,15 +218,15 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 .hero-values svg { color: hsl(var(--primary)); }
 @keyframes hero-float {
   0%, 100% { transform: rotate(2deg) translateY(0); }
-  50% { transform: rotate(2deg) translateY(-8px); }
+  50% { transform: rotate(2deg) translateY(-11px); }
 }
 @keyframes note-float {
   0%, 100% { transform: rotate(-3deg) translateY(0); }
-  50% { transform: rotate(-3deg) translateY(5px); }
+  50% { transform: rotate(-3deg) translateY(7px); }
 }
 @keyframes orb-float {
   0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-7px) scale(1.02); }
+  50% { transform: translateY(-9px) scale(1.025); }
 }
 .hero-visual { position: relative; padding: 22px 6px 48px 12px; }
 .hero-photo-wrap { background: linear-gradient(135deg, hsl(225 75% 90%), hsl(275 65% 92%)); border-radius: 140px 140px 28px 28px; padding: 16px; transform: rotate(2deg); animation: hero-float 7s ease-in-out infinite; will-change: transform; }
