@@ -7,7 +7,7 @@ export const CTASection = () => {
   return (
     <section id="cta-section" className="final-cta">
       <div className="final-cta-copy">
-        <span className="cta-flower" aria-hidden="true">✳</span>
+        <span className="cta-gradient-orb" aria-hidden="true" />
         <h2>{t("cta.title")}</h2>
         <p>{t("cta.description")}</p>
         <StartButton variant="full" />

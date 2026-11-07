@@ -1,4 +1,5 @@
 import { StartButton } from "@/components/StartButton";
+import mehmiroLogo from "@/assets/mehmiro-logo.png";
 import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
@@ -89,7 +90,7 @@ const Navigation = () => {
   return (
     <>
       <header className="site-header">
-        <Link to="/" className="site-wordmark" aria-label="Mehmiro"><span aria-hidden="true">✳</span> mehmiro</Link>
+        <Link to="/" className="site-wordmark" aria-label="Mehmiro"><img className="site-logo" src={mehmiroLogo} alt="" aria-hidden="true" /> mehmiro</Link>
         <div className="header-start"><StartButton /></div>
       </header>
       {/* Mobile menu button */}

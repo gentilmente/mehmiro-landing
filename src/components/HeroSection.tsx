@@ -1,7 +1,7 @@
 import { Heart, Eye, Brain, Check, ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { StartButton } from "@/components/StartButton";
-import teachingTeam from "@/assets/teaching-team.jpg";
+import teacherVoiceNote from "@/assets/teacher-voice-note.webp";
 import ircaiBanner from "@/assets/TOP 100 Promising Project Banner.png";
 
 export const HeroSection = () => {
@@ -24,9 +24,9 @@ export const HeroSection = () => {
           </ul>
         </div>
         <div className="hero-visual">
-          <div className="hero-photo-wrap"><img className="hero-photo" src={teachingTeam} alt={t("hero.imageAlt")} fetchPriority="high" /></div>
+          <div className="hero-photo-wrap"><img className="hero-photo" src={teacherVoiceNote} alt={t("hero.imageAlt")} fetchPriority="high" /></div>
           <div className="hero-note"><div className="hero-note-icon"><Eye size={24} aria-hidden="true" /></div><div><strong>{t("hero.noteTitle")}</strong><span>{t("hero.noteText")}</span></div><Brain className="hero-note-brain" size={22} aria-hidden="true" /></div>
-          <span className="hero-doodle" aria-hidden="true">✳</span>
+          <span className="hero-gradient-orb" aria-hidden="true" />
         </div>
       </div>
       <div className="hero-recognition">

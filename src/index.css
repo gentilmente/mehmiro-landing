@@ -69,30 +69,30 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 42 36% 96%;
-    --foreground: 155 24% 17%;
-    --card: 40 43% 99%;
-    --card-foreground: 155 24% 17%;
-    --popover: 40 43% 99%;
-    --popover-foreground: 155 24% 17%;
-    --primary: 158 34% 25%;
-    --primary-foreground: 42 36% 98%;
-    --secondary: 151 22% 39%;
-    --secondary-foreground: 42 36% 98%;
-    --accent: 19 55% 45%;
+    --background: 250 40% 98%;
+    --foreground: 228 35% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 228 35% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 228 35% 16%;
+    --primary: 225 72% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 275 62% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 268 68% 58%;
     --accent-foreground: 0 0% 100%;
-    --muted: 40 20% 91%;
-    --muted-foreground: 150 9% 35%;
-    --destructive: 0 68% 43%;
+    --muted: 250 30% 94%;
+    --muted-foreground: 230 12% 42%;
+    --destructive: 0 68% 50%;
     --destructive-foreground: 0 0% 100%;
-    --border: 145 13% 70%;
-    --input: 145 13% 74%;
-    --ring: 158 34% 25%;
+    --border: 250 20% 86%;
+    --input: 250 20% 88%;
+    --ring: 225 72% 42%;
     --radius: 1rem;
-    --gradient-hero: linear-gradient(120deg, hsl(158 34% 25%), hsl(151 22% 39%));
-    --gradient-section: linear-gradient(180deg, hsl(42 36% 96%), hsl(43 36% 92%));
-    --glow-primary: 0 8px 24px hsl(158 34% 25% / 0.08);
-    --glow-secondary: 0 8px 24px hsl(151 22% 39% / 0.08);
+    --gradient-hero: linear-gradient(120deg, hsl(225 75% 42%), hsl(275 65% 55%));
+    --gradient-section: linear-gradient(180deg, hsl(250 40% 98%), hsl(255 35% 95%));
+    --glow-primary: 0 8px 24px hsl(225 72% 42% / 0.12);
+    --glow-secondary: 0 8px 24px hsl(275 62% 55% / 0.12);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -193,15 +193,15 @@ All colors MUST be HSL.
   }
 }
 
-/* Warm paper, schoolbook greens, and generous cards for the marketing page. */
+/* Blue-purple brand palette from the app logo, generous cards for the marketing page. */
 html { font-size: 112.5%; scroll-padding-top: 112px; }
 .site-header { position: fixed; inset: 0 0 auto; height: 84px; z-index: 40; display: flex; align-items: center; justify-content: space-between; padding: 0 4%; background: hsl(var(--background) / .95); border-bottom: 1px solid hsl(var(--border) / .45); backdrop-filter: blur(12px); }
-.site-wordmark { display: flex; align-items: center; gap: 8px; font-size: 1.6667rem; font-weight: 800; letter-spacing: -1.5px; color: hsl(var(--primary)); }
-.site-wordmark > span { font-size: 2.2222rem; color: hsl(var(--accent)); }
+.site-wordmark { display: flex; align-items: center; gap: 10px; font-size: 1.6667rem; font-weight: 800; letter-spacing: -1.5px; color: hsl(var(--foreground)); }
+.site-logo { width: 38px; height: 38px; object-fit: contain; flex-shrink: 0; }
 .desktop-navigation { right: calc(4% + 224px); }
 @media (max-width: 1023px) { .nav-schools-link, .nav-schools-divider { display: none; } }
 .start-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 15px 23px; border-radius: 999px; background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); font-size: 1rem; font-weight: 600; line-height: 1.4; transition: background .2s, transform .2s; white-space: nowrap; }
-.start-button:hover { background: hsl(158 34% 19%); transform: translateY(-2px); }
+.start-button:hover { background: hsl(225 72% 34%); transform: translateY(-2px); }
 a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); outline-offset: 5px; }
 .education-hero { max-width: 1400px; margin: auto; padding: 150px 5% 30px; }
 .hero-layout { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 6%; }
@@ -217,24 +217,24 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 @media (max-width: 767px) { .why-now-grid { grid-template-columns: 1fr !important; } }
 .hero-values svg { color: hsl(var(--primary)); }
 .hero-visual { position: relative; padding: 22px 6px 48px 12px; }
-.hero-photo-wrap { background: hsl(43 65% 82%); border-radius: 140px 140px 28px 28px; padding: 16px; transform: rotate(2deg); }
+.hero-photo-wrap { background: linear-gradient(135deg, hsl(225 75% 90%), hsl(275 65% 92%)); border-radius: 140px 140px 28px 28px; padding: 16px; transform: rotate(2deg); }
 .hero-photo { width: 100%; aspect-ratio: 1/1.06; object-fit: cover; border-radius: 128px 128px 18px 18px; }
-.hero-note { position: absolute; bottom: 20px; left: -18px; right: 24px; display: flex; align-items: center; gap: 12px; padding: 20px; border: 1px solid hsl(var(--border) / .6); background: hsl(var(--card)); border-radius: 18px; box-shadow: 0 12px 30px hsl(155 24% 17% / .07); transform: rotate(-3deg); }
-.hero-note-icon { padding: 12px; background: hsl(145 23% 89%); border-radius: 12px; color: hsl(var(--primary)); }
+.hero-note { position: absolute; bottom: 20px; left: -18px; right: 24px; display: flex; align-items: center; gap: 12px; padding: 20px; border: 1px solid hsl(var(--border) / .6); background: hsl(var(--card)); border-radius: 18px; box-shadow: 0 12px 30px hsl(228 35% 16% / .08); transform: rotate(-3deg); }
+.hero-note-icon { padding: 12px; background: hsl(250 40% 93%); border-radius: 12px; color: hsl(var(--primary)); }
 .hero-note strong { display: block; font-size: 0.8889rem; }
 .hero-note span { display: block; color: hsl(var(--muted-foreground)); margin-top: 5px; font-size: 0.8889rem; }
 .hero-note-brain { margin-left: auto; color: hsl(var(--accent)); flex-shrink: 0; }
-.hero-doodle { position: absolute; top: -8px; right: -15px; font-size: 6.2222rem; line-height: 1; color: hsl(var(--accent)); }
+.hero-gradient-orb { position: absolute; top: -10px; right: -10px; width: 108px; height: 108px; border-radius: 50%; background: var(--gradient-hero); opacity: .9; filter: blur(.2px); }
 .hero-recognition { display: flex; align-items: center; justify-content: center; gap: 24px; border-top: 1px solid hsl(var(--border) / .6); margin-top: 32px; padding-top: 22px; }
 .hero-recognition > span { font-size: 0.8889rem; color: hsl(var(--muted-foreground)); }
 .hero-recognition img { width: 310px; max-width: 100%; border-radius: 4px; }
 .section-stack { margin: 16px auto 0; padding: 0 24px 24px; max-width: 1450px; isolation: isolate; }
-.stack-card { position: sticky; top: var(--stack-top, 96px); max-height: var(--stack-height); border-radius: 32px; border: 1px solid hsl(155 24% 17% / .16); box-shadow: 0 -5px 28px hsl(155 24% 17% / .04); margin-bottom: 20px; overflow: clip; }
+.stack-card { position: sticky; top: var(--stack-top, 96px); max-height: var(--stack-height); border-radius: 32px; border: 1px solid hsl(228 35% 16% / .14); box-shadow: 0 -5px 28px hsl(228 35% 16% / .05); margin-bottom: 20px; overflow: clip; }
 .stack-card-content { display: flow-root; }
 .stack-card-spacer { pointer-events: none; }
-.stack-card--peach { background: hsl(20 57% 92%); }
-.stack-card--sage { background: hsl(143 23% 90%); }
-.stack-card--butter { background: hsl(44 62% 90%); }
+.stack-card--peach { background: hsl(245 48% 94%); }
+.stack-card--sage { background: hsl(225 45% 92%); }
+.stack-card--butter { background: hsl(270 45% 94%); }
 .education-section { padding: 44px 16px 32px; }
 .education-section .container { max-width: 1200px; }
 .education-section h2 { font-size: clamp(1.7422rem, 3.36vw, 2.7378rem); font-family: var(--font-serif); letter-spacing: -.025em; line-height: 1.22; font-weight: 500; }
@@ -259,15 +259,15 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 .section-action { display: flex; justify-content: center; margin-top: 24px; }
 .landing-page #preguntas-frecuentes { padding: 64px 0; }
 .landing-page #preguntas-frecuentes h2 { font-family: var(--font-serif); font-weight: 500; letter-spacing: -.025em; line-height: 1.22; }
-.final-cta { display: flex; align-items: center; justify-content: space-between; gap: 48px; background: hsl(158 28% 23%); color: hsl(42 36% 98%); border-radius: 32px; margin: 0 24px 48px; padding: 52px max(32px, 7%); }
+.final-cta { display: flex; align-items: center; justify-content: space-between; gap: 48px; background: linear-gradient(120deg, hsl(225 75% 30%), hsl(275 65% 42%)); color: hsl(0 0% 100%); border-radius: 32px; margin: 0 24px 48px; padding: 52px max(32px, 7%); }
 .final-cta-copy { max-width: 650px; }
-.cta-flower { color: hsl(43 65% 75%); font-size: 3.5rem; line-height: 1; }
+.cta-gradient-orb { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg, hsl(225 85% 72%), hsl(285 75% 78%)); box-shadow: 0 0 0 10px hsl(0 0% 100% / .08); }
 .final-cta h2 { font-size: clamp(1.7422rem, 3.92vw, 2.8622rem); font-family: var(--font-serif); letter-spacing: -.025em; line-height: 1.22; margin: 20px 0; font-weight: 500; }
-.final-cta-copy > p { color: hsl(143 18% 83%); line-height: 1.7; margin-bottom: 24px; }
-.final-cta .start-button { background: hsl(44 62% 85%); color: hsl(158 34% 20%); }
+.final-cta-copy > p { color: hsl(250 30% 90%); line-height: 1.7; margin-bottom: 24px; }
+.final-cta .start-button { background: hsl(0 0% 100%); color: hsl(225 60% 30%); }
 .final-qr { width: 190px; flex-shrink: 0; text-align: center; }
 .final-qr img { background: white; padding: 12px; border-radius: 16px; width: 160px; margin: auto; }
-.final-qr p { margin-top: 14px; font-size: 0.8889rem; line-height: 1.6; color: hsl(143 18% 83%); }
+.final-qr p { margin-top: 14px; font-size: 0.8889rem; line-height: 1.6; color: hsl(250 30% 90%); }
 @media (max-width: 1023px) {
   .desktop-navigation { right: calc(4% + 224px); }
   .education-hero { padding-top: 125px; }
@@ -368,7 +368,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 .faq-description { font-size: 1.1111rem; line-height: 1.6; }
 .faq-deck-track { position: relative; }
 .faq-deck-stage { position: relative; }
-.faq-card { padding: 24px; margin-bottom: 12px; border-radius: 22px; border: 1px solid hsl(var(--border)); background: hsl(var(--card)); box-shadow: 0 6px 20px hsl(155 24% 17% / .05); }
+.faq-card { padding: 24px; margin-bottom: 12px; border-radius: 22px; border: 1px solid hsl(var(--border)); background: hsl(var(--card)); box-shadow: 0 6px 20px hsl(228 35% 16% / .06); }
 .faq-card-heading { display: grid; grid-template-columns: 20px minmax(0, 1fr) 24px; gap: 12px; align-items: center; }
 .faq-card-heading > svg { color: hsl(var(--primary)); }
 .faq-card-heading h3 { font-family: var(--font-sans); font-size: 1.3333rem; font-weight: 600; line-height: 1.4; letter-spacing: -.01em; }

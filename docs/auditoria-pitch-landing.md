@@ -17,7 +17,7 @@
 6. **La documentación existe, pero hoy es un pasivo.** La página de investigación describe un ensayo controlado aleatorizado de 1.200 estudiantes, con efecto grande y financiamiento, sin DOI, registro ni afiliación verificable; el sitemap usa `mehmiro-docs.example.com`. Para investigadores y alianzas, eso es más peligroso que no tener documentación.
 7. **La arquitectura no permite que cada público se reconozca.** El menú solo tiene “Inicio” y “Aprendé”; el menú móvil tiene dos links; no hay páginas para directivos, familias o investigación. El CTA ya cambió a embajadores, pero falta el selector de rol y las páginas por público.
 8. **Son cuatro públicos, no tres.** “Padres-estudiantes” y “pedagogos-investigadores-alianzas” son duplas con necesidades distintas. Recomiendo cuatro tracks y ocho roles, con un relato compartido y un selector de rol.
-9. **La estética cálida y la voz docente son un activo.** No hay que rehacer el diseño: hay que reencuadrar la narrativa, agregar el flujo de voz y coordinación, y separar los CTAs.
+9. **La identidad visual ya se alineó al logo azul-púrpura de la app.** Se reemplazaron los asteriscos naranjas por el logo real y una paleta azul-púrpura; la foto del hero ahora muestra a una docente grabando una nota de voz en el aula.
 10. **Prioridad:** primero credibilidad y metadatos; después narrativa y secciones por público; al final páginas dedicadas, prerender y reescritura de la documentación.
 
 ---
@@ -99,7 +99,8 @@ Leí el repo `mehmiro2` actualizado: `README.md`, `docs/README.md`, `docs/produc
 - **Evidencia y método:** `/evidencia` y `/en/evidencia`, con “lo que sabemos / lo que medimos / lo que no afirmamos / cómo evaluamos / qué falta”.
 - **Home:** selector de cuatro públicos (`#para-quien`), sección “Por qué ahora”, nav con “Cómo funciona”/“Escuelas”, menú móvil completo y footer con las cuatro audiencias.
 - **Navegación con hash:** `ScrollToTop` ahora respeta `#ancla`; los CTA secundarios a `/#embajadores`, `/#mehmiro` y `/#preguntas-frecuentes` funcionan.
-- **Documentación interna:** [`AGENTS.md`](../AGENTS.md) actualizado con la verdad de producto y las reglas de contenido.
+- **Identidad visual:** logo real de la app, paleta azul-púrpura, sin asteriscos naranjas; hero con docente grabando una nota de voz en el aula; favicon y OG image actualizados.
+- **Documentación interna:** [`AGENTS.md`](../AGENTS.md) actualizado con la verdad de producto, la paleta y las reglas de contenido.
 
 ---
 
@@ -228,18 +229,15 @@ En [`index.html`](../index.html#L7-L28):
 
 ### 6.1 Hero
 
-**Lo que funciona:** la calidez, la tipografía serif, el foco en el docente y la frase “Tu mirada importa” son memorables. La foto y la paleta dan una identidad distinta a la típica edtech azul.
+**Lo que funciona:** la tipografía serif, el foco en el docente y la promesa sistémica son memorables. La identidad visual ya usa el logo real de la app, una paleta azul-púrpura y una foto de docente grabando una nota de voz en el aula.
 
 **Lo que falla:**
 
-- Habla solo a docentes; un directivo, una familia o un investigador no se reconoce.
-- No aparecen las señales concretas del pitch (participación, ausencias, aislamiento).
-- No aparece el flujo de voz ni la coordinación.
-- La imagen es una foto corporativa de personas en un pasillo, no un aula ni una interacción docente-estudiante. El alt dice “Equipo docente en una escuela”, pero visualmente parece un equipo de ventas.
-- El CTA principal es “Comenzar gratis” para todos; no hay un CTA institucional.
-- La nav no ofrece caminos por público.
+- El hero sigue siendo principalmente docente; el CTA institucional aparece en el selector de públicos, no como acción principal.
+- La nav desktop solo suma “Escuelas”; familias e investigación viven en el selector y el footer.
+- El reconocimiento IRCAI conserva su banner original con colores ajenos a la nueva paleta.
 
-**Recomendación:** hero con la promesa sistémica, subtítulo con el mecanismo (voz → estructura → patrones → apoyo), selector de rol y dos CTAs: docente (autoservicio) y escuela (diagnóstico/piloto). Mantener la calidez y la serif.
+**Recomendación:** mantener la paleta azul-púrpura y la foto actual; sumar un CTA secundario “Para escuelas” en el hero y revisar si el banner IRCAI necesita una versión neutra.
 
 ### 6.2 Problema
 

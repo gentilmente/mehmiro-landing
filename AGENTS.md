@@ -7,7 +7,7 @@ This file captures the repo-specific context needed to work efficiently.
 - Product: marketing site for Mehmiro, an AI-assisted pedagogical observation and coordination tool.
 - Audiences: teachers, school leaders/owners, families/students, and pedagogues/researchers/partners.
 - Language: Spanish (Argentina) by default; English is a potential market (international calls), currently available via a runtime toggle.
-- UX: warm editorial design, Lora + Source Sans 3, scroll-stacked cards, FAQ deck, ambassador CTA.
+- UX: blue-purple brand palette from the app logo, Lora + Source Sans 3, scroll-stacked cards, FAQ deck, ambassador CTA.
 - Primary CTA: “Probala y sumá recompensas” (full) / “Probala” (short). The ambassador program replaced the unverified social-proof section on the home page.
 
 ## Tech stack
@@ -61,7 +61,7 @@ This file captures the repo-specific context needed to work efficiently.
 ## Assets
 
 - Images/videos live in `src/assets/` and `public/`.
-- The hero uses `teaching-team.jpg`; the QR uses `src/assets/frame.png`.
+- The hero uses `src/assets/teacher-voice-note.webp`; the brand mark is `src/assets/mehmiro-logo.png`; the QR uses `src/assets/frame.png`.
 - OG image: `public/og-mehmiro.png` (1200x630).
 
 ## Deployment
