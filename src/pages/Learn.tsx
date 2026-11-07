@@ -68,12 +68,12 @@ const Learn = () => {
 
   const getLevelColor = (level: string) => {
     if (level === "Principiante" || level === "Beginner")
-      return "bg-green-100 text-green-700";
+      return "bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-800";
     if (level === "Intermedio" || level === "Intermediate")
-      return "bg-yellow-100 text-yellow-700";
+      return "bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800";
     if (level === "Avanzado" || level === "Advanced")
-      return "bg-red-100 text-red-700";
-    return "bg-blue-100 text-blue-700";
+      return "bg-gradient-to-r from-rose-100 to-red-100 text-rose-800";
+    return "bg-gradient-to-r from-sky-100 to-blue-100 text-blue-800";
   };
 
   return (
@@ -81,7 +81,7 @@ const Learn = () => {
       {/* Hero Section */}
       <section className="pt-28 pb-20 px-6">
         <div className="container mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/15 to-secondary/10 rounded-full mb-6">
             <Brain className="w-10 h-10 text-primary" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -96,8 +96,8 @@ const Learn = () => {
               onClick={() => setSelectedCategory("all")}
               className={`px-4 py-2 border rounded-full text-sm font-medium transition-colors ${
                 selectedCategory === "all"
-                  ? "bg-primary text-primary-foreground border-primary"
-                  : "bg-card hover:bg-muted"
+                  ? "bg-gradient-hero text-primary-foreground border-primary"
+                  : "bg-gradient-to-r from-card to-muted/40 hover:to-muted/70"
               }`}
             >
               {t("pages.learn.filters.all")}
@@ -113,8 +113,8 @@ const Learn = () => {
                 }
                 className={`px-4 py-2 border rounded-full text-sm font-medium transition-colors ${
                   selectedCategory === cat.name
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "bg-card hover:bg-muted"
+                    ? "bg-gradient-hero text-primary-foreground border-primary"
+                    : "bg-gradient-to-r from-card to-muted/40 hover:to-muted/70"
                 }`}
               >
                 {cat.name} ({cat.count})
@@ -130,8 +130,8 @@ const Learn = () => {
               onClick={() => setSelectedLevel("all")}
               className={`px-3 py-1.5 border rounded-full text-sm font-medium transition-colors ${
                 selectedLevel === "all"
-                  ? "bg-primary text-primary-foreground border-primary"
-                  : "bg-card hover:bg-muted"
+                  ? "bg-gradient-hero text-primary-foreground border-primary"
+                  : "bg-gradient-to-r from-card to-muted/40 hover:to-muted/70"
               }`}
             >
               {t("pages.learn.filters.all")}
@@ -143,8 +143,8 @@ const Learn = () => {
                 onClick={() => setSelectedLevel(level)}
                 className={`px-3 py-1.5 border rounded-full text-sm font-medium transition-colors ${
                   selectedLevel === level
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "bg-card hover:bg-muted"
+                    ? "bg-gradient-hero text-primary-foreground border-primary"
+                    : "bg-gradient-to-r from-card to-muted/40 hover:to-muted/70"
                 }`}
               >
                 {level}
@@ -155,7 +155,7 @@ const Learn = () => {
       </section>
 
       {/* Quick Stats */}
-      <section className="py-12 px-6 bg-primary text-primary-foreground">
+      <section className="py-12 px-6 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
@@ -184,7 +184,7 @@ const Learn = () => {
                 <Link
                   key={index}
                   to={`/learn/${course.id}`}
-                  className="border rounded-xl bg-card hover:shadow-lg transition-all p-6 group cursor-pointer block"
+                  className="border rounded-xl bg-gradient-to-br from-card to-muted/30 hover:shadow-lg transition-all p-6 group cursor-pointer block"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <span
@@ -197,7 +197,7 @@ const Learn = () => {
                       {course.duration}
                     </span>
                   </div>
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary/15 to-secondary/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
                     <IconComponent className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold mb-2">{course.title}</h3>
@@ -216,7 +216,7 @@ const Learn = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-primary text-primary-foreground">
+      <section className="py-20 px-6 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">
             {t("pages.learn.cta.title")}
@@ -226,7 +226,7 @@ const Learn = () => {
           </p>
           <a
             href="/"
-            className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-white text-primary hover:bg-white/90 rounded-lg transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-gradient-to-r from-white to-blue-50 text-primary hover:from-blue-50 hover:to-white rounded-lg transition-colors"
           >
             {t("pages.learn.cta.button")}
           </a>
@@ -294,10 +294,10 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
       }
       
       rendered.push(
-        <div key={dataIndex} className="border rounded-xl bg-card overflow-hidden">
+        <div key={dataIndex} className="border rounded-xl bg-gradient-to-br from-card to-muted/30 overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Phone mockup */}
-            <div className="lg:order-first relative p-6 bg-muted/30 min-h-[400px] flex items-center justify-center">
+            <div className="lg:order-first relative p-6 bg-gradient-to-br from-muted/50 via-background to-secondary/5 min-h-[400px] flex items-center justify-center">
               <FixedPhoneMockup
                 variant="inline"
                 withId={false}
@@ -314,7 +314,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
                     return (
                       <div key={mergedIndex} className={mergedIndex > 0 ? 'mt-6 pt-6 border-t' : ''}>
                         <div className="flex items-start gap-4">
-                          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                          <div className="w-10 h-10 bg-gradient-to-br from-primary/15 to-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
                             <span className="text-primary font-bold">{currentStepNum}</span>
                           </div>
                           <div className="flex-1">
@@ -326,7 +326,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
                     );
                   })}
                   {step.tip && (
-                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-4">
+                    <div className="bg-gradient-to-br from-amber-50 to-yellow-100/80 border border-yellow-200 rounded-lg p-4 mt-4">
                       <div className="flex items-start gap-2">
                         <Star className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
                         <p className="text-sm text-yellow-800">{step.tip}</p>
@@ -338,14 +338,14 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
                 // Regular single step
                 <>
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary/15 to-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-primary font-bold">{stepNumber}</span>
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                       <p className="text-muted-foreground mb-4">{step.description}</p>
                       {step.tip && (
-                        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                        <div className="bg-gradient-to-br from-amber-50 to-yellow-100/80 border border-yellow-200 rounded-lg p-4">
                           <div className="flex items-start gap-2">
                             <Star className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
                             <p className="text-sm text-yellow-800">{step.tip}</p>
@@ -374,18 +374,18 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
 
   const getLevelColor = (level: string) => {
     if (level === "Principiante" || level === "Beginner")
-      return "bg-green-100 text-green-700";
+      return "bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-800";
     if (level === "Intermedio" || level === "Intermediate")
-      return "bg-yellow-100 text-yellow-700";
+      return "bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800";
     if (level === "Avanzado" || level === "Advanced")
-      return "bg-red-100 text-red-700";
-    return "bg-blue-100 text-blue-700";
+      return "bg-gradient-to-r from-rose-100 to-red-100 text-rose-800";
+    return "bg-gradient-to-r from-sky-100 to-blue-100 text-blue-800";
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
       {/* Hero */}
-      <section className="pt-28 pb-16 px-6 border-b">
+      <section className="border-b bg-gradient-to-br from-background via-background to-secondary/5 px-6 pb-16 pt-28">
         <div className="container mx-auto">
           <Link
             to="/learn"
@@ -395,7 +395,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
             {t("pages.learn.backToLearn")}
           </Link>
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-primary/15 to-secondary/10 rounded-xl flex items-center justify-center">
               <IconComponent className="w-8 h-8 text-primary" />
             </div>
             <div>
@@ -419,7 +419,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
 
       {/* Objectives */}
       {objectives.length > 0 && (
-        <section className="py-12 px-6 bg-muted/30">
+        <section className="py-12 px-6 bg-gradient-section">
           <div className="container mx-auto max-w-3xl">
             <h2 className="text-2xl font-bold mb-6">
               {t("pages.learn.courseObjectives")}
@@ -449,7 +449,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
       </section>
 
       {/* Next Steps */}
-      <section className="py-12 px-6 bg-muted/30">
+      <section className="py-12 px-6 bg-gradient-section">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-2xl font-bold mb-4">
             {t("pages.learn.nextSteps.title")}
@@ -460,14 +460,14 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/learn"
-              className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-gradient-hero text-primary-foreground rounded-lg font-medium transition-opacity hover:opacity-90"
             >
               {t("pages.learn.nextSteps.browseCourses")}
               <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <a
               href="/"
-              className="inline-flex items-center px-6 py-3 border rounded-lg font-medium hover:bg-card transition-colors"
+              className="inline-flex items-center px-6 py-3 border rounded-lg font-medium transition-colors hover:border-primary/40 hover:bg-gradient-to-r hover:from-card hover:to-muted/40"
             >
               {t("pages.learn.nextSteps.tryMehmiro")}
             </a>
