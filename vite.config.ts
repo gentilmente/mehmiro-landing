@@ -205,6 +205,149 @@ const ENGLISH_COURSE_PAGES: EnglishPage[] = readCourses(
   ogDescription: course.description,
 }));
 
+const SPANISH_MARKETING_PAGES: EnglishPage[] = [
+  {
+    dir: "para-docentes",
+    url: "https://mehmiro.com/para-docentes",
+    esUrl: "https://mehmiro.com/para-docentes",
+    title: "Mehmiro para docentes | Observación con evidencia",
+    description:
+      "Respondé por WhatsApp con texto o audio después de clase. Mehmiro analiza la clase y te ayuda a revisar estudiantes y evidencias en la app.",
+    ogTitle: "Tu observación, con evidencia y sin más carga.",
+    ogDescription:
+      "WhatsApp para observar, revisión docente en la app y un historial por estudiante.",
+  },
+  {
+    dir: "para-escuelas",
+    url: "https://mehmiro.com/para-escuelas",
+    esUrl: "https://mehmiro.com/para-escuelas",
+    title: "Mehmiro para escuelas | Visión institucional del progreso",
+    description:
+      "Perfil estudiantil con evidencia aceptada, cobertura y contexto entre materias. Adopción docente, roles, permisos y trazabilidad.",
+    ogTitle: "De señales sueltas a una visión de conjunto.",
+    ogDescription:
+      "Un piloto con objetivos claros para conectar observación, evidencia y decisión institucional.",
+  },
+  {
+    dir: "para-familias",
+    url: "https://mehmiro.com/para-familias",
+    esUrl: "https://mehmiro.com/para-familias",
+    title: "Mehmiro para familias | Transparencia y derechos",
+    description:
+      "Qué registra Mehmiro, quién accede y qué derechos tienen las familias. Transparencia, consentimiento y acceso por roles.",
+    ogTitle: "Más contexto para acompañar, menos etiquetas.",
+    ogDescription:
+      "Qué se registra, quién accede y cómo se revisa la evidencia. Sin portal de familias todavía.",
+  },
+  {
+    dir: "investigacion",
+    url: "https://mehmiro.com/investigacion",
+    esUrl: "https://mehmiro.com/investigacion",
+    title: "Investigación y alianzas | Mehmiro",
+    description:
+      "Marco pedagógico, teoría de cambio, ética y pilotos para evaluar la observación asistida con revisión docente.",
+    ogTitle: "Un marco explícito para aprender con evidencia.",
+    ogDescription:
+      "Colaboración en pilotos, medición y gobernanza de datos. Sin claims que no podamos sostener.",
+  },
+  {
+    dir: "evidencia",
+    url: "https://mehmiro.com/evidencia",
+    esUrl: "https://mehmiro.com/evidencia",
+    title: "Evidencia y método | Mehmiro",
+    description:
+      "Lo que Mehmiro puede afirmar hoy, lo que mide en un piloto y lo que todavía no puede sostener sobre impacto de aprendizaje.",
+    ogTitle: "Lo que sabemos, medimos y no afirmamos.",
+    ogDescription:
+      "Un marco honesto para evaluar observación asistida con revisión docente.",
+  },
+  {
+    dir: "learn",
+    url: "https://mehmiro.com/learn",
+    esUrl: "https://mehmiro.com/learn",
+    title: "Cómo funciona Mehmiro | Tutoriales",
+    description:
+      "Guías paso a paso para configurar tu clase, registrar observaciones y revisar evidencia en Mehmiro.",
+    ogTitle: "Cómo funciona Mehmiro.",
+    ogDescription: "Tutoriales para docentes y equipos.",
+  },
+  {
+    dir: "features",
+    url: "https://mehmiro.com/features",
+    esUrl: "https://mehmiro.com/features",
+    title: "Características | Mehmiro",
+    description:
+      "Observación de clase, revisión docente, perfil estudiantil y gobernanza de datos en una sola plataforma.",
+    ogTitle: "Características de Mehmiro.",
+    ogDescription: "Observación, evidencia y revisión docente.",
+  },
+  {
+    dir: "for-educators",
+    url: "https://mehmiro.com/for-educators",
+    esUrl: "https://mehmiro.com/for-educators",
+    title: "Recursos para educadores | Mehmiro",
+    description:
+      "Guías, tutoriales y recursos para docentes que usan Mehmiro en su práctica cotidiana.",
+    ogTitle: "Recursos para educadores.",
+    ogDescription: "Guías y tutoriales para docentes.",
+  },
+  {
+    dir: "about",
+    url: "https://mehmiro.com/about",
+    esUrl: "https://mehmiro.com/about",
+    title: "Nosotros | Mehmiro",
+    description:
+      "La misión de Mehmiro: acompañar la observación docente con tecnología que ordena, hace visible y no reemplaza el criterio profesional.",
+    ogTitle: "Sobre Mehmiro.",
+    ogDescription: "Tecnología que acompaña, no reemplaza.",
+  },
+  {
+    dir: "blog",
+    url: "https://mehmiro.com/blog",
+    esUrl: "https://mehmiro.com/blog",
+    title: "Blog | Mehmiro",
+    description: "Artículos y reflexiones sobre observación, evidencia y práctica docente.",
+    ogTitle: "Blog de Mehmiro.",
+    ogDescription: "Observación, evidencia y práctica docente.",
+  },
+  {
+    dir: "community",
+    url: "https://mehmiro.com/community",
+    esUrl: "https://mehmiro.com/community",
+    title: "Comunidad | Mehmiro",
+    description: "Conectá con docentes y escuelas que están transformando su observación pedagógica.",
+    ogTitle: "Comunidad Mehmiro.",
+    ogDescription: "Docentes y escuelas que aprenden juntos.",
+  },
+  {
+    dir: "support",
+    url: "https://mehmiro.com/support",
+    esUrl: "https://mehmiro.com/support",
+    title: "Soporte | Mehmiro",
+    description: "Ayuda técnica, guías y respuestas para usar Mehmiro.",
+    ogTitle: "Soporte Mehmiro.",
+    ogDescription: "Ayuda y guías.",
+  },
+  {
+    dir: "privacy",
+    url: "https://mehmiro.com/privacy",
+    esUrl: "https://mehmiro.com/privacy",
+    title: "Privacidad | Mehmiro",
+    description: "Cómo tratamos los datos de estudiantes e instituciones.",
+    ogTitle: "Privacidad en Mehmiro.",
+    ogDescription: "Datos, consentimiento y derechos.",
+  },
+  {
+    dir: "terms",
+    url: "https://mehmiro.com/terms",
+    esUrl: "https://mehmiro.com/terms",
+    title: "Términos | Mehmiro",
+    description: "Términos de uso de la plataforma Mehmiro.",
+    ogTitle: "Términos de Mehmiro.",
+    ogDescription: "Condiciones de uso.",
+  },
+];
+
 const replaceMeta = (
   html: string,
   attribute: "name" | "property",
@@ -286,6 +429,9 @@ const generateStaticPages = (): Plugin => ({
     }
     for (const page of ENGLISH_COURSE_PAGES) {
       writeStaticPage(source, page, true, outDir);
+    }
+    for (const page of SPANISH_MARKETING_PAGES) {
+      writeStaticPage(source, page, false, outDir);
     }
     for (const page of SPANISH_COURSE_PAGES) {
       writeStaticPage(source, page, false, outDir);
