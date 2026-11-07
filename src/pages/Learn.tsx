@@ -1,6 +1,7 @@
 import { useMemo, useState, type ElementType } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import {
   BookOpen,
   Clock,
@@ -78,7 +79,7 @@ const Learn = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
       {/* Hero Section */}
-      <section className="py-20 px-6">
+      <section className="pt-28 pb-20 px-6">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6">
             <Brain className="w-10 h-10 text-primary" />
@@ -384,7 +385,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
       {/* Hero */}
-      <section className="py-16 px-6 border-b">
+      <section className="pt-28 pb-16 px-6 border-b">
         <div className="container mx-auto">
           <Link
             to="/learn"

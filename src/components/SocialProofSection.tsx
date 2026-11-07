@@ -1,6 +1,7 @@
 import { StartButton } from "@/components/StartButton";
 import { Star, Quote, Users, School, Award, CheckCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { CONTENT_FLAGS } from "@/config/contentFlags";
 
 interface SocialProofSectionProps {
   id?: string;
@@ -10,6 +11,8 @@ export const SocialProofSection = ({
   id = "social-proof",
 }: SocialProofSectionProps) => {
   const { t } = useTranslation();
+
+  if (!CONTENT_FLAGS.showSocialProof) return null;
 
   const testimonials = t("socialProof.testimonials", {
     returnObjects: true,

@@ -199,6 +199,7 @@ html { font-size: 112.5%; scroll-padding-top: 112px; }
 .site-wordmark { display: flex; align-items: center; gap: 8px; font-size: 1.6667rem; font-weight: 800; letter-spacing: -1.5px; color: hsl(var(--primary)); }
 .site-wordmark > span { font-size: 2.2222rem; color: hsl(var(--accent)); }
 .desktop-navigation { right: calc(4% + 224px); }
+@media (max-width: 1023px) { .nav-schools-link, .nav-schools-divider { display: none; } }
 .start-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 15px 23px; border-radius: 999px; background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); font-size: 1rem; font-weight: 600; line-height: 1.4; transition: background .2s, transform .2s; white-space: nowrap; }
 .start-button:hover { background: hsl(158 34% 19%); transform: translateY(-2px); }
 a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); outline-offset: 5px; }
@@ -211,7 +212,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 .hero-actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin: 30px 0 24px; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8889rem; font-weight: 500; text-decoration: underline; text-underline-offset: 5px; }
 .hero-values { display: flex; flex-direction: column; gap: 8px; color: hsl(var(--muted-foreground)); font-size: 0.8889rem; }
-.hero-values li { display: flex; align-items: center; gap: 8px; }
+.hero-values li { display: flex; align-items: flex-start; gap: 8px; }
+.hero-values li svg { flex-shrink: 0; margin-top: .28rem; }
+@media (max-width: 767px) { .why-now-grid { grid-template-columns: 1fr !important; } }
 .hero-values svg { color: hsl(var(--primary)); }
 .hero-visual { position: relative; padding: 22px 6px 48px 12px; }
 .hero-photo-wrap { background: hsl(43 65% 82%); border-radius: 140px 140px 28px 28px; padding: 16px; transform: rotate(2deg); }
@@ -432,4 +435,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 }
 @media (max-width: 360px) {
   .header-start .start-button { font-size: .8333rem; padding-inline: 10px; }
+}
+
+/* Keep the tablet nav clear of the wordmark without switching to the mobile menu. */
+@media (min-width: 768px) and (max-width: 900px) {
+  .desktop-navigation { right: calc(4% + 175px); }
 }

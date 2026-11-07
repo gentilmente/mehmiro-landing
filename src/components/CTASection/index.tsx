@@ -10,7 +10,7 @@ export const CTASection = () => {
         <span className="cta-flower" aria-hidden="true">✳</span>
         <h2>{t("cta.title")}</h2>
         <p>{t("cta.description")}</p>
-        <StartButton />
+        <StartButton variant="full" />
       </div>
       <div className="final-qr">
         <img src={frameImage} alt={t("cta.qrCaption")} loading="lazy" />

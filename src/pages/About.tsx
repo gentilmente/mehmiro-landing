@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { CONTENT_FLAGS } from "@/config/contentFlags";
 import {
   GraduationCap,
   Heart,
@@ -142,23 +143,25 @@ const About = () => {
         </div>
       </section>
 
-      {/* Impact Stats */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {stats.map((stat, index) => (
-              <div key={index}>
-                <div className="text-4xl font-bold text-primary mb-2">
-                  {stat.value}
+      {/* Impact Stats: hidden until the numbers are verified. */}
+      {CONTENT_FLAGS.showSocialProof && (
+        <section className="py-16 px-6">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {stats.map((stat, index) => (
+                <div key={index}>
+                  <div className="text-4xl font-bold text-primary mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.label}
+                  </div>
                 </div>
-                <div className="text-sm text-muted-foreground">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
       <Footer />
     </div>
   );

@@ -1,23 +1,25 @@
 import { HeroSection } from "@/components/HeroSection";
+import { AudienceSelector } from "@/components/AudienceSelector";
+import { AmbassadorSection } from "@/components/AmbassadorSection";
 import { ProblemSection } from "@/components/ProblemSection";
+import { WhyNowSection } from "@/components/WhyNowSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { SocialProofSection } from "@/components/SocialProofSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { StackCard } from "@/components/StackCard";
-import { useEffect } from "react";
+import { CONTENT_FLAGS } from "@/config/contentFlags";
 
 const Index = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="landing-page">
       <main>
       {/* Hero Section - Emotional Hook */}
       <HeroSection />
+
+      {/* Audience selector */}
+      <AudienceSelector />
 
       {/* Problem Section - "Every teacher knows this feeling" */}
       <div className="section-stack">
@@ -26,9 +28,22 @@ const Index = () => {
       {/* Solution Section - "Meet Mehmiro" */}
       <StackCard tone="sage"><SolutionSection id="mehmiro" /></StackCard>
 
-      {/* Social Proof - "Join schools already using it" */}
-      <StackCard tone="butter"><SocialProofSection id="comunidad" /></StackCard>
+      {/* Community: social proof stays in i18n but hidden until metrics are verified. */}
+      <StackCard tone="butter">
+        {CONTENT_FLAGS.showSocialProof ? (
+          <SocialProofSection id="comunidad" />
+        ) : (
+          <AmbassadorSection id="embajadores" />
+        )}
+      </StackCard>
       </div>
+
+      {/* Why now: standalone band after the stack, before FAQ */}
+      <section className="mx-auto max-w-[1450px] px-6 pb-6">
+        <div className="overflow-hidden rounded-[32px]" style={{ background: "hsl(190 22% 91%)" }}>
+          <WhyNowSection id="por-que-ahora" />
+        </div>
+      </section>
 
       {/* FAQ - Address concerns directly */}
       <FAQSection id="preguntas-frecuentes" />

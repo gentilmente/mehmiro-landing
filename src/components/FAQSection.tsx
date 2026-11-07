@@ -1,11 +1,11 @@
 import { StartButton } from "@/components/StartButton";
 import { useLayoutEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Shield, Brain, Clock, CheckCircle, HelpCircle } from "lucide-react";
+import { ArrowLeft, ArrowRight, Shield, Brain, Clock, CheckCircle, HelpCircle, Plug, Mic } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 interface FAQSectionProps { id?: string; }
 interface FAQItem { question: string; answer: string; }
-const icons = [Clock, Brain, Shield, CheckCircle, HelpCircle, Shield];
+const icons = [Clock, Brain, Shield, CheckCircle, HelpCircle, Shield, Plug, Mic];
 
 export const FAQSection = ({ id = "faq" }: FAQSectionProps) => {
   const { t, i18n } = useTranslation();

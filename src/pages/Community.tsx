@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { CONTENT_FLAGS } from "@/config/contentFlags";
 import {
   Users,
   MessageCircle,
@@ -70,21 +71,23 @@ const Community = () => {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-12 px-6 bg-primary text-primary-foreground">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {communityStats.map((stat, index) => (
-              <div key={index}>
-                <div className="text-3xl md:text-4xl font-bold mb-1">
-                  {stat.value}
+      {/* Stats: hidden until the numbers are verified. */}
+      {CONTENT_FLAGS.showSocialProof && (
+        <section className="py-12 px-6 bg-primary text-primary-foreground">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {communityStats.map((stat, index) => (
+                <div key={index}>
+                  <div className="text-3xl md:text-4xl font-bold mb-1">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm opacity-90">{stat.label}</div>
                 </div>
-                <div className="text-sm opacity-90">{stat.label}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Events Section */}
       <section className="py-16 px-6">
@@ -187,28 +190,30 @@ const Community = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            {t("pages.community.testimonials.title")}
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="p-6 border rounded-xl bg-card">
-                <Heart className="w-8 h-8 text-primary/30 mb-4" />
-                <p className="text-lg mb-4 italic">"{testimonial.quote}"</p>
-                <div>
-                  <div className="font-semibold">{testimonial.author}</div>
-                  <div className="text-sm text-muted-foreground">
-                    {testimonial.role} • {testimonial.school}
+      {/* Testimonials: hidden until quotes are verified and authorized. */}
+      {CONTENT_FLAGS.showSocialProof && (
+        <section className="py-16 px-6">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              {t("pages.community.testimonials.title")}
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="p-6 border rounded-xl bg-card">
+                  <Heart className="w-8 h-8 text-primary/30 mb-4" />
+                  <p className="text-lg mb-4 italic">"{testimonial.quote}"</p>
+                  <div>
+                    <div className="font-semibold">{testimonial.author}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {testimonial.role} • {testimonial.school}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Become Ambassador */}
       <section className="py-16 px-6 bg-gradient-to-r from-primary/10 to-primary/5">

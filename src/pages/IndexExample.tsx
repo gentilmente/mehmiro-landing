@@ -53,7 +53,7 @@ const IndexExample = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Button size="lg" className="rounded-full px-8 text-base">
-              Comenzar gratis
+              Probala y sumá recompensas
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
             <Button variant="outline" size="lg" className="rounded-full px-8 text-base">
@@ -240,7 +240,7 @@ const IndexExample = () => {
             hoy.
           </p>
           <Button size="lg" className="rounded-full px-10 text-base mt-2">
-            Comenzar gratis
+            Probala y sumá recompensas
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
           <p className="text-xs text-muted-foreground pt-2">

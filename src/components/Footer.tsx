@@ -10,6 +10,10 @@ import {
   ArrowRight,
   BookOpen,
   Users,
+  GraduationCap,
+  Building2,
+  Microscope,
+  FileCheck2,
   Zap,
   Shield,
   FileText,
@@ -19,7 +23,7 @@ import {
 } from "lucide-react";
 import { useForm, ValidationError } from "@formspree/react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { LocalizedLink as Link } from "@/components/LocalizedLink";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -167,6 +171,51 @@ export const Footer = () => {
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.howItWorks")}
+                  </div>
+                </Link>
+                <Link
+                  to="/para-docentes"
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <GraduationCap className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {t("footer.links.forTeachers")}
+                  </div>
+                </Link>
+                <Link
+                  to="/para-escuelas"
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <Building2 className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {t("footer.links.forSchools")}
+                  </div>
+                </Link>
+                <Link
+                  to="/para-familias"
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {t("footer.links.forFamilies")}
+                  </div>
+                </Link>
+                <Link
+                  to="/investigacion"
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <Microscope className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {t("footer.links.research")}
+                  </div>
+                </Link>
+                <Link
+                  to="/evidencia"
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <FileCheck2 className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {t("footer.links.evidence")}
                   </div>
                 </Link>
                 <Link

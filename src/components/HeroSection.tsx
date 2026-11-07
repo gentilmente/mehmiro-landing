@@ -16,7 +16,7 @@ export const HeroSection = () => {
           <h1>{t("hero.headlinePrimary")}<br /><span>{t("hero.headlineSecondary")}</span></h1>
           <p className="hero-description">{t("hero.subheadline")}</p>
           <div className="hero-actions">
-            <StartButton />
+            <StartButton variant="full" />
             <a href="#mehmiro" className="text-link">{t("hero.scrollIndicator")}<ArrowDown size={16} aria-hidden="true" /></a>
           </div>
           <ul className="hero-values">
@@ -25,7 +25,7 @@ export const HeroSection = () => {
         </div>
         <div className="hero-visual">
           <div className="hero-photo-wrap"><img className="hero-photo" src={teachingTeam} alt={t("hero.imageAlt")} fetchPriority="high" /></div>
-          <div className="hero-note"><div className="hero-note-icon"><Eye size={24} aria-hidden="true" /></div><div><strong>{valueProps[0]}</strong><span>{valueProps[1]}</span></div><Brain className="hero-note-brain" size={22} aria-hidden="true" /></div>
+          <div className="hero-note"><div className="hero-note-icon"><Eye size={24} aria-hidden="true" /></div><div><strong>{t("hero.noteTitle")}</strong><span>{t("hero.noteText")}</span></div><Brain className="hero-note-brain" size={22} aria-hidden="true" /></div>
           <span className="hero-doodle" aria-hidden="true">✳</span>
         </div>
       </div>

@@ -377,7 +377,7 @@ const Features = () => {
             href="/"
             className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-white text-primary hover:bg-white/90 rounded-lg transition-colors"
           >
-            Comenzar gratis
+            Probala y sumá recompensas
           </a>
         </div>
       </section>

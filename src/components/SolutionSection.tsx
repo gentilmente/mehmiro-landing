@@ -29,9 +29,9 @@ export const SolutionSection = ({
     icon: featureIcons[index],
   }));
 
-  const stats = t("solution.stats", {
+  const steps = t("solution.steps", {
     returnObjects: true,
-  }) as { value: string; label: string }[];
+  }) as { title: string; description: string }[];
 
   return (
     <section
@@ -58,17 +58,20 @@ export const SolutionSection = ({
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto mb-8">
-          {stats.map((stat, index) => (
+        {/* Product flow */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+          {steps.map((step, index) => (
             <div
-              key={index}
-              className="text-center p-6 rounded-2xl bg-card border border-border/50"
+              key={step.title}
+              className="p-5 rounded-2xl bg-card border border-border/50"
             >
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-2">
-                {stat.value}
+              <div className="text-sm font-semibold text-primary mb-2">
+                {String(index + 1).padStart(2, "0")}
               </div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>
@@ -103,6 +106,11 @@ export const SolutionSection = ({
             </span>
           </div>
         </div>
+        {/* Integrations */}
+        <p className="mt-5 text-center text-sm text-muted-foreground">
+          {t("solution.integrations")}
+        </p>
+
         <div className="section-action"><StartButton /></div>
       </div>
     </section>

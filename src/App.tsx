@@ -1,11 +1,17 @@
 import { StartButton } from "@/components/StartButton";
+import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Index from "./pages";
 import IndexExample from "./pages/IndexExample";
 import Learn, { LearnCourse } from "./pages/Learn";
 import Features from "./pages/Features";
 import ForEducators from "./pages/ForEducators";
+import ParaDocentes from "./pages/ParaDocentes";
+import ParaEscuelas from "./pages/ParaEscuelas";
+import ParaFamilias from "./pages/ParaFamilias";
+import Investigacion from "./pages/Investigacion";
+import Evidencia from "./pages/Evidencia";
 import Blog from "./pages/Blog";
 import Community from "./pages/Community";
 import Support from "./pages/Support";
@@ -17,8 +23,10 @@ import NotFound from "./pages/NotFound";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { useState } from "react";
+import { useDocumentMetadata } from "@/hooks/useDocumentMetadata";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { isEnglishPath, localizePath, stripEnglishPrefix } from "@/lib/locale";
 
 const queryClient = new QueryClient();
 
@@ -58,19 +66,24 @@ const LanguageFlag = ({ language }: { language: string }) => {
 const Navigation = () => {
   const isMobile = useIsMobile();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const englishPath = isEnglishPath(location.pathname);
 
-  const isEnglish = i18n.resolvedLanguage?.startsWith("en");
-  const nextLanguage = isEnglish ? "es-AR" : "en";
-  const nextLanguageLabel = isEnglish
+  const nextLanguage = englishPath ? "es-AR" : "en";
+  const nextLanguageLabel = englishPath
     ? t("language.spanish")
     : t("language.english");
-  const nextLanguageShort = isEnglish
+  const nextLanguageShort = englishPath
     ? t("language.toggleShort.es")
     : t("language.toggleShort.en");
 
   const handleLanguageToggle = () => {
-    void i18n.changeLanguage(nextLanguage);
+    const target = englishPath
+      ? stripEnglishPrefix(location.pathname)
+      : localizePath(location.pathname, true);
+    navigate(target);
   };
 
   return (
@@ -115,6 +128,34 @@ const Navigation = () => {
           >
             {t("nav.howItWorks")}
           </Link>
+          <Link
+            to="/para-docentes"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-xl font-medium text-foreground hover:text-primary transition-colors"
+          >
+            {t("nav.forTeachers")}
+          </Link>
+          <Link
+            to="/para-escuelas"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-xl font-medium text-foreground hover:text-primary transition-colors"
+          >
+            {t("nav.forSchools")}
+          </Link>
+          <Link
+            to="/para-familias"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-xl font-medium text-foreground hover:text-primary transition-colors"
+          >
+            {t("nav.forFamilies")}
+          </Link>
+          <Link
+            to="/investigacion"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-xl font-medium text-foreground hover:text-primary transition-colors"
+          >
+            {t("nav.research")}
+          </Link>
           <StartButton />
           <button
             onClick={handleLanguageToggle}
@@ -147,6 +188,13 @@ const Navigation = () => {
               {t("nav.howItWorks")}
             </Link>
             <div className="w-px h-4 bg-border" />
+            <Link
+              to="/para-escuelas"
+              className="nav-schools-link px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"
+            >
+              {t("nav.forSchools")}
+            </Link>
+            <div className="nav-schools-divider w-px h-4 bg-border" />
             <button
               onClick={handleLanguageToggle}
               className="px-3 py-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted inline-flex items-center gap-2"
@@ -164,11 +212,34 @@ const Navigation = () => {
   );
 };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+const MetadataSync = () => {
+  const location = useLocation();
+  useDocumentMetadata(location.pathname);
+  return null;
+};
+
+const LanguageRouteSync = () => {
+  const { i18n } = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    const target = isEnglishPath(location.pathname) ? "en" : "es-AR";
+    if (i18n.resolvedLanguage !== target) {
+      void i18n.changeLanguage(target);
+    }
+  }, [location.pathname, i18n]);
+
+  return null;
+};
+
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
       <BrowserRouter
         future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
       >
+        <LanguageRouteSync />
+        <MetadataSync />
         <ScrollToTop />
         <Navigation />
         <Routes>
@@ -178,6 +249,11 @@ const App = () => (
         <Route path="/learn/:courseId" element={<LearnCourse />} />
         <Route path="/features" element={<Features />} />
         <Route path="/for-educators" element={<ForEducators />} />
+        <Route path="/para-docentes" element={<ParaDocentes />} />
+        <Route path="/para-escuelas" element={<ParaEscuelas />} />
+        <Route path="/para-familias" element={<ParaFamilias />} />
+        <Route path="/investigacion" element={<Investigacion />} />
+        <Route path="/evidencia" element={<Evidencia />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/community" element={<Community />} />
         <Route path="/support" element={<Support />} />
@@ -185,11 +261,28 @@ const App = () => (
         {/* <Route path="/team" element={<Team />} /> */}
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/en" element={<Index />} />
+        <Route path="/en/para-docentes" element={<ParaDocentes />} />
+        <Route path="/en/para-escuelas" element={<ParaEscuelas />} />
+        <Route path="/en/para-familias" element={<ParaFamilias />} />
+        <Route path="/en/investigacion" element={<Investigacion />} />
+        <Route path="/en/evidencia" element={<Evidencia />} />
+        <Route path="/en/learn" element={<Learn />} />
+        <Route path="/en/learn/:courseId" element={<LearnCourse />} />
+        <Route path="/en/features" element={<Features />} />
+        <Route path="/en/for-educators" element={<ForEducators />} />
+        <Route path="/en/blog" element={<Blog />} />
+        <Route path="/en/community" element={<Community />} />
+        <Route path="/en/support" element={<Support />} />
+        <Route path="/en/about" element={<About />} />
+        <Route path="/en/privacy" element={<Privacy />} />
+        <Route path="/en/terms" element={<Terms />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;

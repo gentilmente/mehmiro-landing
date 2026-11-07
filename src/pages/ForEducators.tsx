@@ -1,6 +1,6 @@
 import { useMemo, useState, type ElementType } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import {
   GraduationCap,
   BookOpen,
