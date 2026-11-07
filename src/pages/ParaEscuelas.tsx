@@ -1,6 +1,7 @@
 import { Building2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AudiencePage, type AudienceSection } from "@/components/AudiencePage";
+import { SchoolVisual } from "@/components/AudienceVisuals";
 
 interface AudienceContent {
   eyebrow: string;
@@ -32,6 +33,7 @@ const ParaEscuelas = () => {
         label: content.secondaryCta,
         href: "/#mehmiro",
       }}
+      visual={<SchoolVisual />}
     />
   );
 };

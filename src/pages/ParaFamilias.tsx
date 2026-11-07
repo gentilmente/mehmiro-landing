@@ -1,6 +1,7 @@
 import { Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AudiencePage, type AudienceSection } from "@/components/AudiencePage";
+import { FamilyVisual } from "@/components/AudienceVisuals";
 
 interface AudienceContent {
   eyebrow: string;
@@ -32,6 +33,7 @@ const ParaFamilias = () => {
         label: content.secondaryCta,
         href: "/#preguntas-frecuentes",
       }}
+      visual={<FamilyVisual />}
     />
   );
 };

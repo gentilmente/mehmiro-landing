@@ -1,8 +1,10 @@
+import type { ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { Footer } from "@/components/Footer";
+import { Reveal } from "@/components/Reveal";
 
 export interface AudienceSection {
   title: string;
@@ -19,6 +21,7 @@ interface AudiencePageProps {
   note?: string;
   primary: { label: string; href: string };
   secondary?: { label: string; href: string };
+  visual?: ReactNode;
 }
 
 const isInternalRoute = (href: string) => href.startsWith("/");
@@ -63,76 +66,86 @@ export const AudiencePage = ({
   note,
   primary,
   secondary,
+  visual,
 }: AudiencePageProps) => {
   const { t } = useTranslation();
 
   return (
-  <div className="min-h-screen bg-background">
-    <header className="px-6 pt-32 pb-12">
-      <div className="mx-auto max-w-4xl">
-        <Link
-          to="/"
-          className="mb-8 flex w-fit items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary"
-        >
-          <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-          {t("audiences.back")}
-        </Link>
+    <div className="min-h-screen bg-background">
+      <header className="audience-hero">
+        <div className="audience-hero-inner">
+          <div className="audience-copy">
+            <Link
+              to="/"
+              className="mb-8 flex w-fit items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              {t("audiences.back")}
+            </Link>
 
-        <div className="section-eyebrow">
-          <Icon className="h-4 w-4" aria-hidden="true" />
-          {eyebrow}
-        </div>
+            <div className="section-eyebrow">
+              <Icon className="h-4 w-4" aria-hidden="true" />
+              {eyebrow}
+            </div>
 
-        <h1 className="max-w-3xl font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
-          {title}
-        </h1>
+            <h1>{title}</h1>
+            <p className="audience-description">{description}</p>
 
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-          {description}
-        </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <ActionLink href={primary.href} label={primary.label} variant="primary" />
+              {secondary && (
+                <ActionLink href={secondary.href} label={secondary.label} variant="secondary" />
+              )}
+            </div>
 
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <ActionLink href={primary.href} label={primary.label} variant="primary" />
-          {secondary && (
-            <ActionLink href={secondary.href} label={secondary.label} variant="secondary" />
+            {note && <p className="audience-note">{note}</p>}
+          </div>
+
+          {visual && (
+            <Reveal className="audience-visual" delay={80}>
+              {visual}
+            </Reveal>
           )}
         </div>
+      </header>
 
-        {note && (
-          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            {note}
-          </p>
-        )}
-      </div>
-    </header>
+      <main className="audience-main">
+        <div className="audience-sections">
+          {sections.map((section, index) => (
+            <Reveal key={section.title} delay={index * 60}>
+              <section className="audience-section-card">
+                <span className="audience-section-index">0{index + 1}</span>
+                <div className="audience-section-copy">
+                  <h2>{section.title}</h2>
+                  <p>{section.body}</p>
+                  {section.bullets && section.bullets.length > 0 && (
+                    <ul className="audience-bullets">
+                      {section.bullets.map((bullet) => (
+                        <li key={bullet}>
+                          <span aria-hidden="true" />
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </section>
+            </Reveal>
+          ))}
+        </div>
+      </main>
 
-    <main className="px-6 pb-20">
-      <div className="mx-auto max-w-4xl space-y-5">
-        {sections.map((section) => (
-          <section
-            key={section.title}
-            className="rounded-3xl border border-border/60 bg-card p-6 md:p-8"
-          >
-            <h2 className="mb-3 font-serif text-2xl leading-tight text-foreground md:text-3xl">
-              {section.title}
-            </h2>
-            <p className="leading-relaxed text-muted-foreground">{section.body}</p>
-            {section.bullets && section.bullets.length > 0 && (
-              <ul className="mt-5 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2">
-                {section.bullets.map((bullet) => (
-                  <li key={bullet} className="flex items-start gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
-        ))}
-      </div>
-    </main>
+      <Reveal className="audience-closing-wrap">
+        <section className="audience-closing">
+          <div>
+            <span className="audience-closing-eyebrow">{t("audiences.nextStep")}</span>
+            <h2>{t("audiences.nextStepDescription")}</h2>
+          </div>
+          <ActionLink href={primary.href} label={primary.label} variant="primary" />
+        </section>
+      </Reveal>
 
-    <Footer />
-  </div>
+      <Footer />
+    </div>
   );
 };

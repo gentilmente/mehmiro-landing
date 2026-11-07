@@ -239,6 +239,8 @@
     ]
   },
   "audiences": {
+    "nextStep": "Next step",
+    "nextStepDescription": "Start where you are: a class, a conversation or a pilot.",
     "back": "Back to home",
     "docentes": {
       "eyebrow": "For teachers",
@@ -483,6 +485,23 @@
         }
       ]
     }
+  },
+  "audienceVisual": {
+    "voiceAlt": "Teacher recording a voice note in the classroom",
+    "schoolAlt": "School leader and teacher with an institutional recognition",
+    "voiceLabel": "Voice note",
+    "voiceDetail": "30 seconds after class",
+    "schoolLabel": "Institutional view",
+    "schoolDetail": "Accepted evidence across subjects",
+    "familyLabel": "Transparency",
+    "familyRows": ["What is recorded", "Who has access", "What AI decides"],
+    "familyFooter": "No family portal yet",
+    "researchLabel": "Evidence and method",
+    "researchSteps": ["Observation", "Evidence", "Review"],
+    "researchFooter": "No short-term impact claims",
+    "evidenceLabel": "Evidence status",
+    "evidenceRows": ["We know", "We measure", "Still missing"],
+    "evidenceFooter": "Public results pending"
   },
   "faq": {
     "scrollHint": "Keep scrolling for the next answer",

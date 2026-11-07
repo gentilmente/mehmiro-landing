@@ -239,6 +239,8 @@
     ]
   },
   "audiences": {
+    "nextStep": "Siguiente paso",
+    "nextStepDescription": "Empezá por donde estás: una clase, una conversación o un piloto.",
     "back": "Volver al inicio",
     "docentes": {
       "eyebrow": "Para docentes",
@@ -483,6 +485,23 @@
         }
       ]
     }
+  },
+  "audienceVisual": {
+    "voiceAlt": "Docente grabando una nota de voz en el aula",
+    "schoolAlt": "Directora y docente con un reconocimiento institucional",
+    "voiceLabel": "Nota de voz",
+    "voiceDetail": "30 segundos después de clase",
+    "schoolLabel": "Visión institucional",
+    "schoolDetail": "Evidencia aceptada entre materias",
+    "familyLabel": "Transparencia",
+    "familyRows": ["Qué se registra", "Quién accede", "Qué decide la IA"],
+    "familyFooter": "Sin portal de familias todavía",
+    "researchLabel": "Evidencia y método",
+    "researchSteps": ["Observación", "Evidencia", "Revisión"],
+    "researchFooter": "Sin claims de impacto a corto plazo",
+    "evidenceLabel": "Estado de evidencia",
+    "evidenceRows": ["Sabemos", "Medimos", "Falta"],
+    "evidenceFooter": "Resultados públicos pendientes"
   },
   "faq": {
     "scrollHint": "Seguí deslizando para ver la próxima respuesta",

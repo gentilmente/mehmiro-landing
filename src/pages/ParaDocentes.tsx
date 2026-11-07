@@ -1,6 +1,7 @@
 import { GraduationCap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AudiencePage, type AudienceSection } from "@/components/AudiencePage";
+import { TeacherVisual } from "@/components/AudienceVisuals";
 
 interface AudienceContent {
   eyebrow: string;
@@ -32,6 +33,7 @@ const ParaDocentes = () => {
         label: content.secondaryCta,
         href: "/#embajadores",
       }}
+      visual={<TeacherVisual />}
     />
   );
 };

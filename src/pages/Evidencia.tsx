@@ -1,6 +1,7 @@
 import { FileCheck2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AudiencePage, type AudienceSection } from "@/components/AudiencePage";
+import { EvidenceVisual } from "@/components/AudienceVisuals";
 
 interface AudienceContent {
   eyebrow: string;
@@ -32,6 +33,7 @@ const Evidencia = () => {
         label: content.secondaryCta,
         href: "/investigacion",
       }}
+      visual={<EvidenceVisual />}
     />
   );
 };
