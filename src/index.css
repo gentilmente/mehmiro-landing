@@ -947,3 +947,96 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
     transition: none;
   }
 }
+
+/* Mobile audience selector: scroll-stacked deck. */
+@media (max-width: 639px) {
+  .audience-selector-grid {
+    display: block;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .audience-selector-grid::after {
+    content: "";
+    display: block;
+    height: 60px;
+  }
+
+  .audience-card {
+    position: sticky;
+    top: calc(84px + var(--card-index, 0) * 130px);
+    z-index: calc(10 + var(--card-index, 0));
+    min-height: 260px;
+    margin-bottom: 14px;
+    box-shadow: 0 18px 40px hsl(228 35% 16% / 0.12);
+  }
+
+  .audience-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .audience-card:hover {
+    transform: none;
+  }
+}
+
+/* Each audience gets a distinct tint within the blue-purple brand family. */
+.audience-tone-0 {
+  --audience-accent: 225 75% 45%;
+  --audience-soft: 225 80% 95%;
+  --audience-soft-2: 235 70% 87%;
+}
+
+.audience-tone-1 {
+  --audience-accent: 245 70% 50%;
+  --audience-soft: 245 75% 94%;
+  --audience-soft-2: 260 65% 86%;
+}
+
+.audience-tone-2 {
+  --audience-accent: 270 65% 54%;
+  --audience-soft: 270 70% 94%;
+  --audience-soft-2: 285 60% 86%;
+}
+
+.audience-tone-3 {
+  --audience-accent: 288 60% 47%;
+  --audience-soft: 288 65% 93%;
+  --audience-soft-2: 300 55% 85%;
+}
+
+.audience-card {
+  --audience-accent: 225 75% 45%;
+  --audience-soft: 225 80% 95%;
+  --audience-soft-2: 235 70% 87%;
+  border-color: hsl(var(--audience-accent) / 0.22);
+  background: linear-gradient(135deg, hsl(var(--audience-soft)), hsl(var(--audience-soft-2)));
+}
+
+.audience-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, hsl(var(--audience-accent)), hsl(var(--audience-accent) / 0.18));
+}
+
+.audience-card:hover {
+  border-color: hsl(var(--audience-accent) / 0.55);
+  box-shadow: 0 18px 40px hsl(var(--audience-accent) / 0.14);
+}
+
+.audience-card-index {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  line-height: 1;
+  color: hsl(var(--audience-accent) / 0.45);
+}
+
+.audience-card-icon {
+  background: hsl(var(--audience-accent) / 0.12);
+  color: hsl(var(--audience-accent));
+}

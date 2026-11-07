@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import {
@@ -36,16 +37,20 @@ export const AudienceSelector = () => {
           </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="audience-selector-grid grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, index) => {
             const Icon = icons[index] ?? Users;
             return (
               <Link
                 key={item.title}
                 to={item.href}
-                className="group flex h-full flex-col rounded-2xl border border-border/60 bg-card p-6 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+                className={`audience-card audience-tone-${index} group relative flex h-full flex-col overflow-hidden rounded-2xl border p-6 transition-all hover:-translate-y-0.5`}
+                style={{ "--card-index": index } as CSSProperties}
               >
-                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <span className="audience-card-index" aria-hidden="true">
+                  0{index + 1}
+                </span>
+                <div className="audience-card-icon mb-5 flex h-10 w-10 items-center justify-center rounded-xl">
                   <Icon className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
