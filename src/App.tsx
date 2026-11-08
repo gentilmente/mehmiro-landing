@@ -22,6 +22,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { PointerGlow } from "@/components/PointerGlow";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useDocumentMetadata } from "@/hooks/useDocumentMetadata";
@@ -242,6 +243,7 @@ const App = () => {
         <LanguageRouteSync />
         <MetadataSync />
         <ScrollToTop />
+        <PointerGlow />
         <Navigation />
         <Routes>
         <Route path="/" element={<Index />} />

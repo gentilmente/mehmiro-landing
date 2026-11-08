@@ -1040,3 +1040,54 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
   background: hsl(var(--audience-accent) / 0.12);
   color: hsl(var(--audience-accent));
 }
+
+/* Soft page-wide gradient with a pointer-following highlight. */
+:root {
+  --pointer-x: 50vw;
+  --pointer-y: 28vh;
+}
+
+html {
+  background: hsl(var(--background));
+}
+
+body {
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      620px circle at var(--pointer-x) var(--pointer-y),
+      hsl(275 70% 60% / 0.14),
+      transparent 66%
+    ),
+    radial-gradient(
+      900px circle at 100% 100%,
+      hsl(225 80% 58% / 0.07),
+      transparent 62%
+    ),
+    linear-gradient(
+      135deg,
+      hsl(250 45% 99%),
+      hsl(255 40% 96%) 55%,
+      hsl(245 45% 97%)
+    );
+}
+
+#root {
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+}
+
+/* Page roots used to paint an opaque background; let the global glow show through. */
+#root > div:not(.fixed) {
+  background-color: transparent !important;
+  background-image: none !important;
+}
