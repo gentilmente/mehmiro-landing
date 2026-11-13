@@ -76,7 +76,7 @@ This file captures the repo-specific context needed to work efficiently.
 
 - Metadata is implemented in `index.html` (title, description, OG/Twitter, canonical, JSON-LD, theme-color), with `public/og-mehmiro.png`, `public/sitemap.xml` and `public/robots.txt`.
 - English routes exist at `/en` and `/en/*`; the language toggle navigates between `/` and `/en`. `vite.config.ts` generates static HTML for all marketing routes and known course IDs in both languages; unknown course IDs remain SPA/404.
-- The hero, problem and “Por qué ahora” sections use the systemic narrative. `/evidencia` and `/en/evidencia` document what the product can and cannot claim.
+- The hero, problem and solution sections use the systemic narrative. The standalone “Por qué ahora” section was removed in the editorial pass. `/evidencia` and `/en/evidencia` document what the product can and cannot claim.
 - Audience pages exist: `/para-docentes`, `/para-escuelas`, `/para-familias`, `/investigacion`; the home selector and footer link to them.
 - `AGENTS.md` should be kept in sync with content/UX decisions.
 
