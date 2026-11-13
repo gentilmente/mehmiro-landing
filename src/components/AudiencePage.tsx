@@ -75,30 +75,35 @@ export const AudiencePage = ({
       <header className="audience-hero">
         <div className="audience-hero-inner">
           <div className="audience-copy">
-            <Link
-              to="/"
-              className="mb-8 flex w-fit items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              {t("audiences.back")}
-            </Link>
+            <div className="audience-intro">
+              <Link
+                to="/"
+                className="mb-8 flex w-fit items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary"
+              >
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+                {t("audiences.back")}
+              </Link>
 
-            <div className="section-eyebrow">
-              <Icon className="h-4 w-4" aria-hidden="true" />
-              {eyebrow}
+              <div className="section-eyebrow">
+                <Icon className="h-4 w-4" aria-hidden="true" />
+                {eyebrow}
+              </div>
+
+              <h1>{title}</h1>
             </div>
 
-            <h1>{title}</h1>
-            <p className="audience-description">{description}</p>
+            <div className="audience-body">
+              <p className="audience-description">{description}</p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <ActionLink href={primary.href} label={primary.label} variant="primary" />
-              {secondary && (
-                <ActionLink href={secondary.href} label={secondary.label} variant="secondary" />
-              )}
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <ActionLink href={primary.href} label={primary.label} variant="primary" />
+                {secondary && (
+                  <ActionLink href={secondary.href} label={secondary.label} variant="secondary" />
+                )}
+              </div>
+
+              {note && <p className="audience-note">{note}</p>}
             </div>
-
-            {note && <p className="audience-note">{note}</p>}
           </div>
 
           {visual && (
