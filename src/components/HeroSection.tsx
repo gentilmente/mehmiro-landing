@@ -13,16 +13,20 @@ export const HeroSection = () => {
     <section className="education-hero">
       <div className="hero-layout">
         <div className="hero-copy">
-          <div className="section-eyebrow"><Heart size={16} aria-hidden="true" />{t("hero.badge")}</div>
-          <h1>{t("hero.headlinePrimary")}<br /><span>{t("hero.headlineSecondary")}</span></h1>
-          <p className="hero-description">{t("hero.subheadline")}</p>
-          <div className="hero-actions">
-            <StartButton variant="full" />
-            <a href="#mehmiro" className="text-link">{t("hero.scrollIndicator")}<ArrowDown size={16} aria-hidden="true" /></a>
+          <div className="hero-intro">
+            <div className="section-eyebrow"><Heart size={16} aria-hidden="true" />{t("hero.badge")}</div>
+            <h1>{t("hero.headlinePrimary")}<br /><span>{t("hero.headlineSecondary")}</span></h1>
           </div>
-          <ul className="hero-values">
-            {valueProps.map((text) => <li key={text}><Check size={16} aria-hidden="true" />{text}</li>)}
-          </ul>
+          <div className="hero-body">
+            <p className="hero-description">{t("hero.subheadline")}</p>
+            <div className="hero-actions">
+              <StartButton variant="full" />
+              <a href="#mehmiro" className="text-link">{t("hero.scrollIndicator")}<ArrowDown size={16} aria-hidden="true" /></a>
+            </div>
+            <ul className="hero-values">
+              {valueProps.map((text) => <li key={text}><Check size={16} aria-hidden="true" />{text}</li>)}
+            </ul>
+          </div>
         </div>
         <div className="hero-visual">
           <LogoMaskedPhoto className="hero-photo-mask" src={teacherVoiceNote} alt={t("hero.imageAlt")} />

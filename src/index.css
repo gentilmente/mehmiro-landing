@@ -296,7 +296,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
   .hero-description { font-size: 1rem; }
   .hero-values { font-size: 0.8889rem; }
   .hero-actions { gap: 18px; }
-  .hero-visual { width: min(100%, 420px); margin: auto; padding: 10px 12px 42px; }
+  .hero-visual { width: min(100%, 420px); margin: auto; padding: 10px 12px 42px; order: 2; }
+  .hero-copy { display: contents; }
+  .hero-intro { order: 1; }
+  .hero-body { order: 3; }
   .hero-recognition { flex-direction: column; gap: 12px; margin-top: 24px; }
   .hero-recognition img { width: 280px; }
   .section-stack { padding: 0 12px; }
