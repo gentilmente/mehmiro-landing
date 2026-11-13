@@ -85,52 +85,27 @@
     "note": "La madurez técnica ya está. El desafío es la adopción y la confianza."
   },
   "solution": {
-    "badge": "La solución",
-    "title": "Así funciona Mehmiro",
-    "description": "Observación de clase asistida por IA, con revisión docente y una visión institucional del progreso.",
+    "badge": "El ciclo docente",
+    "title": "De la planificación a la evidencia",
+    "description": "Cuatro momentos del trabajo docente, conectados en Mehmiro.",
     "steps": [
       {
-        "title": "Respondé por WhatsApp",
-        "description": "Enviá texto o audio después de clase. La transcripción es efímera."
+        "title": "Prepará tu año",
+        "description": "Organizá el programa anual con IA y definí prioridades por período."
       },
       {
-        "title": "Revisá en la app",
-        "description": "Confirmá o corregí las sugerencias. Nada se guarda sin tu revisión."
+        "title": "Prepará la próxima clase",
+        "description": "Mehmiro usa el momento del año y tu planificación para proponer una clase con tu contexto."
       },
       {
-        "title": "Seguí el historial",
-        "description": "La evidencia aceptada queda en el historial del estudiante."
+        "title": "Contá cómo fue",
+        "description": "Después de clase, un recordatorio te invita a registrar con texto o audio cómo salió esa clase."
+      },
+      {
+        "title": "Revisá la evidencia",
+        "description": "Confirmá o corregí las sugerencias en la app. Lo aceptado queda en el perfil del estudiante."
       }
     ],
-    "stats": [
-      {
-        "value": "24h",
-        "label": "Tiempo para las primeras percepciones"
-      },
-      {
-        "value": "100%",
-        "label": "Respeto a tu autonomía"
-      },
-      {
-        "value": "∞",
-        "label": "Capacidad de observación"
-      }
-    ],
-    "features": [
-      {
-        "title": "Revisión con contexto",
-        "description": "Cada sugerencia llega con la observación que la originó."
-      },
-      {
-        "title": "Historial por estudiante",
-        "description": "Evidencia aceptada, ordenada por período y materia."
-      },
-      {
-        "title": "Roles y permisos",
-        "description": "Cada persona ve lo que le corresponde."
-      }
-    ],
-    "valueProposition": "Identifica señales y ofrece opciones. Tu criterio decide.",
     "integrations": "Integraciones: WhatsApp para observaciones y Google (login, Calendar y Gmail/Workspace). Otros canales se prueban en el piloto."
   },
   "socialProof": {

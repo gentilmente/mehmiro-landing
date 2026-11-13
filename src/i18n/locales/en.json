@@ -85,52 +85,27 @@
     "note": "Technical maturity is here. The challenge is adoption and trust."
   },
   "solution": {
-    "badge": "The solution",
-    "title": "How Mehmiro works",
-    "description": "AI-assisted class observation with teacher review and an institutional view of progress.",
+    "badge": "The teaching cycle",
+    "title": "From planning to evidence",
+    "description": "Four moments of teaching work, connected in Mehmiro.",
     "steps": [
       {
-        "title": "Reply on WhatsApp",
-        "description": "Send text or audio after class. Transcription is ephemeral."
+        "title": "Plan your year",
+        "description": "Organize the annual plan with AI and set priorities by term."
       },
       {
-        "title": "Review in the app",
-        "description": "Confirm or correct suggestions. Nothing is saved without your review."
+        "title": "Plan the next class",
+        "description": "Mehmiro uses the time of year and your annual plan to suggest a class grounded in your context."
       },
       {
-        "title": "Follow the history",
-        "description": "Accepted evidence stays in the student's history."
+        "title": "Tell us how it went",
+        "description": "After class, a reminder invites you to record how that class went, by text or audio."
+      },
+      {
+        "title": "Review the evidence",
+        "description": "Confirm or correct suggestions in the app. Accepted evidence stays in the student's profile."
       }
     ],
-    "stats": [
-      {
-        "value": "24h",
-        "label": "Time to first insights"
-      },
-      {
-        "value": "100%",
-        "label": "Respect for your autonomy"
-      },
-      {
-        "value": "∞",
-        "label": "Observation capacity"
-      }
-    ],
-    "features": [
-      {
-        "title": "Review with context",
-        "description": "Every suggestion arrives with the observation behind it."
-      },
-      {
-        "title": "Student history",
-        "description": "Accepted evidence, organized by period and subject."
-      },
-      {
-        "title": "Roles and permissions",
-        "description": "Each person sees what they are meant to see."
-      }
-    ],
-    "valueProposition": "It spots signals and offers options. Your judgment decides.",
     "integrations": "Integrations: WhatsApp for observations and Google (login, Calendar and Gmail/Workspace). Other channels are tested during the pilot."
   },
   "socialProof": {

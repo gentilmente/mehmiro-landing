@@ -1289,3 +1289,25 @@ body::after {
   font-family: var(--font-serif);
   font-weight: 600;
 }
+
+/* The solution reads as four connected moments in the teaching cycle. */
+.solution-flow {
+  position: relative;
+}
+
+.solution-step {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .solution-flow::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.25), transparent);
+  }
+}
