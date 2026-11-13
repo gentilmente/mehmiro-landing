@@ -228,7 +228,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
   50% { transform: translateY(-9px) scale(1.025); }
 }
 .hero-visual { position: relative; padding: 22px 6px 48px 12px; }
-.hero-note { position: absolute; bottom: 20px; left: 50%; right: auto; width: 50%; display: flex; align-items: center; gap: 12px; padding: 20px; border: 1px solid hsl(var(--border) / .6); background: hsl(var(--card)); border-radius: 18px; box-shadow: 0 12px 30px hsl(228 35% 16% / .08); transform: rotate(-3deg); animation: note-float 6s ease-in-out infinite; will-change: transform; }
+.hero-note { position: absolute; bottom: 20px; left: 45%; right: auto; width: 55%; display: flex; align-items: center; gap: 12px; padding: 20px; border: 1px solid hsl(var(--border) / .6); background: hsl(var(--card)); border-radius: 18px; box-shadow: 0 12px 30px hsl(228 35% 16% / .08); transform: rotate(-3deg); animation: note-float 6s ease-in-out infinite; will-change: transform; }
 .hero-note-icon { padding: 12px; background: hsl(250 40% 93%); border-radius: 12px; color: hsl(var(--primary)); }
 .hero-note strong { display: block; font-size: 0.8889rem; }
 .hero-note span { display: block; color: hsl(var(--muted-foreground)); margin-top: 5px; font-size: 0.8889rem; }
