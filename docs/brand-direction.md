@@ -49,9 +49,11 @@ Un **halo de tinta** que responde al pointer, el recorte en dos fragmentos y el 
 ## Do / Don't
 
 - **Sí:** papel, tinta, reglas, numeración, fotos recortadas, asimetría contenida.
+- **Sí:** una misma superficie papel para los cuatro públicos, con un acento de color por audiencia.
 - **Sí:** azul-púrpura como acento.
 - **No:** gradiente púrpura a pantalla completa detrás de todo.
 - **No:** cards flotantes todas blancas y redondeadas.
+- **No:** cuatro fondos de color compitiendo en el selector de públicos.
 - **No:** orbes genéricos, blobs o partículas decorativas.
 - **No:** iconos como única diferenciación entre públicos.
 

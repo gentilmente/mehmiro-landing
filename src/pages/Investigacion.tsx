@@ -33,6 +33,7 @@ const Investigacion = () => {
         label: content.secondaryCta,
         href: "/evidencia",
       }}
+      tone={3}
       visual={<ResearchVisual />}
     />
   );

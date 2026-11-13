@@ -44,20 +44,22 @@ export const AudienceSelector = () => {
               <Link
                 key={item.title}
                 to={item.href}
-                className={`audience-card audience-tone-${index} group relative flex h-full flex-col overflow-hidden rounded-2xl border p-6 transition-all hover:-translate-y-0.5`}
+                className={`audience-card audience-tone-${index} group relative flex h-full flex-col overflow-hidden rounded-2xl border p-4 transition-all hover:-translate-y-0.5`}
                 style={{ "--card-index": index } as CSSProperties}
               >
                 <span className="audience-card-index" aria-hidden="true">
                   0{index + 1}
                 </span>
-                <div className="audience-card-icon mb-5 flex h-10 w-10 items-center justify-center rounded-xl">
-                  <Icon className="h-5 w-5" aria-hidden="true" />
+                <div className="audience-card-head">
+                  <div className="audience-card-icon flex h-9 w-9 items-center justify-center rounded-lg">
+                    <Icon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {item.description}
                 </p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
                   {t("audienceSelector.more")}
                   <ArrowRight
                     className="h-4 w-4 transition-transform group-hover:translate-x-1"

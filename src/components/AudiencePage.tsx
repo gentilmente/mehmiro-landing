@@ -22,6 +22,7 @@ interface AudiencePageProps {
   primary: { label: string; href: string };
   secondary?: { label: string; href: string };
   visual?: ReactNode;
+  tone?: 0 | 1 | 2 | 3;
 }
 
 const isInternalRoute = (href: string) => href.startsWith("/");
@@ -67,11 +68,12 @@ export const AudiencePage = ({
   primary,
   secondary,
   visual,
+  tone = 0,
 }: AudiencePageProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className={`audience-page audience-tone-${tone} min-h-screen bg-background`}>
       <header className="audience-hero">
         <div className="audience-hero-inner">
           <div className="audience-copy">

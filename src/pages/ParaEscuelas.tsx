@@ -33,6 +33,7 @@ const ParaEscuelas = () => {
         label: content.secondaryCta,
         href: "/#mehmiro",
       }}
+      tone={1}
       visual={<SchoolVisual />}
     />
   );

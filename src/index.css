@@ -976,7 +976,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
     position: sticky;
     top: calc(84px + var(--card-index, 0) * 130px);
     z-index: calc(10 + var(--card-index, 0));
-    min-height: 260px;
+    min-height: 180px;
     margin-bottom: 14px;
     box-shadow: 0 18px 40px hsl(228 35% 16% / 0.12);
   }
@@ -990,37 +990,33 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
   }
 }
 
-/* Each audience gets a distinct tint within the blue-purple brand family. */
+/* One paper surface; the audience color is an accent, not a full-card fill. */
 .audience-tone-0 {
   --audience-accent: 225 75% 45%;
-  --audience-soft: 225 80% 95%;
-  --audience-soft-2: 235 70% 87%;
 }
 
 .audience-tone-1 {
   --audience-accent: 245 70% 50%;
-  --audience-soft: 245 75% 94%;
-  --audience-soft-2: 260 65% 86%;
 }
 
 .audience-tone-2 {
   --audience-accent: 270 65% 54%;
-  --audience-soft: 270 70% 94%;
-  --audience-soft-2: 285 60% 86%;
 }
 
 .audience-tone-3 {
   --audience-accent: 288 60% 47%;
-  --audience-soft: 288 65% 93%;
-  --audience-soft-2: 300 55% 85%;
 }
 
 .audience-card {
-  --audience-accent: 225 75% 45%;
-  --audience-soft: 225 80% 95%;
-  --audience-soft-2: 235 70% 87%;
-  border-color: hsl(var(--audience-accent) / 0.22);
-  background: linear-gradient(135deg, hsl(var(--audience-soft)), hsl(var(--audience-soft-2)));
+  border-color: hsl(var(--border));
+  background: linear-gradient(180deg, hsl(var(--card)), hsl(40 28% 98%));
+}
+
+.audience-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 30px;
 }
 
 .audience-card::before {
@@ -1049,6 +1045,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 .audience-card-icon {
   background: hsl(var(--audience-accent) / 0.12);
   color: hsl(var(--audience-accent));
+}
+
+:root {
+  --audience-accent: 225 75% 45%;
 }
 
 /* Soft page-wide gradient with a pointer-following highlight. */
@@ -1323,4 +1323,26 @@ body::after {
     width: 100%;
     max-width: 100%;
   }
+}
+
+
+/* The audience page inherits its card accent in small wayfinding details. */
+.audience-page .section-eyebrow {
+  color: hsl(var(--audience-accent, 225 75% 45%));
+}
+
+.audience-page .audience-section-index {
+  color: hsl(var(--audience-accent, 225 75% 45%) / 0.7);
+}
+
+.audience-page .audience-section-card::before {
+  background: linear-gradient(90deg, hsl(var(--audience-accent, 225 75% 45%)), hsl(var(--secondary)));
+}
+
+.audience-page .audience-floating-note {
+  border-left-color: hsl(var(--audience-accent, 225 75% 45%));
+}
+
+.audience-page .audience-floating-icon {
+  color: hsl(var(--audience-accent, 225 75% 45%));
 }

@@ -33,6 +33,7 @@ const ParaDocentes = () => {
         label: content.secondaryCta,
         href: "/#embajadores",
       }}
+      tone={0}
       visual={<TeacherVisual />}
     />
   );

@@ -33,6 +33,7 @@ const ParaFamilias = () => {
         label: content.secondaryCta,
         href: "/#preguntas-frecuentes",
       }}
+      tone={2}
       visual={<FamilyVisual />}
     />
   );
