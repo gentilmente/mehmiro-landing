@@ -372,7 +372,7 @@ La documentación existe en https://docs.mehmiro.com y tiene tres secciones: Gu�
 
 ### 7.4 Documentación interna del repo
 
-[`AGENTS.md`](../AGENTS.md) está desactualizado: dice “single-page”, “Inter”, “storytelling Juan y Beatriz”, “phone mockup” y “CTA Comenzar gratis + QR”. El código actual usa Lora/Source Sans 3, i18n, stack cards, múltiples rutas y una landing distinta. Esto no es un problema de marketing, pero hace que cualquier agente o colaborador parta de supuestos falsos. Actualizarlo es P1.
+[`AGENTS.md`](../AGENTS.md) está desactualizado: dice “single-page”, “Inter”, “storytelling Juan y Beatriz”, “phone mockup” y “CTA Comenzar gratis + QR”. El código actual usa Fraunces/Source Sans 3, i18n, stack cards, múltiples rutas y una landing distinta. Esto no es un problema de marketing, pero hace que cualquier agente o colaborador parta de supuestos falsos. Actualizarlo es P1.
 
 ---
 

@@ -41,7 +41,7 @@ export const Footer = () => {
           <div className="container mx-auto px-6 py-12">
             <div className="max-w-2xl mx-auto text-center space-y-6 px-4">
               <div className="space-y-3">
-                <h3 className="text-xl sm:text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground">
                   {t("footer.lead.title")}
                 </h3>
                 <p className="text-muted-foreground">
@@ -121,7 +121,7 @@ export const Footer = () => {
             {/* Company Info */}
             <div className="footer-company space-y-6">
               <div className="space-y-4">
-                <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
                   Mehmiro
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-md">

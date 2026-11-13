@@ -38,7 +38,7 @@ const ActionLink = ({
   const className =
     variant === "primary"
       ? "start-button"
-      : "inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:text-primary";
+      : "inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground shadow-[3px_3px_0_hsl(var(--border)/.55)] transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary";
 
   if (isInternalRoute(href)) {
     return (

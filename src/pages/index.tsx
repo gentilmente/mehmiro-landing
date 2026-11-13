@@ -40,7 +40,7 @@ const Index = () => {
 
       {/* Why now: standalone band after the stack, before FAQ */}
       <section className="mx-auto max-w-[1450px] px-6 pb-6">
-        <div className="overflow-hidden rounded-[32px]" style={{ background: "hsl(250 40% 94%)" }}>
+        <div className="why-now-band overflow-hidden rounded-[32px]" style={{ background: "hsl(250 28% 94%)" }}>
           <WhyNowSection id="por-que-ahora" />
         </div>
       </section>

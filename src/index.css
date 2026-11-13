@@ -9,7 +9,7 @@ All colors MUST be HSL.
 
 @theme {
   --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-  --font-serif: "Lora", Georgia, serif;
+  --font-serif: "Fraunces", "Lora", Georgia, serif;
 
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -69,28 +69,28 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 250 40% 98%;
-    --foreground: 228 35% 16%;
-    --card: 0 0% 100%;
-    --card-foreground: 228 35% 16%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 228 35% 16%;
+    --background: 42 28% 96%;
+    --foreground: 225 38% 15%;
+    --card: 40 35% 99%;
+    --card-foreground: 225 38% 15%;
+    --popover: 40 35% 99%;
+    --popover-foreground: 225 38% 15%;
     --primary: 225 72% 42%;
     --primary-foreground: 0 0% 100%;
     --secondary: 275 62% 55%;
     --secondary-foreground: 0 0% 100%;
     --accent: 268 68% 58%;
     --accent-foreground: 0 0% 100%;
-    --muted: 250 30% 94%;
-    --muted-foreground: 230 12% 42%;
+    --muted: 40 18% 91%;
+    --muted-foreground: 225 12% 40%;
     --destructive: 0 68% 50%;
     --destructive-foreground: 0 0% 100%;
-    --border: 250 20% 86%;
-    --input: 250 20% 88%;
+    --border: 40 14% 82%;
+    --input: 40 14% 84%;
     --ring: 225 72% 42%;
     --radius: 1rem;
     --gradient-hero: linear-gradient(120deg, hsl(225 75% 42%), hsl(275 65% 55%));
-    --gradient-section: linear-gradient(180deg, hsl(250 40% 98%), hsl(255 35% 95%));
+    --gradient-section: linear-gradient(180deg, hsl(42 28% 96%), hsl(250 28% 95%));
     --glow-primary: 0 8px 24px hsl(225 72% 42% / 0.12);
     --glow-secondary: 0 8px 24px hsl(275 62% 55% / 0.12);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -236,7 +236,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 .hero-note strong { display: block; font-size: 0.8889rem; }
 .hero-note span { display: block; color: hsl(var(--muted-foreground)); margin-top: 5px; font-size: 0.8889rem; }
 .hero-note-brain { margin-left: auto; color: hsl(var(--accent)); flex-shrink: 0; }
-.hero-gradient-orb { position: absolute; top: -10px; right: -10px; width: 108px; height: 108px; border-radius: 50%; background: var(--gradient-hero); opacity: .9; filter: blur(.2px); animation: orb-float 5.5s ease-in-out infinite; will-change: transform; }
 .hero-recognition { display: flex; align-items: center; justify-content: center; gap: 24px; border-top: 1px solid hsl(var(--border) / .6); margin-top: 32px; padding-top: 22px; }
 .hero-recognition > span { font-size: 0.8889rem; color: hsl(var(--muted-foreground)); }
 .hero-recognition img { width: 310px; max-width: 100%; border-radius: 4px; }
@@ -1090,4 +1089,239 @@ body::before {
 #root > div:not(.fixed) {
   background-color: transparent !important;
   background-image: none !important;
+}
+
+/* Editorial field-notebook direction: paper, rules, shard geometry and squared panels. */
+.hero-visual {
+  isolation: isolate;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: 7% -1% 9% 10%;
+  z-index: -1;
+  background: linear-gradient(135deg, hsl(225 75% 82%), hsl(275 65% 86%));
+  clip-path: polygon(0 7%, 90% 0, 100% 93%, 11% 100%);
+  transform: rotate(4deg);
+  opacity: 0.8;
+}
+
+.hero-photo-wrap {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  clip-path: polygon(0 7%, 90% 0, 100% 93%, 11% 100%);
+  filter: drop-shadow(0 26px 34px hsl(225 38% 15% / 0.16));
+  animation: hero-float 8s ease-in-out infinite;
+}
+
+.hero-photo {
+  border-radius: 0;
+}
+
+.hero-note {
+  border-radius: 8px;
+  border-left: 4px solid hsl(var(--secondary));
+  box-shadow: 8px 8px 0 hsl(225 72% 42% / 0.1);
+  transform: rotate(-1.5deg);
+  animation: note-float 7s ease-in-out infinite;
+}
+
+.hero-note-icon {
+  border-radius: 4px;
+}
+
+.hero-shard {
+  position: absolute;
+  top: -6px;
+  right: -16px;
+  width: 128px;
+  height: 128px;
+  filter: drop-shadow(0 8px 14px hsl(275 62% 55% / 0.2));
+  animation: orb-float 7s ease-in-out infinite;
+}
+
+@keyframes hero-float {
+  0%, 100% { transform: rotate(1.5deg) translateY(0); }
+  50% { transform: rotate(1.5deg) translateY(-11px); }
+}
+
+@keyframes note-float {
+  0%, 100% { transform: rotate(-1.5deg) translateY(0); }
+  50% { transform: rotate(-1.5deg) translateY(7px); }
+}
+
+.start-button {
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 hsl(var(--primary) / 0.18);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 hsl(var(--primary) / 0.18);
+}
+
+.stack-card {
+  border-radius: 14px;
+}
+
+.audience-card {
+  border-radius: 10px;
+}
+
+.audience-section-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.audience-section-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+}
+
+.audience-visual-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.audience-visual-card::before {
+  content: "";
+  position: absolute;
+  right: -58px;
+  bottom: -86px;
+  width: 190px;
+  height: 260px;
+  background: hsl(0 0% 100% / 0.09);
+  clip-path: polygon(0 7%, 90% 0, 100% 93%, 11% 100%);
+  transform: rotate(22deg);
+}
+
+.audience-photo-frame {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  filter: none;
+}
+
+.audience-photo-frame img {
+  border-radius: 0;
+  clip-path: polygon(0 7%, 90% 0, 100% 93%, 11% 100%);
+  filter: drop-shadow(0 22px 28px hsl(225 38% 15% / 0.14));
+}
+
+.audience-floating-note {
+  border-radius: 6px;
+  border-left: 4px solid hsl(var(--secondary));
+  box-shadow: 6px 6px 0 hsl(225 72% 42% / 0.09);
+}
+
+.audience-closing {
+  border-radius: 12px;
+}
+
+.faq-card {
+  border-radius: 10px;
+}
+
+.final-cta {
+  border-radius: 14px;
+}
+
+.why-now-band {
+  border-radius: 14px !important;
+  border: 1px solid hsl(var(--border));
+}
+
+/* Warm paper ground with a cool ink halo and a barely-there grain. */
+body::before {
+  background:
+    radial-gradient(
+      620px circle at var(--pointer-x) var(--pointer-y),
+      hsl(275 70% 60% / 0.12),
+      transparent 66%
+    ),
+    radial-gradient(
+      900px circle at 100% 100%,
+      hsl(225 80% 58% / 0.06),
+      transparent 62%
+    ),
+    linear-gradient(
+      135deg,
+      hsl(42 30% 97%),
+      hsl(250 28% 96%) 58%,
+      hsl(42 28% 96%)
+    );
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+  background-size: 140px 140px;
+}
+
+/* Section index rail: turn the home page into a numbered field notebook. */
+.landing-page main {
+  counter-reset: section;
+}
+
+.landing-page main .section-eyebrow {
+  counter-increment: section;
+}
+
+.landing-page main .section-eyebrow::before {
+  content: "0" counter(section) " / ";
+  margin-right: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  opacity: 0.55;
+}
+
+/* Compact field-note badges instead of pills. */
+.section-badge {
+  padding: 6px 12px;
+  border: 1px solid hsl(var(--primary) / 0.18);
+  border-radius: 6px;
+  background: hsl(var(--primary) / 0.06);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.landing-page main .section-badge {
+  counter-increment: section;
+}
+
+.landing-page main .section-badge::before {
+  content: "0" counter(section) " / ";
+  margin-right: 2px;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  opacity: 0.55;
+}
+
+/* Squared navigation surfaces to match the field-notebook language. */
+.desktop-navigation > div {
+  border-radius: 8px;
+}
+
+.desktop-navigation a,
+.desktop-navigation button {
+  border-radius: 6px;
 }

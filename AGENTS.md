@@ -7,14 +7,14 @@ This file captures the repo-specific context needed to work efficiently.
 - Product: marketing site for Mehmiro, an AI-assisted pedagogical observation and coordination tool.
 - Audiences: teachers, school leaders/owners, families/students, and pedagogues/researchers/partners.
 - Language: Spanish (Argentina) by default; English is a potential market (international calls), currently available via a runtime toggle.
-- UX: blue-purple brand palette from the app logo, Lora + Source Sans 3, scroll-stacked cards, FAQ deck, ambassador CTA.
+- UX: editorial “field notebook” direction, blue-purple brand palette from the app logo, Fraunces + Source Sans 3, paper texture, shard geometry, scroll-stacked cards, FAQ deck, ambassador CTA.
 - Primary CTA: “Probala y sumá recompensas” (full) / “Probala” (short). The ambassador program replaced the unverified social-proof section on the home page.
 
 ## Tech stack
 
 - Vite + React 19 + TypeScript (SPA with React Router).
 - Tailwind CSS 4 + shadcn/ui; Radix primitives; CSS variables in `src/index.css`.
-- Typography: Lora (serif) and Source Sans 3 (sans) via Google Fonts.
+- Typography: Fraunces (display serif) and Source Sans 3 (sans) via Google Fonts.
 - Animation: GSAP/ScrollTrigger components are present; the home page currently uses `StackCard` and the FAQ deck.
 - Data: TanStack Query is wired in `src/App.tsx`.
 - Forms: Formspree (footer contact form).
@@ -61,7 +61,8 @@ This file captures the repo-specific context needed to work efficiently.
 ## Assets
 
 - Images/videos live in `src/assets/` and `public/`.
-- The hero uses `src/assets/teacher-voice-note.webp`; the brand mark is `src/assets/mehmiro-logo.png`; the QR uses `src/assets/frame.png`.
+- The hero uses `src/assets/teacher-voice-note.webp`; the brand mark is `src/assets/mehmiro-logo.png`; the decorative shard motif is `src/components/ShardPair.tsx`; the QR uses `src/assets/frame.png`.
+- Visual direction and rationale live in `docs/brand-direction.md`.
 - OG image: `public/og-mehmiro.png` (1200x630).
 
 ## Deployment

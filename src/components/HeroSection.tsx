@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { StartButton } from "@/components/StartButton";
 import teacherVoiceNote from "@/assets/teacher-voice-note.webp";
 import ircaiBanner from "@/assets/TOP 100 Promising Project Banner.png";
+import { ShardPair } from "@/components/ShardPair";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -26,7 +27,7 @@ export const HeroSection = () => {
         <div className="hero-visual">
           <div className="hero-photo-wrap"><img className="hero-photo" src={teacherVoiceNote} alt={t("hero.imageAlt")} fetchPriority="high" /></div>
           <div className="hero-note"><div className="hero-note-icon"><Eye size={24} aria-hidden="true" /></div><div><strong>{t("hero.noteTitle")}</strong><span>{t("hero.noteText")}</span></div><Brain className="hero-note-brain" size={22} aria-hidden="true" /></div>
-          <span className="hero-gradient-orb" aria-hidden="true" />
+          <ShardPair className="hero-shard" />
         </div>
       </div>
       <div className="hero-recognition">
