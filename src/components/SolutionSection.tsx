@@ -32,7 +32,7 @@ export const SolutionSection = ({
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-8">
-          <div className="section-badge inline-flex items-center gap-2 text-primary text-sm font-medium mb-6">
+          <div className="section-eyebrow">
             <Sparkles className="w-4 h-4" />
             <span>{t("solution.badge")}</span>
           </div>

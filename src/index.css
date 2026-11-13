@@ -1267,49 +1267,6 @@ body::after {
   background-size: 140px 140px;
 }
 
-/* Section index rail: turn the home page into a numbered field notebook. */
-.landing-page main {
-  counter-reset: section;
-}
-
-.landing-page main .section-eyebrow {
-  counter-increment: section;
-}
-
-.landing-page main .section-eyebrow::before {
-  content: "0" counter(section) " / ";
-  margin-right: 4px;
-  font-family: var(--font-sans);
-  font-size: 0.75em;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  opacity: 0.55;
-}
-
-/* Compact field-note badges instead of pills. */
-.section-badge {
-  padding: 6px 12px;
-  border: 1px solid hsl(var(--primary) / 0.18);
-  border-radius: 6px;
-  background: hsl(var(--primary) / 0.06);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.landing-page main .section-badge {
-  counter-increment: section;
-}
-
-.landing-page main .section-badge::before {
-  content: "0" counter(section) " / ";
-  margin-right: 2px;
-  font-size: 0.9em;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  opacity: 0.55;
-}
-
 /* Squared navigation surfaces to match the field-notebook language. */
 .desktop-navigation > div {
   border-radius: 8px;

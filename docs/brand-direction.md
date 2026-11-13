@@ -8,7 +8,7 @@ Mehmiro convierte la observación de clase en evidencia revisada y en una visió
 
 **Editorial / cuaderno de observación**, con una capa académica.
 
-La landing no debe parecer un SaaS genérico de IA ni una marca de moda. Debe sentirse como el instrumento de trabajo de un equipo pedagógico: papel, reglas, fichas, números de sección, notas al margen y evidencia.
+La landing no debe parecer un SaaS genérico de IA ni una marca de moda. Debe sentirse como el instrumento de trabajo de un equipo pedagógico: papel, reglas, fichas, notas al margen y evidencia.
 
 ## Por qué
 
@@ -40,7 +40,7 @@ La landing no debe parecer un SaaS genérico de IA ni una marca de moda. Debe se
   - las fichas y paneles;
   - la línea de acento superior.
 - Esquinas de 8–14 px, no pills ni cards de 32 px.
-- Reglas finas, números de sección y etiquetas en mayúsculas.
+- Reglas finas y etiquetas consistentes; sin numeración decorativa.
 
 ## Interacción signature
 
