@@ -61,7 +61,7 @@ This file captures the repo-specific context needed to work efficiently.
 ## Assets
 
 - Images/videos live in `src/assets/` and `public/`.
-- The hero uses `src/assets/teacher-voice-note.webp`; the brand mark is `src/assets/mehmiro-logo.png`; the decorative shard motif is `src/components/ShardPair.tsx`; the QR uses `src/assets/frame.png`.
+- The hero uses `src/assets/teacher-voice-note.webp`; the brand mark is `src/assets/mehmiro-logo.png`; the hero photo is masked by `src/components/LogoMaskedPhoto.tsx`; the QR uses `src/assets/frame.png`.
 - Visual direction and rationale live in `docs/brand-direction.md`.
 - OG image: `public/og-mehmiro.png` (1200x630).
 

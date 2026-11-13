@@ -204,7 +204,7 @@ html { font-size: 112.5%; scroll-padding-top: 112px; }
 .start-button:hover { background: hsl(225 72% 34%); transform: translateY(-2px); }
 a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); outline-offset: 5px; }
 .education-hero { max-width: 1400px; margin: auto; padding: 150px 5% 30px; }
-.hero-layout { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 6%; }
+.hero-layout { display: grid; grid-template-columns: 1fr 1.25fr; align-items: center; gap: 5%; }
 .section-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8889rem; font-weight: 600; color: hsl(var(--primary)); margin-bottom: 24px; }
 .hero-copy h1 { font-family: var(--font-serif); font-size: clamp(2.3644rem, 4.704vw, 3.8578rem); letter-spacing: -.035em; line-height: 1.16; font-weight: 500; }
 .hero-copy h1 span { color: hsl(var(--secondary)); font-style: italic; }
@@ -228,8 +228,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
   50% { transform: translateY(-9px) scale(1.025); }
 }
 .hero-visual { position: relative; padding: 22px 6px 48px 12px; }
-.hero-photo-wrap { background: linear-gradient(135deg, hsl(225 75% 90%), hsl(275 65% 92%)); border-radius: 140px 140px 28px 28px; padding: 16px; transform: rotate(2deg); animation: hero-float 7s ease-in-out infinite; will-change: transform; }
-.hero-photo { width: 100%; aspect-ratio: 1/1.06; object-fit: cover; border-radius: 128px 128px 18px 18px; }
 .hero-note { position: absolute; bottom: 20px; left: -18px; right: 24px; display: flex; align-items: center; gap: 12px; padding: 20px; border: 1px solid hsl(var(--border) / .6); background: hsl(var(--card)); border-radius: 18px; box-shadow: 0 12px 30px hsl(228 35% 16% / .08); transform: rotate(-3deg); animation: note-float 6s ease-in-out infinite; will-change: transform; }
 .hero-note-icon { padding: 12px; background: hsl(250 40% 93%); border-radius: 12px; color: hsl(var(--primary)); }
 .hero-note strong { display: block; font-size: 0.8889rem; }
@@ -299,8 +297,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
   .hero-values { font-size: 0.8889rem; }
   .hero-actions { gap: 18px; }
   .hero-visual { width: min(100%, 420px); margin: auto; padding: 10px 12px 42px; }
-  .hero-photo { aspect-ratio: 1.25; }
-  .hero-doodle { font-size: 4.5rem; right: -4px; }
   .hero-recognition { flex-direction: column; gap: 12px; margin-top: 24px; }
   .hero-recognition img { width: 280px; }
   .section-stack { padding: 0 12px; }
@@ -523,7 +519,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 }
 
 .audience-description {
-  max-width: 560px;
+  max-width: 760px;
   margin-top: 24px;
   font-size: clamp(1rem, 1.5vw, 1.18rem);
   line-height: 1.7;
@@ -1091,34 +1087,6 @@ body::before {
 }
 
 /* Editorial field-notebook direction: paper, rules, shard geometry and squared panels. */
-.hero-visual {
-  isolation: isolate;
-}
-
-.hero-visual::before {
-  content: "";
-  position: absolute;
-  inset: 7% -1% 9% 10%;
-  z-index: -1;
-  background: linear-gradient(135deg, hsl(225 75% 82%), hsl(275 65% 86%));
-  clip-path: polygon(0 7%, 90% 0, 100% 93%, 11% 100%);
-  transform: rotate(4deg);
-  opacity: 0.8;
-}
-
-.hero-photo-wrap {
-  background: transparent;
-  border-radius: 0;
-  padding: 0;
-  clip-path: polygon(0 7%, 90% 0, 100% 93%, 11% 100%);
-  filter: drop-shadow(0 26px 34px hsl(225 38% 15% / 0.16));
-  animation: hero-float 8s ease-in-out infinite;
-}
-
-.hero-photo {
-  border-radius: 0;
-}
-
 .hero-note {
   border-radius: 8px;
   border-left: 4px solid hsl(var(--secondary));
@@ -1129,16 +1097,6 @@ body::before {
 
 .hero-note-icon {
   border-radius: 4px;
-}
-
-.hero-shard {
-  position: absolute;
-  top: -6px;
-  right: -16px;
-  width: 128px;
-  height: 128px;
-  filter: drop-shadow(0 8px 14px hsl(275 62% 55% / 0.2));
-  animation: orb-float 7s ease-in-out infinite;
 }
 
 @keyframes hero-float {
@@ -1309,5 +1267,29 @@ body::after {
     right: 5%;
     height: 1px;
     background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.25), transparent);
+  }
+}
+
+/* The logo itself becomes the photo mask: two shards, one image. */
+.hero-photo-mask {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+  filter: drop-shadow(0 28px 34px hsl(225 38% 15% / 0.18));
+  animation: mask-float 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes mask-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (max-width: 767px) {
+  .hero-photo-mask {
+    max-width: 100%;
   }
 }
