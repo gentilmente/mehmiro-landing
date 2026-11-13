@@ -1,14 +1,4 @@
-import { StartButton } from "@/components/StartButton";
-import {
-  Sparkles,
-  Eye,
-  Brain,
-  TrendingUp,
-  Shield,
-  Heart,
-  Target,
-  Zap,
-} from "lucide-react";
+import { Sparkles, Eye, TrendingUp, Shield } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 interface SolutionSectionProps {
@@ -23,7 +13,7 @@ export const SolutionSection = ({
   const featureItems = t("solution.features", {
     returnObjects: true,
   }) as { title: string; description: string }[];
-  const featureIcons = [Eye, Brain, Target, TrendingUp, Shield, Heart];
+  const featureIcons = [Eye, TrendingUp, Shield];
   const features = featureItems.map((item, index) => ({
     ...item,
     icon: featureIcons[index],
@@ -63,7 +53,7 @@ export const SolutionSection = ({
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="p-5 rounded-2xl bg-card border border-border/50"
+              className="p-5 rounded-lg bg-card border border-border/50"
             >
               <div className="text-sm font-semibold text-primary mb-2">
                 {String(index + 1).padStart(2, "0")}
@@ -81,9 +71,9 @@ export const SolutionSection = ({
           {features.map((feature, index) => (
             <div
               key={index}
-              className="education-item group relative p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+              className="education-item group relative p-6 rounded-lg bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="education-item-content relative z-10">
                 <div className="education-item-icon bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <feature.icon className="w-6 h-6 text-primary" />
@@ -97,21 +87,11 @@ export const SolutionSection = ({
           ))}
         </div>
 
-        {/* Value proposition */}
-        <div className="mt-8 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
-            <Zap className="w-5 h-5 text-primary" />
-            <span className="text-lg font-medium">
-              {t("solution.valueProposition")}
-            </span>
-          </div>
-        </div>
         {/* Integrations */}
         <p className="mt-5 text-center text-sm text-muted-foreground">
           {t("solution.integrations")}
         </p>
 
-        <div className="section-action"><StartButton /></div>
       </div>
     </section>
   );

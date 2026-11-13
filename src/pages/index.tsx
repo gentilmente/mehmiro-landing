@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { AudienceSelector } from "@/components/AudienceSelector";
 import { AmbassadorSection } from "@/components/AmbassadorSection";
 import { ProblemSection } from "@/components/ProblemSection";
-import { WhyNowSection } from "@/components/WhyNowSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { SocialProofSection } from "@/components/SocialProofSection";
 import { FAQSection } from "@/components/FAQSection";
@@ -37,13 +36,6 @@ const Index = () => {
         )}
       </StackCard>
       </div>
-
-      {/* Why now: standalone band after the stack, before FAQ */}
-      <section className="mx-auto max-w-[1450px] px-6 pb-6">
-        <div className="why-now-band overflow-hidden rounded-[32px]" style={{ background: "hsl(250 28% 94%)" }}>
-          <WhyNowSection id="por-que-ahora" />
-        </div>
-      </section>
 
       {/* FAQ - Address concerns directly */}
       <FAQSection id="preguntas-frecuentes" />

@@ -23,51 +23,51 @@
     "badge": "Teacher observation, evidence and coordination",
     "headlinePrimary": "The signals are there.",
     "headlineSecondary": "The challenge is coordinating them.",
-    "subheadline": "Mehmiro turns classroom observation into reviewed evidence and an institutional view of progress. Without replacing your judgment or adding administrative workload.",
-    "noteTitle": "AI proposes.",
-    "noteText": "You review and decide.",
+    "subheadline": "Mehmiro turns classroom observation into reviewed evidence and an institutional view of progress.",
+    "noteTitle": "Voice note.",
+    "noteText": "30 seconds after class.",
     "recognitionLabel": "IRCAI Recognition 2025",
     "recognitionAlt": "IRCAI Global Top 100 Promising Project 2025",
     "recognitionAria": "Open the IRCAI recognition in a new tab",
     "valueProps": [
-      "AI proposes; the teacher decides",
-      "WhatsApp for observation; Google for login, Calendar and Gmail",
+      "Observation via WhatsApp, text or audio",
+      "Teacher review before saving",
       "Student profile with accepted evidence",
-      "No added administrative load"
+      "Google for login, Calendar and Gmail"
     ],
     "scrollIndicator": "See how it works"
   },
   "problem": {
     "badge": "The problem",
     "title": "The information exists. The challenge is getting it there on time.",
-    "description": "A student stops participating, falls behind, misses class or quietly isolates. The teacher sees it. But the signal stays in a notebook, a form, a spreadsheet or a hallway comment. By the time the pedagogical team reconstructs the picture, support usually arrives late. It is not a lack of commitment: it is a lack of a system that connects what is already being done.",
+    "description": "A student stops participating, misses class or quietly isolates. The teacher sees it, but the signal stays in a notebook, a spreadsheet or a passing comment. By the time the team reconstructs the picture, support arrives late.",
     "items": [
       {
         "title": "Scattered signals",
-        "description": "Each teacher records in their own way; connecting those pieces takes time."
+        "description": "Each teacher records in their own way."
       },
       {
         "title": "Fragmented context",
-        "description": "History is reconstructed by hand and does not always reach the team in time."
+        "description": "History is reconstructed by hand."
       },
       {
         "title": "Late support",
-        "description": "Action starts when the difficulty is already serious; many students wait."
+        "description": "Action starts when the difficulty is already serious."
       },
       {
         "title": "Unnecessary workload",
-        "description": "Asking teachers for extra reports wears down adoption and does not solve the problem."
+        "description": "Asking for extra reports wears down adoption."
       }
     ],
     "closing": {
-      "lead": "The bottleneck is not a lack of data or commitment.",
+      "lead": "The problem is not a lack of data.",
       "rest": "It is the lack of a system that connects signals with action."
     }
   },
   "whyNow": {
     "badge": "Why now",
     "title": "The technology matured. Coordination can scale.",
-    "description": "Voice, contextual analysis and digital school records can connect what used to stay in scattered notes. Without adding administrative workload.",
+    "description": "Voice, contextual analysis and digital school records can connect what used to stay in scattered notes.",
     "items": [
       {
         "title": "Voice is already an interface",
@@ -91,15 +91,15 @@
     "steps": [
       {
         "title": "Reply on WhatsApp",
-        "description": "Send text or a voice note after class. Mehmiro transcribes the audio ephemerally and analyzes the lesson."
+        "description": "Send text or audio after class. Transcription is ephemeral."
       },
       {
         "title": "Review in the app",
-        "description": "Confirm students and suggestions, or correct what is needed. Nothing is saved without your approval."
+        "description": "Confirm or correct suggestions. Nothing is saved without your review."
       },
       {
         "title": "Follow the history",
-        "description": "Accepted evidence stays available to support the student and see progress in context."
+        "description": "Accepted evidence stays in the student's history."
       }
     ],
     "stats": [
@@ -118,32 +118,20 @@
     ],
     "features": [
       {
-        "title": "Your judgment is the foundation",
-        "description": "Mehmiro spots signals and offers options. It amplifies your pedagogical lens without replacing it."
+        "title": "Review with context",
+        "description": "Every suggestion arrives with the observation behind it."
       },
       {
-        "title": "AI as a tool",
-        "description": "An agent that organizes your observations and offers personalized suggestions for the classroom."
+        "title": "Student history",
+        "description": "Accepted evidence, organized by period and subject."
       },
       {
-        "title": "Early detection",
-        "description": "Identify students who need attention before it's too late."
-      },
-      {
-        "title": "Teacher metacognition",
-        "description": "Reflect on your own practice with reports generated from your records."
-      },
-      {
-        "title": "Professionalize observation",
-        "description": "Turn valuable intuitions into systematic, actionable evidence."
-      },
-      {
-        "title": "No added load",
-        "description": "It integrates naturally into your workflow. Less paperwork, more teaching."
+        "title": "Roles and permissions",
+        "description": "Each person sees what they are meant to see."
       }
     ],
     "valueProposition": "It spots signals and offers options. Your judgment decides.",
-    "integrations": "Active integrations: WhatsApp for observations and Google (login, Calendar and Gmail/Workspace). If your school uses another channel, we assess it during the pilot."
+    "integrations": "Integrations: WhatsApp for observations and Google (login, Calendar and Gmail/Workspace). Other channels are tested during the pilot."
   },
   "socialProof": {
     "badge": "Educational community",
@@ -196,7 +184,7 @@
     "steps": [
       {
         "title": "Try it with your class",
-        "description": "Use Mehmiro with your students and see how much time it saves."
+        "description": "Use Mehmiro with your students and show what a reviewed observation looks like."
       },
       {
         "title": "Share your experience",
@@ -207,7 +195,7 @@
         "description": "If your school books a demo or starts a pilot, we coordinate your reward."
       }
     ],
-    "rewardNote": "We define the reward with each school before starting, with no hidden costs.",
+    "rewardNote": "We define the reward with each school before starting.",
     "cta": "Become an ambassador"
   },
   "audienceSelector": {
@@ -240,15 +228,15 @@
   },
   "audiences": {
     "nextStep": "Next step",
-    "nextStepDescription": "Start where you are: a class, a conversation or a pilot.",
+    "nextStepDescription": "Start with a class or a pilot.",
     "back": "Back to home",
     "docentes": {
       "eyebrow": "For teachers",
-      "title": "Your observation, with evidence and less workload",
-      "description": "Reply on WhatsApp with text or audio after class. Mehmiro analyzes the lesson and helps you review students and evidence in the app.",
+      "title": "Your observation, with evidence and context",
+      "description": "Reply on WhatsApp with text or audio after class. Review students and evidence in the app.",
       "primaryCta": "Try it and earn rewards",
       "secondaryCta": "Learn about the ambassador program",
-      "note": "AI proposes; you review, adjust and decide what is saved.",
+      "note": "Only what you reviewed is saved.",
       "sections": [
         {
           "title": "Reply on WhatsApp",
@@ -263,18 +251,8 @@
           "title": "Review and decide in the app",
           "body": "Mehmiro identifies the students mentioned and offers evidence and suggestions. You confirm, correct or discard before anything is saved.",
           "bullets": [
-            "AI proposes; you decide",
             "Nothing is saved without your approval",
             "Student history for context"
-          ]
-        },
-        {
-          "title": "No added workload",
-          "body": "Observation happens in the flow you already use. Less paperwork, more time to teach.",
-          "bullets": [
-            "Start with one class",
-            "Assisted onboarding",
-            "7-day anonymous trial"
           ]
         },
         {
@@ -290,10 +268,9 @@
     "escuelas": {
       "eyebrow": "For school leaders and owners",
       "title": "From scattered signals to a shared view",
-      "description": "Mehmiro connects classroom observation with a student profile and an institutional view of progress, without asking for more paperwork.",
+      "description": "Mehmiro connects classroom observation with a student profile and an institutional view of progress.",
       "primaryCta": "Request a diagnostic",
       "secondaryCta": "See how it works",
-      "note": "We start with a diagnostic, not a blind purchase.",
       "sections": [
         {
           "title": "Institutional view",
@@ -343,7 +320,7 @@
       "sections": [
         {
           "title": "What is recorded",
-          "body": "Classroom observations and evidence reviewed by teachers. AI can propose students and suggestions; the teacher decides what is saved.",
+          "body": "Classroom observations and evidence reviewed by teachers. Only what the teacher reviewed is saved.",
           "bullets": [
             "Observations and accepted evidence",
             "Nothing is saved without teacher review",
@@ -360,15 +337,6 @@
           ]
         },
         {
-          "title": "AI does not decide",
-          "body": "AI spots signals and offers options; it does not diagnose or decide support. The human team reviews.",
-          "bullets": [
-            "No automatic diagnoses",
-            "No automatic decisions",
-            "Human review"
-          ]
-        },
-        {
           "title": "Rights and transparency",
           "body": "The school decides what it shares with each family. See the privacy policy for access, correction and deletion.",
           "bullets": [
@@ -382,23 +350,22 @@
     "investigacion": {
       "eyebrow": "For pedagogues, researchers and partners",
       "title": "An explicit framework to learn with evidence",
-      "description": "Mehmiro is an AI-assisted observation and assessment platform with teacher review. We seek collaboration on pilots and evaluation, not certainty selling.",
+      "description": "Mehmiro is an AI-assisted observation platform with teacher review. We seek collaboration on pilots and measurement, not certainty selling.",
       "primaryCta": "Propose a collaboration",
       "secondaryCta": "See evidence and method",
       "note": "We do not publish results we cannot support. If you want to see the framework, write to us.",
       "sections": [
         {
           "title": "What the product does",
-          "body": "Classroom observation with text or audio, AI analysis, teacher review and a student profile with accepted evidence.",
+          "body": "Observation with text or audio, AI analysis and teacher review before saving.",
           "bullets": [
-            "AI proposes; teacher validates",
             "WhatsApp as an intake channel",
             "Institutional profile with evidence"
           ]
         },
         {
           "title": "What we measure",
-          "body": "Adoption, sustained use, satisfaction and review capacity. Learning impact is evaluated with the school over the medium term.",
+          "body": "Adoption, sustained use, satisfaction and review capacity. Learning impact is measured with the school over the medium term.",
           "bullets": [
             "Operational metrics",
             "Pilot design",
@@ -428,7 +395,7 @@
     "evidencia": {
       "eyebrow": "Evidence and method",
       "title": "What we know, what we measure and what we do not claim",
-      "description": "Mehmiro relies on assisted observation and teacher review. We do not publish learning-impact results yet; we can explain what we measure and how we evaluate it.",
+      "description": "Mehmiro relies on assisted observation and teacher review. We do not publish learning-impact results yet; we can explain what we measure and how.",
       "primaryCta": "Propose a collaboration",
       "secondaryCta": "Back to research",
       "note": "If you are looking for a provider with a published RCT, we are not that today. If you are looking for a well-designed pilot, let's talk.",
@@ -437,7 +404,6 @@
           "title": "What we can already claim",
           "body": "Mehmiro is an AI-assisted classroom observation platform with teacher review. WhatsApp accepts text or audio; the app lets teachers review students, evidence and suggestions before saving.",
           "bullets": [
-            "AI proposes; teacher validates",
             "WhatsApp for intake; Google for login/Calendar/Gmail",
             "Student profile with accepted evidence",
             "IRCAI Global Top 100 2025 selection"
@@ -464,8 +430,8 @@
           ]
         },
         {
-          "title": "How we evaluate",
-          "body": "We design pilots with a baseline and endline, shared instruments and adoption/use analysis. When possible, we compare with reference groups or periods.",
+          "title": "How we measure",
+          "body": "We design pilots with a baseline and endline, shared instruments and adoption/use analysis.",
           "bullets": [
             "Baseline and endline",
             "Shared instruments and metrics",
@@ -514,31 +480,19 @@
     "items": [
       {
         "question": "How long does it take to implement Mehmiro?",
-        "answer": "You can record your first observation in minutes. Impact depends on sustained use and each school's context, so we support implementation instead of promising automatic results."
-      },
-      {
-        "question": "Does it replace a teacher's professional judgment?",
-        "answer": "No. Mehmiro spots signals and offers options and suggestions. You review, adjust and decide. Technology expands your observation capacity; it does not take your place."
+        "answer": "You can record your first observation in minutes. Impact depends on sustained use and each school's context, so we support implementation."
       },
       {
         "question": "What happens to student data?",
         "answer": "Data belongs to the institution. Access is controlled by roles and memberships, with isolation between institutions. Per the privacy policy, it is not used to train models outside the service."
       },
       {
-        "question": "What types of institutions is Mehmiro for?",
-        "answer": "Mehmiro is designed for schools at all educational levels, from primary to secondary and teacher training. It adapts to different contexts and pedagogical needs."
-      },
-      {
         "question": "Do I need training to use it?",
         "answer": "The app is designed for a quick start, and institutional onboarding is assisted. For teaching teams, we provide support during the pilot."
       },
       {
-        "question": "Does Mehmiro monitor or evaluate teachers?",
-        "answer": "No. Mehmiro spots signals and offers suggestions so you can decide. The AI does not judge your work or replace your professional judgment."
-      },
-      {
         "question": "Does it integrate with WhatsApp and Google Workspace?",
-        "answer": "Yes. WhatsApp for observations (depending on the institution's setup) and Google for login, Calendar and Gmail/Workspace. If your school uses another channel, we assess it during the pilot."
+        "answer": "Yes. WhatsApp for observations (depending on the institution's setup) and Google for login, Calendar and Gmail/Workspace. Other channels are tested during the pilot."
       },
       {
         "question": "How is an observation recorded?",
@@ -548,7 +502,7 @@
   },
   "cta": {
     "title": "Try it and become an ambassador",
-    "description": "Start with your class. If your school books a demo or adopts Mehmiro, you receive a reward.",
+    "description": "Start with your class. If your school moves forward, we coordinate the reward.",
     "button": "Try it and earn rewards",
     "buttonShort": "Try it",
     "qrCaption": "Scan to try Mehmiro and learn about the ambassador program"
@@ -1198,14 +1152,14 @@
         },
         {
           "title": "5 strategies for more effective observations",
-          "excerpt": "Practical techniques that every teacher can implement to record meaningful observations without adding workload.",
+          "excerpt": "Practical techniques for recording meaningful classroom observations.",
           "category": "Resources",
           "date": "February 1, 2026",
           "readTime": "7 min"
         },
         {
           "title": "The teacher's role in the AI era",
-          "excerpt": "Reflections on how artificial intelligence can enhance (not replace) teacher professional judgment.",
+          "excerpt": "Reflections on how artificial intelligence can broaden teacher professional judgment.",
           "category": "Technology",
           "date": "January 28, 2026",
           "readTime": "10 min"
@@ -1477,7 +1431,7 @@
       "description": "Meet the team behind Mehmiro and our mission to support formative assessment in schools.",
       "mission": {
         "title": "Our Mission",
-        "description": "Democratize access to quality formative assessment tools for all schools in Argentina and Latin America. We want every teacher to have the ability to detect in time when a student needs more support, without adding administrative burden to their work."
+        "description": "Democratize access to formative assessment tools for schools in Argentina and Latin America. We want every teacher to detect in time when a student needs more support."
       },
       "vision": {
         "title": "Our Vision",
@@ -1488,8 +1442,8 @@
       },
       "values": [
         {
-          "title": "Respect for Teachers",
-          "description": "The teacher is the protagonist. Our technology is designed to amplify their gaze, never to replace it. Their professional judgment is the center of everything we do."
+          "title": "Teachers set the starting point",
+          "description": "Teaching work is the starting point. Technology organizes and makes visible what already happens in the classroom; the decision stays with the teaching team."
         },
         {
           "title": "Human-Centered Approach",
@@ -1507,7 +1461,7 @@
         "paragraphs": [
           "Mehmiro was born after years of living through the tensions of the educational system from multiple roles: first as a student, then as a teacher, later as a trainer, and also participating in teams designing and implementing innovative educational public policies.",
           "In all these spaces, a recurring problem: academic evidence about how people learn rarely manages to translate into simple and usable tools in the real classroom.",
-          "The startup emerges as a bridge between learning science research and the daily practice of teachers. Mehmiro seeks to turn theory into concrete action, without imposing external methodologies or increasing workload, but rather enhancing professional judgment with technology that organizes, makes visible, and scales what good teachers already do intuitively."
+          "Mehmiro turns theory into concrete action: it organizes what already happens in the classroom and makes it visible to the teaching team, without imposing external methodologies."
         ]
       },
       "stats": [

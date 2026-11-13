@@ -44,7 +44,7 @@ La landing no debe parecer un SaaS genérico de IA ni una marca de moda. Debe se
 
 ## Interacción signature
 
-Una **línea de señal** y un halo que responden al pointer, además del apilado de cards al scroll. Nada de animaciones autónomas que no estén ligadas a la observación.
+Un **halo de tinta** que responde al pointer, el recorte en dos fragmentos y el apilado de cards al scroll. Nada de animaciones autónomas que no estén ligadas a la observación.
 
 ## Do / Don't
 

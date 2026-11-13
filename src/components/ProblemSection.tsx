@@ -1,4 +1,3 @@
-import { StartButton } from "@/components/StartButton";
 import { Eye, Clock, AlertCircle, Heart, Brain } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -56,7 +55,7 @@ export const ProblemSection = ({
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="education-item group relative p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+              className="education-item group relative p-6 rounded-lg bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="education-item-content relative z-10">
@@ -81,7 +80,6 @@ export const ProblemSection = ({
             {t("problem.closing.rest")}
           </p>
         </div>
-        <div className="section-action"><StartButton /></div>
       </div>
     </section>
   );

@@ -399,7 +399,7 @@ La documentación existe en https://docs.mehmiro.com y tiene tres secciones: Gu�
 
 Para no alargar la home, los bloques 6–9 pueden ser **tabs** con un panel visible y enlaces a páginas dedicadas. La home cuenta el relato; las páginas profundizan.
 
-**Implementación actual:** “Por qué ahora” quedó como banda standalone después del stack de problema/solución/embajadores y antes de la FAQ, para evitar el clipping de las tarjetas sticky en mobile.
+**Implementación actual:** “Por qué ahora” se removió en la rama editorial por ser texto genérico. La home queda: hero → selector → problema → solución → embajadores → FAQ → CTA.
 
 ### 8.3 Páginas dedicadas
 

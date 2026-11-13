@@ -214,7 +214,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 .hero-values { display: flex; flex-direction: column; gap: 8px; color: hsl(var(--muted-foreground)); font-size: 0.8889rem; }
 .hero-values li { display: flex; align-items: flex-start; gap: 8px; }
 .hero-values li svg { flex-shrink: 0; margin-top: .28rem; }
-@media (max-width: 767px) { .why-now-grid { grid-template-columns: 1fr !important; } }
 .hero-values svg { color: hsl(var(--primary)); }
 @keyframes hero-float {
   0%, 100% { transform: rotate(2deg) translateY(0); }
@@ -1233,11 +1232,6 @@ body::before {
 
 .final-cta {
   border-radius: 14px;
-}
-
-.why-now-band {
-  border-radius: 14px !important;
-  border: 1px solid hsl(var(--border));
 }
 
 /* Warm paper ground with a cool ink halo and a barely-there grain. */
