@@ -29,10 +29,10 @@ const roundedPolygonPath = (points: [number, number][], radius: number) => {
 
 const leftShard = roundedPolygonPath(
   [
-    [8, 13],
+    [13, 13],
     [50, 38],
     [50, 94],
-    [8, 68],
+    [13, 68],
   ],
   4.2,
 );
@@ -67,10 +67,10 @@ export const LogoMaskedPhoto = ({ src, alt, className = "" }: LogoMaskedPhotoPro
       <g clipPath={`url(#${clipId})`}>
         <image
           href={src}
-          x="5"
-          y="5"
-          width="90"
-          height="90"
+          x="8"
+          y="10"
+          width="84"
+          height="84"
           preserveAspectRatio="xMidYMin slice"
         />
       </g>
