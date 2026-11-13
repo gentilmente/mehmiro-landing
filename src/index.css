@@ -914,6 +914,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
 
   .audience-visual {
     width: 100%;
+    margin-bottom: 72px;
+  }
+
+  .audience-floating-note {
+    bottom: -64px;
   }
 
   .audience-photo-frame img {
