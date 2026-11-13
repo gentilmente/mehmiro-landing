@@ -170,7 +170,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {t("footer.links.howItWorks")}
+                    {t("footer.links.academy")}
                   </div>
                 </Link>
                 <Link

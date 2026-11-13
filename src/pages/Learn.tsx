@@ -77,7 +77,7 @@ const Learn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
+    <div className="learn-page min-h-screen bg-gradient-to-b from-background to-muted/30">
       {/* Hero Section */}
       <section className="pt-28 pb-20 px-6">
         <div className="container mx-auto text-center">
@@ -383,7 +383,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
+    <div className="learn-page min-h-screen bg-gradient-to-b from-background to-muted/30">
       {/* Hero */}
       <section className="border-b bg-gradient-to-br from-background via-background to-secondary/5 px-6 pb-16 pt-28">
         <div className="container mx-auto">

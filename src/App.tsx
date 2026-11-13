@@ -128,7 +128,7 @@ const Navigation = () => {
             onClick={() => setMobileMenuOpen(false)}
             className="text-xl font-medium text-foreground hover:text-primary transition-colors"
           >
-            {t("nav.howItWorks")}
+            {t("nav.academy")}
           </Link>
           <Link
             to="/para-docentes"
@@ -187,7 +187,7 @@ const Navigation = () => {
               to="/learn"
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"
             >
-              {t("nav.howItWorks")}
+              {t("nav.academy")}
             </Link>
             <div className="w-px h-4 bg-border" />
             <Link

@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "howItWorks": "How it works",
+    "academy": "Academy",
     "forTeachers": "For teachers",
     "forSchools": "Schools",
     "forFamilies": "Families",
@@ -533,7 +533,7 @@
     },
     "links": {
       "features": "Features",
-      "howItWorks": "How it works",
+      "academy": "Academy",
       "forEducators": "For educators",
       "forTeachers": "For teachers",
       "forSchools": "For schools",
@@ -561,8 +561,8 @@
       "description": "Discover Mehmiro's tools that amplify your pedagogical gaze: observation organization, pattern detection and actionable reports."
     },
     "learn": {
-      "title": "Learn Mehmiro",
-      "description": "Step-by-step guides to master every feature. From first steps to advanced AI-powered evaluation.",
+      "title": "Mehmiro Academy",
+      "description": "Step-by-step guides to set up your class, record observations and review evidence.",
       "coursesTitle": "Available Courses",
       "startCourse": "Start",
       "courseObjectives": "What you'll learn",

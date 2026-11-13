@@ -1319,3 +1319,16 @@ body::after {
 .desktop-navigation button {
   border-radius: 6px;
 }
+
+/* Learn/Academy follows the same editorial typography as the rest of the site. */
+.learn-page h1,
+.learn-page h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.learn-page h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}

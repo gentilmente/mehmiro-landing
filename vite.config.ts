@@ -85,10 +85,10 @@ const ENGLISH_PAGES: EnglishPage[] = [
     dir: "en/learn",
     url: "https://mehmiro.com/en/learn",
     esUrl: "https://mehmiro.com/learn",
-    title: "How Mehmiro works | Tutorials",
+    title: "Mehmiro Academy | Tutorials",
     description:
       "Step-by-step guides to set up your class, record observations and review evidence in Mehmiro.",
-    ogTitle: "How Mehmiro works.",
+    ogTitle: "Mehmiro Academy.",
     ogDescription: "Tutorials for teachers and teams.",
   },
   {
@@ -265,10 +265,10 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     dir: "learn",
     url: "https://mehmiro.com/learn",
     esUrl: "https://mehmiro.com/learn",
-    title: "Cómo funciona Mehmiro | Tutoriales",
+    title: "Academia Mehmiro | Tutoriales",
     description:
       "Guías paso a paso para configurar tu clase, registrar observaciones y revisar evidencia en Mehmiro.",
-    ogTitle: "Cómo funciona Mehmiro.",
+    ogTitle: "Academia Mehmiro.",
     ogDescription: "Tutoriales para docentes y equipos.",
   },
   {

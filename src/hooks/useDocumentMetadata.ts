@@ -141,17 +141,17 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   },
   "/learn": {
     es: {
-      title: "Cómo funciona Mehmiro | Tutoriales",
+      title: "Academia Mehmiro | Tutoriales",
       description:
         "Guías paso a paso para configurar tu clase, registrar observaciones y revisar evidencia en Mehmiro.",
-      ogTitle: "Cómo funciona Mehmiro.",
+      ogTitle: "Academia Mehmiro.",
       ogDescription: "Tutoriales para docentes y equipos.",
     },
     en: {
-      title: "How Mehmiro works | Tutorials",
+      title: "Mehmiro Academy | Tutorials",
       description:
         "Step-by-step guides to set up your class, record observations and review evidence in Mehmiro.",
-      ogTitle: "How Mehmiro works.",
+      ogTitle: "Mehmiro Academy.",
       ogDescription: "Tutorials for teachers and teams.",
     },
   },

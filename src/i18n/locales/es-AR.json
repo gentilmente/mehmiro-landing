@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Inicio",
-    "howItWorks": "Cómo funciona",
+    "academy": "Academia",
     "forTeachers": "Para docentes",
     "forSchools": "Escuelas",
     "forFamilies": "Familias",
@@ -533,7 +533,7 @@
     },
     "links": {
       "features": "Características",
-      "howItWorks": "Cómo funciona",
+      "academy": "Academia",
       "forEducators": "Para educadores",
       "forTeachers": "Para docentes",
       "forSchools": "Para escuelas",
@@ -561,8 +561,8 @@
       "description": "Descubrí las herramientas de Mehmiro que amplifican tu mirada pedagógica: organización de observaciones, detección de patrones y reportes accionables."
     },
     "learn": {
-      "title": "Aprendé Mehmiro",
-      "description": "Guías paso a paso para dominar cada función. Desde el primer paso hasta la evaluación avanzada con IA.",
+      "title": "Academia Mehmiro",
+      "description": "Guías paso a paso para configurar tu clase, registrar observaciones y revisar evidencia.",
       "coursesTitle": "Cursos Disponibles",
       "startCourse": "Comenzar",
       "courseObjectives": "Qué vas a aprender",
