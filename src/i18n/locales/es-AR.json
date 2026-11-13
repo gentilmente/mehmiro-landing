@@ -23,7 +23,7 @@
     "badge": "Observación docente, evidencia y coordinación",
     "headlinePrimary": "Las señales están.",
     "headlineSecondary": "El desafío es coordinarlas.",
-    "subheadline": "Mehmiro convierte la observación de clase en evidencia revisada y una visión institucional del progreso.",
+    "subheadline": "Mehmiro convierte la observación de clase en sugerencias sobre a quién mirar, en qué área y qué hacer después.",
     "noteTitle": "Nota de voz.",
     "noteText": "30 segundos después de clase.",
     "recognitionLabel": "Reconocimiento IRCAI 2025",
@@ -31,8 +31,8 @@
     "recognitionAria": "Abrir reconocimiento IRCAI en una nueva pestaña",
     "valueProps": [
       "Observación por WhatsApp, texto o audio",
-      "Revisión docente antes de guardar",
-      "Perfil estudiantil con evidencia aceptada",
+      "Sugerencias por estudiante y área",
+      "Tendencias antes de que sea difícil revertirlas",
       "Google para login, Calendar y Gmail"
     ],
     "scrollIndicator": "Descubrí cómo funciona"
@@ -40,19 +40,19 @@
   "problem": {
     "badge": "El problema",
     "title": "La información existe. El desafío es que llegue a tiempo.",
-    "description": "Un alumno deja de participar, falta o se aísla. El docente lo ve, pero la señal queda en un cuaderno, una planilla o un comentario suelto. Cuando el equipo reconstruye el panorama, el apoyo llega tarde.",
+    "description": "Un alumno deja de participar, falta o se aísla. El docente lo ve, pero la señal queda en un cuaderno, una planilla o un comentario suelto. Sin un registro común no hay tendencia visible ni forma de saber a quién mirar primero.",
     "items": [
       {
-        "title": "Señales dispersas",
-        "description": "Cada docente registra a su manera."
+        "title": "No sabés a quién mirar",
+        "description": "La observación se reparte por intuición, no por necesidad."
       },
       {
-        "title": "Contexto fragmentado",
-        "description": "El historial se reconstruye a mano."
+        "title": "El área se pierde",
+        "description": "La señal no dice en qué dimensión del aprendizaje está."
       },
       {
         "title": "Apoyo tardío",
-        "description": "Se actúa cuando la dificultad ya es grave."
+        "description": "Cuando la tendencia se ve, revertirla cuesta más."
       },
       {
         "title": "Carga innecesaria",
@@ -86,8 +86,8 @@
   },
   "solution": {
     "badge": "El ciclo docente",
-    "title": "De la planificación a la evidencia",
-    "description": "Cuatro momentos del trabajo docente, conectados en Mehmiro.",
+    "title": "De la planificación a la próxima decisión",
+    "description": "Mehmiro convierte tus observaciones después de clase en sugerencias sobre a quién mirar y en qué área, antes de que la tendencia sea más difícil de revertir.",
     "steps": [
       {
         "title": "Prepará tu año",
@@ -102,8 +102,8 @@
         "description": "Después de clase, un recordatorio te invita a registrar con texto o audio cómo salió esa clase."
       },
       {
-        "title": "Revisá la evidencia",
-        "description": "Confirmá o corregí las sugerencias en la app. Lo aceptado queda en el perfil del estudiante."
+        "title": "Recibí la próxima sugerencia",
+        "description": "Mehmiro cruza las observaciones y te sugiere qué estudiantes necesitan más observación y en qué área. La sugerencia llega con evidencia y queda a tu revisión."
       }
     ],
     "integrations": "Integraciones: WhatsApp para observaciones y Google (login, Calendar y Gmail/Workspace). Otros canales se prueban en el piloto."
@@ -208,7 +208,7 @@
     "docentes": {
       "eyebrow": "Para docentes",
       "title": "Tu observación, con evidencia y contexto",
-      "description": "Respondé por WhatsApp con texto o audio después de clase. Revisá estudiantes y evidencia en la app.",
+      "description": "Respondé por WhatsApp con texto o audio después de clase. Recibí sugerencias sobre qué estudiantes necesitan más observación y en qué área.",
       "primaryCta": "Probala y sumá recompensas",
       "secondaryCta": "Conocer el programa de embajadores",
       "note": "Solo se guarda lo que revisaste.",

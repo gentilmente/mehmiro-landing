@@ -23,7 +23,7 @@
     "badge": "Teacher observation, evidence and coordination",
     "headlinePrimary": "The signals are there.",
     "headlineSecondary": "The challenge is coordinating them.",
-    "subheadline": "Mehmiro turns classroom observation into reviewed evidence and an institutional view of progress.",
+    "subheadline": "Mehmiro turns classroom observation into suggestions about who to look at, in which area and what to do next.",
     "noteTitle": "Voice note.",
     "noteText": "30 seconds after class.",
     "recognitionLabel": "IRCAI Recognition 2025",
@@ -31,8 +31,8 @@
     "recognitionAria": "Open the IRCAI recognition in a new tab",
     "valueProps": [
       "Observation via WhatsApp, text or audio",
-      "Teacher review before saving",
-      "Student profile with accepted evidence",
+      "Suggestions by student and area",
+      "Trends before they are harder to reverse",
       "Google for login, Calendar and Gmail"
     ],
     "scrollIndicator": "See how it works"
@@ -40,19 +40,19 @@
   "problem": {
     "badge": "The problem",
     "title": "The information exists. The challenge is getting it there on time.",
-    "description": "A student stops participating, misses class or quietly isolates. The teacher sees it, but the signal stays in a notebook, a spreadsheet or a passing comment. By the time the team reconstructs the picture, support arrives late.",
+    "description": "A student stops participating, misses class or quietly isolates. The teacher sees it, but the signal stays in a notebook, a spreadsheet or a passing comment. Without a shared record, there is no visible trend and no way to know who to look at first.",
     "items": [
       {
-        "title": "Scattered signals",
-        "description": "Each teacher records in their own way."
+        "title": "Who to observe next",
+        "description": "Observation is distributed by intuition, not need."
       },
       {
-        "title": "Fragmented context",
-        "description": "History is reconstructed by hand."
+        "title": "The area gets lost",
+        "description": "The signal does not say which learning area it belongs to."
       },
       {
         "title": "Late support",
-        "description": "Action starts when the difficulty is already serious."
+        "description": "Once the trend is visible, reversing it costs more."
       },
       {
         "title": "Unnecessary workload",
@@ -86,8 +86,8 @@
   },
   "solution": {
     "badge": "The teaching cycle",
-    "title": "From planning to evidence",
-    "description": "Four moments of teaching work, connected in Mehmiro.",
+    "title": "From planning to the next decision",
+    "description": "Mehmiro turns your post-class observations into suggestions about who needs more observation and in which area, before the trend is harder to reverse.",
     "steps": [
       {
         "title": "Plan your year",
@@ -102,8 +102,8 @@
         "description": "After class, a reminder invites you to record how that class went, by text or audio."
       },
       {
-        "title": "Review the evidence",
-        "description": "Confirm or correct suggestions in the app. Accepted evidence stays in the student's profile."
+        "title": "Get the next suggestion",
+        "description": "Mehmiro cross-references observations and suggests which students need more observation and in which area. The suggestion arrives with evidence and stays open to your review."
       }
     ],
     "integrations": "Integrations: WhatsApp for observations and Google (login, Calendar and Gmail/Workspace). Other channels are tested during the pilot."
@@ -208,7 +208,7 @@
     "docentes": {
       "eyebrow": "For teachers",
       "title": "Your observation, with evidence and context",
-      "description": "Reply on WhatsApp with text or audio after class. Review students and evidence in the app.",
+      "description": "Reply on WhatsApp with text or audio after class. Get suggestions about which students need more observation and in which area.",
       "primaryCta": "Try it and earn rewards",
       "secondaryCta": "Learn about the ambassador program",
       "note": "Only what you reviewed is saved.",
