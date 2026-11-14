@@ -1351,3 +1351,53 @@ body::after {
 .audience-page .audience-floating-icon {
   color: hsl(var(--audience-accent, 225 75% 45%));
 }
+
+/* Desktop audiences menu: all public paths, without privileging one. */
+.nav-audiences {
+  position: relative;
+}
+
+.nav-audiences-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-audiences-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  z-index: 60;
+  width: 252px;
+  padding: 6px;
+  transform: translateX(-50%);
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--card));
+  box-shadow: 0 18px 38px hsl(225 38% 15% / 0.14);
+}
+
+.nav-audience-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-audience-item:hover,
+.nav-audience-item.is-active {
+  background: hsl(var(--muted));
+  color: hsl(var(--primary));
+}
+
+.nav-audience-item svg {
+  flex-shrink: 0;
+}

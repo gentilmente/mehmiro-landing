@@ -2,8 +2,9 @@
   "nav": {
     "home": "Home",
     "academy": "Learn to use it",
+    "audiencesLabel": "Who are you?",
     "forTeachers": "For teachers",
-    "forSchools": "Institutions",
+    "forSchools": "Educational institutions",
     "forFamilies": "Families",
     "research": "Research",
     "openMenu": "Open menu",

@@ -23,10 +23,10 @@ import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { PointerGlow } from "@/components/PointerGlow";
-import { Menu, X } from "lucide-react";
+import { Building2, ChevronDown, GraduationCap, Menu, Microscope, Users, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useDocumentMetadata } from "@/hooks/useDocumentMetadata";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { isEnglishPath, localizePath, stripEnglishPrefix } from "@/lib/locale";
 
@@ -72,6 +72,37 @@ const Navigation = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const englishPath = isEnglishPath(location.pathname);
+  const basePath = stripEnglishPrefix(location.pathname);
+  const [audiencesOpen, setAudiencesOpen] = useState(false);
+  const audiencesRef = useRef<HTMLDivElement>(null);
+
+  const audienceLinks = [
+    { href: "/para-docentes", label: t("nav.forTeachers"), icon: GraduationCap },
+    { href: "/para-escuelas", label: t("nav.forSchools"), icon: Building2 },
+    { href: "/para-familias", label: t("nav.forFamilies"), icon: Users },
+    { href: "/investigacion", label: t("nav.research"), icon: Microscope },
+  ];
+  const audienceActive = audienceLinks.some((item) => item.href === basePath);
+
+  useEffect(() => {
+    if (!audiencesOpen) return;
+
+    const onPointerDown = (event: PointerEvent) => {
+      if (audiencesRef.current && !audiencesRef.current.contains(event.target as Node)) {
+        setAudiencesOpen(false);
+      }
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setAudiencesOpen(false);
+    };
+
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [audiencesOpen]);
 
   const nextLanguage = englishPath ? "es-AR" : "en";
   const nextLanguageLabel = englishPath
@@ -190,13 +221,44 @@ const Navigation = () => {
               {t("nav.academy")}
             </Link>
             <div className="w-px h-4 bg-border" />
-            <Link
-              to="/para-escuelas"
-              className="nav-schools-link px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"
-            >
-              {t("nav.forSchools")}
-            </Link>
-            <div className="nav-schools-divider w-px h-4 bg-border" />
+            <div ref={audiencesRef} className="nav-audiences">
+              <button
+                type="button"
+                className={`nav-audiences-trigger px-4 py-2 text-sm font-medium transition-colors rounded-full hover:bg-muted ${
+                  audienceActive || audiencesOpen
+                    ? "text-foreground bg-muted"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                aria-expanded={audiencesOpen}
+                aria-haspopup="menu"
+                onClick={() => setAudiencesOpen((open) => !open)}
+              >
+                {t("nav.audiencesLabel")}
+                <ChevronDown
+                  className={`h-3.5 w-3.5 transition-transform ${audiencesOpen ? "rotate-180" : ""}`}
+                  aria-hidden="true"
+                />
+              </button>
+
+              {audiencesOpen && (
+                <div className="nav-audiences-menu" role="menu">
+                  {audienceLinks.map(({ href, label, icon: Icon }) => (
+                    <Link
+                      key={href}
+                      to={href}
+                      role="menuitem"
+                      aria-current={basePath === href ? "page" : undefined}
+                      onClick={() => setAudiencesOpen(false)}
+                      className={`nav-audience-item ${basePath === href ? "is-active" : ""}`}
+                    >
+                      <Icon className="h-4 w-4" aria-hidden="true" />
+                      <span>{label}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div className="w-px h-4 bg-border" />
             <button
               onClick={handleLanguageToggle}
               className="px-3 py-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted inline-flex items-center gap-2"
