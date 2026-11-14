@@ -41,7 +41,8 @@ const ENGLISH_PAGES: EnglishPage[] = [
     dir: "en/para-escuelas",
     url: "https://mehmiro.com/en/para-escuelas",
     esUrl: "https://mehmiro.com/para-escuelas",
-    title: "Mehmiro for educational institutions | Institutional view of progress",
+    title:
+      "Mehmiro for educational institutions | Institutional view of progress",
     description:
       "Student profile with accepted evidence, coverage and cross-subject context. Teacher adoption, roles, permissions and traceability.",
     ogTitle: "From scattered signals to a shared view.",
@@ -52,12 +53,11 @@ const ENGLISH_PAGES: EnglishPage[] = [
     dir: "en/para-familias",
     url: "https://mehmiro.com/en/para-familias",
     esUrl: "https://mehmiro.com/para-familias",
-    title: "Mehmiro for families | Support with context",
+    title: "Mehmiro for families | Know how they are and how to support them",
     description:
-      "Your institution shares highlights and news; Mehmiro gives you clues to support and spark a desire to learn.",
+      "The school shares what stood out; Mehmiro gives you a concrete clue to understand and support your child this week.",
     ogTitle: "More context to support.",
-    ogDescription:
-      "Highlights, news and clues to support.",
+    ogDescription: "A concrete clue to support this week.",
   },
   {
     dir: "en/investigacion",
@@ -116,7 +116,8 @@ const ENGLISH_PAGES: EnglishPage[] = [
     url: "https://mehmiro.com/en/blog",
     esUrl: "https://mehmiro.com/blog",
     title: "Blog | Mehmiro",
-    description: "Articles and reflections on observation, evidence and teaching practice.",
+    description:
+      "Articles and reflections on observation, evidence and teaching practice.",
     ogTitle: "Mehmiro blog.",
     ogDescription: "Observation, evidence and teaching practice.",
   },
@@ -125,7 +126,8 @@ const ENGLISH_PAGES: EnglishPage[] = [
     url: "https://mehmiro.com/en/community",
     esUrl: "https://mehmiro.com/community",
     title: "Community | Mehmiro",
-    description: "Connect with teachers and schools transforming their pedagogical observation.",
+    description:
+      "Connect with teachers and schools transforming their pedagogical observation.",
     ogTitle: "Mehmiro community.",
     ogDescription: "Teachers and schools learning together.",
   },
@@ -221,7 +223,8 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     dir: "para-escuelas",
     url: "https://mehmiro.com/para-escuelas",
     esUrl: "https://mehmiro.com/para-escuelas",
-    title: "Mehmiro para instituciones educativas | Visión institucional del progreso",
+    title:
+      "Mehmiro para instituciones educativas | Visión institucional del progreso",
     description:
       "Perfil estudiantil con evidencia aceptada, cobertura y contexto entre materias. Adopción docente, roles, permisos y trazabilidad.",
     ogTitle: "De señales sueltas a una visión de conjunto.",
@@ -232,12 +235,11 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     dir: "para-familias",
     url: "https://mehmiro.com/para-familias",
     esUrl: "https://mehmiro.com/para-familias",
-    title: "Mehmiro para familias | Acompañar con contexto",
+    title: "Mehmiro para familias | Saber cómo está y cómo acompañar",
     description:
-      "Tu institución comparte lo que se destacó y las novedades; Mehmiro te da pistas para acompañar y despertar las ganas de aprender.",
+      "Tu institución comparte lo importante y las novedades; Mehmiro te da pistas para acompañar y despertar las ganas de aprender.",
     ogTitle: "Más contexto para acompañar.",
-    ogDescription:
-      "Lo que se destacó, novedades y pistas para acompañar.",
+    ogDescription: "lo importante, novedades y pistas para acompañar.",
   },
   {
     dir: "investigacion",
@@ -306,7 +308,8 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     url: "https://mehmiro.com/blog",
     esUrl: "https://mehmiro.com/blog",
     title: "Blog | Mehmiro",
-    description: "Artículos y reflexiones sobre observación, evidencia y práctica docente.",
+    description:
+      "Artículos y reflexiones sobre observación, evidencia y práctica docente.",
     ogTitle: "Blog de Mehmiro.",
     ogDescription: "Observación, evidencia y práctica docente.",
   },
@@ -315,7 +318,8 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     url: "https://mehmiro.com/community",
     esUrl: "https://mehmiro.com/community",
     title: "Comunidad | Mehmiro",
-    description: "Conectá con docentes y escuelas que están transformando su observación pedagógica.",
+    description:
+      "Conectá con docentes y escuelas que están transformando su observación pedagógica.",
     ogTitle: "Comunidad Mehmiro.",
     ogDescription: "Docentes y escuelas que aprenden juntos.",
   },
@@ -390,7 +394,12 @@ const writeStaticPage = (
   html = replaceMeta(html, "name", "description", page.description);
   html = replaceMeta(html, "property", "og:title", page.ogTitle);
   html = replaceMeta(html, "property", "og:description", page.ogDescription);
-  html = replaceMeta(html, "property", "og:locale", english ? "en_US" : "es_AR");
+  html = replaceMeta(
+    html,
+    "property",
+    "og:locale",
+    english ? "en_US" : "es_AR",
+  );
   html = replaceMeta(
     html,
     "property",

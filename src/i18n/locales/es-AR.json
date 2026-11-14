@@ -192,7 +192,7 @@
       },
       {
         "title": "Familias",
-        "description": "Conocé cómo acompañar con más contexto y pistas concretas.",
+        "description": "Conocé cómo acompañar a tu hijo o hija con una pista concreta para esta semana.",
         "href": "/para-familias"
       },
       {
@@ -216,22 +216,9 @@
       "note": "Solo se guarda lo que revisaste.",
       "faqTitle": "Preguntas de docentes",
       "faqs": [
-        {
-          "question": "¿Cómo registro una observación?",
-          "answer": "Después de clase, respondé por WhatsApp con texto o audio. La transcripción es efímera y después revisás la evidencia en la app."
-        },
-        {
-          "question": "¿Qué pasa si una sugerencia no coincide?",
-          "answer": "Podés corregirla o descartarla antes de guardar. Nada se guarda sin tu revisión."
-        },
-        {
-          "question": "¿Cómo se conecta con mi planificación?",
-          "answer": "Mehmiro usa tu programa anual y el momento del año para ayudarte a preparar la próxima clase."
-        },
-        {
-          "question": "¿Cómo funciona la recompensa?",
-          "answer": "Si tu escuela agenda una demo o empieza un piloto, coordinamos la recompensa con la institución."
-        }
+        { "question": "¿Qué necesito para empezar?", "answer": "Un celular con WhatsApp y tu cuenta de Google. El trial es anónimo y dura 7 días." },
+        { "question": "¿Puedo probarlo antes de involucrar a mi escuela?", "answer": "Sí. Empezá con una clase y compartí el resultado cuando quieras." },
+        { "question": "¿Dónde consulto por privacidad?", "answer": "En la política de privacidad. Los datos son de la institución y el acceso se controla por roles." }
       ],
       "sections": [
         {
@@ -257,22 +244,9 @@
       "secondaryCta": "Ver cómo funciona",
       "faqTitle": "Preguntas de instituciones",
       "faqs": [
-        {
-          "question": "¿Cómo empieza un piloto?",
-          "answer": "Con un diagnóstico breve. Definimos objetivos, métricas y alcance antes de empezar."
-        },
-        {
-          "question": "¿Qué ve la dirección?",
-          "answer": "Una lectura institucional del progreso, con evidencia aceptada y cobertura por período y materia."
-        },
-        {
-          "question": "¿Cómo se integra con lo que ya usamos?",
-          "answer": "Se integra al software que ya usás: WhatsApp y Google Workspace forman parte del flujo."
-        },
-        {
-          "question": "¿Qué pasa con los datos?",
-          "answer": "La institución conserva la titularidad; el acceso se organiza por roles y cada institución queda aislada."
-        }
+        { "question": "¿Qué necesita la institución para empezar?", "answer": "Nombre y email del responsable. El onboarding institucional es asistido." },
+        { "question": "¿Cuánto dura el trial?", "answer": "7 días, anónimo. Después definimos juntos el alcance del piloto." },
+        { "question": "¿Cómo se accede a la información?", "answer": "Por roles y membresías. Cada institución queda aislada." }
       ],
       "sections": [
         {
@@ -304,45 +278,30 @@
       ]
     },
     "familias": {
-      "closingDescription": "Compartí esta página y escribinos para coordinar la suscripción.",
       "eyebrow": "Para familias y estudiantes",
-      "title": "Más contexto para acompañar",
-      "description": "Tu institución comparte lo importante y te mantiene al tanto de las novedades para acompañar a tu hijo o hija. Mehmiro te da pistas para entender qué necesita y despertar sus ganas de conocer y aprender.",
+      "title": "Saber cómo está y cómo acompañar",
+      "description": "La escuela comparte lo que se destacó. Mehmiro te ayuda a entender qué puede estar pasando y te da una pista concreta para acompañar esta semana.",
       "primaryCta": "Compartí en redes y ganá una suscripción gratis para tu escuela",
       "secondaryCta": "Preguntas frecuentes",
       "shareText": "Conocé Mehmiro, la herramienta que ayuda a las familias a acompañar con más contexto.",
-      "note": "La institución comparte lo importante y te cuenta las novedades.",
       "faqTitle": "Preguntas de familias",
       "faqs": [
-        {
-          "question": "¿Cómo me entero de lo que pasa con mi hijo o hija?",
-          "answer": "Tu institución comparte lo importante y las novedades. Mehmiro te da pistas para acompañar."
-        },
-        {
-          "question": "¿Qué puedo hacer con esas pistas?",
-          "answer": "Usarlas para conversar, apoyar y despertar sus ganas de conocer y aprender."
-        },
-        {
-          "question": "¿Cómo se coordina con la escuela?",
-          "answer": "La institución y el equipo docente sostienen el acompañamiento; vos sumás tu mirada."
-        },
-        {
-          "question": "¿Dónde consulto sobre privacidad?",
-          "answer": "En la política de privacidad o con tu institución."
-        }
+        { "question": "¿Qué hago si algo no coincide?", "answer": "Hablalo con la escuela. El equipo docente revisa la evidencia y puede corregirla." },
+        { "question": "¿Cómo uso la pista en casa?", "answer": "Elegí una conversación o una actividad para esta semana. No hace falta hacer todo junto." },
+        { "question": "¿Dónde consulto sobre privacidad?", "answer": "En la política de privacidad o con la institución." }
       ],
       "sections": [
         {
-          "title": "Novedades y avances",
-          "body": "La escuela comparte lo importante de las observaciones revisadas por docentes y te mantiene al tanto de las novedades. Mehmiro lo organiza para que puedas ver el contexto y acompañar con información clara."
+          "title": "Lo que la escuela te cuenta",
+          "body": "La escuela comparte lo que se destacó en clase. Mehmiro lo traduce en una mirada clara sobre participación, vínculos y aprendizaje, para que sepas qué puede estar pasando."
         },
         {
-          "title": "Pistas para acompañar",
-          "body": "Mehmiro te da ideas concretas sobre qué mirar y cómo acompañar, con el mismo enfoque que usa con los docentes. Podés usarlas para conversar, apoyar y despertar curiosidad."
+          "title": "Una pista para esta semana",
+          "body": "Mehmiro te da una idea concreta para conversar, apoyar y despertar curiosidad, con el mismo enfoque que usa con los docentes. Una pista para probar y ajustar a tu manera."
         },
         {
           "title": "Acompañar en equipo",
-          "body": "La institución comparte las novedades y el equipo docente sostiene el proceso. Mehmiro te ayuda a ver el progreso y a sumar tu mirada."
+          "body": "La escuela y el equipo docente sostienen el acompañamiento. Mehmiro te ayuda a ver avances y a sumar tu mirada."
         }
       ]
     },
@@ -356,22 +315,9 @@
       "note": "No publicamos resultados que no podamos sostener. Si querés ver el marco, escribinos.",
       "faqTitle": "Preguntas de investigación",
       "faqs": [
-        {
-          "question": "¿Qué marco usa Mehmiro?",
-          "answer": "Observación asistida con revisión docente, con foco en evidencia y contexto."
-        },
-        {
-          "question": "¿Qué se puede medir en un piloto?",
-          "answer": "Adopción, uso sostenido, satisfacción, capacidad de revisión y cobertura de evidencia."
-        },
-        {
-          "question": "¿Publican resultados de impacto?",
-          "answer": "Todavía no publicamos resultados de impacto; sí documentamos método, medición y límites."
-        },
-        {
-          "question": "¿Cómo proponer una colaboración?",
-          "answer": "Escribinos con tu institución, objetivo y alcance; diseñamos el piloto juntos."
-        }
+        { "question": "¿Qué necesita un piloto para empezar?", "answer": "Objetivos compartidos, línea de base, instrumentos y revisión ética." },
+        { "question": "¿Qué datos se comparten?", "answer": "Datos anonimizados bajo acuerdo y protocolo." },
+        { "question": "¿Cómo se propone una colaboración?", "answer": "Escribinos con institución, objetivo y alcance." }
       ],
       "sections": [
         {
@@ -416,22 +362,9 @@
       "note": "Si buscás un proveedor con un ensayo controlado aleatorizado publicado, hoy no lo somos. Si buscás un piloto bien diseñado, hablemos.",
       "faqTitle": "Preguntas sobre evidencia",
       "faqs": [
-        {
-          "question": "¿Qué podemos afirmar hoy?",
-          "answer": "Que Mehmiro permite observar, revisar evidencia y ordenar el seguimiento. Todavía no publicamos impacto de aprendizaje."
-        },
-        {
-          "question": "¿Qué se mide en un piloto?",
-          "answer": "Adopción, uso sostenido, satisfacción, capacidad de revisión y cobertura de evidencia."
-        },
-        {
-          "question": "¿Qué falta?",
-          "answer": "Evidencia pública de impacto, evaluación independiente y seguimiento longitudinal."
-        },
-        {
-          "question": "¿Cómo se colabora?",
-          "answer": "Con un piloto bien diseñado, objetivos compartidos y revisión ética y legal."
-        }
+        { "question": "¿Dónde puedo ver el marco?", "answer": "Escribinos y compartimos el marco, las métricas y los límites." },
+        { "question": "¿Qué se puede compartir?", "answer": "Método y medición. Resultados de impacto, cuando exista evidencia." },
+        { "question": "¿Cómo se diseña un piloto?", "answer": "Con línea de base, cierre, instrumentos compartidos y revisión ética." }
       ],
       "sections": [
         {
@@ -469,13 +402,13 @@
     "voiceDetail": "30 segundos después de clase",
     "schoolLabel": "Visión institucional",
     "schoolDetail": "Evidencia aceptada entre materias",
-    "familyLabel": "Acompañamiento",
+    "familyLabel": "Para acompañar",
     "familyRows": [
-      "Novedades",
-      "Pistas para acompañar",
+      "Lo que se destacó",
+      "Una pista para esta semana",
       "Tu mirada suma"
     ],
-    "familyFooter": "Información compartida por tu institución",
+    "familyFooter": "La escuela y vos, en equipo",
     "researchLabel": "Evidencia y método",
     "researchSteps": [
       "Observación",

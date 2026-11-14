@@ -29,7 +29,9 @@ const HOME: Record<"es" | "en", Metadata> = {
   },
 };
 
-const courseMeta = (locale: typeof esAR | typeof en): Record<string, Metadata> =>
+const courseMeta = (
+  locale: typeof esAR | typeof en,
+): Record<string, Metadata> =>
   Object.fromEntries(
     locale.pages.learn.courses.map((course) => [
       course.id,
@@ -69,7 +71,8 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   },
   "/para-escuelas": {
     es: {
-      title: "Mehmiro para instituciones educativas | Visión institucional del progreso",
+      title:
+        "Mehmiro para instituciones educativas | Visión institucional del progreso",
       description:
         "Perfil estudiantil con evidencia aceptada, cobertura y contexto entre materias. Adopción docente, roles, permisos y trazabilidad.",
       ogTitle: "De señales sueltas a una visión de conjunto.",
@@ -77,7 +80,8 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
         "Un piloto con objetivos claros para conectar observación, evidencia y decisión institucional.",
     },
     en: {
-      title: "Mehmiro for educational institutions | Institutional view of progress",
+      title:
+        "Mehmiro for educational institutions | Institutional view of progress",
       description:
         "Student profile with accepted evidence, coverage and cross-subject context. Teacher adoption, roles, permissions and traceability.",
       ogTitle: "From scattered signals to a shared view.",
@@ -87,20 +91,18 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   },
   "/para-familias": {
     es: {
-      title: "Mehmiro para familias | Acompañar con contexto",
+      title: "Mehmiro para familias | Saber cómo está y cómo acompañar",
       description:
-        "Tu institución comparte lo que se destacó y las novedades; Mehmiro te da pistas para acompañar y despertar las ganas de aprender.",
+        "Tu institución comparte lo importante y las novedades; Mehmiro te da pistas para acompañar y despertar las ganas de aprender.",
       ogTitle: "Más contexto para acompañar.",
-      ogDescription:
-        "Lo que se destacó, novedades y pistas para acompañar.",
+      ogDescription: "lo importante, novedades y pistas para acompañar.",
     },
     en: {
-      title: "Mehmiro for families | Support with context",
+      title: "Mehmiro for families | Know how they are and how to support them",
       description:
-        "Your institution shares highlights and news; Mehmiro gives you clues to support and spark a desire to learn.",
+        "The school shares what stood out; Mehmiro gives you a concrete clue to understand and support your child this week.",
       ogTitle: "More context to support.",
-      ogDescription:
-        "Highlights, news and clues to support.",
+      ogDescription: "A concrete clue to support this week.",
     },
   },
   "/investigacion": {
@@ -206,13 +208,15 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   "/blog": {
     es: {
       title: "Blog | Mehmiro",
-      description: "Artículos y reflexiones sobre observación, evidencia y práctica docente.",
+      description:
+        "Artículos y reflexiones sobre observación, evidencia y práctica docente.",
       ogTitle: "Blog de Mehmiro.",
       ogDescription: "Observación, evidencia y práctica docente.",
     },
     en: {
       title: "Blog | Mehmiro",
-      description: "Articles and reflections on observation, evidence and teaching practice.",
+      description:
+        "Articles and reflections on observation, evidence and teaching practice.",
       ogTitle: "Mehmiro blog.",
       ogDescription: "Observation, evidence and teaching practice.",
     },
@@ -220,13 +224,15 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   "/community": {
     es: {
       title: "Comunidad | Mehmiro",
-      description: "Conectá con docentes y escuelas que están transformando su observación pedagógica.",
+      description:
+        "Conectá con docentes y escuelas que están transformando su observación pedagógica.",
       ogTitle: "Comunidad Mehmiro.",
       ogDescription: "Docentes y escuelas que aprenden juntos.",
     },
     en: {
       title: "Community | Mehmiro",
-      description: "Connect with teachers and schools transforming their pedagogical observation.",
+      description:
+        "Connect with teachers and schools transforming their pedagogical observation.",
       ogTitle: "Mehmiro community.",
       ogDescription: "Teachers and schools learning together.",
     },
@@ -275,7 +281,11 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   },
 };
 
-const setMeta = (attribute: "name" | "property", key: string, content: string) => {
+const setMeta = (
+  attribute: "name" | "property",
+  key: string,
+  content: string,
+) => {
   const element = document.head.querySelector<HTMLMetaElement>(
     `meta[${attribute}="${key}"]`,
   );
@@ -311,7 +321,9 @@ export const useDocumentMetadata = (pathname: string) => {
     setMeta("name", "twitter:title", meta.ogTitle);
     setMeta("name", "twitter:description", meta.ogDescription);
 
-    const canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const canonical = document.head.querySelector<HTMLLinkElement>(
+      'link[rel="canonical"]',
+    );
     if (canonical) canonical.href = url;
   }, [pathname]);
 };

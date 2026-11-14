@@ -192,7 +192,7 @@
       },
       {
         "title": "Families",
-        "description": "Learn how to support with more context and concrete clues.",
+        "description": "Learn how to support your child with a concrete clue for this week.",
         "href": "/para-familias"
       },
       {
@@ -216,10 +216,9 @@
       "note": "Only what you reviewed is saved.",
       "faqTitle": "Teacher questions",
       "faqs": [
-        { "question": "How do I record an observation?", "answer": "After class, reply on WhatsApp with text or audio. Transcription is ephemeral, then you review the evidence in the app." },
-        { "question": "What if a suggestion does not match?", "answer": "You can correct or discard it before saving. Nothing is saved without your review." },
-        { "question": "How does it connect to my planning?", "answer": "Mehmiro uses your annual plan and the time of year to help you prepare the next class." },
-        { "question": "How does the reward work?", "answer": "If your school books a demo or starts a pilot, we coordinate the reward with the institution." }
+        { "question": "What do I need to start?", "answer": "A phone with WhatsApp and your Google account. The trial is anonymous and lasts 7 days." },
+        { "question": "Can I try it before involving my school?", "answer": "Yes. Start with one class and share the result when you are ready." },
+        { "question": "Where can I ask about privacy?", "answer": "In the privacy policy. Data belongs to the institution and access is controlled by roles." }
       ],
       "sections": [
         {
@@ -245,10 +244,9 @@
       "secondaryCta": "See how it works",
       "faqTitle": "Institution questions",
       "faqs": [
-        { "question": "How does a pilot start?", "answer": "With a short diagnostic. We define goals, metrics and scope before starting." },
-        { "question": "What does leadership see?", "answer": "An institutional view of progress, with accepted evidence and coverage by period and subject." },
-        { "question": "How does it fit with what we already use?", "answer": "It works with the software you already use: WhatsApp and Google Workspace are part of the flow." },
-        { "question": "What happens to the data?", "answer": "The institution retains ownership; access is organized by roles and each institution remains isolated." }
+        { "question": "What does the institution need to start?", "answer": "The institution name and the owner email. Institutional onboarding is assisted." },
+        { "question": "How long is the trial?", "answer": "7 days, anonymous. Then we define the pilot scope together." },
+        { "question": "How is information accessed?", "answer": "Through roles and memberships. Each institution remains isolated." }
       ],
       "sections": [
         {
@@ -280,33 +278,30 @@
       ]
     },
     "familias": {
-      "closingDescription": "Share this page and write to us to coordinate the subscription.",
       "eyebrow": "For families and students",
-      "title": "More context to support",
-      "description": "Your institution shares highlights and news so you can support your child. Mehmiro gives you clues to understand what they need and spark their desire to learn.",
+      "title": "Know how they are and how to support them",
+      "description": "The school shares what stood out. Mehmiro helps you understand what may be going on and gives you a concrete clue to support your child this week.",
       "primaryCta": "Share on social and win a free subscription for your school",
       "secondaryCta": "Frequently asked questions",
       "shareText": "Meet Mehmiro, the tool that helps families support their children with more context.",
-      "note": "Your institution shares what stood out and tells you the news.",
       "faqTitle": "Family questions",
       "faqs": [
-        { "question": "How do I learn what is happening with my child?", "answer": "Your institution shares what stood out and the news. Mehmiro gives you clues to support your child." },
-        { "question": "What can I do with those clues?", "answer": "Use them to talk, support and spark your child's desire to learn." },
-        { "question": "How does it coordinate with the school?", "answer": "The institution and teaching team sustain the support; you add your perspective." },
+        { "question": "What if something does not match?", "answer": "Talk to the school. The teaching team reviews the evidence and can correct it." },
+        { "question": "How do I use the clue at home?", "answer": "Choose one conversation or activity for this week. You do not have to do everything at once." },
         { "question": "Where can I ask about privacy?", "answer": "In the privacy policy or with your institution." }
       ],
       "sections": [
         {
-          "title": "News and highlights",
-          "body": "The school shares what stood out from teacher-reviewed observations and keeps you updated on news. Mehmiro organizes it so you can see the context and support with clear information."
+          "title": "What the school tells you",
+          "body": "The school shares what stood out in class. Mehmiro translates it into a clear view of participation, relationships and learning, so you know what may be going on."
         },
         {
-          "title": "Clues for support",
-          "body": "Mehmiro gives you concrete ideas about what to look for and how to support, using the same approach it uses with teachers. Use them to talk, support and spark curiosity."
+          "title": "A clue for this week",
+          "body": "Mehmiro gives you a concrete idea to talk, support and spark curiosity, using the same approach it uses with teachers. A clue to try and adapt in your own way."
         },
         {
           "title": "Support together",
-          "body": "The institution shares news and the teaching team sustains the process. Mehmiro helps you see progress and add your perspective."
+          "body": "The school and teaching team sustain the support. Mehmiro helps you see progress and add your perspective."
         }
       ]
     },
@@ -320,10 +315,9 @@
       "note": "We do not publish results we cannot support. If you want to see the framework, write to us.",
       "faqTitle": "Research questions",
       "faqs": [
-        { "question": "What framework does Mehmiro use?", "answer": "Assisted observation with teacher review, focused on evidence and context." },
-        { "question": "What can be measured in a pilot?", "answer": "Adoption, sustained use, satisfaction, review capacity and evidence coverage." },
-        { "question": "Do you publish impact results?", "answer": "We do not publish impact results yet; we do document method, measurement and limits." },
-        { "question": "How can we propose a collaboration?", "answer": "Write to us with your institution, goal and scope; we design the pilot together." }
+        { "question": "What does a pilot need to start?", "answer": "Shared goals, a baseline, instruments and ethical review." },
+        { "question": "What data is shared?", "answer": "Anonymized data under an agreement and protocol." },
+        { "question": "How do we propose a collaboration?", "answer": "Write to us with your institution, goal and scope." }
       ],
       "sections": [
         {
@@ -368,10 +362,9 @@
       "note": "If you are looking for a provider with a published RCT, we are not that today. If you are looking for a well-designed pilot, let's talk.",
       "faqTitle": "Evidence questions",
       "faqs": [
-        { "question": "What can we claim today?", "answer": "That Mehmiro supports observation, evidence review and organized follow-up. We do not publish learning impact yet." },
-        { "question": "What is measured in a pilot?", "answer": "Adoption, sustained use, satisfaction, review capacity and evidence coverage." },
-        { "question": "What is missing?", "answer": "Public impact evidence, independent evaluation and longitudinal follow-up." },
-        { "question": "How do we collaborate?", "answer": "With a well-designed pilot, shared goals and ethical and legal review." }
+        { "question": "Where can I see the framework?", "answer": "Write to us and we will share the framework, metrics and limits." },
+        { "question": "What can be shared?", "answer": "Method and measurement. Impact results, when evidence exists." },
+        { "question": "How is a pilot designed?", "answer": "With a baseline, endline, shared instruments and ethical review." }
       ],
       "sections": [
         {
@@ -409,9 +402,9 @@
     "voiceDetail": "30 seconds after class",
     "schoolLabel": "Institutional view",
     "schoolDetail": "Accepted evidence across subjects",
-    "familyLabel": "Support",
-    "familyRows": ["News", "Clues for support", "Your perspective"],
-    "familyFooter": "Information shared by your institution",
+    "familyLabel": "How to support",
+    "familyRows": ["What stood out", "A clue for this week", "Your perspective"],
+    "familyFooter": "School and family, together",
     "researchLabel": "Evidence and method",
     "researchSteps": ["Observation", "Evidence", "Review"],
     "researchFooter": "No short-term impact claims",
