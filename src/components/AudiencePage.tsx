@@ -51,7 +51,12 @@ const ActionLink = ({
   }
 
   return (
-    <a href={href} className={className}>
+    <a
+      href={href}
+      className={className}
+      target="_blank"
+      rel="noreferrer"
+    >
       {label}
       {variant === "primary" && <ArrowRight className="h-4 w-4" aria-hidden="true" />}
     </a>

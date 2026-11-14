@@ -14,8 +14,13 @@ interface AudienceContent {
 }
 
 const ParaFamilias = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const content = t("audiences.familias", { returnObjects: true }) as AudienceContent;
+  const shareText = t("audiences.familias.shareText");
+  const shareUrl = i18n.resolvedLanguage?.startsWith("en")
+    ? "https://mehmiro.com/en/para-familias"
+    : "https://mehmiro.com/para-familias";
+  const shareHref = `https://wa.me/?text=${encodeURIComponent(`${shareText} ${shareUrl}`)}`;
 
   return (
     <AudiencePage
@@ -27,7 +32,7 @@ const ParaFamilias = () => {
       note={content.note}
       primary={{
         label: content.primaryCta,
-        href: "/privacy",
+        href: shareHref,
       }}
       secondary={{
         label: content.secondaryCta,
