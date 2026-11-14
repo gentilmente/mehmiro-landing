@@ -34,7 +34,7 @@
       "Observation via WhatsApp, text or audio",
       "Suggestions by student and area",
       "Trends before they are harder to reverse",
-      "Google for login, Calendar and Gmail"
+      "Integrated with the software you already use"
     ],
     "scrollIndicator": "See how it works"
   },
@@ -107,7 +107,7 @@
         "description": "Mehmiro cross-references observations and suggests which students need more observation and in which area. The suggestion arrives with evidence and stays open to your review."
       }
     ],
-    "integrations": "Integrations: WhatsApp for observations and Google (login, Calendar and Gmail/Workspace). Other channels are tested during the pilot."
+    "integrations": "It works with the software you already use: WhatsApp for observations and Google (login, Calendar and Gmail/Workspace). Other channels are tested during the pilot."
   },
   "socialProof": {
     "badge": "Educational community",
@@ -380,7 +380,7 @@
           "title": "What we can already claim",
           "body": "Mehmiro is an AI-assisted classroom observation platform with teacher review. WhatsApp accepts text or audio; the app lets teachers review students, evidence and suggestions before saving.",
           "bullets": [
-            "WhatsApp for intake; Google for login/Calendar/Gmail",
+            "Integrated with the software you already use",
             "Student profile with accepted evidence",
             "IRCAI Global Top 100 2025 selection"
           ]
@@ -468,7 +468,7 @@
       },
       {
         "question": "Does it integrate with WhatsApp and Google Workspace?",
-        "answer": "Yes. WhatsApp for observations (depending on the institution's setup) and Google for login, Calendar and Gmail/Workspace. Other channels are tested during the pilot."
+        "answer": "Yes. WhatsApp for observations (depending on the institution's setup) and Google Workspace are part of the flow. Other channels are tested during the pilot."
       },
       {
         "question": "How is an observation recorded?",

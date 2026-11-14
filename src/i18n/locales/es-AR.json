@@ -34,7 +34,7 @@
       "Observación por WhatsApp, texto o audio",
       "Sugerencias por estudiante y área",
       "Tendencias antes de que sea difícil revertirlas",
-      "Google para login, Calendar y Gmail"
+      "Integrado al software que ya usás"
     ],
     "scrollIndicator": "Descubrí cómo funciona"
   },
@@ -107,7 +107,7 @@
         "description": "Mehmiro cruza las observaciones y te sugiere qué estudiantes necesitan más observación y en qué área. La sugerencia llega con evidencia y queda a tu revisión."
       }
     ],
-    "integrations": "Integraciones: WhatsApp para observaciones y Google (login, Calendar y Gmail/Workspace). Otros canales se prueban en el piloto."
+    "integrations": "Se integra al software que ya usás: WhatsApp para observaciones y Google (login, Calendar y Gmail/Workspace). Otros canales se prueban en el piloto."
   },
   "socialProof": {
     "badge": "Comunidad educativa",
@@ -380,7 +380,7 @@
           "title": "Lo que ya podemos afirmar",
           "body": "Mehmiro es una plataforma de observación de clase asistida por IA, con revisión docente. WhatsApp permite enviar texto o audio; la app permite revisar estudiantes, evidencia y sugerencias antes de guardar.",
           "bullets": [
-            "WhatsApp para intake; Google para login/Calendar/Gmail",
+            "Integrado al software que ya usás",
             "Perfil estudiantil con evidencia aceptada",
             "Selección IRCAI Global Top 100 2025"
           ]
@@ -468,7 +468,7 @@
       },
       {
         "question": "¿Se integra con WhatsApp y Google Workspace?",
-        "answer": "Sí. WhatsApp para observaciones (según configuración de la institución) y Google para login, Calendar y Gmail/Workspace. Otros canales se prueban durante el piloto."
+        "answer": "Sí. WhatsApp para observaciones (según configuración de la institución) y Google Workspace forman parte del flujo. Otros canales se prueban durante el piloto."
       },
       {
         "question": "¿Cómo se registra una observación?",
