@@ -310,7 +310,7 @@
       "primaryCta": "Share on social and win a free subscription for your school",
       "secondaryCta": "Frequently asked questions",
       "shareText": "Meet Mehmiro, the tool that helps families support their children with more context.",
-      "note": "Your institution shares what stood out and keeps you updated.",
+      "note": "Your institution shares what stood out and tells you the news.",
       "faqTitle": "Family questions",
       "faqs": [
         { "question": "How do I learn what is happening with my child?", "answer": "Your institution shares what stood out and the news. Mehmiro gives you clues to support your child." },
@@ -320,7 +320,7 @@
       ],
       "sections": [
         {
-          "title": "What your institution shares",
+          "title": "News and highlights",
           "body": "The school shares what stood out from teacher-reviewed observations and keeps you updated on news. Mehmiro organizes it so you can see the context and support with clear information.",
           "bullets": [
             "What stood out",
@@ -477,7 +477,7 @@
     "schoolLabel": "Institutional view",
     "schoolDetail": "Accepted evidence across subjects",
     "familyLabel": "Support",
-    "familyRows": ["What you receive", "How it helps", "How you support"],
+    "familyRows": ["News", "Clues for support", "Your perspective"],
     "familyFooter": "Information shared by your institution",
     "researchLabel": "Evidence and method",
     "researchSteps": ["Observation", "Evidence", "Review"],

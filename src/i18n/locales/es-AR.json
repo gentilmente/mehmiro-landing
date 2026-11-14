@@ -310,7 +310,7 @@
       "primaryCta": "Compartí en redes y ganá una suscripción gratis para tu escuela",
       "secondaryCta": "Preguntas frecuentes",
       "shareText": "Conocé Mehmiro, la herramienta que ayuda a las familias a acompañar con más contexto.",
-      "note": "La institución comparte lo que se destacó y te acerca las novedades.",
+      "note": "La institución comparte lo que se destacó y te cuenta las novedades.",
       "faqTitle": "Preguntas de familias",
       "faqs": [
         { "question": "¿Cómo me entero de lo que pasa con mi hijo o hija?", "answer": "Tu institución comparte lo que se destacó y las novedades. Mehmiro te da pistas para acompañar." },
@@ -320,7 +320,7 @@
       ],
       "sections": [
         {
-          "title": "Qué te comparte la institución",
+          "title": "Novedades y avances",
           "body": "La escuela comparte lo que se destacó de las observaciones revisadas por docentes y te mantiene al tanto de las novedades. Mehmiro lo organiza para que puedas ver el contexto y acompañar con información clara.",
           "bullets": [
             "Lo que se destacó",
@@ -477,7 +477,7 @@
     "schoolLabel": "Visión institucional",
     "schoolDetail": "Evidencia aceptada entre materias",
     "familyLabel": "Acompañamiento",
-    "familyRows": ["Qué te acerca", "Cómo te ayuda", "Cómo acompañás"],
+    "familyRows": ["Novedades", "Pistas para acompañar", "Tu mirada suma"],
     "familyFooter": "Información compartida por tu institución",
     "researchLabel": "Evidencia y método",
     "researchSteps": ["Observación", "Evidencia", "Revisión"],
