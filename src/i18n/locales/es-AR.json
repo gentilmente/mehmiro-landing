@@ -107,7 +107,7 @@
         "description": "Mehmiro cruza las observaciones y te sugiere qué estudiantes necesitan más observación y en qué área. La sugerencia llega con evidencia y queda a tu revisión."
       }
     ],
-    "integrations": "Se integra al software que ya usás: WhatsApp para observaciones y Google (login, Calendar y Gmail/Workspace). Otros canales se prueban en el piloto."
+    "integrations": "Se integra al software que ya usás: WhatsApp para observaciones y Google Workspace. Otros canales se prueban en el piloto."
   },
   "socialProof": {
     "badge": "Comunidad educativa",
