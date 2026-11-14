@@ -10,6 +10,9 @@ interface AudienceContent {
   primaryCta: string;
   secondaryCta: string;
   note?: string;
+  closingDescription: string;
+  faqTitle: string;
+  faqs: { question: string; answer: string }[];
   sections: AudienceSection[];
 }
 
@@ -36,10 +39,13 @@ const ParaFamilias = () => {
       }}
       secondary={{
         label: content.secondaryCta,
-        href: "/#preguntas-frecuentes",
+        href: "#preguntas-frecuentes",
       }}
       tone={2}
       visual={<FamilyVisual />}
+      closingDescription={content.closingDescription}
+      faqTitle={content.faqTitle}
+      faqs={content.faqs}
     />
   );
 };

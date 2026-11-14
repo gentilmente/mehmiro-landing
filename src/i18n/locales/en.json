@@ -207,12 +207,20 @@
     "nextStepDescription": "Start with a class or a pilot.",
     "back": "Back to home",
     "docentes": {
+      "closingDescription": "Start with a class.",
       "eyebrow": "For teachers",
       "title": "Your observation, with evidence and context",
       "description": "Reply on WhatsApp with text or audio after class. Get suggestions about which students need more observation and in which area.",
       "primaryCta": "Try it and earn rewards",
       "secondaryCta": "Learn about the ambassador program",
       "note": "Only what you reviewed is saved.",
+      "faqTitle": "Teacher questions",
+      "faqs": [
+        { "question": "How do I record an observation?", "answer": "After class, reply on WhatsApp with text or audio. Transcription is ephemeral, then you review the evidence in the app." },
+        { "question": "What if a suggestion does not match?", "answer": "You can correct or discard it before saving. Nothing is saved without your review." },
+        { "question": "How does it connect to my planning?", "answer": "Mehmiro uses your annual plan and the time of year to help you prepare the next class." },
+        { "question": "How does the reward work?", "answer": "If your school books a demo or starts a pilot, we coordinate the reward with the institution." }
+      ],
       "sections": [
         {
           "title": "Reply on WhatsApp",
@@ -242,11 +250,19 @@
       ]
     },
     "escuelas": {
+      "closingDescription": "Start with a diagnostic.",
       "eyebrow": "For educational institutions",
       "title": "From scattered signals to a shared view",
       "description": "Mehmiro connects classroom observation with a student profile and an institutional view of progress.",
       "primaryCta": "Request a diagnostic",
       "secondaryCta": "See how it works",
+      "faqTitle": "Institution questions",
+      "faqs": [
+        { "question": "How does a pilot start?", "answer": "With a short diagnostic. We define goals, metrics and scope before starting." },
+        { "question": "What does leadership see?", "answer": "An institutional view of progress, with accepted evidence and coverage by period and subject." },
+        { "question": "How does it fit with what we already use?", "answer": "It works with the software you already use: WhatsApp and Google Workspace are part of the flow." },
+        { "question": "What happens to the data?", "answer": "The institution retains ownership; access is organized by roles and each institution remains isolated." }
+      ],
       "sections": [
         {
           "title": "Institutional view",
@@ -287,6 +303,7 @@
       ]
     },
     "familias": {
+      "closingDescription": "Share this page and write to us to coordinate the subscription.",
       "eyebrow": "For families and students",
       "title": "More context to support",
       "description": "Your institution shares highlights and news so you can support your child. Mehmiro gives you clues to understand what they need and spark their desire to learn.",
@@ -294,6 +311,13 @@
       "secondaryCta": "Frequently asked questions",
       "shareText": "Meet Mehmiro, the tool that helps families support their children with more context.",
       "note": "Your institution shares what stood out and keeps you updated.",
+      "faqTitle": "Family questions",
+      "faqs": [
+        { "question": "How do I learn what is happening with my child?", "answer": "Your institution shares what stood out and the news. Mehmiro gives you clues to support your child." },
+        { "question": "What can I do with those clues?", "answer": "Use them to talk, support and spark your child's desire to learn." },
+        { "question": "How does it coordinate with the school?", "answer": "The institution and teaching team sustain the support; you add your perspective." },
+        { "question": "Where can I ask about privacy?", "answer": "In the privacy policy or with your institution." }
+      ],
       "sections": [
         {
           "title": "What your institution shares",
@@ -325,12 +349,20 @@
       ]
     },
     "investigacion": {
+      "closingDescription": "Start with a conversation.",
       "eyebrow": "For pedagogues, researchers and partners",
       "title": "An explicit framework to learn with evidence",
       "description": "Mehmiro is an AI-assisted observation platform with teacher review. We seek collaboration on pilots and measurement, not certainty selling.",
       "primaryCta": "Propose a collaboration",
       "secondaryCta": "See evidence and method",
       "note": "We do not publish results we cannot support. If you want to see the framework, write to us.",
+      "faqTitle": "Research questions",
+      "faqs": [
+        { "question": "What framework does Mehmiro use?", "answer": "Assisted observation with teacher review, focused on evidence and context." },
+        { "question": "What can be measured in a pilot?", "answer": "Adoption, sustained use, satisfaction, review capacity and evidence coverage." },
+        { "question": "Do you publish impact results?", "answer": "We do not publish impact results yet; we do document method, measurement and limits." },
+        { "question": "How can we propose a collaboration?", "answer": "Write to us with your institution, goal and scope; we design the pilot together." }
+      ],
       "sections": [
         {
           "title": "What the product does",
@@ -370,12 +402,20 @@
       ]
     },
     "evidencia": {
+      "closingDescription": "Start with a conversation.",
       "eyebrow": "Evidence and method",
       "title": "What we know, what we measure and what we do not claim",
       "description": "Mehmiro relies on assisted observation and teacher review. We do not publish learning-impact results yet; we can explain what we measure and how.",
       "primaryCta": "Propose a collaboration",
       "secondaryCta": "Back to research",
       "note": "If you are looking for a provider with a published RCT, we are not that today. If you are looking for a well-designed pilot, let's talk.",
+      "faqTitle": "Evidence questions",
+      "faqs": [
+        { "question": "What can we claim today?", "answer": "That Mehmiro supports observation, evidence review and organized follow-up. We do not publish learning impact yet." },
+        { "question": "What is measured in a pilot?", "answer": "Adoption, sustained use, satisfaction, review capacity and evidence coverage." },
+        { "question": "What is missing?", "answer": "Public impact evidence, independent evaluation and longitudinal follow-up." },
+        { "question": "How do we collaborate?", "answer": "With a well-designed pilot, shared goals and ethical and legal review." }
+      ],
       "sections": [
         {
           "title": "What we can already claim",

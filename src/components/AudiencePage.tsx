@@ -5,6 +5,7 @@ import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
+import { AudienceFAQ, type AudienceFAQItem } from "@/components/AudienceFAQ";
 
 export interface AudienceSection {
   title: string;
@@ -23,6 +24,9 @@ interface AudiencePageProps {
   secondary?: { label: string; href: string };
   visual?: ReactNode;
   tone?: 0 | 1 | 2 | 3;
+  closingDescription?: string;
+  faqTitle: string;
+  faqs: AudienceFAQItem[];
 }
 
 const isInternalRoute = (href: string) => href.startsWith("/");
@@ -40,6 +44,15 @@ const ActionLink = ({
     variant === "primary"
       ? "start-button"
       : "inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground shadow-[3px_3px_0_hsl(var(--border)/.55)] transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary";
+
+  if (href.startsWith("#")) {
+    return (
+      <a href={href} className={className}>
+        {label}
+        {variant === "primary" && <ArrowRight className="h-4 w-4" aria-hidden="true" />}
+      </a>
+    );
+  }
 
   if (isInternalRoute(href)) {
     return (
@@ -74,6 +87,9 @@ export const AudiencePage = ({
   secondary,
   visual,
   tone = 0,
+  closingDescription,
+  faqTitle,
+  faqs,
 }: AudiencePageProps) => {
   const { t } = useTranslation();
 
@@ -145,13 +161,17 @@ export const AudiencePage = ({
             </Reveal>
           ))}
         </div>
+
+        <Reveal>
+          <AudienceFAQ title={faqTitle} items={faqs} />
+        </Reveal>
       </main>
 
       <Reveal className="audience-closing-wrap">
         <section className="audience-closing">
           <div>
             <span className="audience-closing-eyebrow">{t("audiences.nextStep")}</span>
-            <h2>{t("audiences.nextStepDescription")}</h2>
+            <h2>{closingDescription ?? t("audiences.nextStepDescription")}</h2>
           </div>
           <ActionLink href={primary.href} label={primary.label} variant="primary" />
         </section>

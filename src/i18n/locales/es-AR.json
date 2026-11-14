@@ -207,12 +207,20 @@
     "nextStepDescription": "Empezá con una clase o un piloto.",
     "back": "Volver al inicio",
     "docentes": {
+      "closingDescription": "Empezá con una clase.",
       "eyebrow": "Para docentes",
       "title": "Tu observación, con evidencia y contexto",
       "description": "Respondé por WhatsApp con texto o audio después de clase. Recibí sugerencias sobre qué estudiantes necesitan más observación y en qué área.",
       "primaryCta": "Probala y sumá recompensas",
       "secondaryCta": "Conocer el programa de embajadores",
       "note": "Solo se guarda lo que revisaste.",
+      "faqTitle": "Preguntas de docentes",
+      "faqs": [
+        { "question": "¿Cómo registro una observación?", "answer": "Después de clase, respondé por WhatsApp con texto o audio. La transcripción es efímera y después revisás la evidencia en la app." },
+        { "question": "¿Qué pasa si una sugerencia no coincide?", "answer": "Podés corregirla o descartarla antes de guardar. Nada se guarda sin tu revisión." },
+        { "question": "¿Cómo se conecta con mi planificación?", "answer": "Mehmiro usa tu programa anual y el momento del año para ayudarte a preparar la próxima clase." },
+        { "question": "¿Cómo funciona la recompensa?", "answer": "Si tu escuela agenda una demo o empieza un piloto, coordinamos la recompensa con la institución." }
+      ],
       "sections": [
         {
           "title": "Respondé por WhatsApp",
@@ -242,11 +250,19 @@
       ]
     },
     "escuelas": {
+      "closingDescription": "Empezá con un diagnóstico.",
       "eyebrow": "Para instituciones educativas",
       "title": "De señales sueltas a una visión de conjunto",
       "description": "Mehmiro conecta la observación de aula con un perfil estudiantil y una lectura institucional del progreso.",
       "primaryCta": "Solicitar diagnóstico",
       "secondaryCta": "Ver cómo funciona",
+      "faqTitle": "Preguntas de instituciones",
+      "faqs": [
+        { "question": "¿Cómo empieza un piloto?", "answer": "Con un diagnóstico breve. Definimos objetivos, métricas y alcance antes de empezar." },
+        { "question": "¿Qué ve la dirección?", "answer": "Una lectura institucional del progreso, con evidencia aceptada y cobertura por período y materia." },
+        { "question": "¿Cómo se integra con lo que ya usamos?", "answer": "Se integra al software que ya usás: WhatsApp y Google Workspace forman parte del flujo." },
+        { "question": "¿Qué pasa con los datos?", "answer": "La institución conserva la titularidad; el acceso se organiza por roles y cada institución queda aislada." }
+      ],
       "sections": [
         {
           "title": "Visión institucional",
@@ -287,6 +303,7 @@
       ]
     },
     "familias": {
+      "closingDescription": "Compartí esta página y escribinos para coordinar la suscripción.",
       "eyebrow": "Para familias y estudiantes",
       "title": "Más contexto para acompañar",
       "description": "Tu institución comparte lo que se destacó y te mantiene al tanto de las novedades para acompañar a tu hijo o hija. Mehmiro te da pistas para entender qué necesita y despertar sus ganas de conocer y aprender.",
@@ -294,6 +311,13 @@
       "secondaryCta": "Preguntas frecuentes",
       "shareText": "Conocé Mehmiro, la herramienta que ayuda a las familias a acompañar con más contexto.",
       "note": "La institución comparte lo que se destacó y te acerca las novedades.",
+      "faqTitle": "Preguntas de familias",
+      "faqs": [
+        { "question": "¿Cómo me entero de lo que pasa con mi hijo o hija?", "answer": "Tu institución comparte lo que se destacó y las novedades. Mehmiro te da pistas para acompañar." },
+        { "question": "¿Qué puedo hacer con esas pistas?", "answer": "Usarlas para conversar, apoyar y despertar sus ganas de conocer y aprender." },
+        { "question": "¿Cómo se coordina con la escuela?", "answer": "La institución y el equipo docente sostienen el acompañamiento; vos sumás tu mirada." },
+        { "question": "¿Dónde consulto sobre privacidad?", "answer": "En la política de privacidad o con tu institución." }
+      ],
       "sections": [
         {
           "title": "Qué te comparte la institución",
@@ -325,12 +349,20 @@
       ]
     },
     "investigacion": {
+      "closingDescription": "Empezá con una conversación.",
       "eyebrow": "Para pedagogos, investigadores y alianzas",
       "title": "Un marco explícito para aprender con evidencia",
       "description": "Mehmiro es una plataforma de observación asistida, con revisión docente. Buscamos colaborar en pilotos y medición, no vender certezas.",
       "primaryCta": "Proponer una colaboración",
       "secondaryCta": "Ver evidencia y método",
       "note": "No publicamos resultados que no podamos sostener. Si querés ver el marco, escribinos.",
+      "faqTitle": "Preguntas de investigación",
+      "faqs": [
+        { "question": "¿Qué marco usa Mehmiro?", "answer": "Observación asistida con revisión docente, con foco en evidencia y contexto." },
+        { "question": "¿Qué se puede medir en un piloto?", "answer": "Adopción, uso sostenido, satisfacción, capacidad de revisión y cobertura de evidencia." },
+        { "question": "¿Publican resultados de impacto?", "answer": "Todavía no publicamos resultados de impacto; sí documentamos método, medición y límites." },
+        { "question": "¿Cómo proponer una colaboración?", "answer": "Escribinos con tu institución, objetivo y alcance; diseñamos el piloto juntos." }
+      ],
       "sections": [
         {
           "title": "Qué hace el producto",
@@ -370,12 +402,20 @@
       ]
     },
     "evidencia": {
+      "closingDescription": "Empezá con una conversación.",
       "eyebrow": "Evidencia y método",
       "title": "Lo que sabemos, lo que medimos y lo que no afirmamos",
       "description": "Mehmiro se apoya en observación asistida y revisión docente. Todavía no publicamos resultados de impacto de aprendizaje; sí podemos explicar qué medimos y cómo.",
       "primaryCta": "Proponer una colaboración",
       "secondaryCta": "Volver a investigación",
       "note": "Si buscás un proveedor con un ensayo controlado aleatorizado publicado, hoy no lo somos. Si buscás un piloto bien diseñado, hablemos.",
+      "faqTitle": "Preguntas sobre evidencia",
+      "faqs": [
+        { "question": "¿Qué podemos afirmar hoy?", "answer": "Que Mehmiro permite observar, revisar evidencia y ordenar el seguimiento. Todavía no publicamos impacto de aprendizaje." },
+        { "question": "¿Qué se mide en un piloto?", "answer": "Adopción, uso sostenido, satisfacción, capacidad de revisión y cobertura de evidencia." },
+        { "question": "¿Qué falta?", "answer": "Evidencia pública de impacto, evaluación independiente y seguimiento longitudinal." },
+        { "question": "¿Cómo se colabora?", "answer": "Con un piloto bien diseñado, objetivos compartidos y revisión ética y legal." }
+      ],
       "sections": [
         {
           "title": "Lo que ya podemos afirmar",

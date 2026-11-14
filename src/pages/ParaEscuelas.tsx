@@ -10,6 +10,9 @@ interface AudienceContent {
   primaryCta: string;
   secondaryCta: string;
   note?: string;
+  closingDescription: string;
+  faqTitle: string;
+  faqs: { question: string; answer: string }[];
   sections: AudienceSection[];
 }
 
@@ -35,6 +38,9 @@ const ParaEscuelas = () => {
       }}
       tone={1}
       visual={<SchoolVisual />}
+      closingDescription={content.closingDescription}
+      faqTitle={content.faqTitle}
+      faqs={content.faqs}
     />
   );
 };
