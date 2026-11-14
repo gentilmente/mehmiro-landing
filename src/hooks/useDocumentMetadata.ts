@@ -87,20 +87,20 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   },
   "/para-familias": {
     es: {
-      title: "Mehmiro para familias | Transparencia y derechos",
+      title: "Mehmiro para familias | Acompañar con contexto",
       description:
-        "Qué registra Mehmiro, quién accede y qué derechos tienen las familias. Transparencia, consentimiento y acceso por roles.",
-      ogTitle: "Más contexto para acompañar, menos etiquetas.",
+        "La dirección institucional comunica; Mehmiro también da a las familias pistas para acompañar y despertar las ganas de aprender.",
+      ogTitle: "Más contexto para acompañar.",
       ogDescription:
-        "Qué se registra, quién accede y cómo se revisa la evidencia. Sin portal de familias todavía.",
+        "Comunicación institucional y pistas para acompañar a cada estudiante.",
     },
     en: {
-      title: "Mehmiro for families | Transparency and rights",
+      title: "Mehmiro for families | Support with context",
       description:
-        "What Mehmiro records, who has access and what rights families have. Transparency, consent and role-based access.",
-      ogTitle: "More context to support, fewer labels.",
+        "The institution communicates; Mehmiro also gives families clues to support students and spark a desire to learn.",
+      ogTitle: "More context to support.",
       ogDescription:
-        "What is recorded, who has access and how evidence is reviewed. No family portal yet.",
+        "Institution-led communication and clues to support each student.",
     },
   },
   "/investigacion": {

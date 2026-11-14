@@ -192,7 +192,7 @@
       },
       {
         "title": "Families",
-        "description": "Learn what is recorded, who has access and what rights you have.",
+        "description": "Learn what the institution shares and how each student is supported.",
         "href": "/para-familias"
       },
       {
@@ -288,37 +288,37 @@
     },
     "familias": {
       "eyebrow": "For families and students",
-      "title": "More context to support, fewer labels",
-      "description": "Mehmiro helps the school observe and support. It is not a family portal or a surveillance system.",
+      "title": "More context to support",
+      "description": "Institutional leadership communicates to families what it decides to share. Mehmiro also gives families clues to support each student and spark curiosity and a desire to learn.",
       "primaryCta": "Read the privacy policy",
       "secondaryCta": "Frequently asked questions",
-      "note": "There is no family portal today. If your school enables one, it will inform you.",
+      "note": "The institution decides how and when to share this information with each family.",
       "sections": [
         {
-          "title": "What is recorded",
-          "body": "Classroom observations and evidence reviewed by teachers. Only what the teacher reviewed is saved.",
+          "title": "What the institution shares",
+          "body": "Institutional leadership decides what information reaches each family. Mehmiro organizes observations and teacher-reviewed evidence so that conversation has context.",
           "bullets": [
-            "Observations and accepted evidence",
-            "Nothing is saved without teacher review",
-            "No personality labels"
+            "Information defined by the institution",
+            "Observations reviewed by teachers",
+            "Context for support"
           ]
         },
         {
-          "title": "Who has access",
-          "body": "Access is controlled by roles and memberships inside the institution. Data is not shared across institutions.",
+          "title": "How it helps families",
+          "body": "Mehmiro gives families clues about what to look for and how to support, using the same approach it uses with teachers. Those clues help spark students' curiosity and desire to learn.",
+          "bullets": [
+            "Clues for support",
+            "Context to understand what is happening",
+            "Learning with curiosity"
+          ]
+        },
+        {
+          "title": "Access and rights",
+          "body": "The institution defines what each person sees according to their role. See the privacy policy for access, correction and deletion.",
           "bullets": [
             "Roles and permissions",
-            "Isolation per institution",
-            "Data belongs to the institution"
-          ]
-        },
-        {
-          "title": "Rights and transparency",
-          "body": "The school decides what it shares with each family. See the privacy policy for access, correction and deletion.",
-          "bullets": [
             "Access, correction and deletion",
-            "The school decides what is shared",
-            "No family portal yet"
+            "Communication led by the institution"
           ]
         }
       ]
@@ -436,8 +436,8 @@
     "schoolLabel": "Institutional view",
     "schoolDetail": "Accepted evidence across subjects",
     "familyLabel": "Transparency",
-    "familyRows": ["What is recorded", "Who has access", "What AI decides"],
-    "familyFooter": "No family portal yet",
+    "familyRows": ["What is shared", "How it helps", "Who has access"],
+    "familyFooter": "Communication led by the institution",
     "researchLabel": "Evidence and method",
     "researchSteps": ["Observation", "Evidence", "Review"],
     "researchFooter": "No short-term impact claims",

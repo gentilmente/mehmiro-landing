@@ -192,7 +192,7 @@
       },
       {
         "title": "Familias",
-        "description": "Conocé qué se registra, quién accede y qué derechos tenés.",
+        "description": "Conocé qué comparte la institución y cómo se acompaña a cada estudiante.",
         "href": "/para-familias"
       },
       {
@@ -288,37 +288,37 @@
     },
     "familias": {
       "eyebrow": "Para familias y estudiantes",
-      "title": "Más contexto para acompañar, menos etiquetas",
-      "description": "Mehmiro ayuda a la escuela a observar y acompañar. No es un portal de familias ni un sistema de vigilancia.",
+      "title": "Más contexto para acompañar",
+      "description": "La dirección institucional comunica a las familias lo que decide compartir. Mehmiro también les da pistas a las familias para acompañar a cada estudiante y despertar las ganas de conocer y aprender.",
       "primaryCta": "Leer política de privacidad",
       "secondaryCta": "Preguntas frecuentes",
-      "note": "Hoy no hay un portal de familias. Si tu escuela lo habilita, te informará.",
+      "note": "La institución define cómo y cuándo comparte esta información con cada familia.",
       "sections": [
         {
-          "title": "Qué se registra",
-          "body": "Observaciones de clase y evidencia revisada por docentes. Solo se guarda lo que el docente revisó.",
+          "title": "Qué comparte la institución",
+          "body": "La dirección institucional decide qué información llega a cada familia. Mehmiro organiza observaciones y evidencia revisada por docentes para que esa conversación tenga contexto.",
           "bullets": [
-            "Observaciones y evidencia aceptada",
-            "Nada se guarda sin revisión docente",
-            "Sin etiquetas de personalidad"
+            "Información definida por la institución",
+            "Observaciones revisadas por docentes",
+            "Contexto para acompañar"
           ]
         },
         {
-          "title": "Quién accede",
-          "body": "El acceso se controla por roles y membresías dentro de la institución. Los datos no se comparten entre instituciones.",
+          "title": "Cómo ayuda a las familias",
+          "body": "Mehmiro les da a las familias pistas sobre qué mirar y cómo acompañar, con el mismo enfoque que usa con los docentes. Esas pistas ayudan a despertar en los estudiantes las ganas de conocer y aprender.",
+          "bullets": [
+            "Pistas para acompañar",
+            "Contexto para entender qué pasa",
+            "Aprendizaje con curiosidad"
+          ]
+        },
+        {
+          "title": "Acceso y derechos",
+          "body": "La institución define qué ve cada persona según su rol. Consultá la política de privacidad para acceso, rectificación y eliminación.",
           "bullets": [
             "Roles y permisos",
-            "Aislamiento por institución",
-            "Datos de la institución"
-          ]
-        },
-        {
-          "title": "Derechos y transparencia",
-          "body": "La escuela define qué comparte con cada familia. Consultá la política de privacidad para acceso, rectificación y eliminación.",
-          "bullets": [
             "Acceso, rectificación y eliminación",
-            "La escuela define qué comparte",
-            "Sin portal de familias todavía"
+            "Comunicación a cargo de la institución"
           ]
         }
       ]
@@ -436,8 +436,8 @@
     "schoolLabel": "Visión institucional",
     "schoolDetail": "Evidencia aceptada entre materias",
     "familyLabel": "Transparencia",
-    "familyRows": ["Qué se registra", "Quién accede", "Qué decide la IA"],
-    "familyFooter": "Sin portal de familias todavía",
+    "familyRows": ["Qué comparte", "Cómo ayuda", "Quién accede"],
+    "familyFooter": "Comunicación a cargo de la institución",
     "researchLabel": "Evidencia y método",
     "researchSteps": ["Observación", "Evidencia", "Revisión"],
     "researchFooter": "Sin claims de impacto a corto plazo",
