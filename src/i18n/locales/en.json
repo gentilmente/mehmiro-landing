@@ -289,18 +289,18 @@
     "familias": {
       "eyebrow": "For families and students",
       "title": "More context to support",
-      "description": "Your institution shares information to help you support your child. Mehmiro gives you clues to understand what they need and spark their desire to learn.",
+      "description": "Your institution shares highlights and news so you can support your child. Mehmiro gives you clues to understand what they need and spark their desire to learn.",
       "primaryCta": "Read the privacy policy",
       "secondaryCta": "Frequently asked questions",
-      "note": "Information reaches you through your institution, in clear and useful language for support.",
+      "note": "Your institution shares what stood out and keeps you updated.",
       "sections": [
         {
           "title": "What your institution shares",
-          "body": "The school shares observations reviewed by teachers. Mehmiro organizes them so you can see the context and support with clear information.",
+          "body": "The school shares what stood out from teacher-reviewed observations and keeps you updated on news. Mehmiro organizes it so you can see the context and support with clear information.",
           "bullets": [
-            "Observations with context",
-            "Reviewed teacher perspectives",
-            "Information for support"
+            "What stood out",
+            "News from the institution",
+            "Context for support"
           ]
         },
         {
@@ -314,7 +314,7 @@
         },
         {
           "title": "Support together",
-          "body": "The institution and teaching team sustain the process. Mehmiro helps you see progress and add your perspective.",
+          "body": "The institution shares news and the teaching team sustains the process. Mehmiro helps you see progress and add your perspective.",
           "bullets": [
             "Progress with context",
             "Your perspective matters",

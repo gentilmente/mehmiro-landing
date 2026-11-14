@@ -289,18 +289,18 @@
     "familias": {
       "eyebrow": "Para familias y estudiantes",
       "title": "Más contexto para acompañar",
-      "description": "Tu institución te acerca información sobre cómo acompañar a tu hijo o hija. Mehmiro te da pistas para entender qué necesita y despertar sus ganas de conocer y aprender.",
+      "description": "Tu institución comparte lo que se destacó y te mantiene al tanto de las novedades para acompañar a tu hijo o hija. Mehmiro te da pistas para entender qué necesita y despertar sus ganas de conocer y aprender.",
       "primaryCta": "Leer política de privacidad",
       "secondaryCta": "Preguntas frecuentes",
-      "note": "La información llega a través de tu institución, con un lenguaje claro y útil para acompañar.",
+      "note": "La institución comparte lo que se destacó y te acerca las novedades.",
       "sections": [
         {
-          "title": "Qué te acerca la institución",
-          "body": "La escuela comparte observaciones revisadas por docentes. Mehmiro las organiza para que puedas ver el contexto y acompañar con información clara.",
+          "title": "Qué te comparte la institución",
+          "body": "La escuela comparte lo que se destacó de las observaciones revisadas por docentes y te mantiene al tanto de las novedades. Mehmiro lo organiza para que puedas ver el contexto y acompañar con información clara.",
           "bullets": [
-            "Observaciones con contexto",
-            "Miradas docentes revisadas",
-            "Información para acompañar"
+            "Lo que se destacó",
+            "Novedades de la institución",
+            "Contexto para acompañar"
           ]
         },
         {
@@ -314,7 +314,7 @@
         },
         {
           "title": "Acompañar en equipo",
-          "body": "La institución y el equipo docente sostienen el proceso. Mehmiro te ayuda a ver el progreso y a sumar tu mirada.",
+          "body": "La institución comparte las novedades y el equipo docente sostiene el proceso. Mehmiro te ayuda a ver el progreso y a sumar tu mirada.",
           "bullets": [
             "Seguimiento con contexto",
             "Tu mirada suma",
