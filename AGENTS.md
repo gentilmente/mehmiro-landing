@@ -5,7 +5,7 @@ This file captures the repo-specific context needed to work efficiently.
 ## Project context
 
 - Product: marketing site for Mehmiro, an AI-assisted pedagogical observation and coordination tool.
-- Audiences: teachers, school leaders/owners, families/students, and pedagogues/researchers/partners.
+- Audiences: teachers, educational institutions, families/students, and pedagogues/researchers/partners.
 - Language: Spanish (Argentina) by default; English is a potential market (international calls), currently available via a runtime toggle.
 - UX: editorial “field notebook” direction, blue-purple brand palette from the app logo, Fraunces + Source Sans 3, paper texture, shard geometry, scroll-stacked cards, FAQ deck, ambassador CTA.
 - Primary CTA: “Probala y sumá recompensas” (full) / “Probala” (short). The ambassador program replaced the unverified social-proof section on the home page.

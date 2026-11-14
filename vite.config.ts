@@ -21,7 +21,7 @@ const ENGLISH_PAGES: EnglishPage[] = [
     esUrl: "https://mehmiro.com/",
     title: "Mehmiro | Classroom observation with teacher review",
     description:
-      "Mehmiro helps teachers and school leaders turn classroom observation into reviewed evidence, with WhatsApp, AI and an institutional view of progress.",
+      "Mehmiro helps teachers and educational institutions turn classroom observation into reviewed evidence, with WhatsApp, AI and an institutional view of progress.",
     ogTitle: "Observe better to support students on time.",
     ogDescription:
       "AI-assisted classroom observation, teacher review and an institutional view of progress.",
@@ -41,7 +41,7 @@ const ENGLISH_PAGES: EnglishPage[] = [
     dir: "en/para-escuelas",
     url: "https://mehmiro.com/en/para-escuelas",
     esUrl: "https://mehmiro.com/para-escuelas",
-    title: "Mehmiro for schools | Institutional view of progress",
+    title: "Mehmiro for educational institutions | Institutional view of progress",
     description:
       "Student profile with accepted evidence, coverage and cross-subject context. Teacher adoption, roles, permissions and traceability.",
     ogTitle: "From scattered signals to a shared view.",
@@ -85,10 +85,10 @@ const ENGLISH_PAGES: EnglishPage[] = [
     dir: "en/learn",
     url: "https://mehmiro.com/en/learn",
     esUrl: "https://mehmiro.com/learn",
-    title: "Mehmiro Academy | Tutorials",
+    title: "Learn to use Mehmiro | Tutorials",
     description:
       "Step-by-step guides to set up your class, record observations and review evidence in Mehmiro.",
-    ogTitle: "Mehmiro Academy.",
+    ogTitle: "Learn to use Mehmiro.",
     ogDescription: "Tutorials for teachers and teams.",
   },
   {
@@ -221,7 +221,7 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     dir: "para-escuelas",
     url: "https://mehmiro.com/para-escuelas",
     esUrl: "https://mehmiro.com/para-escuelas",
-    title: "Mehmiro para escuelas | Visión institucional del progreso",
+    title: "Mehmiro para instituciones educativas | Visión institucional del progreso",
     description:
       "Perfil estudiantil con evidencia aceptada, cobertura y contexto entre materias. Adopción docente, roles, permisos y trazabilidad.",
     ogTitle: "De señales sueltas a una visión de conjunto.",
@@ -265,10 +265,10 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     dir: "learn",
     url: "https://mehmiro.com/learn",
     esUrl: "https://mehmiro.com/learn",
-    title: "Academia Mehmiro | Tutoriales",
+    title: "Aprendé a usar Mehmiro | Tutoriales",
     description:
       "Guías paso a paso para configurar tu clase, registrar observaciones y revisar evidencia en Mehmiro.",
-    ogTitle: "Academia Mehmiro.",
+    ogTitle: "Aprendé a usar Mehmiro.",
     ogDescription: "Tutoriales para docentes y equipos.",
   },
   {

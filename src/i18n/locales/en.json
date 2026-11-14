@@ -1,9 +1,9 @@
 {
   "nav": {
     "home": "Home",
-    "academy": "Academy",
+    "academy": "Learn to use it",
     "forTeachers": "For teachers",
-    "forSchools": "Schools",
+    "forSchools": "Institutions",
     "forFamilies": "Families",
     "research": "Research",
     "openMenu": "Open menu",
@@ -185,7 +185,7 @@
         "href": "/para-docentes"
       },
       {
-        "title": "School leaders",
+        "title": "Educational institutions",
         "description": "Request a diagnostic or a pilot for your institution.",
         "href": "/para-escuelas"
       },
@@ -241,7 +241,7 @@
       ]
     },
     "escuelas": {
-      "eyebrow": "For school leaders and owners",
+      "eyebrow": "For educational institutions",
       "title": "From scattered signals to a shared view",
       "description": "Mehmiro connects classroom observation with a student profile and an institutional view of progress.",
       "primaryCta": "Request a diagnostic",
@@ -451,7 +451,7 @@
     "position": "Question {{current}} of {{total}}",
     "badge": "Frequently asked questions",
     "title": "Answers to your questions",
-    "description": "We address the main concerns of teachers, school leaders and families.",
+    "description": "We address the main concerns of teachers, institutions and families.",
     "items": [
       {
         "question": "How long does it take to implement Mehmiro?",
@@ -508,10 +508,10 @@
     },
     "links": {
       "features": "Features",
-      "academy": "Academy",
+      "academy": "Learn to use it",
       "forEducators": "For educators",
       "forTeachers": "For teachers",
-      "forSchools": "For schools",
+      "forSchools": "Educational institutions",
       "forFamilies": "Families",
       "research": "Research",
       "evidence": "Evidence",
@@ -536,7 +536,7 @@
       "description": "Discover Mehmiro's tools that amplify your pedagogical gaze: observation organization, pattern detection and actionable reports."
     },
     "learn": {
-      "title": "Mehmiro Academy",
+      "title": "Learn to use Mehmiro",
       "description": "Step-by-step guides to set up your class, record observations and review evidence.",
       "coursesTitle": "Available Courses",
       "startCourse": "Start",

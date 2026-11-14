@@ -1,9 +1,9 @@
 {
   "nav": {
     "home": "Inicio",
-    "academy": "Academia",
+    "academy": "Aprendé a usarlo",
     "forTeachers": "Para docentes",
-    "forSchools": "Escuelas",
+    "forSchools": "Instituciones",
     "forFamilies": "Familias",
     "research": "Investigación",
     "openMenu": "Abrir menú",
@@ -185,7 +185,7 @@
         "href": "/para-docentes"
       },
       {
-        "title": "Directivos",
+        "title": "Instituciones educativas",
         "description": "Solicitá un diagnóstico o un piloto para tu institución.",
         "href": "/para-escuelas"
       },
@@ -241,7 +241,7 @@
       ]
     },
     "escuelas": {
-      "eyebrow": "Para directivos y dueños",
+      "eyebrow": "Para instituciones educativas",
       "title": "De señales sueltas a una visión de conjunto",
       "description": "Mehmiro conecta la observación de aula con un perfil estudiantil y una lectura institucional del progreso.",
       "primaryCta": "Solicitar diagnóstico",
@@ -451,7 +451,7 @@
     "position": "Pregunta {{current}} de {{total}}",
     "badge": "Preguntas frecuentes",
     "title": "Respuestas a tus dudas",
-    "description": "Abordamos las principales preocupaciones de docentes, directivos y familias.",
+    "description": "Abordamos las principales preocupaciones de docentes, instituciones y familias.",
     "items": [
       {
         "question": "¿Cuánto tiempo toma implementar Mehmiro?",
@@ -508,10 +508,10 @@
     },
     "links": {
       "features": "Características",
-      "academy": "Academia",
+      "academy": "Aprendé a usarlo",
       "forEducators": "Para educadores",
       "forTeachers": "Para docentes",
-      "forSchools": "Para escuelas",
+      "forSchools": "Instituciones educativas",
       "forFamilies": "Familias",
       "research": "Investigación",
       "evidence": "Evidencia",
@@ -536,7 +536,7 @@
       "description": "Descubrí las herramientas de Mehmiro que amplifican tu mirada pedagógica: organización de observaciones, detección de patrones y reportes accionables."
     },
     "learn": {
-      "title": "Academia Mehmiro",
+      "title": "Aprendé a usar Mehmiro",
       "description": "Guías paso a paso para configurar tu clase, registrar observaciones y revisar evidencia.",
       "coursesTitle": "Cursos Disponibles",
       "startCourse": "Comenzar",

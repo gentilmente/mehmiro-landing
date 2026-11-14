@@ -14,7 +14,7 @@ const HOME: Record<"es" | "en", Metadata> = {
   es: {
     title: "Mehmiro | Observación y coordinación pedagógica con IA",
     description:
-      "Mehmiro ayuda a docentes y equipos directivos a convertir la observación de clase en evidencia revisada, con WhatsApp, IA y visión institucional del progreso.",
+      "Mehmiro ayuda a docentes e instituciones educativas a convertir la observación de clase en evidencia revisada, con WhatsApp, IA y visión institucional del progreso.",
     ogTitle: "Observar mejor para acompañar a tiempo.",
     ogDescription:
       "Observación de clase con IA, revisión docente y una visión institucional del progreso.",
@@ -22,7 +22,7 @@ const HOME: Record<"es" | "en", Metadata> = {
   en: {
     title: "Mehmiro | Classroom observation with teacher review",
     description:
-      "Mehmiro helps teachers and school leaders turn classroom observation into reviewed evidence, with WhatsApp, AI and an institutional view of progress.",
+      "Mehmiro helps teachers and educational institutions turn classroom observation into reviewed evidence, with WhatsApp, AI and an institutional view of progress.",
     ogTitle: "Observe better to support students on time.",
     ogDescription:
       "AI-assisted classroom observation, teacher review and an institutional view of progress.",
@@ -69,7 +69,7 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   },
   "/para-escuelas": {
     es: {
-      title: "Mehmiro para escuelas | Visión institucional del progreso",
+      title: "Mehmiro para instituciones educativas | Visión institucional del progreso",
       description:
         "Perfil estudiantil con evidencia aceptada, cobertura y contexto entre materias. Adopción docente, roles, permisos y trazabilidad.",
       ogTitle: "De señales sueltas a una visión de conjunto.",
@@ -77,7 +77,7 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
         "Un piloto con objetivos claros para conectar observación, evidencia y decisión institucional.",
     },
     en: {
-      title: "Mehmiro for schools | Institutional view of progress",
+      title: "Mehmiro for educational institutions | Institutional view of progress",
       description:
         "Student profile with accepted evidence, coverage and cross-subject context. Teacher adoption, roles, permissions and traceability.",
       ogTitle: "From scattered signals to a shared view.",
@@ -141,17 +141,17 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
   },
   "/learn": {
     es: {
-      title: "Academia Mehmiro | Tutoriales",
+      title: "Aprendé a usar Mehmiro | Tutoriales",
       description:
         "Guías paso a paso para configurar tu clase, registrar observaciones y revisar evidencia en Mehmiro.",
-      ogTitle: "Academia Mehmiro.",
+      ogTitle: "Aprendé a usar Mehmiro.",
       ogDescription: "Tutoriales para docentes y equipos.",
     },
     en: {
-      title: "Mehmiro Academy | Tutorials",
+      title: "Learn to use Mehmiro | Tutorials",
       description:
         "Step-by-step guides to set up your class, record observations and review evidence in Mehmiro.",
-      ogTitle: "Mehmiro Academy.",
+      ogTitle: "Learn to use Mehmiro.",
       ogDescription: "Tutorials for teachers and teams.",
     },
   },
