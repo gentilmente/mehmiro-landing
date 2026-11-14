@@ -192,7 +192,7 @@
       },
       {
         "title": "Familias",
-        "description": "Conocé qué comparte la institución y cómo se acompaña a cada estudiante.",
+        "description": "Conocé cómo acompañar con más contexto y pistas concretas.",
         "href": "/para-familias"
       },
       {
@@ -289,36 +289,36 @@
     "familias": {
       "eyebrow": "Para familias y estudiantes",
       "title": "Más contexto para acompañar",
-      "description": "La dirección institucional comunica a las familias lo que decide compartir. Mehmiro también les da pistas a las familias para acompañar a cada estudiante y despertar las ganas de conocer y aprender.",
+      "description": "Tu institución te acerca información sobre cómo acompañar a tu hijo o hija. Mehmiro te da pistas para entender qué necesita y despertar sus ganas de conocer y aprender.",
       "primaryCta": "Leer política de privacidad",
       "secondaryCta": "Preguntas frecuentes",
-      "note": "La institución define cómo y cuándo comparte esta información con cada familia.",
+      "note": "La información llega a través de tu institución, con un lenguaje claro y útil para acompañar.",
       "sections": [
         {
-          "title": "Qué comparte la institución",
-          "body": "La dirección institucional decide qué información llega a cada familia. Mehmiro organiza observaciones y evidencia revisada por docentes para que esa conversación tenga contexto.",
+          "title": "Qué te acerca la institución",
+          "body": "La escuela comparte observaciones revisadas por docentes. Mehmiro las organiza para que puedas ver el contexto y acompañar con información clara.",
           "bullets": [
-            "Información definida por la institución",
-            "Observaciones revisadas por docentes",
-            "Contexto para acompañar"
+            "Observaciones con contexto",
+            "Miradas docentes revisadas",
+            "Información para acompañar"
           ]
         },
         {
-          "title": "Cómo ayuda a las familias",
-          "body": "Mehmiro les da a las familias pistas sobre qué mirar y cómo acompañar, con el mismo enfoque que usa con los docentes. Esas pistas ayudan a despertar en los estudiantes las ganas de conocer y aprender.",
+          "title": "Pistas para acompañar",
+          "body": "Mehmiro te da ideas concretas sobre qué mirar y cómo acompañar, con el mismo enfoque que usa con los docentes. Podés usarlas para conversar, apoyar y despertar curiosidad.",
           "bullets": [
-            "Pistas para acompañar",
-            "Contexto para entender qué pasa",
-            "Aprendizaje con curiosidad"
+            "Ideas para conversar",
+            "Apoyo con contexto",
+            "Ganas de aprender"
           ]
         },
         {
-          "title": "Acceso y derechos",
-          "body": "La institución define qué ve cada persona según su rol. Consultá la política de privacidad para acceso, rectificación y eliminación.",
+          "title": "Acompañar en equipo",
+          "body": "La institución y el equipo docente sostienen el proceso. Mehmiro te ayuda a ver el progreso y a sumar tu mirada.",
           "bullets": [
-            "Roles y permisos",
-            "Acceso, rectificación y eliminación",
-            "Comunicación a cargo de la institución"
+            "Seguimiento con contexto",
+            "Tu mirada suma",
+            "Comunicación con la institución"
           ]
         }
       ]
@@ -435,9 +435,9 @@
     "voiceDetail": "30 segundos después de clase",
     "schoolLabel": "Visión institucional",
     "schoolDetail": "Evidencia aceptada entre materias",
-    "familyLabel": "Transparencia",
-    "familyRows": ["Qué comparte", "Cómo ayuda", "Quién accede"],
-    "familyFooter": "Comunicación a cargo de la institución",
+    "familyLabel": "Acompañamiento",
+    "familyRows": ["Qué te acerca", "Cómo te ayuda", "Cómo acompañás"],
+    "familyFooter": "Información compartida por tu institución",
     "researchLabel": "Evidencia y método",
     "researchSteps": ["Observación", "Evidencia", "Revisión"],
     "researchFooter": "Sin claims de impacto a corto plazo",

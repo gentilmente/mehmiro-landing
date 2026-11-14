@@ -192,7 +192,7 @@
       },
       {
         "title": "Families",
-        "description": "Learn what the institution shares and how each student is supported.",
+        "description": "Learn how to support with more context and concrete clues.",
         "href": "/para-familias"
       },
       {
@@ -289,36 +289,36 @@
     "familias": {
       "eyebrow": "For families and students",
       "title": "More context to support",
-      "description": "Institutional leadership communicates to families what it decides to share. Mehmiro also gives families clues to support each student and spark curiosity and a desire to learn.",
+      "description": "Your institution shares information to help you support your child. Mehmiro gives you clues to understand what they need and spark their desire to learn.",
       "primaryCta": "Read the privacy policy",
       "secondaryCta": "Frequently asked questions",
-      "note": "The institution decides how and when to share this information with each family.",
+      "note": "Information reaches you through your institution, in clear and useful language for support.",
       "sections": [
         {
-          "title": "What the institution shares",
-          "body": "Institutional leadership decides what information reaches each family. Mehmiro organizes observations and teacher-reviewed evidence so that conversation has context.",
+          "title": "What your institution shares",
+          "body": "The school shares observations reviewed by teachers. Mehmiro organizes them so you can see the context and support with clear information.",
           "bullets": [
-            "Information defined by the institution",
-            "Observations reviewed by teachers",
-            "Context for support"
+            "Observations with context",
+            "Reviewed teacher perspectives",
+            "Information for support"
           ]
         },
         {
-          "title": "How it helps families",
-          "body": "Mehmiro gives families clues about what to look for and how to support, using the same approach it uses with teachers. Those clues help spark students' curiosity and desire to learn.",
+          "title": "Clues for support",
+          "body": "Mehmiro gives you concrete ideas about what to look for and how to support, using the same approach it uses with teachers. Use them to talk, support and spark curiosity.",
           "bullets": [
-            "Clues for support",
-            "Context to understand what is happening",
-            "Learning with curiosity"
+            "Ideas to talk about",
+            "Support with context",
+            "Desire to learn"
           ]
         },
         {
-          "title": "Access and rights",
-          "body": "The institution defines what each person sees according to their role. See the privacy policy for access, correction and deletion.",
+          "title": "Support together",
+          "body": "The institution and teaching team sustain the process. Mehmiro helps you see progress and add your perspective.",
           "bullets": [
-            "Roles and permissions",
-            "Access, correction and deletion",
-            "Communication led by the institution"
+            "Progress with context",
+            "Your perspective matters",
+            "Communication with the institution"
           ]
         }
       ]
@@ -435,9 +435,9 @@
     "voiceDetail": "30 seconds after class",
     "schoolLabel": "Institutional view",
     "schoolDetail": "Accepted evidence across subjects",
-    "familyLabel": "Transparency",
-    "familyRows": ["What is shared", "How it helps", "Who has access"],
-    "familyFooter": "Communication led by the institution",
+    "familyLabel": "Support",
+    "familyRows": ["What you receive", "How it helps", "How you support"],
+    "familyFooter": "Information shared by your institution",
     "researchLabel": "Evidence and method",
     "researchSteps": ["Observation", "Evidence", "Review"],
     "researchFooter": "No short-term impact claims",

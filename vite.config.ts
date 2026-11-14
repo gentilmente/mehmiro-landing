@@ -54,10 +54,10 @@ const ENGLISH_PAGES: EnglishPage[] = [
     esUrl: "https://mehmiro.com/para-familias",
     title: "Mehmiro for families | Support with context",
     description:
-      "The institution communicates; Mehmiro also gives families clues to support students and spark a desire to learn.",
+      "Your institution shares information to support your child; Mehmiro gives you clues to understand what they need and spark their desire to learn.",
     ogTitle: "More context to support.",
     ogDescription:
-      "Institution-led communication and clues to support each student.",
+      "Concrete clues to support and spark a desire to learn.",
   },
   {
     dir: "en/investigacion",
@@ -234,10 +234,10 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     esUrl: "https://mehmiro.com/para-familias",
     title: "Mehmiro para familias | Acompañar con contexto",
     description:
-      "La dirección institucional comunica; Mehmiro también da a las familias pistas para acompañar y despertar las ganas de aprender.",
+      "Tu institución te acerca información para acompañar; Mehmiro te da pistas para entender qué necesita y despertar sus ganas de aprender.",
     ogTitle: "Más contexto para acompañar.",
     ogDescription:
-      "Comunicación institucional y pistas para acompañar a cada estudiante.",
+      "Pistas concretas para acompañar y despertar las ganas de aprender.",
   },
   {
     dir: "investigacion",
