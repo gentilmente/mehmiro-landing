@@ -224,28 +224,15 @@
       "sections": [
         {
           "title": "Reply on WhatsApp",
-          "body": "After class, send text or a voice note. Mehmiro transcribes the audio ephemerally and returns a class-level analysis.",
-          "bullets": [
-            "Text or audio, no rigid forms",
-            "Ephemeral transcription: audio is not stored",
-            "Class-level analysis, not per-student analysis in the chat"
-          ]
+          "body": "After class, send text or a voice note. Mehmiro transcribes the audio ephemerally and returns a class-level analysis."
         },
         {
           "title": "Review and decide in the app",
-          "body": "Mehmiro identifies the students mentioned and offers evidence and suggestions. You confirm, correct or discard before anything is saved.",
-          "bullets": [
-            "Nothing is saved without your approval",
-            "Student history for context"
-          ]
+          "body": "Mehmiro identifies the students mentioned and offers evidence and suggestions. You confirm, correct or discard before anything is saved."
         },
         {
           "title": "Try it and earn rewards",
-          "body": "If your school books a demo or starts a pilot, you receive a reward. The program is an invitation, not a quota.",
-          "bullets": [
-            "Reward for a qualified demo or pilot",
-            "Clear terms before starting"
-          ]
+          "body": "If your school books a demo or starts a pilot, you receive a reward. The program is an invitation, not a quota."
         }
       ]
     },
@@ -266,12 +253,7 @@
       "sections": [
         {
           "title": "Institutional view",
-          "body": "The student profile composes accepted evidence across subjects, with coverage and context. It does not erase teacher authorship or expose drafts.",
-          "bullets": [
-            "Profile by student and period",
-            "Accepted evidence, not rumors",
-            "Cross-subject context"
-          ]
+          "body": "The student profile composes accepted evidence across subjects, with coverage and context. It does not erase teacher authorship or expose drafts."
         },
         {
           "title": "Real adoption",
@@ -293,12 +275,7 @@
         },
         {
           "title": "A pilot with clear goals",
-          "body": "We define adoption, usage and satisfaction metrics together. We do not promise learning impact without evidence.",
-          "bullets": [
-            "Adoption and usage metrics",
-            "Ethical and legal review",
-            "Shared roadmap"
-          ]
+          "body": "We define adoption, usage and satisfaction metrics together. We do not promise learning impact without evidence."
         }
       ]
     },
@@ -321,30 +298,15 @@
       "sections": [
         {
           "title": "News and highlights",
-          "body": "The school shares what stood out from teacher-reviewed observations and keeps you updated on news. Mehmiro organizes it so you can see the context and support with clear information.",
-          "bullets": [
-            "What stood out",
-            "News from the institution",
-            "Context for support"
-          ]
+          "body": "The school shares what stood out from teacher-reviewed observations and keeps you updated on news. Mehmiro organizes it so you can see the context and support with clear information."
         },
         {
           "title": "Clues for support",
-          "body": "Mehmiro gives you concrete ideas about what to look for and how to support, using the same approach it uses with teachers. Use them to talk, support and spark curiosity.",
-          "bullets": [
-            "Ideas to talk about",
-            "Support with context",
-            "Desire to learn"
-          ]
+          "body": "Mehmiro gives you concrete ideas about what to look for and how to support, using the same approach it uses with teachers. Use them to talk, support and spark curiosity."
         },
         {
           "title": "Support together",
-          "body": "The institution shares news and the teaching team sustains the process. Mehmiro helps you see progress and add your perspective.",
-          "bullets": [
-            "Progress with context",
-            "Your perspective matters",
-            "Communication with the institution"
-          ]
+          "body": "The institution shares news and the teaching team sustains the process. Mehmiro helps you see progress and add your perspective."
         }
       ]
     },
@@ -374,12 +336,7 @@
         },
         {
           "title": "What we measure",
-          "body": "Adoption, sustained use, satisfaction and review capacity. Learning impact is measured with the school over the medium term.",
-          "bullets": [
-            "Operational metrics",
-            "Pilot design",
-            "No short-term learning claims"
-          ]
+          "body": "Adoption, sustained use, satisfaction and review capacity. Learning impact is measured with the school over the medium term."
         },
         {
           "title": "Ethics and governance",
@@ -428,43 +385,19 @@
         },
         {
           "title": "What we measure",
-          "body": "In a pilot we measure adoption, sustained use, leadership satisfaction and review capacity. We also track evidence coverage and quality.",
-          "bullets": [
-            "Teacher adoption and use per class",
-            "Leadership and team satisfaction",
-            "Review time and capacity",
-            "Evidence coverage per student"
-          ]
+          "body": "In a pilot we measure adoption, sustained use, leadership satisfaction and review capacity. We also track evidence coverage and quality."
         },
         {
           "title": "What we do not claim",
-          "body": "We do not claim that software alone improves learning. We do not publish an RCT, a causal effect or an automatic diagnosis.",
-          "bullets": [
-            "No learning-impact claim",
-            "No diagnosis or personality labels",
-            "No public results yet",
-            "No automatic decisions"
-          ]
+          "body": "We do not claim that software alone improves learning. We do not publish an RCT, a causal effect or an automatic diagnosis."
         },
         {
           "title": "How we measure",
-          "body": "We design pilots with a baseline and endline, shared instruments and adoption/use analysis.",
-          "bullets": [
-            "Baseline and endline",
-            "Shared instruments and metrics",
-            "Consent and ethics",
-            "Bias and limitation review"
-          ]
+          "body": "We design pilots with a baseline and endline, shared instruments and adoption/use analysis."
         },
         {
           "title": "What is missing",
-          "body": "We still need public impact evidence, independent evaluation and longitudinal follow-up. That is part of the work, not a marketing detail.",
-          "bullets": [
-            "Public results",
-            "Independent evaluation",
-            "Longitudinal follow-up",
-            "Protocol open to review"
-          ]
+          "body": "We still need public impact evidence, independent evaluation and longitudinal follow-up. That is part of the work, not a marketing detail."
         }
       ]
     }
