@@ -26,6 +26,8 @@ interface AudiencePageProps {
   visual?: ReactNode;
   tone?: 0 | 1 | 2 | 3;
   closingDescription?: string;
+  closingPrimaryLabel?: string;
+  closingStacked?: boolean;
   faqTitle?: string;
   faqs?: AudienceFAQItem[];
   stackSections?: boolean;
@@ -103,6 +105,8 @@ export const AudiencePage = ({
   visual,
   tone = 0,
   closingDescription,
+  closingPrimaryLabel,
+  closingStacked = false,
   faqTitle = "",
   faqs = [],
   stackSections = false,
@@ -187,12 +191,17 @@ export const AudiencePage = ({
       </main>
 
       <Reveal className="audience-closing-wrap">
-        <section className="audience-closing">
+        <section className={`audience-closing ${closingStacked ? "audience-closing--stacked" : ""}`}>
           <div>
             <span className="audience-closing-eyebrow">{t("audiences.nextStep")}</span>
             <h2>{closingDescription ?? t("audiences.nextStepDescription")}</h2>
           </div>
-          <ActionLink href={primary.href} label={primary.label} variant="primary" onClick={primary.onClick} />
+          <ActionLink
+            href={primary.href}
+            label={closingPrimaryLabel ?? primary.label}
+            variant="primary"
+            onClick={primary.onClick}
+          />
         </section>
       </Reveal>
 

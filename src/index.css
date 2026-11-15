@@ -2117,3 +2117,18 @@ body::after {
     font-size: 0.74rem;
   }
 }
+
+/* Family closing CTA: let the heading breathe and place the button below. */
+.audience-closing--stacked {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.audience-closing--stacked h2 {
+  max-width: 760px;
+}
+
+.audience-closing--stacked .start-button {
+  flex-shrink: 0;
+}

@@ -10,6 +10,7 @@ interface AudienceContent {
   primaryCta: string;
   note?: string;
   closingDescription: string;
+  closingCta: string;
   sections: AudienceSection[];
 }
 
@@ -37,6 +38,8 @@ const ParaFamilias = () => {
       tone={2}
       visual={<FamilyVisual />}
       closingDescription={content.closingDescription}
+      closingPrimaryLabel={content.closingCta}
+      closingStacked
       stackSections
     />
   );
