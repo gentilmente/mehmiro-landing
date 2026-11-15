@@ -478,17 +478,17 @@
     "familyFooter": "Información compartida por tu institución",
     "familyPreviewLabel": "Novedad de la escuela",
     "familyPreviewTime": "Hoy",
-    "familyNewsTitle": "Se animó a participar en grupos chicos.",
-    "familyNewsText": "La escuela compartió una observación revisada por su docente.",
+    "familyNewsTitle": "Historia le resultó lejana; en Matemática se trabó con los paréntesis.",
+    "familyNewsText": "La escuela compartió dos observaciones revisadas por su docente: una en Historia y otra en Matemática.",
     "familyCluesTitle": "Pistas para acompañar",
     "familyClues": [
-      "Preguntale qué actividad le gustó más.",
-      "Proponé una charla corta, sin interrogatorio."
+      "Historia: preguntale qué tema le resultó más lejano y busquen juntos una película, serie o podcast que lo acerque.",
+      "Matemática: pedile que te muestre el paso con los paréntesis que no le cierra y preguntá qué cambió respecto del anterior."
     ],
     "familyChatTitle": "Chat con Mehmiro",
-    "familyChatHint": "Una pista corta, a tu ritmo.",
-    "familyChatUser": "¿Por dónde empiezo esta semana?",
-    "familyChatReply": "Preguntale qué fue lo que más disfrutó y escuchá sin corregir.",
+    "familyChatHint": "Veo dos señales: Historia le resulta lejana y Matemática se traba con los paréntesis. ¿Armamos una conversación para esta semana?",
+    "familyChatUser": "Sí, pero no quiero que se sienta interrogado. ¿Cómo empiezo?",
+    "familyChatReply": "Empezá por Historia: preguntale qué parte le resultó más lejana y escuchá sin corregir. En Matemática, pedile que te muestre el paso que no le cierra; no lo resuelvas vos.",
     "researchLabel": "Evidencia y método",
     "researchSteps": [
       "Observación",
