@@ -54,10 +54,10 @@ const ENGLISH_PAGES: EnglishPage[] = [
     esUrl: "https://mehmiro.com/para-familias",
     title: "Mehmiro for families | Support with context",
     description:
-      "Your institution shares highlights and news; Mehmiro gives you clues to support and spark a desire to learn.",
+      "Your institution keeps you updated; Mehmiro gives you clues to support and spark a desire to learn.",
     ogTitle: "More context to support.",
     ogDescription:
-      "Highlights, news and clues to support.",
+      "News and clues to support.",
   },
   {
     dir: "en/investigacion",
@@ -234,10 +234,10 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     esUrl: "https://mehmiro.com/para-familias",
     title: "Mehmiro para familias | Acompañar con contexto",
     description:
-      "Tu institución comparte lo que se destacó y las novedades; Mehmiro te da pistas para acompañar y despertar las ganas de aprender.",
+      "Tu institución te mantiene al tanto de las novedades; Mehmiro te da pistas para acompañar y despertar las ganas de aprender.",
     ogTitle: "Más contexto para acompañar.",
     ogDescription:
-      "Lo que se destacó, novedades y pistas para acompañar.",
+      "Novedades y pistas para acompañar.",
   },
   {
     dir: "investigacion",
