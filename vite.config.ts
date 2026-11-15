@@ -30,12 +30,12 @@ const ENGLISH_PAGES: EnglishPage[] = [
     dir: "en/para-docentes",
     url: "https://mehmiro.com/en/para-docentes",
     esUrl: "https://mehmiro.com/para-docentes",
-    title: "Mehmiro for teachers | Your year with more context",
+    title: "Mehmiro for teachers | Observation with evidence",
     description:
-      "Mehmiro supports the teaching cycle: plan the year, prepare each class, record how it went and coordinate the next move.",
-    ogTitle: "Your year, with more context.",
+      "Reply on WhatsApp with text or audio after class. Mehmiro analyzes the lesson and helps you review students and evidence in the app.",
+    ogTitle: "Your observation, with evidence and less workload.",
     ogDescription:
-      "Annual planning, class preparation, post-class records and next moves.",
+      "WhatsApp for observation, teacher review in the app and student history.",
   },
   {
     dir: "en/para-escuelas",
@@ -210,12 +210,12 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     dir: "para-docentes",
     url: "https://mehmiro.com/para-docentes",
     esUrl: "https://mehmiro.com/para-docentes",
-    title: "Mehmiro para docentes | Tu año con más contexto",
+    title: "Mehmiro para docentes | Observación con evidencia",
     description:
-      "Mehmiro acompaña el ciclo docente: planificar el año, preparar cada clase, registrar cómo salió y coordinar el próximo movimiento.",
-    ogTitle: "Tu año, con más contexto.",
+      "Respondé por WhatsApp con texto o audio después de clase. Mehmiro analiza la clase y te ayuda a revisar estudiantes y evidencias en la app.",
+    ogTitle: "Tu observación, con evidencia y sin más carga.",
     ogDescription:
-      "Planificación anual, preparación de clases, registro post-clase y próximos movimientos.",
+      "WhatsApp para observar, revisión docente en la app y un historial por estudiante.",
   },
   {
     dir: "para-escuelas",

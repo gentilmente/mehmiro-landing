@@ -209,26 +209,30 @@
     "docentes": {
       "closingDescription": "Start with a class.",
       "eyebrow": "For teachers",
-      "title": "Your year, with more context",
-      "description": "Mehmiro supports your teaching cycle: plan the year, prepare each class, record how it went and see what to do next for each student.",
+      "title": "Your observation, with evidence and context",
+      "description": "Reply on WhatsApp with text or audio after class. Get suggestions about which students need more observation and in which area.",
       "primaryCta": "Try it and earn rewards",
       "secondaryCta": "Learn about the ambassador program",
+      "note": "Only what you reviewed is saved.",
+      "faqTitle": "Teacher questions",
+      "faqs": [
+        { "question": "How do I record an observation?", "answer": "After class, reply on WhatsApp with text or audio. Transcription is ephemeral, then you review the evidence in the app." },
+        { "question": "What if a suggestion does not match?", "answer": "You can correct or discard it before saving. Nothing is saved without your review." },
+        { "question": "How does it connect to my planning?", "answer": "Mehmiro uses your annual plan and the time of year to help you prepare the next class." },
+        { "question": "How does the reward work?", "answer": "If your school books a demo or starts a pilot, we coordinate the reward with the institution." }
+      ],
       "sections": [
         {
-          "title": "Plan your year",
-          "body": "Set priorities by term and use your annual plan as the base for upcoming classes."
+          "title": "Reply on WhatsApp",
+          "body": "After class, send text or a voice note. Mehmiro transcribes the audio ephemerally and returns a class-level analysis."
         },
         {
-          "title": "Prepare the class",
-          "body": "Mehmiro uses the time of year and your plan to suggest a class grounded in your context."
+          "title": "Review and decide in the app",
+          "body": "Mehmiro identifies the students mentioned and offers evidence and suggestions. You confirm, correct or discard before anything is saved."
         },
         {
-          "title": "Record how it went",
-          "body": "After class, send text or audio on WhatsApp. Transcription is ephemeral and the analysis returns to the app."
-        },
-        {
-          "title": "Coordinate the next move",
-          "body": "Review which students need more observation and in which area. Adjust the next class and share what the team needs."
+          "title": "Try it and earn rewards",
+          "body": "If your school books a demo or starts a pilot, you receive a reward. The program is an invitation, not a quota."
         }
       ]
     },

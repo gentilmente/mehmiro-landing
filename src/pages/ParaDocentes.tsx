@@ -11,6 +11,8 @@ interface AudienceContent {
   secondaryCta: string;
   note?: string;
   closingDescription: string;
+  faqTitle: string;
+  faqs: { question: string; answer: string }[];
   sections: AudienceSection[];
 }
 
@@ -37,6 +39,8 @@ const ParaDocentes = () => {
       tone={0}
       visual={<TeacherVisual />}
       closingDescription={content.closingDescription}
+      faqTitle={content.faqTitle}
+      faqs={content.faqs}
     />
   );
 };
