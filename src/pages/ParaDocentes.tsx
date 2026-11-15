@@ -28,7 +28,7 @@ const ParaDocentes = () => {
       note={content.note}
       primary={{
         label: content.primaryCta,
-        href: "https://app.mehmiro.com/onboarding",
+        href: "#lead-capture",
       }}
       secondary={{
         label: content.secondaryCta,

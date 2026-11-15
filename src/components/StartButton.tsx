@@ -5,22 +5,26 @@ import { cn } from "@/lib/utils";
 interface StartButtonProps {
   className?: string;
   variant?: "short" | "full";
+  href?: string;
+  label?: string;
 }
 
 export const StartButton = ({
   className = "",
   variant = "short",
+  href = "https://app.mehmiro.com/onboarding",
+  label,
 }: StartButtonProps) => {
   const { t } = useTranslation();
-  const label = t(variant === "full" ? "cta.button" : "cta.buttonShort");
+  const buttonLabel = label ?? t(variant === "full" ? "cta.button" : "cta.buttonShort");
 
   return (
     <a
-      href="https://app.mehmiro.com/onboarding"
+      href={href}
       className={cn("start-button", className)}
-      aria-label={variant === "short" ? t("cta.button") : undefined}
+      aria-label={label ?? (variant === "short" ? t("cta.button") : undefined)}
     >
-      {label}
+      {buttonLabel}
       <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
     </a>
   );

@@ -209,10 +209,11 @@
     "docentes": {
       "closingDescription": "Empezá con una clase.",
       "eyebrow": "Para docentes",
-      "title": "Tu año, con más contexto",
+      "title": "De chats con IA a un año coordinado",
       "description": "Mehmiro acompaña tu ciclo de trabajo: planificás el año, preparás cada clase, registrás cómo salió y ves qué hacer después con cada estudiante.",
-      "primaryCta": "Probala y sumá recompensas",
+      "primaryCta": "Pedí una demo",
       "secondaryCta": "Conocer el programa de embajadores",
+      "note": "No podemos mostrarte cómo Mehmiro coordina todas tus observaciones en acciones personalizadas. Sí podemos mostrarte cómo interpreta un audio como el que harías al terminar tu clase y lo convierte en sugerencias personalizadas.",
       "sections": [
         {
           "title": "Planificá el año",
@@ -223,8 +224,8 @@
           "body": "Mehmiro toma el momento del año y tu planificación para proponer una clase con tu contexto."
         },
         {
-          "title": "Registrá cómo salió",
-          "body": "Después de clase, mandá texto o audio por WhatsApp. La transcripción es efímera y el análisis vuelve a la app."
+          "title": "Soltalo todo",
+          "body": "Al terminar la clase, mandá un audio o un texto por WhatsApp con lo que viste. Mehmiro se encarga de ordenarlo, lo convierte en sugerencias personalizadas y vos decidís qué queda."
         },
         {
           "title": "Coordiná el próximo movimiento",

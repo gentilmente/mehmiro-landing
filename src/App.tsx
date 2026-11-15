@@ -111,6 +111,8 @@ const Navigation = () => {
   const nextLanguageShort = englishPath
     ? t("language.toggleShort.es")
     : t("language.toggleShort.en");
+  const isTeacherPage =
+    location.pathname === "/para-docentes" || location.pathname === "/en/para-docentes";
 
   const handleLanguageToggle = () => {
     const target = englishPath
@@ -123,7 +125,12 @@ const Navigation = () => {
     <>
       <header className="site-header">
         <Link to="/" className="site-wordmark" aria-label="Mehmiro"><img className="site-logo" src={mehmiroLogo} alt="" aria-hidden="true" /> mehmiro</Link>
-        <div className="header-start"><StartButton /></div>
+        <div className="header-start">
+          <StartButton
+            href={isTeacherPage ? "#lead-capture" : undefined}
+            label={isTeacherPage ? t("audiences.docentes.primaryCta") : undefined}
+          />
+        </div>
       </header>
       {/* Mobile menu button */}
       {isMobile && !mobileMenuOpen && (
@@ -189,7 +196,10 @@ const Navigation = () => {
           >
             {t("nav.research")}
           </Link>
-          <StartButton />
+          <StartButton
+            href={isTeacherPage ? "#lead-capture" : undefined}
+            label={isTeacherPage ? t("audiences.docentes.primaryCta") : undefined}
+          />
           <button
             onClick={handleLanguageToggle}
             className="mt-2 inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/80 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-foreground hover:border-primary/40 hover:text-primary transition-colors"

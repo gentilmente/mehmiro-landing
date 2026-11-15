@@ -30,10 +30,10 @@ const ENGLISH_PAGES: EnglishPage[] = [
     dir: "en/para-docentes",
     url: "https://mehmiro.com/en/para-docentes",
     esUrl: "https://mehmiro.com/para-docentes",
-    title: "Mehmiro for teachers | Your year with more context",
+    title: "Mehmiro for teachers | From AI chats to a coordinated year",
     description:
       "Mehmiro supports the teaching cycle: plan the year, prepare each class, record how it went and coordinate the next move.",
-    ogTitle: "Your year, with more context.",
+    ogTitle: "From AI chats to a coordinated year.",
     ogDescription:
       "Annual planning, class preparation, post-class records and next moves.",
   },
@@ -210,10 +210,10 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     dir: "para-docentes",
     url: "https://mehmiro.com/para-docentes",
     esUrl: "https://mehmiro.com/para-docentes",
-    title: "Mehmiro para docentes | Tu año con más contexto",
+    title: "Mehmiro para docentes | De chats con IA a un año coordinado",
     description:
       "Mehmiro acompaña el ciclo docente: planificar el año, preparar cada clase, registrar cómo salió y coordinar el próximo movimiento.",
-    ogTitle: "Tu año, con más contexto.",
+    ogTitle: "De chats con IA a un año coordinado.",
     ogDescription:
       "Planificación anual, preparación de clases, registro post-clase y próximos movimientos.",
   },
