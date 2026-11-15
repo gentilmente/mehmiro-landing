@@ -1681,3 +1681,39 @@ body::after {
     overflow-wrap: anywhere;
   }
 }
+
+/* The three family sections behave as a scroll-stacked deck on mobile. */
+@media (max-width: 767px) {
+  .audience-sections--stack {
+    display: block;
+    max-width: 620px;
+  }
+
+  .audience-sections--stack > .reveal {
+    position: sticky;
+    margin-bottom: 14px;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px hsl(225 38% 15% / 0.12);
+  }
+
+  .audience-sections--stack > .reveal:nth-child(1) {
+    top: 92px;
+    z-index: 1;
+  }
+
+  .audience-sections--stack > .reveal:nth-child(2) {
+    top: 204px;
+    z-index: 2;
+  }
+
+  .audience-sections--stack > .reveal:nth-child(3) {
+    top: 316px;
+    z-index: 3;
+  }
+
+  .audience-sections--stack::after {
+    content: "";
+    display: block;
+    height: 64px;
+  }
+}

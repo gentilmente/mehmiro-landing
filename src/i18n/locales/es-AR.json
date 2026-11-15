@@ -309,40 +309,20 @@
       "title": "Más contexto para acompañar",
       "description": "Tu institución comparte lo importante y te mantiene al tanto de las novedades para acompañar a tu hijo o hija. Mehmiro te da pistas para entender qué necesita y despertar sus ganas de conocer y aprender.",
       "primaryCta": "Compartí en redes y ganá una suscripción gratis para tu escuela",
-      "secondaryCta": "Preguntas frecuentes",
       "shareText": "Conocé Mehmiro, la herramienta que ayuda a las familias a acompañar con más contexto.",
       "note": "La institución comparte lo importante y te cuenta las novedades.",
-      "faqTitle": "Preguntas de familias",
-      "faqs": [
-        {
-          "question": "¿Cómo me entero de lo que pasa con mi hijo o hija?",
-          "answer": "Tu institución comparte lo importante y las novedades. Mehmiro te da pistas para acompañar."
-        },
-        {
-          "question": "¿Qué puedo hacer con esas pistas?",
-          "answer": "Usarlas para conversar, apoyar y despertar sus ganas de conocer y aprender."
-        },
-        {
-          "question": "¿Cómo se coordina con la escuela?",
-          "answer": "La institución y el equipo docente sostienen el acompañamiento; vos sumás tu mirada."
-        },
-        {
-          "question": "¿Dónde consulto sobre privacidad?",
-          "answer": "En la política de privacidad o con tu institución."
-        }
-      ],
       "sections": [
         {
-          "title": "Novedades y avances",
-          "body": "La escuela comparte lo importante de las observaciones revisadas por docentes y te mantiene al tanto de las novedades. Mehmiro lo organiza para que puedas ver el contexto y acompañar con información clara."
+          "title": "Una conversación distinta",
+          "body": "La pista no es una receta: es una forma de abrir una conversación sobre Historia sin que suene a examen, y de mirar Matemática con un ejemplo cotidiano."
         },
         {
-          "title": "Pistas para acompañar",
-          "body": "Mehmiro te da ideas concretas sobre qué mirar y cómo acompañar, con el mismo enfoque que usa con los docentes. Podés usarlas para conversar, apoyar y despertar curiosidad."
+          "title": "Sin hacerte cargo de todo",
+          "body": "No necesitás convertirte en docente ni revisar cada tarea. Alcanza con escuchar, preguntar y acompañar desde tu lugar."
         },
         {
-          "title": "Acompañar en equipo",
-          "body": "La institución comparte las novedades y el equipo docente sostiene el proceso. Mehmiro te ayuda a ver el progreso y a sumar tu mirada."
+          "title": "Una mirada compartida",
+          "body": "La escuela ve lo que pasa en clase; vos ves lo que pasa en casa. Mehmiro ayuda a que esas dos miradas se encuentren."
         }
       ]
     },

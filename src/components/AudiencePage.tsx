@@ -25,8 +25,9 @@ interface AudiencePageProps {
   visual?: ReactNode;
   tone?: 0 | 1 | 2 | 3;
   closingDescription?: string;
-  faqTitle: string;
-  faqs: AudienceFAQItem[];
+  faqTitle?: string;
+  faqs?: AudienceFAQItem[];
+  stackSections?: boolean;
 }
 
 const isInternalRoute = (href: string) => href.startsWith("/");
@@ -88,8 +89,9 @@ export const AudiencePage = ({
   visual,
   tone = 0,
   closingDescription,
-  faqTitle,
-  faqs,
+  faqTitle = "",
+  faqs = [],
+  stackSections = false,
 }: AudiencePageProps) => {
   const { t } = useTranslation();
 
@@ -138,7 +140,7 @@ export const AudiencePage = ({
       </header>
 
       <main className="audience-main">
-        <div className="audience-sections">
+        <div className={`audience-sections ${stackSections ? "audience-sections--stack" : ""}`}>
           {sections.map((section, index) => (
             <Reveal key={section.title} delay={index * 60}>
               <section className="audience-section-card">
@@ -162,9 +164,11 @@ export const AudiencePage = ({
           ))}
         </div>
 
-        <Reveal>
-          <AudienceFAQ title={faqTitle} items={faqs} />
-        </Reveal>
+        {faqs.length > 0 && (
+          <Reveal>
+            <AudienceFAQ title={faqTitle} items={faqs} />
+          </Reveal>
+        )}
       </main>
 
       <Reveal className="audience-closing-wrap">

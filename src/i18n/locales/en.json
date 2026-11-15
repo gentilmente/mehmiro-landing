@@ -283,30 +283,22 @@
       "closingDescription": "Share this page and write to us to coordinate the subscription.",
       "eyebrow": "For families and students",
       "title": "More context to support",
-      "description": "Your institution shares highlights and news so you can support your child. Mehmiro gives you clues to understand what they need and spark their desire to learn.",
+      "description": "Your institution shares what is important and keeps you updated so you can support your child. Mehmiro gives you clues to understand what they need and spark their desire to learn.",
       "primaryCta": "Share on social and win a free subscription for your school",
-      "secondaryCta": "Frequently asked questions",
       "shareText": "Meet Mehmiro, the tool that helps families support their children with more context.",
-      "note": "Your institution shares what stood out and tells you the news.",
-      "faqTitle": "Family questions",
-      "faqs": [
-        { "question": "How do I learn what is happening with my child?", "answer": "Your institution shares what stood out and the news. Mehmiro gives you clues to support your child." },
-        { "question": "What can I do with those clues?", "answer": "Use them to talk, support and spark your child's desire to learn." },
-        { "question": "How does it coordinate with the school?", "answer": "The institution and teaching team sustain the support; you add your perspective." },
-        { "question": "Where can I ask about privacy?", "answer": "In the privacy policy or with your institution." }
-      ],
+      "note": "Your institution shares what is important and tells you the news.",
       "sections": [
         {
-          "title": "News and highlights",
-          "body": "The school shares what stood out from teacher-reviewed observations and keeps you updated on news. Mehmiro organizes it so you can see the context and support with clear information."
+          "title": "A different conversation",
+          "body": "The clue is not a script: it is a way to open a conversation about History without it feeling like a test, and to look at Math through an everyday example."
         },
         {
-          "title": "Clues for support",
-          "body": "Mehmiro gives you concrete ideas about what to look for and how to support, using the same approach it uses with teachers. Use them to talk, support and spark curiosity."
+          "title": "You do not have to do it all",
+          "body": "You do not need to become a teacher or check every assignment. Listening, asking and supporting from your place is enough."
         },
         {
-          "title": "Support together",
-          "body": "The institution shares news and the teaching team sustains the process. Mehmiro helps you see progress and add your perspective."
+          "title": "A shared view",
+          "body": "The school sees what happens in class; you see what happens at home. Mehmiro helps those two views meet."
         }
       ]
     },
