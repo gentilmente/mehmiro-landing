@@ -209,42 +209,26 @@
     "docentes": {
       "closingDescription": "Empezá con una clase.",
       "eyebrow": "Para docentes",
-      "title": "Tu observación, con evidencia y contexto",
-      "description": "Respondé por WhatsApp con texto o audio después de clase. Recibí sugerencias sobre qué estudiantes necesitan más observación y en qué área.",
+      "title": "Tu año, con más contexto",
+      "description": "Mehmiro acompaña tu ciclo de trabajo: planificás el año, preparás cada clase, registrás cómo salió y ves qué hacer después con cada estudiante.",
       "primaryCta": "Probala y sumá recompensas",
       "secondaryCta": "Conocer el programa de embajadores",
-      "note": "Solo se guarda lo que revisaste.",
-      "faqTitle": "Preguntas de docentes",
-      "faqs": [
-        {
-          "question": "¿Cómo registro una observación?",
-          "answer": "Después de clase, respondé por WhatsApp con texto o audio. La transcripción es efímera y después revisás la evidencia en la app."
-        },
-        {
-          "question": "¿Qué pasa si una sugerencia no coincide?",
-          "answer": "Podés corregirla o descartarla antes de guardar. Nada se guarda sin tu revisión."
-        },
-        {
-          "question": "¿Cómo se conecta con mi planificación?",
-          "answer": "Mehmiro usa tu programa anual y el momento del año para ayudarte a preparar la próxima clase."
-        },
-        {
-          "question": "¿Cómo funciona la recompensa?",
-          "answer": "Si tu escuela agenda una demo o empieza un piloto, coordinamos la recompensa con la institución."
-        }
-      ],
       "sections": [
         {
-          "title": "Respondé por WhatsApp",
-          "body": "Al terminar la clase, enviá un texto o una nota de voz. Mehmiro transcribe el audio de forma efímera y devuelve un análisis de la clase."
+          "title": "Planificá el año",
+          "body": "Organizá prioridades por período y usá tu programa anual como base para las próximas clases."
         },
         {
-          "title": "Revisá y decidí en la app",
-          "body": "Mehmiro identifica a los estudiantes mencionados y te ofrece evidencia y sugerencias. Vos confirmás, corregís o descartás antes de que se guarde."
+          "title": "Prepará la clase",
+          "body": "Mehmiro toma el momento del año y tu planificación para proponer una clase con tu contexto."
         },
         {
-          "title": "Probá y sumá recompensas",
-          "body": "Si tu escuela agenda una demo o empieza un piloto, recibís una recompensa. El programa es una invitación, no una cuota."
+          "title": "Registrá cómo salió",
+          "body": "Después de clase, mandá texto o audio por WhatsApp. La transcripción es efímera y el análisis vuelve a la app."
+        },
+        {
+          "title": "Coordiná el próximo movimiento",
+          "body": "Revisá qué estudiantes necesitan más observación y en qué área. Ajustá la próxima clase y compartí lo necesario con el equipo."
         }
       ]
     },
