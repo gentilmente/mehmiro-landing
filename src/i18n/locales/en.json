@@ -211,25 +211,36 @@
       "eyebrow": "For teachers",
       "title": "From AI chats to a coordinated year",
       "description": "Mehmiro supports your teaching cycle: plan the year, prepare each class, record how it went and see what to do next for each student.",
-      "primaryCta": "Request a demo",
+      "primaryCta": "Try it now",
+      "headerCta": "Request a demo",
       "secondaryCta": "Learn about the ambassador program",
-      "note": "We cannot show you how Mehmiro coordinates all your observations into personalized actions. We can show you how it interprets an audio like the one you would record after class and turns it into personalized suggestions.",
+      "demo": {
+        "eyebrow": "Guided demo",
+        "title": "How Mehmiro organizes what you observe",
+        "description": "This demo shows one part of the flow: how Mehmiro interprets an audio like the one you would record after class and turns it into personalized suggestions. The full coordination is shown with your own group, in a guided demo.",
+        "stageLabel": "Live demo",
+        "stageNote": "Coming soon",
+        "stageTitle": "One observation, organized",
+        "stageHint": "You will be able to record and see the result here.",
+        "primaryCta": "Request a guided demo",
+        "secondaryCta": "Keep exploring"
+      },
       "sections": [
         {
           "title": "Plan your year",
-          "body": "Set priorities by term and use your annual plan as the base for upcoming classes."
+          "body": "Mehmiro uses your annual plan and the time of year to organize priorities by term and suggest the next focus."
         },
         {
           "title": "Prepare the class",
-          "body": "Mehmiro uses the time of year and your plan to suggest a class grounded in your context."
+          "body": "With your plan and the time of year, Mehmiro suggests a class grounded in your context."
         },
         {
           "title": "Let it all out",
-          "body": "After class, send an audio or text on WhatsApp with what you saw. Mehmiro organizes it, turns it into personalized suggestions and you decide what stays."
+          "body": "After class, send an audio or text on WhatsApp with what you saw. Mehmiro organizes it, turns it into personalized suggestions and shows you what to observe next."
         },
         {
           "title": "Coordinate the next move",
-          "body": "Review which students need more observation and in which area. Adjust the next class and share what the team needs."
+          "body": "Mehmiro organizes which student needs more observation and in which area, and suggests the next move. You decide what to do with that information."
         }
       ]
     },

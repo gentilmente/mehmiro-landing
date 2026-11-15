@@ -20,7 +20,7 @@ interface AudiencePageProps {
   description: string;
   sections: AudienceSection[];
   note?: string;
-  primary: { label: string; href: string };
+  primary: { label: string; href?: string; onClick?: () => void };
   secondary?: { label: string; href: string };
   visual?: ReactNode;
   tone?: 0 | 1 | 2 | 3;
@@ -36,15 +36,28 @@ const ActionLink = ({
   href,
   label,
   variant,
+  onClick,
 }: {
-  href: string;
+  href?: string;
   label: string;
   variant: "primary" | "secondary";
+  onClick?: () => void;
 }) => {
   const className =
     variant === "primary"
       ? "start-button"
       : "inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground shadow-[3px_3px_0_hsl(var(--border)/.55)] transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary";
+
+  if (onClick) {
+    return (
+      <button type="button" onClick={onClick} className={className}>
+        {label}
+        {variant === "primary" && <ArrowRight className="h-4 w-4" aria-hidden="true" />}
+      </button>
+    );
+  }
+
+  if (!href) return null;
 
   if (href.startsWith("#")) {
     return (
@@ -121,7 +134,7 @@ export const AudiencePage = ({
               <p className="audience-description">{description}</p>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <ActionLink href={primary.href} label={primary.label} variant="primary" />
+                <ActionLink href={primary.href} label={primary.label} variant="primary" onClick={primary.onClick} />
                 {secondary && (
                   <ActionLink href={secondary.href} label={secondary.label} variant="secondary" />
                 )}
@@ -177,7 +190,7 @@ export const AudiencePage = ({
             <span className="audience-closing-eyebrow">{t("audiences.nextStep")}</span>
             <h2>{closingDescription ?? t("audiences.nextStepDescription")}</h2>
           </div>
-          <ActionLink href={primary.href} label={primary.label} variant="primary" />
+          <ActionLink href={primary.href} label={primary.label} variant="primary" onClick={primary.onClick} />
         </section>
       </Reveal>
 

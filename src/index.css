@@ -1717,3 +1717,208 @@ body::after {
     height: 64px;
   }
 }
+
+/* Teacher demo modal: expectation-setting first, live demo stage later. */
+.teacher-demo-dialog {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 0;
+  max-width: 920px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.teacher-demo-dialog > button {
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: hsl(var(--card));
+  color: hsl(var(--foreground));
+  opacity: 1;
+}
+
+.teacher-demo-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 32px;
+}
+
+.teacher-demo-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: hsl(var(--primary));
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.teacher-demo-copy h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.2vw, 2.45rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.teacher-demo-copy p {
+  margin-top: 14px;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.teacher-demo-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.teacher-demo-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--card));
+  padding: 0.7rem 1rem;
+  color: hsl(var(--foreground));
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.teacher-demo-stage {
+  position: relative;
+  display: flex;
+  min-height: 460px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 24px;
+  background: linear-gradient(145deg, hsl(225 75% 27%), hsl(275 65% 42%));
+  color: white;
+}
+
+.teacher-demo-stage::before {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -100px;
+  width: 230px;
+  height: 300px;
+  background: hsl(0 0% 100% / 0.08);
+  clip-path: polygon(0 7%, 90% 0, 100% 93%, 11% 100%);
+}
+
+.teacher-demo-stage-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-right: 34px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.teacher-demo-badge {
+  border: 1px solid hsl(0 0% 100% / 0.25);
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: hsl(250 40% 92%);
+}
+
+.teacher-demo-stage-center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.teacher-demo-play {
+  display: inline-flex;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background: hsl(0 0% 100% / 0.94);
+  color: hsl(250 60% 38%);
+  box-shadow: 0 14px 30px hsl(225 38% 15% / 0.28);
+}
+
+.teacher-demo-stage-center strong {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.teacher-demo-stage-center p {
+  max-width: 220px;
+  color: hsl(250 35% 88%);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.teacher-demo-wave {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.teacher-demo-wave span {
+  width: 3px;
+  border-radius: 999px;
+  background: hsl(0 0% 100% / 0.55);
+}
+
+@media (max-width: 767px) {
+  .teacher-demo-dialog {
+    grid-template-columns: 1fr;
+    max-height: 88vh;
+    overflow-y: auto;
+  }
+
+  .teacher-demo-copy {
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .teacher-demo-copy h2 {
+    font-size: 1.8rem;
+  }
+
+  .teacher-demo-stage {
+    min-height: 250px;
+    padding: 20px;
+  }
+
+  .teacher-demo-stage-center strong {
+    font-size: 1.15rem;
+  }
+
+  .teacher-demo-wave {
+    height: 50px;
+  }
+}

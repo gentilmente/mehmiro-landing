@@ -128,7 +128,7 @@ const Navigation = () => {
         <div className="header-start">
           <StartButton
             href={isTeacherPage ? "#lead-capture" : undefined}
-            label={isTeacherPage ? t("audiences.docentes.primaryCta") : undefined}
+            label={isTeacherPage ? t("audiences.docentes.headerCta") : undefined}
           />
         </div>
       </header>
@@ -198,7 +198,7 @@ const Navigation = () => {
           </Link>
           <StartButton
             href={isTeacherPage ? "#lead-capture" : undefined}
-            label={isTeacherPage ? t("audiences.docentes.primaryCta") : undefined}
+            label={isTeacherPage ? t("audiences.docentes.headerCta") : undefined}
           />
           <button
             onClick={handleLanguageToggle}

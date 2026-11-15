@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { GraduationCap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AudiencePage, type AudienceSection } from "@/components/AudiencePage";
 import { TeacherVisual } from "@/components/AudienceVisuals";
+import { TeacherDemoDialog, type TeacherDemoContent } from "@/components/TeacherDemoDialog";
 
 interface AudienceContent {
   eyebrow: string;
@@ -11,15 +13,18 @@ interface AudienceContent {
   secondaryCta: string;
   note?: string;
   closingDescription: string;
+  demo: TeacherDemoContent;
   sections: AudienceSection[];
 }
 
 const ParaDocentes = () => {
   const { t } = useTranslation();
   const content = t("audiences.docentes", { returnObjects: true }) as AudienceContent;
+  const [demoOpen, setDemoOpen] = useState(false);
 
   return (
-    <AudiencePage
+    <>
+      <AudiencePage
       icon={GraduationCap}
       eyebrow={content.eyebrow}
       title={content.title}
@@ -28,7 +33,7 @@ const ParaDocentes = () => {
       note={content.note}
       primary={{
         label: content.primaryCta,
-        href: "#lead-capture",
+        onClick: () => setDemoOpen(true),
       }}
       secondary={{
         label: content.secondaryCta,
@@ -36,8 +41,14 @@ const ParaDocentes = () => {
       }}
       tone={0}
       visual={<TeacherVisual />}
-      closingDescription={content.closingDescription}
-    />
+        closingDescription={content.closingDescription}
+      />
+      <TeacherDemoDialog
+        open={demoOpen}
+        onOpenChange={setDemoOpen}
+        content={content.demo}
+      />
+    </>
   );
 };
 
