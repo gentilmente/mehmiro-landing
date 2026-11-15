@@ -476,6 +476,19 @@
       "Tu mirada suma"
     ],
     "familyFooter": "Información compartida por tu institución",
+    "familyPreviewLabel": "Novedad de la escuela",
+    "familyPreviewTime": "Hoy",
+    "familyNewsTitle": "Se animó a participar en grupos chicos.",
+    "familyNewsText": "La escuela compartió una observación revisada por su docente.",
+    "familyCluesTitle": "Pistas para acompañar",
+    "familyClues": [
+      "Preguntale qué actividad le gustó más.",
+      "Proponé una charla corta, sin interrogatorio."
+    ],
+    "familyChatTitle": "Chat con Mehmiro",
+    "familyChatHint": "Una pista corta, a tu ritmo.",
+    "familyChatUser": "¿Por dónde empiezo esta semana?",
+    "familyChatReply": "Preguntale qué fue lo que más disfrutó y escuchá sin corregir.",
     "researchLabel": "Evidencia y método",
     "researchSteps": [
       "Observación",

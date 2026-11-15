@@ -1,14 +1,13 @@
 import { useTranslation } from "react-i18next";
 import {
   ArrowRight,
-  Brain,
   Building2,
-  Eye,
   FileCheck2,
-  LockKeyhole,
+  Lightbulb,
+  MessageCircle,
   Mic,
   Microscope,
-  ShieldCheck,
+  Sparkles,
   Users,
 } from "lucide-react";
 import teacherVoiceNote from "@/assets/teacher-voice-note.webp";
@@ -54,29 +53,55 @@ export const SchoolVisual = () => {
 
 export const FamilyVisual = () => {
   const { t } = useTranslation();
-  const rows = t("audienceVisual.familyRows", { returnObjects: true }) as string[];
-  const icons = [Eye, LockKeyhole, Brain];
+  const clues = t("audienceVisual.familyClues", { returnObjects: true }) as string[];
 
   return (
-    <div className="audience-visual-card">
-      <div className="audience-visual-header">
-        <ShieldCheck className="h-5 w-5" aria-hidden="true" />
-        {t("audienceVisual.familyLabel")}
+    <div className="audience-visual-card family-preview">
+      <div className="family-preview-top">
+        <span>{t("audienceVisual.familyPreviewLabel")}</span>
+        <span>{t("audienceVisual.familyPreviewTime")}</span>
       </div>
-      <div className="audience-visual-rows">
-        {rows.map((row, index) => {
-          const Icon = icons[index] ?? ShieldCheck;
-          return (
-            <div key={row} className="audience-visual-row">
-              <span className="audience-visual-icon">
-                <Icon className="h-4 w-4" aria-hidden="true" />
-              </span>
-              <strong>{row}</strong>
-            </div>
-          );
-        })}
+
+      <div className="family-news">
+        <span className="family-news-icon">
+          <Sparkles className="h-4 w-4" aria-hidden="true" />
+        </span>
+        <div>
+          <strong>{t("audienceVisual.familyNewsTitle")}</strong>
+          <p>{t("audienceVisual.familyNewsText")}</p>
+        </div>
       </div>
-      <p className="audience-visual-footer">{t("audienceVisual.familyFooter")}</p>
+
+      <div className="family-clues">
+        <div className="family-clues-header">
+          <Lightbulb className="h-4 w-4" aria-hidden="true" />
+          <strong>{t("audienceVisual.familyCluesTitle")}</strong>
+        </div>
+        <ul>
+          {clues.map((clue) => (
+            <li key={clue}>
+              <span aria-hidden="true" />
+              {clue}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="family-chat">
+        <div className="family-chat-header">
+          <MessageCircle className="h-4 w-4" aria-hidden="true" />
+          <strong>{t("audienceVisual.familyChatTitle")}</strong>
+        </div>
+        <div className="family-chat-bubble family-chat-bubble--assistant">
+          {t("audienceVisual.familyChatHint")}
+        </div>
+        <div className="family-chat-bubble family-chat-bubble--user">
+          {t("audienceVisual.familyChatUser")}
+        </div>
+        <div className="family-chat-bubble family-chat-bubble--assistant">
+          {t("audienceVisual.familyChatReply")}
+        </div>
+      </div>
     </div>
   );
 };

@@ -1508,3 +1508,141 @@ body::after {
     padding-inline: 16px;
   }
 }
+
+/* Family hero: a small product preview instead of a static photo. */
+.family-preview {
+  gap: 10px;
+}
+
+.family-preview-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 2px;
+  color: hsl(250 45% 88%);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.family-news {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  background: hsl(var(--card));
+  color: hsl(var(--foreground));
+  box-shadow: 0 12px 26px hsl(225 38% 15% / 0.12);
+}
+
+.family-news-icon {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: hsl(var(--audience-accent) / 0.12);
+  color: hsl(var(--audience-accent));
+}
+
+.family-news strong {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.family-news p {
+  margin-top: 4px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: hsl(var(--muted-foreground));
+}
+
+.family-clues,
+.family-chat {
+  padding: 13px 14px;
+  border: 1px solid hsl(0 0% 100% / 0.16);
+  border-radius: 12px;
+  background: hsl(0 0% 100% / 0.1);
+}
+
+.family-clues-header,
+.family-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: hsl(250 45% 88%);
+  font-size: 0.8rem;
+}
+
+.family-clues-header svg,
+.family-chat-header svg {
+  flex-shrink: 0;
+}
+
+.family-clues ul {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+  color: hsl(250 35% 93%);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.family-clues li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.family-clues li > span {
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+  margin-top: 0.45rem;
+  border-radius: 50%;
+  background: hsl(var(--audience-accent));
+}
+
+.family-chat {
+  display: grid;
+  gap: 7px;
+}
+
+.family-chat-bubble {
+  max-width: 90%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.family-chat-bubble--assistant {
+  border-bottom-left-radius: 3px;
+  background: hsl(0 0% 100% / 0.14);
+  color: hsl(250 35% 95%);
+}
+
+.family-chat-bubble--user {
+  margin-left: auto;
+  border-bottom-right-radius: 3px;
+  background: hsl(var(--card));
+  color: hsl(var(--foreground));
+}
+
+@media (max-width: 767px) {
+  .family-preview {
+    gap: 8px;
+  }
+
+  .family-news,
+  .family-clues,
+  .family-chat {
+    padding: 12px;
+  }
+}
