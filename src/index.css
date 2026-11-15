@@ -1646,3 +1646,38 @@ body::after {
     padding: 12px;
   }
 }
+
+/* Mobile safety for the family product preview and long CTAs. */
+@media (max-width: 900px) {
+  .audience-page .start-button {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .family-preview {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .family-preview-top {
+    flex-wrap: wrap;
+  }
+
+  .family-news,
+  .family-news > div,
+  .family-clues,
+  .family-clues ul,
+  .family-clues li,
+  .family-chat,
+  .family-chat-bubble {
+    min-width: 0;
+  }
+
+  .family-news strong,
+  .family-news p,
+  .family-clues li,
+  .family-chat-bubble {
+    overflow-wrap: anywhere;
+  }
+}
