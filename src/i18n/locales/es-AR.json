@@ -251,33 +251,14 @@
       "description": "Mehmiro conecta la observación de aula con un perfil estudiantil y una lectura institucional del progreso.",
       "primaryCta": "Solicitar diagnóstico",
       "secondaryCta": "Ver cómo funciona",
-      "faqTitle": "Preguntas de instituciones",
-      "faqs": [
-        {
-          "question": "¿Cómo empieza un piloto?",
-          "answer": "Con un diagnóstico breve. Definimos objetivos, métricas y alcance antes de empezar."
-        },
-        {
-          "question": "¿Qué ve la dirección?",
-          "answer": "Una lectura institucional del progreso, con evidencia aceptada y cobertura por período y materia."
-        },
-        {
-          "question": "¿Cómo se integra con lo que ya usamos?",
-          "answer": "Se integra al software que ya usás: WhatsApp y Google Workspace forman parte del flujo."
-        },
-        {
-          "question": "¿Qué pasa con los datos?",
-          "answer": "La institución conserva la titularidad; el acceso se organiza por roles y cada institución queda aislada."
-        }
-      ],
       "sections": [
         {
           "title": "Visión institucional",
-          "body": "El perfil estudiantil compone evidencia aceptada de distintas materias, con cobertura y contexto. No borra la autoría docente ni muestra borradores."
+          "body": "Mehmiro reúne evidencia aceptada de distintas materias en un perfil por estudiante. La dirección ve cobertura, contexto y progreso sin reconstruirlo a mano."
         },
         {
           "title": "Adopción real",
-          "body": "El docente parte de una nota de voz o texto; la revisión ocurre en la app. El onboarding institucional es asistido y se adapta a lo que la escuela ya tiene.",
+          "body": "Mehmiro se adapta a lo que la escuela ya usa: WhatsApp y Google Workspace. El onboarding es asistido y el docente empieza con una nota de voz o texto, sin cambiar su forma de trabajo.",
           "bullets": [
             "Onboarding asistido por Mehmiro",
             "Solo nombre y email del responsable para empezar",
@@ -286,7 +267,7 @@
         },
         {
           "title": "Gobernanza y privacidad",
-          "body": "Roles, membresías y aislamiento por institución. Los datos son de la institución y el acceso se controla por capacidades.",
+          "body": "Mehmiro organiza roles, membresías y aislamiento por institución. Los datos son de la institución y el acceso se controla por capacidades.",
           "bullets": [
             "RLS y multitenencia",
             "Roles: owner/admin, dirección, secretaría, docentes",
@@ -295,7 +276,7 @@
         },
         {
           "title": "Piloto con objetivos claros",
-          "body": "Definimos juntos métricas de adopción, uso y satisfacción. No prometemos impacto de aprendizaje sin evidencia."
+          "body": "El piloto se mide con adopción, uso y satisfacción. La institución define el alcance y ve el avance antes de decidir el siguiente paso."
         }
       ]
     },

@@ -251,21 +251,14 @@
       "description": "Mehmiro connects classroom observation with a student profile and an institutional view of progress.",
       "primaryCta": "Request a diagnostic",
       "secondaryCta": "See how it works",
-      "faqTitle": "Institution questions",
-      "faqs": [
-        { "question": "How does a pilot start?", "answer": "With a short diagnostic. We define goals, metrics and scope before starting." },
-        { "question": "What does leadership see?", "answer": "An institutional view of progress, with accepted evidence and coverage by period and subject." },
-        { "question": "How does it fit with what we already use?", "answer": "It works with the software you already use: WhatsApp and Google Workspace are part of the flow." },
-        { "question": "What happens to the data?", "answer": "The institution retains ownership; access is organized by roles and each institution remains isolated." }
-      ],
       "sections": [
         {
           "title": "Institutional view",
-          "body": "The student profile composes accepted evidence across subjects, with coverage and context. It does not erase teacher authorship or expose drafts."
+          "body": "Mehmiro brings together accepted evidence from different subjects into a student profile. Leadership sees coverage, context and progress without rebuilding it by hand."
         },
         {
           "title": "Real adoption",
-          "body": "Teachers start from a voice note or text; review happens in the app. Institutional onboarding is assisted and adapts to what the school already has.",
+          "body": "Mehmiro adapts to what the school already uses: WhatsApp and Google Workspace. Onboarding is assisted and teachers start with a voice note or text, without changing how they work.",
           "bullets": [
             "Onboarding assisted by Mehmiro",
             "Only the institution name and owner email to start",
@@ -274,7 +267,7 @@
         },
         {
           "title": "Governance and privacy",
-          "body": "Roles, memberships and isolation per institution. Data belongs to the institution and access is capability-controlled.",
+          "body": "Mehmiro organizes roles, memberships and isolation by institution. Data belongs to the institution and access is controlled by capabilities.",
           "bullets": [
             "RLS and multitenancy",
             "Roles: owner/admin, leadership, secretary, teachers",
@@ -283,7 +276,7 @@
         },
         {
           "title": "A pilot with clear goals",
-          "body": "We define adoption, usage and satisfaction metrics together. We do not promise learning impact without evidence."
+          "body": "The pilot is measured by adoption, use and satisfaction. The institution defines the scope and sees progress before deciding the next step."
         }
       ]
     },
