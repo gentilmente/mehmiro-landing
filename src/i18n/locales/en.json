@@ -253,30 +253,20 @@
       "secondaryCta": "See how it works",
       "sections": [
         {
-          "title": "Institutional view",
-          "body": "Mehmiro brings together accepted evidence from different subjects into a student profile. Leadership sees coverage, context and progress without rebuilding it by hand."
+          "title": "Tracking map",
+          "body": "Leadership sees what was covered, what moved away from the plan and which events shaped the period, in one view."
         },
         {
-          "title": "Real adoption",
-          "body": "Mehmiro adapts to what the school already uses: WhatsApp and Google Workspace. Onboarding is assisted and teachers start with a voice note or text, without changing how they work.",
-          "bullets": [
-            "Onboarding assisted by Mehmiro",
-            "Only the institution name and owner email to start",
-            "7-day anonymous trial"
-          ]
+          "title": "Integrations",
+          "body": "Mehmiro integrates with the software the institution already uses: Google Workspace, WhatsApp or your school management system. We value the digitalization and innovation work already done; we do not ask you to start over."
         },
         {
           "title": "Governance and privacy",
-          "body": "Mehmiro organizes roles, memberships and isolation by institution. Data belongs to the institution and access is controlled by capabilities.",
-          "bullets": [
-            "RLS and multitenancy",
-            "Roles: owner/admin, leadership, secretary, teachers",
-            "No sensitive data in logs"
-          ]
+          "body": "Each role sees what it needs: leadership, office, coordination and teachers. Information flows clearly and each institution keeps its own space."
         },
         {
-          "title": "A pilot with clear goals",
-          "body": "The pilot is measured by adoption, use and satisfaction. The institution defines the scope and sees progress before deciding the next step."
+          "title": "3-week pilot",
+          "body": "Diagnostic, a short training on AI in general and in education, teacher selection and one challenging course. Three weeks to see how it works at the institution."
         }
       ]
     },
@@ -401,6 +391,26 @@
     "voiceDetail": "30 seconds after class",
     "schoolLabel": "Institutional view",
     "schoolDetail": "Accepted evidence across subjects",
+    "schoolMap": {
+      "title": "Tracking map",
+      "week": "Week 12",
+      "subjects": [
+        { "name": "History", "status": "On plan", "tone": "ok" },
+        { "name": "Math", "status": "1 gap", "tone": "warn" },
+        { "name": "Science", "status": "On plan", "tone": "ok" }
+      ],
+      "coherence": "Annual plan vs. lessons delivered",
+      "coherenceStatus": "On track",
+      "topics": "Topics covered",
+      "topicList": ["May Revolution", "Equations", "Ecosystems"],
+      "calendar": "Calendar",
+      "days": ["M", "T", "W", "T", "F"],
+      "calendarEvent": "Holiday 5/25",
+      "projects": "Cross-curricular project",
+      "projectName": "Water and territory",
+      "events": "Special events",
+      "eventList": ["Holiday", "Field trip", "Current affairs"]
+    },
     "familyLabel": "Support",
     "familyRows": ["News", "Clues for support", "Your perspective"],
     "familyFooter": "Information shared by your institution",

@@ -253,30 +253,20 @@
       "secondaryCta": "Ver cómo funciona",
       "sections": [
         {
-          "title": "Visión institucional",
-          "body": "Mehmiro reúne evidencia aceptada de distintas materias en un perfil por estudiante. La dirección ve cobertura, contexto y progreso sin reconstruirlo a mano."
+          "title": "Mapa de seguimiento",
+          "body": "La dirección ve qué se abordó, qué se corrió del plan y qué eventos atravesaron el período, en una sola vista."
         },
         {
-          "title": "Adopción real",
-          "body": "Mehmiro se adapta a lo que la escuela ya usa: WhatsApp y Google Workspace. El onboarding es asistido y el docente empieza con una nota de voz o texto, sin cambiar su forma de trabajo.",
-          "bullets": [
-            "Onboarding asistido por Mehmiro",
-            "Solo nombre y email del responsable para empezar",
-            "Trial anónimo de 7 días"
-          ]
+          "title": "Integraciones",
+          "body": "Mehmiro se integra al software que la institución ya usa: Google Workspace, WhatsApp o su gestor de colegios. Valoramos el esfuerzo de digitalización e innovación que ya hicieron; no pedimos empezar de cero."
         },
         {
           "title": "Gobernanza y privacidad",
-          "body": "Mehmiro organiza roles, membresías y aislamiento por institución. Los datos son de la institución y el acceso se controla por capacidades.",
-          "bullets": [
-            "RLS y multitenencia",
-            "Roles: owner/admin, dirección, secretaría, docentes",
-            "Sin datos sensibles en logs"
-          ]
+          "body": "Cada rol ve lo que necesita: dirección, secretaría, coordinación y docentes. Así la información circula con claridad y cada institución mantiene su propio espacio."
         },
         {
-          "title": "Piloto con objetivos claros",
-          "body": "El piloto se mide con adopción, uso y satisfacción. La institución define el alcance y ve el avance antes de decidir el siguiente paso."
+          "title": "Piloto de 3 semanas",
+          "body": "Diagnóstico, mini capacitación sobre IA en general y en educación, selección de docentes y un curso difícil. Tres semanas para ver cómo funciona en la institución."
         }
       ]
     },
@@ -425,6 +415,26 @@
     "voiceDetail": "30 segundos después de clase",
     "schoolLabel": "Visión institucional",
     "schoolDetail": "Evidencia aceptada entre materias",
+    "schoolMap": {
+      "title": "Mapa de seguimiento",
+      "week": "Semana 12",
+      "subjects": [
+        { "name": "Historia", "status": "Plan al día", "tone": "ok" },
+        { "name": "Matemática", "status": "1 desvío", "tone": "warn" },
+        { "name": "Ciencias", "status": "Plan al día", "tone": "ok" }
+      ],
+      "coherence": "Plan anual vs. lecciones dadas",
+      "coherenceStatus": "En línea",
+      "topics": "Temas abordados",
+      "topicList": ["Revolución de Mayo", "Ecuaciones", "Ecosistemas"],
+      "calendar": "Calendario",
+      "days": ["L", "M", "M", "J", "V"],
+      "calendarEvent": "Feriado 25/5",
+      "projects": "Proyecto transversal",
+      "projectName": "Agua y territorio",
+      "events": "Eventos especiales",
+      "eventList": ["Feriado", "Salida didáctica", "Actualidad"]
+    },
     "familyLabel": "Acompañamiento",
     "familyRows": [
       "Novedades",

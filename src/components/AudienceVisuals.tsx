@@ -1,8 +1,12 @@
 import { useTranslation } from "react-i18next";
 import {
+  AlertCircle,
   ArrowRight,
   Building2,
+  CalendarDays,
+  CheckCircle2,
   FileCheck2,
+  FolderKanban,
   Lightbulb,
   MessageCircle,
   Mic,
@@ -156,6 +160,97 @@ export const EvidenceVisual = () => {
         ))}
       </div>
       <p className="audience-visual-footer">{t("audienceVisual.evidenceFooter")}</p>
+    </div>
+  );
+};
+
+export const InstitutionTrackingMap = () => {
+  const { t } = useTranslation();
+  const subjects = t("audienceVisual.schoolMap.subjects", { returnObjects: true }) as Array<{
+    name: string;
+    status: string;
+    tone: "ok" | "warn";
+  }>;
+  const topics = t("audienceVisual.schoolMap.topicList", { returnObjects: true }) as string[];
+  const days = t("audienceVisual.schoolMap.days", { returnObjects: true }) as string[];
+  const events = t("audienceVisual.schoolMap.eventList", { returnObjects: true }) as string[];
+
+  return (
+    <div className="school-map">
+      <div className="school-map-head">
+        <span>
+          <CalendarDays className="h-4 w-4" aria-hidden="true" />
+          {t("audienceVisual.schoolMap.title")}
+        </span>
+        <span className="school-map-week">{t("audienceVisual.schoolMap.week")}</span>
+      </div>
+
+      <div className="school-map-subjects">
+        {subjects.map((subject) => (
+          <div key={subject.name} className="school-map-subject">
+            <span>{subject.name}</span>
+            <span className={`school-map-status school-map-status--${subject.tone}`}>
+              {subject.tone === "ok" ? (
+                <CheckCircle2 className="h-3.5 w-3.5" aria-hidden="true" />
+              ) : (
+                <AlertCircle className="h-3.5 w-3.5" aria-hidden="true" />
+              )}
+              {subject.status}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <div className="school-map-coherence">
+        <div className="school-map-label-row">
+          <span>{t("audienceVisual.schoolMap.coherence")}</span>
+          <strong>{t("audienceVisual.schoolMap.coherenceStatus")}</strong>
+        </div>
+        <div className="school-map-bar" aria-hidden="true">
+          <span />
+        </div>
+      </div>
+
+      <div className="school-map-calendar">
+        <div className="school-map-label-row">
+          <span>{t("audienceVisual.schoolMap.calendar")}</span>
+          <strong>{t("audienceVisual.schoolMap.calendarEvent")}</strong>
+        </div>
+        <div className="school-map-days" aria-hidden="true">
+          {days.map((day, index) => (
+            <span key={`${day}-${index}`} className={index === 2 ? "is-marked" : ""}>
+              {day}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="school-map-topics">
+        <span className="school-map-label-row">{t("audienceVisual.schoolMap.topics")}</span>
+        <div className="school-map-chips">
+          {topics.map((topic) => (
+            <span key={topic}>{topic}</span>
+          ))}
+        </div>
+      </div>
+
+      <div className="school-map-footer">
+        <div className="school-map-project">
+          <FolderKanban className="h-4 w-4" aria-hidden="true" />
+          <div>
+            <span>{t("audienceVisual.schoolMap.projects")}</span>
+            <strong>{t("audienceVisual.schoolMap.projectName")}</strong>
+          </div>
+        </div>
+        <div className="school-map-events">
+          <span>{t("audienceVisual.schoolMap.events")}</span>
+          <div className="school-map-chips">
+            {events.map((event) => (
+              <span key={event}>{event}</span>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

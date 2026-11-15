@@ -11,6 +11,7 @@ export interface AudienceSection {
   title: string;
   body: string;
   bullets?: string[];
+  visual?: ReactNode;
 }
 
 interface AudiencePageProps {
@@ -171,6 +172,7 @@ export const AudiencePage = ({
                       ))}
                     </ul>
                   )}
+                  {section.visual && <div className="audience-section-visual">{section.visual}</div>}
                 </div>
               </section>
             </Reveal>

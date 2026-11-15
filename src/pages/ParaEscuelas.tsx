@@ -1,7 +1,7 @@
 import { Building2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AudiencePage, type AudienceSection } from "@/components/AudiencePage";
-import { SchoolVisual } from "@/components/AudienceVisuals";
+import { InstitutionTrackingMap, SchoolVisual } from "@/components/AudienceVisuals";
 
 interface AudienceContent {
   eyebrow: string;
@@ -17,6 +17,9 @@ interface AudienceContent {
 const ParaEscuelas = () => {
   const { t } = useTranslation();
   const content = t("audiences.escuelas", { returnObjects: true }) as AudienceContent;
+  const sections = content.sections.map((section, index) =>
+    index === 0 ? { ...section, visual: <InstitutionTrackingMap /> } : section,
+  );
 
   return (
     <AudiencePage
@@ -24,15 +27,15 @@ const ParaEscuelas = () => {
       eyebrow={content.eyebrow}
       title={content.title}
       description={content.description}
-      sections={content.sections}
+      sections={sections}
       note={content.note}
       primary={{
         label: content.primaryCta,
-        href: "mailto:info@mehmiro.com?subject=Diagn%C3%B3stico%20para%20mi%20escuela",
+        href: "#lead-capture",
       }}
       secondary={{
         label: content.secondaryCta,
-        href: "/#mehmiro",
+        href: "/learn/institutions",
       }}
       tone={1}
       visual={<SchoolVisual />}
