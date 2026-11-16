@@ -11,8 +11,6 @@ interface AudienceContent {
   secondaryCta: string;
   note?: string;
   closingDescription: string;
-  faqTitle: string;
-  faqs: { question: string; answer: string }[];
   sections: AudienceSection[];
 }
 
@@ -30,7 +28,7 @@ const Investigacion = () => {
       note={content.note}
       primary={{
         label: content.primaryCta,
-        href: "mailto:info@mehmiro.com?subject=Colaboraci%C3%B3n%20acad%C3%A9mica",
+        href: "#lead-capture",
       }}
       secondary={{
         label: content.secondaryCta,
@@ -39,8 +37,6 @@ const Investigacion = () => {
       tone={3}
       visual={<ResearchVisual />}
       closingDescription={content.closingDescription}
-      faqTitle={content.faqTitle}
-      faqs={content.faqs}
     />
   );
 };

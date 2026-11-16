@@ -65,10 +65,10 @@ const ENGLISH_PAGES: EnglishPage[] = [
     esUrl: "https://mehmiro.com/investigacion",
     title: "Research and partnerships | Mehmiro",
     description:
-      "Pedagogical framework, theory of change, ethics and pilots to evaluate AI-assisted observation with teacher review.",
+      "Assisted observation with teacher review, measurement pilots and access to anonymized data for universities, centers and teacher networks.",
     ogTitle: "An explicit framework to learn with evidence.",
     ogDescription:
-      "Collaboration on pilots, measurement and data governance. No claims we cannot support.",
+      "Pilot co-design, shared metrics and ethics by design.",
   },
   {
     dir: "en/evidencia",
@@ -245,10 +245,10 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     esUrl: "https://mehmiro.com/investigacion",
     title: "Investigación y alianzas | Mehmiro",
     description:
-      "Marco pedagógico, teoría de cambio, ética y pilotos para evaluar la observación asistida con revisión docente.",
+      "Observación asistida con revisión docente, pilotos de medición y acceso a datos anonimizados para universidades, centros y redes docentes.",
     ogTitle: "Un marco explícito para aprender con evidencia.",
     ogDescription:
-      "Colaboración en pilotos, medición y gobernanza de datos. Sin claims que no podamos sostener.",
+      "Co-diseño de pilotos, métricas compartidas y ética desde el diseño.",
   },
   {
     dir: "evidencia",

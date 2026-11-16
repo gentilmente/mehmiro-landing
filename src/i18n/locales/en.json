@@ -297,47 +297,26 @@
       "closingDescription": "Start with a conversation.",
       "eyebrow": "For pedagogues, researchers and partners",
       "title": "An explicit framework to learn with evidence",
-      "description": "Mehmiro is an AI-assisted observation platform with teacher review. We seek collaboration on pilots and measurement, not certainty selling.",
+      "description": "Mehmiro is an assisted observation platform with teacher review. We collaborate with institutions, universities and research centers on pilots and measurement.",
       "primaryCta": "Propose a collaboration",
       "secondaryCta": "See evidence and method",
-      "note": "We do not publish results we cannot support. If you want to see the framework, write to us.",
-      "faqTitle": "Research questions",
-      "faqs": [
-        { "question": "What framework does Mehmiro use?", "answer": "Assisted observation with teacher review, focused on evidence and context." },
-        { "question": "What can be measured in a pilot?", "answer": "Adoption, sustained use, satisfaction, review capacity and evidence coverage." },
-        { "question": "Do you publish impact results?", "answer": "We do not publish impact results yet; we do document method, measurement and limits." },
-        { "question": "How can we propose a collaboration?", "answer": "Write to us with your institution, goal and scope; we design the pilot together." }
-      ],
+      "note": "The framework, metrics and limits are available to review together.",
       "sections": [
         {
-          "title": "What the product does",
-          "body": "Observation with text or audio, AI analysis and teacher review before saving.",
-          "bullets": [
-            "WhatsApp as an intake channel",
-            "Institutional profile with evidence"
-          ]
+          "title": "What can be studied",
+          "body": "Classroom observation with text or audio, assisted analysis and teacher review before saving. Each student keeps a profile with evidence, context and traceability."
         },
         {
-          "title": "What we measure",
-          "body": "Adoption, sustained use, satisfaction and review capacity. Learning impact is measured with the school over the medium term."
+          "title": "What can be measured",
+          "body": "Adoption, sustained use, satisfaction, review capacity and evidence coverage. Learning impact is measured with the school in the medium term."
         },
         {
-          "title": "Ethics and governance",
-          "body": "RLS, multitenancy, role-based access and human review. No personality labels or automatic diagnoses.",
-          "bullets": [
-            "Consent and protection of minors",
-            "No training on data outside the service",
-            "Evidence traceability"
-          ]
+          "title": "Ethics by design",
+          "body": "Consent and protection of minors, human review and evidence traceability. No personality labels or automatic diagnoses."
         },
         {
-          "title": "Collaboration",
-          "body": "We seek universities, research centers, teacher networks and partners to design pilots, measure and publish rigorously.",
-          "bullets": [
-            "Pilot co-design",
-            "Protocol and ethics",
-            "Access to anonymized data under agreement"
-          ]
+          "title": "End-to-end collaboration",
+          "body": "We co-design the pilot, the protocol and the ethics, and provide access to anonymized data under agreement."
         }
       ]
     },
@@ -430,7 +409,7 @@
     "familyChatReply": "Start with History: ask which part felt most distant and listen without correcting. In Math, ask them to show you the step that does not click; do not solve it for them.",
     "researchLabel": "Evidence and method",
     "researchSteps": ["Observation", "Evidence", "Review"],
-    "researchFooter": "No short-term impact claims",
+    "researchFooter": "Evidence traceability",
     "evidenceLabel": "Evidence status",
     "evidenceRows": ["We know", "We measure", "Still missing"],
     "evidenceFooter": "Public results pending"

@@ -297,59 +297,26 @@
       "closingDescription": "Empezá con una conversación.",
       "eyebrow": "Para pedagogos, investigadores y alianzas",
       "title": "Un marco explícito para aprender con evidencia",
-      "description": "Mehmiro es una plataforma de observación asistida, con revisión docente. Buscamos colaborar en pilotos y medición, no vender certezas.",
+      "description": "Mehmiro es una plataforma de observación asistida con revisión docente. Colaboramos con instituciones, universidades y centros de investigación en pilotos y medición.",
       "primaryCta": "Proponer una colaboración",
       "secondaryCta": "Ver evidencia y método",
-      "note": "No publicamos resultados que no podamos sostener. Si querés ver el marco, escribinos.",
-      "faqTitle": "Preguntas de investigación",
-      "faqs": [
-        {
-          "question": "¿Qué marco usa Mehmiro?",
-          "answer": "Observación asistida con revisión docente, con foco en evidencia y contexto."
-        },
-        {
-          "question": "¿Qué se puede medir en un piloto?",
-          "answer": "Adopción, uso sostenido, satisfacción, capacidad de revisión y cobertura de evidencia."
-        },
-        {
-          "question": "¿Publican resultados de impacto?",
-          "answer": "Todavía no publicamos resultados de impacto; sí documentamos método, medición y límites."
-        },
-        {
-          "question": "¿Cómo proponer una colaboración?",
-          "answer": "Escribinos con tu institución, objetivo y alcance; diseñamos el piloto juntos."
-        }
-      ],
+      "note": "El marco, las métricas y los límites están disponibles para revisar juntos.",
       "sections": [
         {
-          "title": "Qué hace el producto",
-          "body": "Observación con texto o audio, análisis de IA y revisión docente antes de guardar.",
-          "bullets": [
-            "WhatsApp como canal de intake",
-            "Perfil institucional con evidencia"
-          ]
+          "title": "Qué pueden estudiar",
+          "body": "Observación de aula con texto o audio, análisis asistido y revisión docente antes de guardar. Cada estudiante conserva un perfil con evidencia, contexto y trazabilidad."
         },
         {
-          "title": "Qué medimos",
-          "body": "Adopción, uso sostenido, satisfacción y capacidad de revisión. El impacto en aprendizaje se mide con la escuela en el mediano plazo."
+          "title": "Qué se puede medir",
+          "body": "Adopción, uso sostenido, satisfacción, capacidad de revisión y cobertura de evidencia. El impacto en aprendizaje se mide con la escuela en el mediano plazo."
         },
         {
-          "title": "Ética y gobernanza",
-          "body": "RLS, multitenencia, acceso por roles y revisión humana. Sin etiquetas de personalidad ni diagnósticos automáticos.",
-          "bullets": [
-            "Consentimiento y protección de menores",
-            "Sin entrenamiento con datos fuera del servicio",
-            "Trazabilidad de evidencia"
-          ]
+          "title": "Ética desde el diseño",
+          "body": "Consentimiento y protección de menores, revisión humana y trazabilidad de la evidencia. Sin etiquetas de personalidad ni diagnósticos automáticos."
         },
         {
-          "title": "Colaboración",
-          "body": "Buscamos universidades, centros de investigación, redes docentes y aliados para diseñar pilotos, medir y publicar con rigor.",
-          "bullets": [
-            "Co-diseño de piloto",
-            "Protocolo y ética",
-            "Acceso a datos anonimizados bajo acuerdo"
-          ]
+          "title": "Colaboración de punta a punta",
+          "body": "Co-diseñamos el piloto, el protocolo y la ética, y damos acceso a datos anonimizados bajo acuerdo."
         }
       ]
     },
@@ -462,7 +429,7 @@
       "Evidencia",
       "Revisión"
     ],
-    "researchFooter": "Sin claims de impacto a corto plazo",
+    "researchFooter": "Trazabilidad de la evidencia",
     "evidenceLabel": "Estado de evidencia",
     "evidenceRows": [
       "Sabemos",
