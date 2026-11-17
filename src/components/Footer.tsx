@@ -4,8 +4,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  ExternalLink,
-  Code2,
   ArrowRight,
   BookOpen,
   Users,
@@ -126,31 +124,6 @@ export const Footer = () => {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-md">
                   {t("footer.company.description")}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {t("footer.company.partner")}{" "}
-                  <a
-                    href={COMPANY.partner.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-medium text-primary hover:underline"
-                  >
-                    {COMPANY.partner.name}
-                  </a>
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {t("footer.company.founder")}{" "}
-                  <a
-                    href={COMPANY.founder.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-medium text-primary hover:underline"
-                  >
-                    {COMPANY.founder.name}
-                  </a>
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {t("footer.company.status")}
                 </p>
               </div>
 
@@ -327,7 +300,16 @@ export const Footer = () => {
                   </div>
                 </Link>
                 <Link
-                  to="/about#equipo"
+                  to="/company"
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
+                >
+                  <div className="flex items-center gap-2">
+                    <Building2 className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {t("footer.links.companyPage")}
+                  </div>
+                </Link>
+                <Link
+                  to="/company#equipo"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
@@ -367,41 +349,6 @@ export const Footer = () => {
                 {t("footer.bottom.copyright", { year: currentYear })}
               </div>
 
-              {/* Public, verifiable profiles */}
-              <div className="flex flex-wrap items-center gap-4">
-                <span className="text-sm text-muted-foreground">
-                  {t("footer.bottom.follow")}
-                </span>
-                <div className="flex gap-3">
-                  <a
-                    href={COMPANY.founder.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-9 h-9 rounded-full bg-background/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-all duration-300 group"
-                    aria-label={`LinkedIn de ${COMPANY.founder.name}`}
-                  >
-                    <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  </a>
-                  <a
-                    href={COMPANY.founder.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-9 h-9 rounded-full bg-background/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-all duration-300 group"
-                    aria-label={`GitHub de ${COMPANY.founder.name}`}
-                  >
-                    <Code2 className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  </a>
-                  <a
-                    href={COMPANY.partner.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-9 h-9 rounded-full bg-background/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-all duration-300 group"
-                    aria-label={COMPANY.partner.fullName}
-                  >
-                    <Globe className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>

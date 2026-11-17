@@ -559,10 +559,7 @@
       "placeholder": "you@email.com"
     },
     "company": {
-      "description": "Observation and pedagogical coordination tool designed to support teaching work. We facilitate the analysis of each student to strengthen learning processes.",
-      "partner": "In collaboration with",
-      "founder": "Founded by",
-      "status": "Live app. Access to student data requires an institutional account."
+      "description": "Observation and pedagogical coordination tool designed to support teaching work. We facilitate the analysis of each student to strengthen learning processes."
     },
     "contact": {
       "location": "Buenos Aires, Argentina",
@@ -590,7 +587,8 @@
       "about": "About us",
       "team": "Team",
       "privacy": "Privacy",
-      "terms": "Terms"
+      "terms": "Terms",
+      "companyPage": "Company"
     },
     "bottom": {
       "copyright": "© {{year}} Mehmiro. Buenos Aires, Argentina.",
@@ -1485,6 +1483,12 @@
       ],
       "lastUpdate": "Last updated: February 27, 2026",
       "privacyLink": "View Privacy Policy"
+    },
+    "company": {
+      "title": "Company, team and product",
+      "description": "Who is behind Mehmiro, what the app looks like and where we are.",
+      "heroDescription": "Mehmiro is a live app for pedagogical observation and coordination. Here we collect the verifiable information about the company, the team and the product.",
+      "appCta": "Open the app"
     }
   },
   "story": {

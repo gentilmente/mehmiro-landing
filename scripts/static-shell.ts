@@ -10,7 +10,7 @@ export interface StaticPage {
   ogDescription?: string;
 }
 
-export type StaticPageKind = "home" | "about" | "generic";
+export type StaticPageKind = "home" | "about" | "company" | "generic";
 
 const escapeHtml = (value: string) =>
   value
@@ -132,7 +132,6 @@ const renderProductBlock = (english: boolean) => `
 `;
 
 const renderHomeContent = (english: boolean) => `
-  ${renderProductBlock(english)}
   <section class="static-section">
     <h2>${localized(english, "Qué hace Mehmiro", "What Mehmiro does")}</h2>
     <p>${localized(
@@ -162,9 +161,14 @@ const renderHomeContent = (english: boolean) => `
         "Coordinate the next step with the support team.",
       )}</li>
     </ol>
+    <p class="static-links">
+      <a href="${localizedPath(english, "/company")}">${localized(
+        english,
+        "Empresa, equipo y producto",
+        "Company, team and product",
+      )}</a>
+    </p>
   </section>
-  ${renderFounderBlock(english)}
-  ${renderCompanyFacts(english)}
 `;
 
 const renderAboutContent = (english: boolean) => `
@@ -181,9 +185,14 @@ const renderAboutContent = (english: boolean) => `
       "Mehmiro nació después de años atravesando el sistema educativo desde múltiples roles: estudiante, docente, formador y equipos de diseño e implementación de políticas públicas educativas. Hoy es una app en producción, desarrollada en colaboración con LAIA.",
       "Mehmiro was born after years of moving through the education system in multiple roles: student, teacher, trainer and teams designing and implementing public education policy. Today it is a live app, developed in collaboration with LAIA.",
     )}</p>
+    <p class="static-links">
+      <a href="${localizedPath(english, "/company")}">${localized(
+        english,
+        "Empresa, equipo y producto",
+        "Company, team and product",
+      )}</a>
+    </p>
   </section>
-  ${renderFounderBlock(english)}
-  ${renderCompanyFacts(english)}
 `;
 
 const renderGenericContent = (english: boolean, page: StaticPage) => `
@@ -196,7 +205,11 @@ const renderGenericContent = (english: boolean, page: StaticPage) => `
     )}</p>
     <p class="static-links">
       <a href="${localizedPath(english, "/")}">${localized(english, "Inicio", "Home")}</a>
-      <a href="${localizedPath(english, "/about")}">${localized(english, "Equipo", "Team")}</a>
+      <a href="${localizedPath(english, "/company")}">${localized(
+        english,
+        "Empresa y equipo",
+        "Company and team",
+      )}</a>
       <a href="${COMPANY.app.login}" target="_blank" rel="noreferrer">${localized(
         english,
         "Abrir la app",
@@ -207,6 +220,10 @@ const renderGenericContent = (english: boolean, page: StaticPage) => `
       page.title,
     )}</p>
   </section>
+`;
+
+const renderCompanyContent = (english: boolean) => `
+  ${renderProductBlock(english)}
   ${renderFounderBlock(english)}
   ${renderCompanyFacts(english)}
 `;
@@ -220,6 +237,7 @@ const renderFooter = (english: boolean) => `
     )} · <a href="mailto:${COMPANY.contactEmail}">${COMPANY.contactEmail}</a></p>
     <p class="static-links">
       <a href="${localizedPath(english, "/about")}">${localized(english, "Nosotros", "About")}</a>
+      <a href="${localizedPath(english, "/company")}">${localized(english, "Empresa", "Company")}</a>
       <a href="${localizedPath(english, "/para-docentes")}">${localized(
         english,
         "Para docentes",
@@ -236,7 +254,6 @@ const renderFooter = (english: boolean) => `
         "Open the app",
       )}</a>
       <a href="${COMPANY.partner.url}" target="_blank" rel="noreferrer">LAIA</a>
-      <a href="${COMPANY.recognition.url}" target="_blank" rel="noreferrer">IRCAI</a>
       <a href="${COMPANY.founder.linkedin}" target="_blank" rel="noreferrer">LinkedIn</a>
       <a href="${COMPANY.founder.github}" target="_blank" rel="noreferrer">GitHub</a>
     </p>
@@ -294,7 +311,13 @@ export const renderStaticShell = (
           "Las señales están. El desafío es coordinarlas.",
           "The signals are there. The challenge is coordinating them.",
         )
-      : title;
+      : kind === "company"
+        ? localized(
+            english,
+            "Empresa, equipo y producto",
+            "Company, team and product",
+          )
+        : title;
   const lede =
     kind === "home"
       ? localized(
@@ -309,7 +332,9 @@ export const renderStaticShell = (
       ? renderHomeContent(english)
       : kind === "about"
         ? renderAboutContent(english)
-        : renderGenericContent(english, page);
+        : kind === "company"
+          ? renderCompanyContent(english)
+          : renderGenericContent(english, page);
 
   return `${styles}
   <div class="static-shell">

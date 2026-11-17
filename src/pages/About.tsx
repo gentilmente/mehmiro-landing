@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { CONTENT_FLAGS } from "@/config/contentFlags";
-import { COMPANY } from "@/config/company";
 import {
   GraduationCap,
   Heart,
@@ -9,7 +8,6 @@ import {
   Shield,
 } from "lucide-react";
 import { Footer } from "@/components/Footer";
-import { FounderSection } from "@/components/FounderSection";
 
 const About = () => {
   const { t } = useTranslation();
@@ -103,9 +101,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Founder and verifiable team information */}
-      <FounderSection />
-
       {/* Story Section */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto">
@@ -131,10 +126,7 @@ const About = () => {
                   <cite className="not-italic flex justify-end items-start">
                     <div className="text-right">
                       <div className="font-semibold text-foreground">
-                        {COMPANY.founder.name}
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        {t("founder.role")}
+                        {t("pages.about.story.author") || "Mehmiro team"}
                       </div>
                     </div>
                   </cite>

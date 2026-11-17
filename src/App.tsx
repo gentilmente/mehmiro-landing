@@ -16,6 +16,7 @@ import Blog from "./pages/Blog";
 import Community from "./pages/Community";
 import Support from "./pages/Support";
 import About from "./pages/About";
+import Company from "./pages/Company";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
@@ -330,6 +331,7 @@ const App = () => {
         <Route path="/community" element={<Community />} />
         <Route path="/support" element={<Support />} />
         <Route path="/about" element={<About />} />
+        <Route path="/company" element={<Company />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/en" element={<Index />} />
@@ -346,6 +348,7 @@ const App = () => {
         <Route path="/en/community" element={<Community />} />
         <Route path="/en/support" element={<Support />} />
         <Route path="/en/about" element={<About />} />
+        <Route path="/en/company" element={<Company />} />
         <Route path="/en/privacy" element={<Privacy />} />
         <Route path="/en/terms" element={<Terms />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

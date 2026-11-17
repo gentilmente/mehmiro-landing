@@ -153,6 +153,17 @@ const ENGLISH_PAGES: EnglishPage[] = [
     ogDescription: "Technology that supports, not replaces.",
   },
   {
+    dir: "en/company",
+    url: "https://mehmiro.com/en/company",
+    esUrl: "https://mehmiro.com/company",
+    title: "Company, team and product | Mehmiro",
+    description:
+      "Who is behind Mehmiro, what the live app looks like and where we are.",
+    ogTitle: "Company, team and product.",
+    ogDescription:
+      "Founder, live product, LAIA, IRCAI and contact information.",
+  },
+  {
     dir: "en/privacy",
     url: "https://mehmiro.com/en/privacy",
     esUrl: "https://mehmiro.com/privacy",
@@ -306,6 +317,17 @@ const SPANISH_MARKETING_PAGES: EnglishPage[] = [
     ogDescription: "Tecnología que acompaña, no reemplaza.",
   },
   {
+    dir: "company",
+    url: "https://mehmiro.com/company",
+    esUrl: "https://mehmiro.com/company",
+    title: "Empresa, equipo y producto | Mehmiro",
+    description:
+      "Quién está detrás de Mehmiro, cómo se ve la app en producción y dónde estamos.",
+    ogTitle: "Empresa, equipo y producto.",
+    ogDescription:
+      "Fundador, producto en producción, LAIA, IRCAI y datos de contacto.",
+  },
+  {
     dir: "blog",
     url: "https://mehmiro.com/blog",
     esUrl: "https://mehmiro.com/blog",
@@ -457,7 +479,9 @@ const generateStaticPages = (): Plugin => ({
           ? "home"
           : page.dir === "en/about"
             ? "about"
-            : "generic";
+            : page.dir === "en/company"
+              ? "company"
+              : "generic";
       writeStaticPage(emptySource, page, true, outDir, kind);
     }
     for (const page of ENGLISH_COURSE_PAGES) {
@@ -469,7 +493,11 @@ const generateStaticPages = (): Plugin => ({
         page,
         false,
         outDir,
-        page.dir === "about" ? "about" : "generic",
+        page.dir === "about"
+          ? "about"
+          : page.dir === "company"
+            ? "company"
+            : "generic",
       );
     }
     for (const page of SPANISH_COURSE_PAGES) {

@@ -559,10 +559,7 @@
       "placeholder": "tu@email.com"
     },
     "company": {
-      "description": "Herramienta de observación y coordinación pedagógica diseñada para acompañar el trabajo docente. Facilitamos el análisis de cada estudiante para fortalecer los procesos de aprendizaje.",
-      "partner": "En colaboración con",
-      "founder": "Fundado por",
-      "status": "App en producción. El acceso a datos de estudiantes requiere una cuenta institucional."
+      "description": "Herramienta de observación y coordinación pedagógica diseñada para acompañar el trabajo docente. Facilitamos el análisis de cada estudiante para fortalecer los procesos de aprendizaje."
     },
     "contact": {
       "location": "Buenos Aires, Argentina",
@@ -590,7 +587,8 @@
       "about": "Nosotros",
       "team": "Equipo",
       "privacy": "Privacidad",
-      "terms": "Términos"
+      "terms": "Términos",
+      "companyPage": "Empresa"
     },
     "bottom": {
       "copyright": "© {{year}} Mehmiro. Buenos Aires, Argentina.",
@@ -1504,6 +1502,12 @@
       ],
       "lastUpdate": "Última actualización: 27 de Febrero de 2026",
       "privacyLink": "Ver Política de Privacidad"
+    },
+    "company": {
+      "title": "Empresa, equipo y producto",
+      "description": "Quién está detrás de Mehmiro, cómo se ve la app y dónde estamos.",
+      "heroDescription": "Mehmiro es una app en producción para observación y coordinación pedagógica. Acá reunimos la información verificable de la empresa, el equipo y el producto.",
+      "appCta": "Abrir la app"
     }
   },
   "story": {

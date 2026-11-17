@@ -36,10 +36,10 @@ This file captures the repo-specific context needed to work efficiently.
 
 ## Project structure
 
-- `src/pages/`: `index` (home), `ParaDocentes`, `ParaEscuelas`, `ParaFamilias`, `Investigacion`, `Evidencia`, `Learn`, `Features`, `ForEducators`, `Blog`, `Community`, `Support`, `About`, `Privacy`, `Terms`, `NotFound`. The old `/ejemplo` layout and the invented `/team` page were removed.
+- `src/pages/`: `index` (home), `ParaDocentes`, `ParaEscuelas`, `ParaFamilias`, `Investigacion`, `Evidencia`, `Learn`, `Features`, `ForEducators`, `Blog`, `Community`, `Support`, `About`, `Company`, `Privacy`, `Terms`, `NotFound`. The old `/ejemplo` layout and the invented `/team` page were removed.
 - `src/components/`: hero, product showcase, founder section, audience selector, audience page layout, problem, solution, ambassador, social proof, FAQ, CTA, footer, phone mockup.
-- `src/components/ProductShowcase.tsx`: live product proof on the home page. Uses real app screenshots and `public/product-demo.mp4`; no fake mockups.
-- `src/components/FounderSection.tsx`: verifiable founder/team block used on the home page and `/about#equipo`.
+- `src/components/ProductShowcase.tsx`: live product proof used on `/company`. Uses real app screenshots and `public/product-demo.mp4`; no fake mockups.
+- `src/components/FounderSection.tsx`: verifiable founder/team block used on `/company#equipo`.
 - `src/config/company.ts`: public, verified company/founder links (LinkedIn, GitHub, LAIA, IRCAI, app). Keep it free of invented roles, legal entities or metrics.
 - `src/components/StackCard.tsx`: scroll-stacked panels used on the home page.
 - `src/components/ScrollStorySection/`: GSAP ScrollTrigger panels; not used on the current home page.
@@ -57,6 +57,7 @@ This file captures the repo-specific context needed to work efficiently.
 - **Do not say coordination does not exist.** Coordinators, preceptors and support teams already do this work by hand. Frame the problem as fragmentation and lack of system/scale, not lack of commitment.
 - **Social proof is hidden, not deleted.** `CONTENT_FLAGS.showSocialProof = false`; keep the 500+/98%/testimonial copy in i18n until the numbers are backed by source, date, and N.
 - **Do not invent operational content.** No fake testimonials, events, articles, forum posts, downloads, team members, metrics or legal claims. `/blog` uses real founder LinkedIn notes; `/community` uses the real ambassador program; `/features`, `/forEducators` and `/support` describe only shipped capabilities.
+- **Compliance proof lives on `/company`.** It is public, outside the main navigation, and linked from the footer and sitemap. Do not hide it from users or serve it only to Googlebot: that is cloaking.
 - **Docs are not a source of truth.** `docs.mehmiro.com` is abandoned; it is no longer linked from the footer. Audit before citing or reusing.
 - **Do not mention previous organizational partnerships** in public copy. Use Mehmiro and IRCAI.
 - Integrations: WhatsApp for observations (institution-configured) and Google login/Calendar/Gmail; other channels are assessed during a school pilot.
@@ -79,8 +80,9 @@ This file captures the repo-specific context needed to work efficiently.
 ## Known issues / next steps
 
 - Every built route contains a static HTML fallback inside `#root` (see `scripts/static-shell.ts` and `vite.config.ts`). React replaces it on load. Do not remove it: Google's compliance crawler previously saw an empty root.
-- `src/pages/Team.tsx` was removed because it contained invented people. Team information lives in `FounderSection` and `src/config/company.ts`.
+- `src/pages/Team.tsx` was removed because it contained invented people. Team information lives on `/company` (`FounderSection`) and in `src/config/company.ts`.
 - The founder/team block intentionally uses initials, not a stock photo. Replace with a real photo only if the owner provides one.
+- The home page and `/about` keep their original design; `/company` is the public, unlisted-in-nav proof page.
 - Metadata is implemented in `index.html` (title, description, OG/Twitter, canonical, JSON-LD, theme-color), with `public/og-mehmiro.png`, `public/sitemap.xml` and `public/robots.txt`.
 - English routes exist at `/en` and `/en/*`; the language toggle navigates between `/` and `/en`. `vite.config.ts` generates static HTML for all marketing routes and known course IDs in both languages; unknown course IDs remain SPA/404.
 - The hero, problem and solution sections use the systemic narrative. The standalone “Por qué ahora” section was removed in the editorial pass. `/evidencia` and `/en/evidencia` document what the product can and cannot claim.

@@ -203,6 +203,24 @@ const ROUTE_META: Record<string, Record<"es" | "en", Metadata>> = {
       ogDescription: "Technology that supports, not replaces.",
     },
   },
+  "/company": {
+    es: {
+      title: "Empresa, equipo y producto | Mehmiro",
+      description:
+        "Quién está detrás de Mehmiro, cómo se ve la app en producción y dónde estamos.",
+      ogTitle: "Empresa, equipo y producto.",
+      ogDescription:
+        "Fundador, producto en producción, LAIA, IRCAI y datos de contacto.",
+    },
+    en: {
+      title: "Company, team and product | Mehmiro",
+      description:
+        "Who is behind Mehmiro, what the live app looks like and where we are.",
+      ogTitle: "Company, team and product.",
+      ogDescription:
+        "Founder, live product, LAIA, IRCAI and contact information.",
+    },
+  },
   "/blog": {
     es: {
       title: "Blog | Mehmiro",

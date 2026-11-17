@@ -1,6 +1,7 @@
 import { ArrowUpRight, CheckCircle2, Play } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { COMPANY } from "@/config/company";
+import { LocalizedLink as Link } from "@/components/LocalizedLink";
 
 interface ProductShowcaseProps {
   id?: string;
@@ -111,9 +112,9 @@ export const ProductShowcase = ({ id = "producto" }: ProductShowcaseProps) => {
             {t("product.cta")}
             <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
           </a>
-          <a href="#mehmiro" className="text-link">
+          <Link to="/#mehmiro" className="text-link">
             {t("product.ctaSecondary")}
-          </a>
+          </Link>
         </div>
         <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           {t("product.demoNote")}
