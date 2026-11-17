@@ -25,7 +25,7 @@ export const FounderSection = ({ id = "equipo" }: FounderSectionProps) => {
           <Users className="h-4 w-4" aria-hidden="true" />
           {t("founder.eyebrow")}
         </div>
-        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
+        <h2 className="brand-section-title mt-4 text-3xl sm:text-4xl">
           {t("founder.title")}
         </h2>
         <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -41,7 +41,7 @@ export const FounderSection = ({ id = "equipo" }: FounderSectionProps) => {
               {COMPANY.founder.initials}
             </div>
             <div className="min-w-0">
-              <h3 className="text-2xl font-bold">{COMPANY.founder.name}</h3>
+              <h3 className="brand-section-title text-2xl">{COMPANY.founder.name}</h3>
               <p className="mt-1 font-medium text-primary">
                 {t("founder.role")}
               </p>

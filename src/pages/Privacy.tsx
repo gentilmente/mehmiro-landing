@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Shield, Lock, Eye, Database, Globe } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { PageHero } from "@/components/PageHero";
 
 const Privacy = () => {
   const { t } = useTranslation();
@@ -24,19 +25,11 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
       {/* Hero Section */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6">
-            <Shield className="w-10 h-10 text-primary" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t("pages.privacy.title")}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {t("pages.privacy.description")}
-          </p>
-        </div>
-      </section>
+      <PageHero
+        icon={Shield}
+        title={t("pages.privacy.title")}
+        description={t("pages.privacy.description")}
+      />
 
       {/* Highlights */}
       <section className="py-12 px-6 bg-primary text-primary-foreground">
@@ -64,7 +57,7 @@ const Privacy = () => {
           <div className="space-y-8">
             {sections.map((section, index) => (
               <div key={index} className="border rounded-xl bg-card p-6 md:p-8">
-                <h2 className="text-xl font-bold mb-4">{section.title}</h2>
+                <h2 className="brand-section-title text-xl mb-4">{section.title}</h2>
                 <div className="text-muted-foreground whitespace-pre-line leading-relaxed">
                   {section.content}
                 </div>
@@ -77,8 +70,8 @@ const Privacy = () => {
       {/* compliance Badge */}
       <section className="py-12 px-6 bg-muted/30">
         <div className="container mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-            <Globe className="w-8 h-8 text-green-600" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+            <Globe className="w-8 h-8 text-primary" />
           </div>
           <h3 className="text-lg font-semibold mb-2">
             {t("pages.privacy.compliance.title")}

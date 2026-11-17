@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ArrowRight, BookOpen, HelpCircle, Mail } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { PageHero } from "@/components/PageHero";
 import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { COMPANY } from "@/config/company";
 
@@ -25,26 +26,18 @@ const Support = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
-      <section className="py-20 px-6">
-        <div className="container mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6">
-            <HelpCircle className="w-10 h-10 text-primary" aria-hidden="true" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t("pages.support.title")}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {t("pages.support.heroDescription")}
-          </p>
-        </div>
-      </section>
+      <PageHero
+        icon={HelpCircle}
+        title={t("pages.support.title")}
+        description={t("pages.support.heroDescription")}
+      />
 
       <section className="py-12 px-6">
         <div className="container mx-auto max-w-3xl text-center">
           <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
             <Mail className="h-6 w-6 text-primary" aria-hidden="true" />
           </div>
-          <h2 className="text-2xl font-bold">
+          <h2 className="brand-section-title text-2xl">
             {t("pages.support.contactTitle")}
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
@@ -65,7 +58,7 @@ const Support = () => {
 
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl font-bold text-center mb-4">
+          <h2 className="brand-section-title text-2xl text-center mb-4">
             {t("pages.support.resourcesTitle")}
           </h2>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -100,7 +93,7 @@ const Support = () => {
 
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-10">
+          <h2 className="brand-section-title text-3xl text-center mb-10">
             {t("pages.support.faqTitle")}
           </h2>
 
@@ -139,7 +132,7 @@ const Support = () => {
 
       <section className="py-16 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="brand-section-title text-2xl mb-4">
             {t("pages.support.stillNeedHelp.title")}
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">

@@ -8,6 +8,7 @@ import {
   Shield,
 } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { PageHero } from "@/components/PageHero";
 
 const About = () => {
   const { t } = useTranslation();
@@ -26,17 +27,11 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
-      {/* Hero Section */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
-            {t("pages.about.title")}
-          </h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">
-            {t("pages.about.description")}
-          </p>
-        </div>
-      </section>
+      <PageHero
+        icon={Heart}
+        title={t("pages.about.title")}
+        description={t("pages.about.description")}
+      />
 
       {/* Mission & Vision */}
       <section className="py-16 px-6 bg-muted/30">
@@ -46,7 +41,7 @@ const About = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Target className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-2xl font-bold">
+              <h2 className="brand-section-title text-2xl">
                 {t("pages.about.mission.title")}
               </h2>
               <p className="text-muted-foreground">
@@ -57,7 +52,7 @@ const About = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Lightbulb className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-2xl font-bold">
+              <h2 className="brand-section-title text-2xl">
                 {t("pages.about.vision.title")}
               </h2>
               <p className="text-muted-foreground">
@@ -71,7 +66,7 @@ const About = () => {
       {/* Values */}
       <section className="py-16 px-6">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="brand-section-title text-3xl text-center mb-12">
             {values[0]?.title
               ? t("pages.about.valuesSection.title", {
                   defaultValue: "Nuestros Valores",
@@ -104,7 +99,7 @@ const About = () => {
       {/* Story Section */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="brand-section-title text-3xl text-center mb-12">
             {t("pages.about.story.title")}
           </h2>
           <div className="max-w-3xl mx-auto">

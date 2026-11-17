@@ -68,12 +68,12 @@ const Learn = () => {
 
   const getLevelColor = (level: string) => {
     if (level === "Principiante" || level === "Beginner")
-      return "bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-800";
+      return "bg-primary/10 text-primary";
     if (level === "Intermedio" || level === "Intermediate")
-      return "bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800";
+      return "bg-secondary/10 text-secondary";
     if (level === "Avanzado" || level === "Advanced")
-      return "bg-gradient-to-r from-rose-100 to-red-100 text-rose-800";
-    return "bg-gradient-to-r from-sky-100 to-blue-100 text-blue-800";
+      return "bg-secondary/15 text-secondary";
+    return "bg-muted text-muted-foreground";
   };
 
   return (
@@ -226,7 +226,7 @@ const Learn = () => {
           </p>
           <a
             href="/"
-            className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-gradient-to-r from-white to-blue-50 text-primary hover:from-blue-50 hover:to-white rounded-lg transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-white text-primary hover:bg-primary/5 rounded-lg transition-colors"
           >
             {t("pages.learn.cta.button")}
           </a>
@@ -326,10 +326,10 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
                     );
                   })}
                   {step.tip && (
-                    <div className="bg-gradient-to-br from-amber-50 to-yellow-100/80 border border-yellow-200 rounded-lg p-4 mt-4">
+                    <div className="bg-secondary/5 border border-secondary/20 rounded-lg p-4 mt-4">
                       <div className="flex items-start gap-2">
-                        <Star className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
-                        <p className="text-sm text-yellow-800">{step.tip}</p>
+                        <Star className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                        <p className="text-sm text-secondary">{step.tip}</p>
                       </div>
                     </div>
                   )}
@@ -345,10 +345,10 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
                       <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                       <p className="text-muted-foreground mb-4">{step.description}</p>
                       {step.tip && (
-                        <div className="bg-gradient-to-br from-amber-50 to-yellow-100/80 border border-yellow-200 rounded-lg p-4">
+                        <div className="bg-secondary/5 border border-secondary/20 rounded-lg p-4">
                           <div className="flex items-start gap-2">
-                            <Star className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
-                            <p className="text-sm text-yellow-800">{step.tip}</p>
+                            <Star className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                            <p className="text-sm text-secondary">{step.tip}</p>
                           </div>
                         </div>
                       )}
@@ -374,12 +374,12 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
 
   const getLevelColor = (level: string) => {
     if (level === "Principiante" || level === "Beginner")
-      return "bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-800";
+      return "bg-primary/10 text-primary";
     if (level === "Intermedio" || level === "Intermediate")
-      return "bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800";
+      return "bg-secondary/10 text-secondary";
     if (level === "Avanzado" || level === "Advanced")
-      return "bg-gradient-to-r from-rose-100 to-red-100 text-rose-800";
-    return "bg-gradient-to-r from-sky-100 to-blue-100 text-blue-800";
+      return "bg-secondary/15 text-secondary";
+    return "bg-muted text-muted-foreground";
   };
 
   return (
@@ -427,7 +427,7 @@ const steps = t(`pages.learn.courseContent.${courseId}.steps`, {
             <ul className="space-y-3">
               {objectives.map((obj, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <span>{obj}</span>
                 </li>
               ))}

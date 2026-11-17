@@ -49,7 +49,7 @@ export const Footer = () => {
 
               {state.succeeded ? (
                 <div className="space-y-4">
-                  <div className="flex items-center justify-center gap-2 text-green-600">
+                  <div className="flex items-center justify-center gap-2 text-primary">
                     <CheckCircle className="w-6 h-6" />
                     <p className="text-lg font-medium">
                       {t("footer.lead.successTitle")}
@@ -101,7 +101,7 @@ export const Footer = () => {
                     prefix="Email"
                     field="email"
                     errors={state.errors}
-                    className="text-red-600 text-sm text-center"
+                    className="text-destructive text-sm text-center"
                   />
                 </form>
               )}

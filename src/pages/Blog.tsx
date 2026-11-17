@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ArrowUpRight, BookOpen, Calendar } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { PageHero } from "@/components/PageHero";
 import { COMPANY } from "@/config/company";
 
 const Blog = () => {
@@ -15,20 +16,15 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
-      <section className="py-20 px-6">
-        <div className="container mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
-            {t("pages.blog.title")}
-          </h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">
-            {t("pages.blog.heroDescription")}
-          </p>
-        </div>
-      </section>
+      <PageHero
+        icon={BookOpen}
+        title={t("pages.blog.title")}
+        description={t("pages.blog.heroDescription")}
+      />
 
       <section className="py-10 px-6">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl md:text-3xl font-bold">
+          <h2 className="brand-section-title text-2xl md:text-3xl">
             {t("pages.blog.notesTitle")}
           </h2>
           <p className="mt-3 text-muted-foreground leading-relaxed">

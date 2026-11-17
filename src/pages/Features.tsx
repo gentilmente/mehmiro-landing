@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { PageHero } from "@/components/PageHero";
 import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { COMPANY } from "@/config/company";
 
@@ -15,16 +16,11 @@ const Features = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
-      <section className="py-20 px-6">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t("pages.features.title")}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {t("pages.features.description")}
-          </p>
-        </div>
-      </section>
+      <PageHero
+        icon={CheckCircle2}
+        title={t("pages.features.title")}
+        description={t("pages.features.description")}
+      />
 
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
@@ -61,7 +57,7 @@ const Features = () => {
 
       <section className="py-16 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="brand-section-title text-3xl mb-4">
             {t("pages.features.ctaTitle")}
           </h2>
           <p className="text-lg mb-8 opacity-90">

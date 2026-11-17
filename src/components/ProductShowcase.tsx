@@ -22,7 +22,7 @@ export const ProductShowcase = ({ id = "producto" }: ProductShowcaseProps) => {
             {t("product.eyebrow")}
           </div>
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+            <h2 className="brand-section-title text-3xl sm:text-4xl md:text-5xl">
               {t("product.title")}
             </h2>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
