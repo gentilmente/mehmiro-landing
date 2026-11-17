@@ -27,7 +27,7 @@
     "subheadline": "Mehmiro convierte la observación de clase en sugerencias sobre a quién mirar, en qué área y qué hacer después.",
     "noteTitle": "Nota de voz.",
     "noteText": "30 segundos después de clase.",
-    "recognitionLabel": "Reconocimiento IRCAI 2025",
+    "recognitionLabel": "Seleccionado en IRCAI Global Top 100 2025",
     "recognitionAlt": "IRCAI Global Top 100 Promising Project 2025",
     "recognitionAria": "Abrir reconocimiento IRCAI en una nueva pestaña",
     "valueProps": [
@@ -37,6 +37,51 @@
       "Integrado al software que ya usás"
     ],
     "scrollIndicator": "Descubrí cómo funciona"
+  },
+  "product": {
+    "eyebrow": "Producto en producción",
+    "title": "Así se ve Mehmiro por dentro",
+    "description": "No es una landing ni una lista de espera: es la app que docentes y equipos usan para registrar observaciones, revisar evidencia y coordinar el acompañamiento.",
+    "liveBadge": "App online",
+    "screens": {
+      "onboarding": {
+        "alt": "Pantalla de bienvenida de Mehmiro con el formulario para describir la clase",
+        "title": "Empezá con tu clase",
+        "description": "El onboarding pide el contexto mínimo para que las sugerencias sean útiles desde el primer registro."
+      },
+      "profile": {
+        "alt": "Perfil estudiantil de Mehmiro con áreas de progreso y evidencia",
+        "title": "Cada estudiante, con contexto",
+        "description": "El perfil reúne observaciones y evidencia revisada por el equipo docente, sin reemplazar su criterio."
+      },
+      "video": {
+        "title": "Un recorrido real por la app",
+        "description": "El video muestra el onboarding y la revisión de datos extraídos, grabado en la app en producción."
+      }
+    },
+    "demoNote": "La app abre en una pantalla de acceso. Elegí «Explorar sin cuenta» para recorrerla sin registro; los datos de estudiantes requieren una cuenta institucional.",
+    "cta": "Abrir la app",
+    "ctaSecondary": "Ver cómo funciona",
+    "disclaimer": "Capturas de la app en producción. Los nombres y datos que aparecen son de demostración."
+  },
+  "founder": {
+    "eyebrow": "Equipo",
+    "title": "Quién está detrás",
+    "description": "Mehmiro es un proyecto fundado por Ezequiel Gentile Montes y desarrollado en colaboración con LAIA.",
+    "role": "Fundador y desarrollador principal de producto",
+    "bio": "Fundó Mehmiro y lidera su desarrollo de producto. Trabaja en la intersección entre inteligencia artificial y educación; hoy Mehmiro se desarrolla en colaboración con LAIA, el Laboratorio Abierto de Inteligencia Artificial.",
+    "linksLabel": "Perfil verificable",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "partnerLabel": "Colaboración",
+    "partner": "LAIA — Laboratorio Abierto de Inteligencia Artificial",
+    "partnerDescription": "Equipo e infraestructura de investigación en IA con base en Buenos Aires.",
+    "recognitionLabel": "Reconocimiento",
+    "locationLabel": "Dónde estamos",
+    "location": "Buenos Aires, Argentina",
+    "statusLabel": "Estado del producto",
+    "status": "App en producción, con acceso institucional para datos de estudiantes.",
+    "aboutLink": "Conocer más sobre Mehmiro"
   },
   "problem": {
     "badge": "El problema",
@@ -378,7 +423,7 @@
   },
   "audienceVisual": {
     "voiceAlt": "Docente grabando una nota de voz en el aula",
-    "schoolAlt": "Directora y docente con un reconocimiento institucional",
+    "schoolAlt": "Perfil estudiantil en Mehmiro con evidencia revisada por el equipo docente",
     "voiceLabel": "Nota de voz",
     "voiceDetail": "30 segundos después de clase",
     "schoolLabel": "Visión institucional",
@@ -387,21 +432,47 @@
       "title": "Mapa de seguimiento",
       "week": "Semana 12",
       "subjects": [
-        { "name": "Historia", "status": "Plan al día", "tone": "ok" },
-        { "name": "Matemática", "status": "1 desvío", "tone": "warn" },
-        { "name": "Ciencias", "status": "Plan al día", "tone": "ok" }
+        {
+          "name": "Historia",
+          "status": "Plan al día",
+          "tone": "ok"
+        },
+        {
+          "name": "Matemática",
+          "status": "1 desvío",
+          "tone": "warn"
+        },
+        {
+          "name": "Ciencias",
+          "status": "Plan al día",
+          "tone": "ok"
+        }
       ],
       "coherence": "Plan anual vs. lecciones dadas",
       "coherenceStatus": "En línea",
       "topics": "Temas abordados",
-      "topicList": ["Revolución de Mayo", "Ecuaciones", "Ecosistemas"],
+      "topicList": [
+        "Revolución de Mayo",
+        "Ecuaciones",
+        "Ecosistemas"
+      ],
       "calendar": "Calendario",
-      "days": ["L", "M", "M", "J", "V"],
+      "days": [
+        "L",
+        "M",
+        "M",
+        "J",
+        "V"
+      ],
       "calendarEvent": "Feriado 25/5",
       "projects": "Proyecto transversal",
       "projectName": "Agua y territorio",
       "events": "Eventos especiales",
-      "eventList": ["Feriado", "Salida didáctica", "Actualidad"]
+      "eventList": [
+        "Feriado",
+        "Salida didáctica",
+        "Actualidad"
+      ]
     },
     "familyLabel": "Acompañamiento",
     "familyRows": [
@@ -488,7 +559,10 @@
       "placeholder": "tu@email.com"
     },
     "company": {
-      "description": "Herramienta de observación y coordinación pedagógica diseñada para acompañar el trabajo docente. Facilitamos el análisis de cada estudiante para fortalecer los procesos de aprendizaje."
+      "description": "Herramienta de observación y coordinación pedagógica diseñada para acompañar el trabajo docente. Facilitamos el análisis de cada estudiante para fortalecer los procesos de aprendizaje.",
+      "partner": "En colaboración con",
+      "founder": "Fundado por",
+      "status": "App en producción. El acceso a datos de estudiantes requiere una cuenta institucional."
     },
     "contact": {
       "location": "Buenos Aires, Argentina",
@@ -509,8 +583,7 @@
       "forFamilies": "Familias",
       "research": "Investigación",
       "evidence": "Evidencia",
-      "demo": "Demo",
-      "docs": "Documentación",
+      "app": "Abrir la app",
       "blog": "Blog",
       "community": "Comunidad",
       "support": "Soporte",
@@ -520,14 +593,92 @@
       "terms": "Términos"
     },
     "bottom": {
-      "copyright": "© {{year}} Mehmiro. Acompañando la evaluación formativa en Argentina y Latinoamérica.",
+      "copyright": "© {{year}} Mehmiro. Buenos Aires, Argentina.",
       "follow": "Síguenos:"
     }
   },
   "pages": {
     "features": {
       "title": "Características",
-      "description": "Descubrí las herramientas de Mehmiro que amplifican tu mirada pedagógica: organización de observaciones, detección de patrones y reportes accionables."
+      "description": "Lo que Mehmiro hace hoy: observación, revisión docente, perfil estudiantil y visión institucional.",
+      "items": [
+        {
+          "title": "Observación por WhatsApp, texto o audio",
+          "description": "Registrá cómo salió la clase desde el canal que ya usás. La institución define si WhatsApp está habilitado.",
+          "details": [
+            "Texto o audio",
+            "Transcripción para revisar",
+            "Onboarding asistido"
+          ]
+        },
+        {
+          "title": "Revisión docente antes de guardar",
+          "description": "La IA identifica señales y propone sugerencias; el equipo docente revisa, edita y decide qué queda.",
+          "details": [
+            "Sugerencias editables",
+            "Evidencia aceptada",
+            "Sin veredictos automáticos"
+          ]
+        },
+        {
+          "title": "Perfil estudiantil con contexto",
+          "description": "Cada estudiante reúne observaciones y evidencia aceptada por período y materia.",
+          "details": [
+            "Historial por estudiante",
+            "Contexto entre materias",
+            "Cobertura por período"
+          ]
+        },
+        {
+          "title": "Análisis de clase",
+          "description": "Mehmiro organiza la observación y la convierte en una lectura útil para la próxima decisión.",
+          "details": [
+            "Patrones por área",
+            "Sugerencias para la próxima clase",
+            "Revisión antes de guardar"
+          ]
+        },
+        {
+          "title": "Visión institucional",
+          "description": "Dirección y coordinación ven cobertura, evidencia y temas abordados, con permisos por rol.",
+          "details": [
+            "Roles y permisos",
+            "Cobertura por materia",
+            "Trazabilidad de la evidencia"
+          ]
+        },
+        {
+          "title": "Planificación y preparación",
+          "description": "Organizá el año y prepará la próxima clase con el contexto del grupo.",
+          "details": [
+            "Plan anual",
+            "Prioridades por período",
+            "Propuestas de clase"
+          ]
+        },
+        {
+          "title": "Integraciones",
+          "description": "WhatsApp para observaciones y Google Workspace. Otros canales se evalúan en el piloto.",
+          "details": [
+            "WhatsApp (según institución)",
+            "Google Workspace",
+            "Otros canales en piloto"
+          ]
+        },
+        {
+          "title": "Datos y gobernanza",
+          "description": "Los datos pertenecen a la institución. El acceso a datos de estudiantes requiere cuenta institucional y permisos.",
+          "details": [
+            "Acceso por roles",
+            "Datos de la institución",
+            "Consentimiento y marco legal"
+          ]
+        }
+      ],
+      "ctaTitle": "Probalo con tu clase",
+      "ctaDescription": "La app está online. Podés explorar la interfaz sin cuenta o crear una cuenta institucional.",
+      "ctaButton": "Abrir la app",
+      "ctaSecondary": "Conocer el equipo"
     },
     "learn": {
       "title": "Aprendé a usar Mehmiro",
@@ -981,468 +1132,170 @@
     },
     "forEducators": {
       "title": "Para educadores",
-      "description": "Recursos y guías pensadas para docentes: cómo integrar Mehmiro en la práctica diaria y ejemplos de uso en el aula.",
-      "heroDescription": "Recursos y guías pensadas para docentes: cómo integrar Mehmiro en la práctica diaria y ejemplos de uso en el aula.",
-      "quickStats": [
+      "description": "Recursos para docentes que quieren usar Mehmiro con criterio: guías, método y soporte.",
+      "heroDescription": "Recursos para docentes que quieren usar Mehmiro con criterio: guías, método y soporte.",
+      "sections": [
         {
-          "value": "24h",
-          "label": "Tiempo para primeras percepciones"
+          "title": "Aprendé a usar Mehmiro",
+          "description": "Cursos paso a paso para configurar tu clase, registrar observaciones y revisar evidencia.",
+          "url": "/learn",
+          "label": "Ver cursos"
         },
         {
-          "value": "100%",
-          "label": "Respeto a tu autonomía"
+          "title": "Evidencia y método",
+          "description": "Qué puede afirmar Mehmiro hoy, qué mide en un piloto y qué todavía no puede sostener.",
+          "url": "/evidencia",
+          "label": "Ver método"
         },
         {
-          "value": "∞",
-          "label": "Capacidad de observación"
+          "title": "Soporte",
+          "description": "Preguntas frecuentes, acceso y contacto por email.",
+          "url": "/support",
+          "label": "Ir a soporte"
         },
         {
-          "value": "0",
-          "label": "Carga administrativa"
+          "title": "Equipo y empresa",
+          "description": "Quién está detrás, dónde estamos y cómo contactarnos.",
+          "url": "/about#equipo",
+          "label": "Conocer el equipo"
         }
       ],
-      "guidesTitle": "Guías y Tutoriales",
-      "guides": [
+      "howTitle": "Cómo empezar",
+      "steps": [
         {
-          "title": "Guía de Inicio Rápido",
-          "description": "Empezá a usar Mehmiro en menos de 10 minutos. Paso a paso.",
-          "level": "Principiante",
-          "duration": "10 min"
+          "title": "Creá tu cuenta o explorá sin cuenta",
+          "description": "Podés abrir la app y recorrer la interfaz sin registro. Para datos de estudiantes necesitás una cuenta institucional."
         },
         {
-          "title": "Cómo Registrar Observaciones",
-          "description": "Aprendé a capturar observaciones pedagógicas de forma efectiva.",
-          "level": "Principiante",
-          "duration": "15 min"
+          "title": "Registrá una observación",
+          "description": "Después de clase, contá cómo salió por texto o audio. La institución define si WhatsApp está habilitado."
         },
         {
-          "title": "Detección Temprana en Práctica",
-          "description": "Estrategias para identificar estudiantes que necesitan más apoyo.",
-          "level": "Intermedio",
-          "duration": "20 min"
-        },
-        {
-          "title": "Feedback Efectivo",
-          "description": "Cómo usar los análisis de Mehmiro para mejorar tu feedback.",
-          "level": "Intermedio",
-          "duration": "25 min"
-        },
-        {
-          "title": "Colaboración en Equipo",
-          "description": "Coordiná con otros docentes y orientadores para acompañar mejor.",
-          "level": "Avanzado",
-          "duration": "30 min"
-        },
-        {
-          "title": "Reportes para Familias",
-          "description": "Creá comunicaciones claras y productivas con las familias.",
-          "level": "Todos",
-          "duration": "20 min"
+          "title": "Revisá y coordiná",
+          "description": "Mehmiro identifica señales y ofrece sugerencias; el equipo docente revisa la evidencia y decide el próximo paso."
         }
       ],
-      "videoSection": {
-        "title": "Videos Tutoriales",
-        "description": "Aprendé a usar Mehmiro viendo cómo otros docentes lo integran en su día a día. Nuestra biblioteca de videos incluye:",
-        "items": [
-          "Primeros pasos con la plataforma",
-          "Registro de observaciones paso a paso",
-          "Cómo interpretar los análisis",
-          "Casos de uso reales en el aula",
-          "Tips y tricks de usuarios avanzados"
-        ],
-        "button": "Ver todos los videos",
-        "featured": "Video tutorial destacado"
-      },
-      "tipsTitle": "Tips para Observaciones Efectivas",
-      "tipsDescription": "Consejos prácticos de docentes que ya usan Mehmiro efectivamente",
-      "tips": [
-        {
-          "title": "Registrá en el momento",
-          "description": "Las observaciones son más precisas cuando las registrás inmediatamente después de ocurridas. Usá la función de notas de voz si no podés escribir en el momento."
-        },
-        {
-          "title": "Sé específico pero conciso",
-          "description": "Evitá generalizaciones como 'bien' o 'mal'. Descripción qué exactamente hizo o dijo el estudiante. 'Completó 3 de 5 ejercicios' es más útil que 'trabajó bien'."
-        },
-        {
-          "title": "Usá las categorías",
-          "description": "Las categorías de Mehmiro están diseñadas para cubrir los aspectos más importantes del desarrollo. Intentá usar al menos 2-3 categorías por observación."
-        },
-        {
-          "title": "Revisá los patrones",
-          "description": "No te quedes solo con observaciones individuales. Semanalmente, revisá los patrones que Mehmiro detecta. Son invaluables para entender el progreso real."
-        },
-        {
-          "title": "Actuá a tiempo",
-          "description": "Las alertas de detección temprana son herramientas, no diagnósticos. Usalas como punto de partida para conversar, intervenir y acompañar."
-        },
-        {
-          "title": "Compartí con el equipo",
-          "description": "La colaboración multiplica el impacto. Compartí observaciones relevantes con tutores, orientadores y otros docentes que trabajen con el mismo estudiante."
-        }
-      ],
-      "downloads": {
-        "title": "Descargables Gratuitos",
-        "description": "Materiales que podés imprimir y usar en tu escuela",
-        "items": [
-          {
-            "title": "Plantilla de Observación",
-            "description": "PDF • 2 páginas"
-          },
-          {
-            "title": "Indicadores de Alerta",
-            "description": "PDF • 1 página"
-          },
-          {
-            "title": "Guía para Reuniones con Familias",
-            "description": "PDF • 3 páginas"
-          }
-        ]
-      },
-      "testimonialsTitle": "Lo que dicen los docentes",
-      "cta": {
-        "title": "¿Listo para empezar?",
-        "description": "Probá Mehmiro con tu clase y compartilo con tu escuela. Si tu institución avanza, recibís una recompensa.",
-        "button": "Probala y sumá recompensas"
-      }
+      "ctaTitle": "Probalo con tu clase",
+      "ctaDescription": "La app está online. Podés explorar la interfaz sin cuenta o crear una cuenta institucional.",
+      "ctaButton": "Abrir la app"
     },
     "blog": {
       "title": "Blog",
       "description": "Artículos, casos de estudio y novedades sobre evaluación formativa y tecnología educativa.",
-      "heroDescription": "Artículos, casos de estudio y reflexiones sobre evaluación formativa, tecnología educativa y la labor docente en Argentina.",
-      "featured": {
-        "badge": "Artículo destacado",
-        "title": "La evaluación formativa: más que calificar, acompañar",
-        "description": "En el sistema educativo actual, solemos pensar en la evaluación como una medida del conocimiento adquirido. Pero la evaluación formativa va mucho más allá: se trata de acompañar el proceso de aprendizaje de cada estudiante, detectando a tiempo cuándo necesita más apoyo.",
-        "link": "Leer artículo completo"
-      },
-      "categories": [
+      "heroDescription": "Notas y reflexiones del fundador sobre observación, IA y educación.",
+      "notesTitle": "Notas del fundador",
+      "notesDescription": "Publicamos notas en LinkedIn. Acá reunimos las que explican el proyecto y su enfoque pedagógico.",
+      "notesCta": "Ver perfil en",
+      "notes": [
         {
-          "name": "Todos",
-          "count": 24
+          "title": "Desarrollos emocionantes en la educación con IA",
+          "date": "23 de septiembre de 2025",
+          "description": "Mehmiro, LAIA y el trabajo con instituciones educativas en Argentina.",
+          "url": "https://es.linkedin.com/pulse/desarrollos-emocionantes-en-la-educaci%C3%B3n-con-ia-gentile-montes-r3xrf"
         },
         {
-          "name": "Educación",
-          "count": 8
+          "title": "Hoja de RUTA (volqué en la curva)",
+          "date": "8 de octubre de 2025",
+          "description": "Una retrospectiva sobre el recorrido que llevó a Mehmiro.",
+          "url": "https://es.linkedin.com/pulse/hoja-de-ruta-volqu%C3%A9-en-lacurva-ezequiel-gentile-montes-loqgf"
         },
         {
-          "name": "Casos de éxito",
-          "count": 5
-        },
-        {
-          "name": "Comunidad",
-          "count": 6
-        },
-        {
-          "name": "Recursos",
-          "count": 7
-        },
-        {
-          "name": "Tecnología",
-          "count": 4
-        }
-      ],
-      "posts": [
-        {
-          "title": "La evaluación formativa en el siglo XXI",
-          "excerpt": "Cómo la tecnología está transformando la manera en que los docentes observan y acompañan el aprendizaje de sus estudiantes.",
-          "category": "Educación",
-          "date": "15 de Febrero, 2026",
-          "readTime": "8 min"
-        },
-        {
-          "title": "Detectando a tiempo: la importancia de la intervención temprana",
-          "excerpt": "Casos reales de docentes que lograron cambiar el destino académico de sus estudiantes gracias a la detección temprana.",
-          "category": "Casos de éxito",
-          "date": "10 de Febrero, 2026",
-          "readTime": "6 min"
-        },
-        {
-          "title": "Comunidad Mehmiro: historias que inspiran",
-          "excerpt": "Conectamos con docentes de todo Argentina que comparten su experiencia transformando la observación pedagógica.",
-          "category": "Comunidad",
-          "date": "5 de Febrero, 2026",
-          "readTime": "5 min"
-        },
-        {
-          "title": "5 estrategias para observaciones más efectivas",
-          "excerpt": "Técnicas prácticas para registrar observaciones significativas en el aula.",
-          "category": "Recursos",
-          "date": "1 de Febrero, 2026",
-          "readTime": "7 min"
-        },
-        {
-          "title": "El rol del docente en la era de la IA",
-          "excerpt": "Reflexiones sobre cómo la inteligencia artificial puede ampliar el criterio profesional docente.",
-          "category": "Tecnología",
-          "date": "28 de Enero, 2026",
-          "readTime": "10 min"
-        },
-        {
-          "title": "Planificación académica 2026: tendencias y herramientas",
-          "excerpt": "Las instituciones educativas están adoptando nuevas herramientas para mejorar los procesos de evaluación formativa.",
-          "category": "Educación",
-          "date": "20 de Enero, 2026",
-          "readTime": "6 min"
-        }
-      ],
-      "readTime": "de lectura",
-      "newsletter": {
-        "title": "Suscribite a nuestro newsletter",
-        "description": "Recibí artículos exclusivos, casos de éxito y recursos directamente en tu correo. Sin spam, solo contenido valioso para docentes.",
-        "placeholder": "tu@email.com",
-        "button": "Suscribirse",
-        "footer": "Más de 2.000 docentes ya reciben nuestro newsletter"
-      }
-    },
-    "community": {
-      "title": "Comunidad",
-      "description": "Conectate con otras escuelas y docentes que usan Mehmiro: eventos, foros y grupos de trabajo.",
-      "heroDescription": "Un espacio para conectar, aprender y crecer juntos. Porque la educación mejora cuando los docentes trabajan en comunidad.",
-      "stats": [
-        {
-          "value": "500+",
-          "label": "Docentes activos"
-        },
-        {
-          "value": "10+",
-          "label": "Instituciones"
-        },
-        {
-          "value": "50+",
-          "label": "Escuelas conectadas"
-        },
-        {
-          "value": "100+",
-          "label": "Historias compartidas"
-        }
-      ],
-      "events": {
-        "title": "Próximos Eventos",
-        "description": "Participá de encuentros, talleres y webinars diseñados para vos",
-        "viewAll": "Ver todos los eventos",
-        "participants": "participantes"
-      },
-      "eventList": [
-        {
-          "title": "Encuentro de Docentes Mehmiro 2026",
-          "description": "El evento anual más importante de nuestra comunidad. Comparte experiencias con cientos de docentes de todo el país.",
-          "date": "15 de Marzo, 2026",
-          "type": "Presencial",
-          "location": "Buenos Aires",
-          "participants": "200+"
-        },
-        {
-          "title": "Webinar: Evaluación Formativa en Acción",
-          "description": "Aprende de la mano de docentes que ya transformaron su práctica pedagógica con Mehmiro.",
-          "date": "28 de Febrero, 2026",
-          "type": "Online",
-          "location": "Virtual",
-          "participants": "500+"
-        },
-        {
-          "title": "Taller: Detección Temprana en el Aula",
-          "description": "Taller práctico sobre estrategias prácticas para identificar estudiantes que necesitan más apoyo.",
-          "date": "10 de Marzo, 2026",
-          "type": "Híbrido",
-          "location": "Córdoba",
-          "participants": "50"
-        }
-      ],
-      "forum": {
-        "title": "Foro de Discusión",
-        "description": "Un espacio seguro para hacer preguntas, compartir experiencias y aprender de colegas de todo Argentina. Los temas del foro incluyen:",
-        "topics": [
-          "Estrategias de observación en el aula",
-          "Cómo manejar situaciones difíciles",
-          "Evaluación formativa y feedback",
-          "Integración tecnológica en clase"
-        ],
-        "button": "Unirse al foro",
-        "replies": "respuestas"
-      },
-      "forumPreview": [
-        {
-          "quote": "¿Cómo manejáis la observación de estudiantes con necesidades especiales en clases con muchos alumnos?",
-          "author": "María G.",
-          "replies": 12
-        },
-        {
-          "quote": "Les comparto mi experiencia con el registro de observaciones. Al principio me costaba, pero con Mehmiro...",
-          "author": "Carlos R.",
-          "replies": 8
-        }
-      ],
-      "testimonials": {
-        "title": "Voces de Nuestra Comunidad"
-      },
-      "testimonialsList": [
-        {
-          "quote": "Encontré en la comunidad Mehmiro un espacio donde mis colegas entienden los desafíos diarios. No me siento más solo.",
-          "author": "Roberto Martínez",
-          "role": "Profesor de Historia",
-          "school": "Escuela Normal"
-        },
-        {
-          "quote": "Los webinars me ayudaron a mejorar mi práctica docente. Ahora tengo herramientas concretas para acompañar a mis estudiantes.",
-          "author": "Laura Sánchez",
-          "role": "Maestra de 5° grado",
-          "school": "Colegio San Miguel"
-        }
-      ],
-      "ambassador": {
-        "title": "Convertite en Embajador Mehmiro",
-        "description": "Probá Mehmiro con tu clase, compartilo con tu escuela y ayudá a que lo adopten. Si tu institución agenda una demo o empieza un piloto, recibís una recompensa.",
-        "benefits": "Recompensas por escuela que avanza, formación y reconocimiento."
-      }
-    },
-    "support": {
-      "title": "Soporte",
-      "description": "Accedé a ayuda técnica, guías rápidas y recursos para resolver dudas sobre la plataforma.",
-      "heroDescription": "¿Tenés dudas? Encontrá respuestas a las preguntas más frecuentes o contactá nuestro equipo de soporte.",
-      "faqCategories": [
-        {
-          "category": "Cuenta y Acceso",
-          "questions": [
-            {
-              "q": "¿Cómo creo una cuenta en Mehmiro?",
-              "a": "Simplemente hacé clic en 'Probala' en nuestra página principal y seguí los pasos. Solo necesitás un correo electrónico y los datos de tu institución."
-            },
-            {
-              "q": "¿Qué hago si olvidé mi contraseña?",
-              "a": "Hacé clic en 'Olvidé mi contraseña' en la página de inicio de sesión. Te enviaremos un correo para restablecer tu contraseña."
-            },
-            {
-              "q": "¿Puedo usar Mehmiro en varios dispositivos?",
-              "a": "Sí, Mehmiro es una aplicación web progresiva. Podés acceder desde tu computadora, tablet o celular, y tus datos se sincronizarán automáticamente."
-            }
-          ]
-        },
-        {
-          "category": "Uso de la Plataforma",
-          "questions": [
-            {
-              "q": "¿Cuánto tiempo toma registrar una observación?",
-              "a": "El registro de una observación básica toma entre 2-3 minutos. Podés usar notas de voz que se convierten automáticamente a texto, lo cual agiliza el proceso."
-            },
-            {
-              "q": "¿Qué son las alertas de detección temprana?",
-              "a": "Son notificaciones que el sistema genera cuando detecta patrones que podrían indicar que un estudiante necesita más atención. Estas alertas se basan en tus observaciones y te ayudan a intervenir a tiempo."
-            },
-            {
-              "q": "¿Cómo personalizo las categorías de observación?",
-              "a": "Podés acceder a Configuración > Categorías desde tu panel. Allí podés crear, editar o eliminar categorías según las necesidades de tu institución."
-            },
-            {
-              "q": "¿Puedo exportar mis observaciones?",
-              "a": "Sí, podés exportar tus datos en formato PDF o Excel desde la sección de Reportes. También podés generar informes específicos para compartir con familias."
-            }
-          ]
-        },
-        {
-          "category": "Privacidad y Seguridad",
-          "questions": [
-            {
-              "q": "¿Son seguros los datos de mis estudiantes?",
-              "a": "Absolutamente. Usamos encriptación de extremo a extremo y cumplimos con la Ley Argentina de Protección de Datos Personales. Los datos pertenecen a tu institución."
-            },
-            {
-              "q": "¿Quién puede ver las observaciones que registro?",
-              "a": "Por defecto, solo vos y los usuarios de tu institución que tengan permisos asignados. Podés configurar permisos granulares desde el panel de administración."
-            },
-            {
-              "q": "¿Qué pasa si quiero eliminar mi cuenta?",
-              "a": "Podés solicitar la eliminación de tu cuenta y todos los datos asociados en cualquier momento. Contáctanos a soporte@mehmiro.com."
-            }
-          ]
-        },
-        {
-          "category": "Facturación y Planes",
-          "questions": [
-            {
-              "q": "¿Cuánto cuesta Mehmiro?",
-              "a": "Tenemos un plan gratuito con funcionalidades básicas y planes pagos para instituciones que necesitan más capacidad. Visitá nuestra página de precios para más detalles."
-            },
-            {
-              "q": "¿Hay descuento para instituciones educativas públicas?",
-              "a": "Sí, ofrecemos condiciones especiales para escuelas públicas y sin fines de lucro. Contactanos para discutir las opciones."
-            },
-            {
-              "q": "¿Puedo cambiar de plan en cualquier momento?",
-              "a": "Sí, podés actualizar o degradar tu plan en cualquier momento. Los cambios se aplicarán en el próximo ciclo de facturación."
-            }
-          ]
-        }
-      ],
-      "contactOptions": [
-        {
-          "title": "Chat en vivo",
-          "description": "Chateá con nuestro equipo de soporte",
-          "availability": "Lunes a viernes, 9h a 18h",
-          "action": "Iniciar chat"
-        },
-        {
-          "title": "Email",
-          "description": "Escribinos y te respondemos en 24-48h",
-          "availability": "support@mehmiro.com",
-          "action": "Enviar email"
-        },
-        {
-          "title": "Teléfono",
-          "description": "Llamanos para soporte urgente",
-          "availability": "Lunes a viernes, 9h a 18h",
-          "action": "Llamar ahora"
-        }
-      ],
-      "resourcesTitle": "Recursos Disponibles",
-      "resourcesDescription": "Documentación, guías y tutoriales para aprovechar al máximo Mehmiro",
-      "resources": [
-        {
-          "title": "Guía de Inicio Rápido",
-          "description": "Empezá a usar Mehmiro en 10 minutos",
-          "type": "PDF"
-        },
-        {
-          "title": "Manual de Usuario",
-          "description": "Documentación completa de todas las funciones",
-          "type": "Documento"
-        },
-        {
-          "title": "Videos Tutoriales",
-          "description": "Aprendé viendo cómo otros docentes lo usan",
-          "type": "Video"
-        },
-        {
-          "title": "Preguntas Frecuentes",
-          "description": "Respuestas a las dudas más comunes",
-          "type": "FAQ"
-        }
-      ],
-      "faqTitle": "Preguntas Frecuentes",
-      "stillNeedHelp": {
-        "title": "¿Aún necesitás ayuda?",
-        "description": "Nuestro equipo está listo para ayudarte. Escribinos y te respondemos lo antes posible.",
-        "button": "Contactar soporte",
-        "secondaryButton": "Ver documentación"
-      },
-      "responseTimes": [
-        {
-          "value": "< 1h",
-          "label": "Tiempo de respuesta en chat"
-        },
-        {
-          "value": "24-48h",
-          "label": "Tiempo de respuesta por email"
-        },
-        {
-          "value": "98%",
-          "label": "Satisfacción de usuarios"
+          "title": "Formative Assessment App",
+          "date": "10 de marzo de 2025",
+          "description": "El enfoque de observación formativa que originó el producto.",
+          "url": "https://www.linkedin.com/pulse/formative-assessment-app-ezequiel-gentile-montes-avwrf"
         }
       ]
     },
+    "community": {
+      "title": "Comunidad",
+      "description": "Conectate con otras escuelas y docentes que usan Mehmiro: programa de embajadores y pilotos.",
+      "heroDescription": "Un espacio para conectar, aprender y crecer juntos. Porque la educación mejora cuando los docentes trabajan en comunidad.",
+      "currentTitle": "Qué está abierto hoy",
+      "currentDescription": "La comunidad se organiza en dos espacios concretos: el programa de embajadores y los pilotos con instituciones. Si querés sumarte, escribinos y coordinamos.",
+      "currentCta": "Quiero sumarme"
+    },
+    "support": {
+      "title": "Soporte",
+      "description": "Ayuda para usar Mehmiro: acceso, producto y datos.",
+      "heroDescription": "¿Tenés dudas? Empezá por las preguntas frecuentes o escribinos por email.",
+      "contactTitle": "Contacto",
+      "contactDescription": "Por ahora atendemos por email. Escribinos y te respondemos en 24-48 horas hábiles.",
+      "emailCta": "Escribir a soporte",
+      "resourcesTitle": "Recursos",
+      "resourcesDescription": "Material público para entender el producto y el método.",
+      "resourceLinks": [
+        {
+          "title": "Aprendé a usar Mehmiro",
+          "description": "Guías paso a paso para configurar tu clase y registrar observaciones.",
+          "url": "/learn",
+          "type": "Guías"
+        },
+        {
+          "title": "Evidencia y método",
+          "description": "Qué puede afirmar Mehmiro hoy, qué mide en un piloto y qué no.",
+          "url": "/evidencia",
+          "type": "Método"
+        },
+        {
+          "title": "Equipo y empresa",
+          "description": "Quién está detrás, dónde estamos y cómo contactarnos.",
+          "url": "/about#equipo",
+          "type": "Nosotros"
+        }
+      ],
+      "faqTitle": "Preguntas frecuentes",
+      "faqCategories": [
+        {
+          "category": "Cuenta y acceso",
+          "questions": [
+            {
+              "q": "¿Cómo creo una cuenta?",
+              "a": "Hacé clic en «Probala» y creá tu cuenta con Google o con tu email. Para datos de estudiantes necesitás una cuenta institucional."
+            },
+            {
+              "q": "¿Cómo entro si no tengo contraseña?",
+              "a": "Mehmiro usa códigos de acceso. Ingresá tu email y te enviamos un código para entrar."
+            },
+            {
+              "q": "¿Puedo explorar sin cuenta?",
+              "a": "Sí. En la pantalla de acceso elegí «Explorar sin cuenta» para recorrer la app sin registro."
+            }
+          ]
+        },
+        {
+          "category": "Producto y datos",
+          "questions": [
+            {
+              "q": "¿Mehmiro está online?",
+              "a": "Sí. La app está en producción y podés abrirla desde mehmiro.com. Las capturas y el video de la home son de la app real."
+            },
+            {
+              "q": "¿La IA decide por el docente?",
+              "a": "No. Mehmiro identifica señales y ofrece sugerencias; el equipo docente revisa la evidencia y decide."
+            },
+            {
+              "q": "¿Quién puede ver los datos de estudiantes?",
+              "a": "El acceso requiere una cuenta institucional y permisos por rol. Los datos pertenecen a la institución."
+            },
+            {
+              "q": "¿Cómo pido una demo o un piloto?",
+              "a": "Escribinos a info@mehmiro.com o dejanos tus datos en el formulario de contacto."
+            }
+          ]
+        }
+      ],
+      "stillNeedHelp": {
+        "title": "¿Seguís con dudas?",
+        "description": "Escribinos y te respondemos por email.",
+        "button": "Escribir a soporte",
+        "secondaryButton": "Ver guías"
+      },
+      "responseNote": "Respondemos por email en 24-48 horas hábiles."
+    },
     "about": {
       "title": "Nosotros",
-      "description": "Conocé al equipo detrás de Mehmiro y nuestra misión de acompañar la evaluación formativa en las escuelas.",
+      "description": "Conocé al equipo fundador y nuestra misión de acompañar la evaluación formativa en las escuelas.",
       "mission": {
         "title": "Nuestra Misión",
         "description": "Democratizar el acceso a herramientas de evaluación formativa para escuelas de Argentina y Latinoamérica. Queremos que cada docente pueda detectar a tiempo cuándo un estudiante necesita más apoyo."
@@ -1510,7 +1363,7 @@
           "description": "No vendemos tu información. Los datos pertenecen a tu institución."
         },
         {
-          "title": "Encriptación de extremo a extremo",
+          "title": "Encriptación en tránsito y en reposo",
           "description": "Tus observaciones y análisis están protegidos con los más altos estándares."
         },
         {
@@ -1537,7 +1390,7 @@
         },
         {
           "title": "4. Almacenamiento y seguridad de datos",
-          "content": "La seguridad de tus datos es nuestra prioridad absoluta:\n\n• **Encriptación**: Todos los datos se encriptan en tránsito (TLS/SSL) y en reposo (AES-256) para garantizar que solo vos y tu institución puedan acceder a ellos.\n\n• **Servidores seguros**: Nuestros servidores están ubicados en Argentina y cumplen con las mejores prácticas de seguridad física y digital.\n\n• **Control de acceso**: Implementamos controles de acceso estrictos. Solo personal autorizado puede acceder a los datos, y siempre bajo protocolos de seguridad.\n\n• **Respaldo**: Realizamos respaldos automáticos regulares para garantizar la disponibilidad de tus datos.\n\n• **Retención**: Mantenemos los datos mientras tu cuenta esté activa o según sea necesario para proporcionar servicios. Podés solicitar la eliminación de datos en cualquier momento."
+          "content": "La seguridad de tus datos es nuestra prioridad absoluta:\n\n• **Encriptación**: Todos los datos se encriptan en tránsito (TLS/SSL) y en reposo (AES-256) para garantizar que solo vos y tu institución puedan acceder a ellos.\n\n• **Servidores seguros**: Aplicamos controles de acceso, respaldos y mejores prácticas de seguridad física y digital.\n\n• **Control de acceso**: Implementamos controles de acceso estrictos. Solo personal autorizado puede acceder a los datos, y siempre bajo protocolos de seguridad.\n\n• **Respaldo**: Realizamos respaldos automáticos regulares para garantizar la disponibilidad de tus datos.\n\n• **Retención**: Mantenemos los datos mientras tu cuenta esté activa o según sea necesario para proporcionar servicios. Podés solicitar la eliminación de datos en cualquier momento."
         },
         {
           "title": "5. Compartición de datos",
@@ -1646,7 +1499,7 @@
         },
         {
           "title": "15. Contacto",
-          "content": "Para cualquier consulta sobre estos Términos:\n\n• **Email**: legal@mehmiro.com\n• **Dirección**: Buenos Aires, Argentina\n• **Formulario de contacto**: mehmiro.com/contacto\n\nResponderemos tu consulta dentro de los 10 días hábiles."
+          "content": "Para cualquier consulta sobre estos Términos:\n\n• **Email**: legal@mehmiro.com\n• **Dirección**: Buenos Aires, Argentina\n• **Formulario de contacto**: mehmiro.com/support\n\nResponderemos tu consulta dentro de los 10 días hábiles."
         }
       ],
       "lastUpdate": "Última actualización: 27 de Febrero de 2026",

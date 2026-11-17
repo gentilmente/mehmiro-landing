@@ -3,6 +3,10 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import fs from "fs";
 import { componentTagger } from "lovable-tagger";
+import {
+  renderStaticShell,
+  type StaticPageKind,
+} from "./scripts/static-shell";
 
 interface EnglishPage {
   dir: string;
@@ -369,6 +373,7 @@ const writeStaticPage = (
   page: EnglishPage,
   english: boolean,
   outDir: string,
+  kind: StaticPageKind = "generic",
 ) => {
   const spanishUrl = page.esUrl;
   const englishUrl = english
@@ -409,6 +414,12 @@ const writeStaticPage = (
     `    <link rel="alternate" hreflang="es-AR" href="${spanishUrl}" />\n    <link rel="alternate" hreflang="en" href="${englishUrl}" />\n    <link rel="alternate" hreflang="x-default" href="${spanishUrl}" />\n  </head>`,
   );
 
+  const staticShell = renderStaticShell(page, english, kind);
+  html = html.replace(
+    '<div id="root"></div>',
+    `<div id="root">${staticShell}</div>`,
+  );
+
   const targetDir = path.join(outDir, page.dir);
   fs.mkdirSync(targetDir, { recursive: true });
   fs.writeFileSync(path.join(targetDir, "index.html"), html);
@@ -422,19 +433,47 @@ const generateStaticPages = (): Plugin => ({
     const sourcePath = path.join(outDir, "index.html");
     if (!fs.existsSync(sourcePath)) return;
 
-    const source = fs.readFileSync(sourcePath, "utf8");
+    const emptySource = fs.readFileSync(sourcePath, "utf8");
+
+    // El HTML de la home también necesita contenido real: sin JS, el sitio
+    // era un <div id="root"> vacío para cualquier crawler.
+    const homePage = {
+      dir: "",
+      url: "https://mehmiro.com/",
+      esUrl: "https://mehmiro.com/",
+      title: "Mehmiro | Observación y coordinación pedagógica con IA",
+      description:
+        "Mehmiro ayuda a docentes e instituciones educativas a convertir la observación de clase en evidencia revisada, con WhatsApp, IA y visión institucional del progreso.",
+    };
+    const homeHtml = emptySource.replace(
+      '<div id="root"></div>',
+      `<div id="root">${renderStaticShell(homePage, false, "home")}</div>`,
+    );
+    fs.writeFileSync(sourcePath, homeHtml);
 
     for (const page of ENGLISH_PAGES) {
-      writeStaticPage(source, page, true, outDir);
+      const kind: StaticPageKind =
+        page.dir === "en"
+          ? "home"
+          : page.dir === "en/about"
+            ? "about"
+            : "generic";
+      writeStaticPage(emptySource, page, true, outDir, kind);
     }
     for (const page of ENGLISH_COURSE_PAGES) {
-      writeStaticPage(source, page, true, outDir);
+      writeStaticPage(emptySource, page, true, outDir, "generic");
     }
     for (const page of SPANISH_MARKETING_PAGES) {
-      writeStaticPage(source, page, false, outDir);
+      writeStaticPage(
+        emptySource,
+        page,
+        false,
+        outDir,
+        page.dir === "about" ? "about" : "generic",
+      );
     }
     for (const page of SPANISH_COURSE_PAGES) {
-      writeStaticPage(source, page, false, outDir);
+      writeStaticPage(emptySource, page, false, outDir, "generic");
     }
   },
 });

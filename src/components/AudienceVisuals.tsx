@@ -15,7 +15,7 @@ import {
   Users,
 } from "lucide-react";
 import teacherVoiceNote from "@/assets/teacher-voice-note.webp";
-import principalCongrats from "@/assets/principal-congrats.webp";
+import studentProfile from "@/assets/student-profile.png";
 
 export const TeacherVisual = () => {
   const { t } = useTranslation();
@@ -41,7 +41,7 @@ export const SchoolVisual = () => {
 
   return (
     <div className="audience-photo-frame audience-photo-frame--school">
-      <img src={principalCongrats} alt={t("audienceVisual.schoolAlt")} />
+      <img src={studentProfile} alt={t("audienceVisual.schoolAlt")} />
       <div className="audience-floating-note">
         <span className="audience-floating-icon">
           <Building2 className="h-4 w-4" aria-hidden="true" />

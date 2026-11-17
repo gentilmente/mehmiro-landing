@@ -4,7 +4,6 @@ import { LocalizedLink as Link } from "@/components/LocalizedLink";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Index from "./pages";
-import IndexExample from "./pages/IndexExample";
 import Learn, { LearnCourse } from "./pages/Learn";
 import Features from "./pages/Features";
 import ForEducators from "./pages/ForEducators";
@@ -17,7 +16,6 @@ import Blog from "./pages/Blog";
 import Community from "./pages/Community";
 import Support from "./pages/Support";
 import About from "./pages/About";
-// import Team from "./pages/Team";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
@@ -319,7 +317,6 @@ const App = () => {
         <Navigation />
         <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/ejemplo" element={<IndexExample />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/learn/:courseId" element={<LearnCourse />} />
         <Route path="/features" element={<Features />} />
@@ -333,7 +330,6 @@ const App = () => {
         <Route path="/community" element={<Community />} />
         <Route path="/support" element={<Support />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/team" element={<Team />} /> */}
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/en" element={<Index />} />

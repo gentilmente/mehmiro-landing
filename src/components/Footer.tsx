@@ -4,9 +4,8 @@ import {
   Mail,
   Phone,
   MapPin,
-  Github,
-  Linkedin,
-  Twitter,
+  ExternalLink,
+  Code2,
   ArrowRight,
   BookOpen,
   Users,
@@ -24,6 +23,7 @@ import {
 import { useForm, ValidationError } from "@formspree/react";
 import { useTranslation } from "react-i18next";
 import { LocalizedLink as Link } from "@/components/LocalizedLink";
+import { COMPANY } from "@/config/company";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -127,6 +127,31 @@ export const Footer = () => {
                 <p className="text-muted-foreground leading-relaxed max-w-md">
                   {t("footer.company.description")}
                 </p>
+                <p className="text-sm text-muted-foreground">
+                  {t("footer.company.partner")}{" "}
+                  <a
+                    href={COMPANY.partner.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-primary hover:underline"
+                  >
+                    {COMPANY.partner.name}
+                  </a>
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  {t("footer.company.founder")}{" "}
+                  <a
+                    href={COMPANY.founder.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-primary hover:underline"
+                  >
+                    {COMPANY.founder.name}
+                  </a>
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  {t("footer.company.status")}
+                </p>
               </div>
 
               <div className="footer-contact text-sm">
@@ -228,12 +253,14 @@ export const Footer = () => {
                   </div>
                 </Link>
                 <a
-                  href="https://app.mehmiro.com/onboarding"
+                  href={COMPANY.app.login}
+                  target="_blank"
+                  rel="noreferrer"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {t("footer.links.demo")}
+                    {t("footer.links.app")}
                   </div>
                 </a>
               </nav>
@@ -245,17 +272,15 @@ export const Footer = () => {
                 {t("footer.sections.resources")}
               </h4>
               <nav className="footer-link-list">
-                <a
-                  href="http://docs.mehmiro.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/learn"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <BookOpen className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {t("footer.links.docs")}
+                    {t("footer.links.academy")}
                   </div>
-                </a>
+                </Link>
                 <Link
                   to="/blog"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
@@ -301,15 +326,15 @@ export const Footer = () => {
                     {t("footer.links.about")}
                   </div>
                 </Link>
-                {/* <Link
-                  to="/team"
+                <Link
+                  to="/about#equipo"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="flex items-center gap-2">
                     <Users className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {t("footer.links.team")}
                   </div>
-                </Link> */}
+                </Link>
                 <Link
                   to="/privacy"
                   className="block text-sm text-muted-foreground hover:text-primary transition-colors group"
@@ -342,35 +367,41 @@ export const Footer = () => {
                 {t("footer.bottom.copyright", { year: currentYear })}
               </div>
 
-              {/* Social Links 
-              <div className="flex items-center gap-4">
-                <span className="text-sm text-muted-foreground mr-2">
+              {/* Public, verifiable profiles */}
+              <div className="flex flex-wrap items-center gap-4">
+                <span className="text-sm text-muted-foreground">
                   {t("footer.bottom.follow")}
                 </span>
                 <div className="flex gap-3">
                   <a
-                    href="#"
+                    href={COMPANY.founder.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
                     className="w-9 h-9 rounded-full bg-background/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-all duration-300 group"
-                    aria-label="LinkedIn"
+                    aria-label={`LinkedIn de ${COMPANY.founder.name}`}
                   >
-                    <Linkedin className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                    <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
                   </a>
                   <a
-                    href="#"
+                    href={COMPANY.founder.github}
+                    target="_blank"
+                    rel="noreferrer"
                     className="w-9 h-9 rounded-full bg-background/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-all duration-300 group"
-                    aria-label="Twitter"
+                    aria-label={`GitHub de ${COMPANY.founder.name}`}
                   >
-                    <Twitter className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                    <Code2 className="w-4 h-4 group-hover:scale-110 transition-transform" />
                   </a>
                   <a
-                    href="#"
+                    href={COMPANY.partner.url}
+                    target="_blank"
+                    rel="noreferrer"
                     className="w-9 h-9 rounded-full bg-background/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-all duration-300 group"
-                    aria-label="GitHub"
+                    aria-label={COMPANY.partner.fullName}
                   >
-                    <Github className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                    <Globe className="w-4 h-4 group-hover:scale-110 transition-transform" />
                   </a>
                 </div>
-              </div>*/}
+              </div>
             </div>
           </div>
         </div>

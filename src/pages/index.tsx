@@ -1,4 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
+import { ProductShowcase } from "@/components/ProductShowcase";
+import { FounderSection } from "@/components/FounderSection";
 import { AudienceSelector } from "@/components/AudienceSelector";
 import { AmbassadorSection } from "@/components/AmbassadorSection";
 import { ProblemSection } from "@/components/ProblemSection";
@@ -15,6 +17,9 @@ const Index = () => {
       <main>
       {/* Hero Section - Emotional Hook */}
       <HeroSection />
+
+      {/* Live product proof */}
+      <ProductShowcase />
 
       {/* Audience selector */}
       <AudienceSelector />
@@ -35,6 +40,9 @@ const Index = () => {
         )}
       </StackCard>
       </div>
+
+      {/* Founder and verifiable team information */}
+      <FounderSection />
 
       {/* Final CTA */}
       <CTASection />

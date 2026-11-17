@@ -27,7 +27,7 @@
     "subheadline": "Mehmiro turns classroom observation into suggestions about who to look at, in which area and what to do next.",
     "noteTitle": "Voice note.",
     "noteText": "30 seconds after class.",
-    "recognitionLabel": "IRCAI Recognition 2025",
+    "recognitionLabel": "Selected for the IRCAI Global Top 100 2025",
     "recognitionAlt": "IRCAI Global Top 100 Promising Project 2025",
     "recognitionAria": "Open the IRCAI recognition in a new tab",
     "valueProps": [
@@ -37,6 +37,51 @@
       "Integrated with the software you already use"
     ],
     "scrollIndicator": "See how it works"
+  },
+  "product": {
+    "eyebrow": "Live product",
+    "title": "Inside Mehmiro",
+    "description": "This is not a landing page or a waitlist: it is the app teachers and teams use to record observations, review evidence and coordinate support.",
+    "liveBadge": "App online",
+    "screens": {
+      "onboarding": {
+        "alt": "Mehmiro welcome screen with the class description form",
+        "title": "Start with your class",
+        "description": "Onboarding asks for the minimum context needed to make suggestions useful from the first record."
+      },
+      "profile": {
+        "alt": "Mehmiro student profile with progress areas and evidence",
+        "title": "Every student, in context",
+        "description": "The profile brings together observations and evidence reviewed by the teaching team, without replacing their judgment."
+      },
+      "video": {
+        "title": "A real walkthrough of the app",
+        "description": "The video shows onboarding and extracted-data review, recorded in the live app."
+      }
+    },
+    "demoNote": "The app opens on a sign-in screen. Choose “Explore without an account” to look around; student data requires an institutional account.",
+    "cta": "Open the app",
+    "ctaSecondary": "See how it works",
+    "disclaimer": "Screenshots from the live app. Names and data shown are for demonstration."
+  },
+  "founder": {
+    "eyebrow": "Team",
+    "title": "Who is behind it",
+    "description": "Mehmiro is a project founded by Ezequiel Gentile Montes and developed in collaboration with LAIA.",
+    "role": "Founder and lead product developer",
+    "bio": "He founded Mehmiro and leads product development. He works at the intersection of artificial intelligence and education; today Mehmiro is developed in collaboration with LAIA, the Open Laboratory of Artificial Intelligence.",
+    "linksLabel": "Verifiable profile",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "partnerLabel": "Collaboration",
+    "partner": "LAIA — Open Laboratory of Artificial Intelligence",
+    "partnerDescription": "AI research team and infrastructure based in Buenos Aires.",
+    "recognitionLabel": "Recognition",
+    "locationLabel": "Where we are",
+    "location": "Buenos Aires, Argentina",
+    "statusLabel": "Product status",
+    "status": "Live app, with institutional access for student data.",
+    "aboutLink": "Learn more about Mehmiro"
   },
   "problem": {
     "badge": "The problem",
@@ -330,10 +375,22 @@
       "note": "If you are looking for a provider with a published RCT, we are not that today. If you are looking for a well-designed pilot, let's talk.",
       "faqTitle": "Evidence questions",
       "faqs": [
-        { "question": "What can we claim today?", "answer": "That Mehmiro supports observation, evidence review and organized follow-up. We do not publish learning impact yet." },
-        { "question": "What is measured in a pilot?", "answer": "Adoption, sustained use, satisfaction, review capacity and evidence coverage." },
-        { "question": "What is missing?", "answer": "Public impact evidence, independent evaluation and longitudinal follow-up." },
-        { "question": "How do we collaborate?", "answer": "With a well-designed pilot, shared goals and ethical and legal review." }
+        {
+          "question": "What can we claim today?",
+          "answer": "That Mehmiro supports observation, evidence review and organized follow-up. We do not publish learning impact yet."
+        },
+        {
+          "question": "What is measured in a pilot?",
+          "answer": "Adoption, sustained use, satisfaction, review capacity and evidence coverage."
+        },
+        {
+          "question": "What is missing?",
+          "answer": "Public impact evidence, independent evaluation and longitudinal follow-up."
+        },
+        {
+          "question": "How do we collaborate?",
+          "answer": "With a well-designed pilot, shared goals and ethical and legal review."
+        }
       ],
       "sections": [
         {
@@ -366,7 +423,7 @@
   },
   "audienceVisual": {
     "voiceAlt": "Teacher recording a voice note in the classroom",
-    "schoolAlt": "School leader and teacher with an institutional recognition",
+    "schoolAlt": "Mehmiro student profile with evidence reviewed by the teaching team",
     "voiceLabel": "Voice note",
     "voiceDetail": "30 seconds after class",
     "schoolLabel": "Institutional view",
@@ -375,24 +432,54 @@
       "title": "Tracking map",
       "week": "Week 12",
       "subjects": [
-        { "name": "History", "status": "On plan", "tone": "ok" },
-        { "name": "Math", "status": "1 gap", "tone": "warn" },
-        { "name": "Science", "status": "On plan", "tone": "ok" }
+        {
+          "name": "History",
+          "status": "On plan",
+          "tone": "ok"
+        },
+        {
+          "name": "Math",
+          "status": "1 gap",
+          "tone": "warn"
+        },
+        {
+          "name": "Science",
+          "status": "On plan",
+          "tone": "ok"
+        }
       ],
       "coherence": "Annual plan vs. lessons delivered",
       "coherenceStatus": "On track",
       "topics": "Topics covered",
-      "topicList": ["May Revolution", "Equations", "Ecosystems"],
+      "topicList": [
+        "May Revolution",
+        "Equations",
+        "Ecosystems"
+      ],
       "calendar": "Calendar",
-      "days": ["M", "T", "W", "T", "F"],
+      "days": [
+        "M",
+        "T",
+        "W",
+        "T",
+        "F"
+      ],
       "calendarEvent": "Holiday 5/25",
       "projects": "Cross-curricular project",
       "projectName": "Water and territory",
       "events": "Special events",
-      "eventList": ["Holiday", "Field trip", "Current affairs"]
+      "eventList": [
+        "Holiday",
+        "Field trip",
+        "Current affairs"
+      ]
     },
     "familyLabel": "Support",
-    "familyRows": ["News", "Clues for support", "Your perspective"],
+    "familyRows": [
+      "News",
+      "Clues for support",
+      "Your perspective"
+    ],
     "familyFooter": "Information shared by your institution",
     "familyPreviewLabel": "School update",
     "familyPreviewTime": "Today",
@@ -408,10 +495,18 @@
     "familyChatUser": "Yes, but I do not want them to feel interrogated. How do I start?",
     "familyChatReply": "Start with History: ask which part felt most distant and listen without correcting. In Math, ask them to show you the step that does not click; do not solve it for them.",
     "researchLabel": "Evidence and method",
-    "researchSteps": ["Observation", "Evidence", "Review"],
+    "researchSteps": [
+      "Observation",
+      "Evidence",
+      "Review"
+    ],
     "researchFooter": "Evidence traceability",
     "evidenceLabel": "Evidence status",
-    "evidenceRows": ["We know", "We measure", "Still missing"],
+    "evidenceRows": [
+      "We know",
+      "We measure",
+      "Still missing"
+    ],
     "evidenceFooter": "Public results pending"
   },
   "faq": {
@@ -464,7 +559,10 @@
       "placeholder": "you@email.com"
     },
     "company": {
-      "description": "Observation and pedagogical coordination tool designed to support teaching work. We facilitate the analysis of each student to strengthen learning processes."
+      "description": "Observation and pedagogical coordination tool designed to support teaching work. We facilitate the analysis of each student to strengthen learning processes.",
+      "partner": "In collaboration with",
+      "founder": "Founded by",
+      "status": "Live app. Access to student data requires an institutional account."
     },
     "contact": {
       "location": "Buenos Aires, Argentina",
@@ -485,8 +583,7 @@
       "forFamilies": "Families",
       "research": "Research",
       "evidence": "Evidence",
-      "demo": "Demo",
-      "docs": "Documentation",
+      "app": "Open the app",
       "blog": "Blog",
       "community": "Community",
       "support": "Support",
@@ -496,14 +593,92 @@
       "terms": "Terms"
     },
     "bottom": {
-      "copyright": "© {{year}} Mehmiro. Supporting formative assessment in Argentina and Latin America.",
+      "copyright": "© {{year}} Mehmiro. Buenos Aires, Argentina.",
       "follow": "Follow us:"
     }
   },
   "pages": {
     "features": {
       "title": "Features",
-      "description": "Discover Mehmiro's tools that amplify your pedagogical gaze: observation organization, pattern detection and actionable reports."
+      "description": "What Mehmiro does today: observation, teacher review, student profile and institutional view.",
+      "items": [
+        {
+          "title": "Observation via WhatsApp, text or audio",
+          "description": "Record how the class went through the channel you already use. The institution decides whether WhatsApp is enabled.",
+          "details": [
+            "Text or audio",
+            "Transcript for review",
+            "Assisted onboarding"
+          ]
+        },
+        {
+          "title": "Teacher review before saving",
+          "description": "AI identifies signals and offers suggestions; the teaching team reviews, edits and decides what stays.",
+          "details": [
+            "Editable suggestions",
+            "Accepted evidence",
+            "No automatic verdicts"
+          ]
+        },
+        {
+          "title": "Student profile with context",
+          "description": "Each student brings together observations and evidence accepted by period and subject.",
+          "details": [
+            "History by student",
+            "Cross-subject context",
+            "Coverage by period"
+          ]
+        },
+        {
+          "title": "Class analysis",
+          "description": "Mehmiro organizes the observation and turns it into a useful reading for the next decision.",
+          "details": [
+            "Patterns by area",
+            "Suggestions for the next class",
+            "Review before saving"
+          ]
+        },
+        {
+          "title": "Institutional view",
+          "description": "Leadership and coordination see coverage, evidence and topics covered, with role-based permissions.",
+          "details": [
+            "Roles and permissions",
+            "Coverage by subject",
+            "Evidence traceability"
+          ]
+        },
+        {
+          "title": "Planning and preparation",
+          "description": "Plan the year and prepare the next class with the group's context.",
+          "details": [
+            "Annual plan",
+            "Priorities by period",
+            "Class proposals"
+          ]
+        },
+        {
+          "title": "Integrations",
+          "description": "WhatsApp for observations and Google Workspace. Other channels are assessed in the pilot.",
+          "details": [
+            "WhatsApp (institution-configured)",
+            "Google Workspace",
+            "Other channels in pilot"
+          ]
+        },
+        {
+          "title": "Data and governance",
+          "description": "Data belongs to the institution. Access to student data requires an institutional account and permissions.",
+          "details": [
+            "Role-based access",
+            "Institution-owned data",
+            "Consent and legal framework"
+          ]
+        }
+      ],
+      "ctaTitle": "Try it with your class",
+      "ctaDescription": "The app is live. You can explore the interface without an account or create an institutional account.",
+      "ctaButton": "Open the app",
+      "ctaSecondary": "Meet the team"
     },
     "learn": {
       "title": "Learn to use Mehmiro",
@@ -521,16 +696,40 @@
       "courseNotFound": "Course not found",
       "backToLearn": "Back to courses",
       "quickStats": [
-        { "value": "9", "label": "Available courses" },
-        { "value": "3h", "label": "Total content" },
-        { "value": "100%", "label": "Free" },
-        { "value": "∞", "label": "Unlimited access" }
+        {
+          "value": "9",
+          "label": "Available courses"
+        },
+        {
+          "value": "3h",
+          "label": "Total content"
+        },
+        {
+          "value": "100%",
+          "label": "Free"
+        },
+        {
+          "value": "∞",
+          "label": "Unlimited access"
+        }
       ],
       "categories": [
-        { "name": "Getting started", "count": 2 },
-        { "name": "Management", "count": 2 },
-        { "name": "Evaluation", "count": 3 },
-        { "name": "AI", "count": 2 }
+        {
+          "name": "Getting started",
+          "count": 2
+        },
+        {
+          "name": "Management",
+          "count": 2
+        },
+        {
+          "name": "Evaluation",
+          "count": 3
+        },
+        {
+          "name": "AI",
+          "count": 2
+        }
       ],
       "courses": [
         {
@@ -615,10 +814,7 @@
       "cta": {
         "title": "Ready to transform your teaching practice?",
         "description": "Try Mehmiro with your class and share it with your school. If your institution moves forward, you receive a reward.",
-"button": "Try it and earn rewards"
-      },
-      "courseSteps": {
-        "title": "Course steps"
+        "button": "Try it and earn rewards"
       },
       "courseContent": {
         "getting-started": {
@@ -912,468 +1108,170 @@
     },
     "forEducators": {
       "title": "For educators",
-      "description": "Resources and guides designed for teachers: how to integrate Mehmiro into daily practice and classroom examples.",
-      "heroDescription": "Resources and guides designed for teachers: how to integrate Mehmiro into daily practice and classroom examples.",
-      "quickStats": [
+      "description": "Resources for teachers who want to use Mehmiro with judgment: guides, method and support.",
+      "heroDescription": "Resources for teachers who want to use Mehmiro with judgment: guides, method and support.",
+      "sections": [
         {
-          "value": "24h",
-          "label": "Time to first insights"
+          "title": "Learn to use Mehmiro",
+          "description": "Step-by-step courses to set up your class, record observations and review evidence.",
+          "url": "/learn",
+          "label": "See courses"
         },
         {
-          "value": "100%",
-          "label": "Respect for your autonomy"
+          "title": "Evidence and method",
+          "description": "What Mehmiro can claim today, what it measures in a pilot and what it cannot yet support.",
+          "url": "/evidencia",
+          "label": "See method"
         },
         {
-          "value": "∞",
-          "label": "Observation capacity"
+          "title": "Support",
+          "description": "FAQs, access and email contact.",
+          "url": "/support",
+          "label": "Go to support"
         },
         {
-          "value": "0",
-          "label": "Administrative load"
+          "title": "Team and company",
+          "description": "Who is behind it, where we are and how to contact us.",
+          "url": "/about#equipo",
+          "label": "Meet the team"
         }
       ],
-      "guidesTitle": "Guides & Tutorials",
-      "guides": [
+      "howTitle": "How to start",
+      "steps": [
         {
-          "title": "Quick Start Guide",
-          "description": "Start using Mehmiro in less than 10 minutes. Step by step.",
-          "level": "Beginner",
-          "duration": "10 min"
+          "title": "Create an account or explore without one",
+          "description": "You can open the app and look around without registering. Student data requires an institutional account."
         },
         {
-          "title": "How to Record Observations",
-          "description": "Learn to capture pedagogical observations effectively.",
-          "level": "Beginner",
-          "duration": "15 min"
+          "title": "Record an observation",
+          "description": "After class, describe how it went by text or audio. The institution decides whether WhatsApp is enabled."
         },
         {
-          "title": "Early Detection in Practice",
-          "description": "Strategies to identify students who need more support.",
-          "level": "Intermediate",
-          "duration": "20 min"
-        },
-        {
-          "title": "Effective Feedback",
-          "description": "How to use Mehmiro's analysis to improve your feedback.",
-          "level": "Intermediate",
-          "duration": "25 min"
-        },
-        {
-          "title": "Team Collaboration",
-          "description": "Coordinate with other teachers and counselors to better support students.",
-          "level": "Advanced",
-          "duration": "30 min"
-        },
-        {
-          "title": "Reports for Families",
-          "description": "Create clear and productive communications with families.",
-          "level": "All levels",
-          "duration": "20 min"
+          "title": "Review and coordinate",
+          "description": "Mehmiro identifies signals and offers suggestions; the teaching team reviews the evidence and decides the next step."
         }
       ],
-      "videoSection": {
-        "title": "Tutorial Videos",
-        "description": "Learn to use Mehmiro by watching how other teachers integrate it into their daily routine. Our video library includes:",
-        "items": [
-          "Getting started with the platform",
-          "Step-by-step observation recording",
-          "How to interpret analyses",
-          "Real classroom use cases",
-          "Tips and tricks from advanced users"
-        ],
-        "button": "View all videos",
-        "featured": "Featured tutorial video"
-      },
-      "tipsTitle": "Tips for Effective Observations",
-      "tipsDescription": "Practical tips from teachers who already use Mehmiro effectively",
-      "tips": [
-        {
-          "title": "Record in the moment",
-          "description": "Observations are more accurate when you record them immediately after they occur. Use the voice notes feature if you can't write at the moment."
-        },
-        {
-          "title": "Be specific but concise",
-          "description": "Avoid generalizations like 'good' or 'bad'. Describe exactly what the student did or said. 'Completed 3 of 5 exercises' is more useful than 'worked well'."
-        },
-        {
-          "title": "Use the categories",
-          "description": "Mehmiro's categories are designed to cover the most important aspects of development. Try to use at least 2-3 categories per observation."
-        },
-        {
-          "title": "Review patterns",
-          "description": "Don't just look at individual observations. Weekly, review the patterns that Mehmiro detects. They are invaluable for understanding real progress."
-        },
-        {
-          "title": "Act in time",
-          "description": "Early detection alerts are tools, not diagnoses. Use them as a starting point to converse, intervene and support."
-        },
-        {
-          "title": "Share with the team",
-          "description": "Collaboration multiplies the impact. Share relevant observations with tutors, counselors and other teachers working with the same student."
-        }
-      ],
-      "downloads": {
-        "title": "Free Downloads",
-        "description": "Materials you can print and use in your school",
-        "items": [
-          {
-            "title": "Observation Template",
-            "description": "PDF • 2 pages"
-          },
-          {
-            "title": "Alert Indicators",
-            "description": "PDF • 1 page"
-          },
-          {
-            "title": "Guide for Family Meetings",
-            "description": "PDF • 3 pages"
-          }
-        ]
-      },
-      "testimonialsTitle": "What teachers say",
-      "cta": {
-        "title": "Ready to get started?",
-        "description": "Try Mehmiro with your class and share it with your school. If your institution moves forward, you receive a reward.",
-        "button": "Try it and earn rewards"
-      }
+      "ctaTitle": "Try it with your class",
+      "ctaDescription": "The app is live. You can explore the interface without an account or create an institutional account.",
+      "ctaButton": "Open the app"
     },
     "blog": {
       "title": "Blog",
       "description": "Articles, case studies and news about formative assessment and educational technology.",
-      "heroDescription": "Articles, case studies and reflections on formative assessment, educational technology and teaching in Argentina.",
-      "featured": {
-        "badge": "Featured article",
-        "title": "Formative assessment: more than grading, accompanying",
-        "description": "In the current educational system, we tend to think of assessment as a measure of acquired knowledge. But formative assessment goes much further: it's about accompanying each student's learning process, detecting in time when they need more support.",
-        "link": "Read full article"
-      },
-      "categories": [
+      "heroDescription": "Notes and reflections from the founder on observation, AI and education.",
+      "notesTitle": "Notes from the founder",
+      "notesDescription": "We publish notes on LinkedIn. Here we collect the ones that explain the project and its pedagogical approach.",
+      "notesCta": "View profile on",
+      "notes": [
         {
-          "name": "All",
-          "count": 24
+          "title": "Exciting developments in AI and education",
+          "date": "September 23, 2025",
+          "description": "Mehmiro, LAIA and the work with educational institutions in Argentina.",
+          "url": "https://es.linkedin.com/pulse/desarrollos-emocionantes-en-la-educaci%C3%B3n-con-ia-gentile-montes-r3xrf"
         },
         {
-          "name": "Education",
-          "count": 8
+          "title": "Roadmap (I rolled on the curve)",
+          "date": "October 8, 2025",
+          "description": "A retrospective on the path that led to Mehmiro.",
+          "url": "https://es.linkedin.com/pulse/hoja-de-ruta-volqu%C3%A9-en-lacurva-ezequiel-gentile-montes-loqgf"
         },
         {
-          "name": "Success stories",
-          "count": 5
-        },
-        {
-          "name": "Community",
-          "count": 6
-        },
-        {
-          "name": "Resources",
-          "count": 7
-        },
-        {
-          "name": "Technology",
-          "count": 4
-        }
-      ],
-      "posts": [
-        {
-          "title": "Formative assessment in the 21st century",
-          "excerpt": "How technology is transforming the way teachers observe and accompany student learning.",
-          "category": "Education",
-          "date": "February 15, 2026",
-          "readTime": "8 min"
-        },
-        {
-          "title": "Detecting in time: the importance of early intervention",
-          "excerpt": "Real cases of teachers who managed to change the academic destiny of their students thanks to early detection.",
-          "category": "Success stories",
-          "date": "February 10, 2026",
-          "readTime": "6 min"
-        },
-        {
-          "title": "Mehmiro Community: inspiring stories",
-          "excerpt": "We connect with teachers from across Argentina who share their experience transforming pedagogical observation.",
-          "category": "Community",
-          "date": "February 5, 2026",
-          "readTime": "5 min"
-        },
-        {
-          "title": "5 strategies for more effective observations",
-          "excerpt": "Practical techniques for recording meaningful classroom observations.",
-          "category": "Resources",
-          "date": "February 1, 2026",
-          "readTime": "7 min"
-        },
-        {
-          "title": "The teacher's role in the AI era",
-          "excerpt": "Reflections on how artificial intelligence can broaden teacher professional judgment.",
-          "category": "Technology",
-          "date": "January 28, 2026",
-          "readTime": "10 min"
-        },
-        {
-          "title": "Academic planning 2026: trends and tools",
-          "excerpt": "Educational institutions are adopting new tools to improve formative assessment processes.",
-          "category": "Education",
-          "date": "January 20, 2026",
-          "readTime": "6 min"
-        }
-      ],
-      "readTime": "min read",
-      "newsletter": {
-        "title": "Subscribe to our newsletter",
-        "description": "Get exclusive articles, success stories and resources directly in your inbox. No spam, just valuable content for teachers.",
-        "placeholder": "your@email.com",
-        "button": "Subscribe",
-        "footer": "Over 2,000 teachers already receive our newsletter"
-      }
-    },
-    "community": {
-      "title": "Community",
-      "description": "Connect with other schools and teachers using Mehmiro: events, forums and working groups.",
-      "heroDescription": "A space to connect, learn and grow together. Because education improves when teachers work in community.",
-      "stats": [
-        {
-          "value": "500+",
-          "label": "Active teachers"
-        },
-        {
-          "value": "10+",
-          "label": "Institutions"
-        },
-        {
-          "value": "50+",
-          "label": "Connected schools"
-        },
-        {
-          "value": "100+",
-          "label": "Shared stories"
-        }
-      ],
-      "events": {
-        "title": "Upcoming Events",
-        "description": "Join events, workshops and webinars designed for you",
-        "viewAll": "View all events",
-        "participants": "participants"
-      },
-      "eventList": [
-        {
-          "title": "Mehmiro Teachers Meeting 2026",
-          "description": "The most important annual event of our community. Share experiences with hundreds of teachers from across the country.",
-          "date": "March 15, 2026",
-          "type": "In-person",
-          "location": "Buenos Aires",
-          "participants": "200+"
-        },
-        {
-          "title": "Webinar: Formative Assessment in Action",
-          "description": "Learn from teachers who have already transformed their pedagogical practice with Mehmiro.",
-          "date": "February 28, 2026",
-          "type": "Online",
-          "location": "Virtual",
-          "participants": "500+"
-        },
-        {
-          "title": "Workshop: Early Detection in the Classroom",
-          "description": "Practical workshop on strategies to identify students who need more support.",
-          "date": "March 10, 2026",
-          "type": "Hybrid",
-          "location": "Córdoba",
-          "participants": "50"
-        }
-      ],
-      "forum": {
-        "title": "Discussion Forum",
-        "description": "A safe space to ask questions, share experiences and learn from colleagues across Argentina. Forum topics include:",
-        "topics": [
-          "Classroom observation strategies",
-          "How to handle difficult situations",
-          "Formative assessment and feedback",
-          "Technology integration in class"
-        ],
-        "button": "Join the forum",
-        "replies": "replies"
-      },
-      "forumPreview": [
-        {
-          "quote": "How do you handle observing students with special needs in classes with many students?",
-          "author": "María G.",
-          "replies": 12
-        },
-        {
-          "quote": "I share my experience with observation recording. At first it was difficult, but with Mehmiro...",
-          "author": "Carlos R.",
-          "replies": 8
-        }
-      ],
-      "testimonials": {
-        "title": "Voices from Our Community"
-      },
-      "testimonialsList": [
-        {
-          "quote": "I found in the Mehmiro community a space where my colleagues understand the daily challenges. I no longer feel alone.",
-          "author": "Roberto Martínez",
-          "role": "History Teacher",
-          "school": "Escuela Normal"
-        },
-        {
-          "quote": "The webinars helped me improve my teaching practice. Now I have concrete tools to support my students.",
-          "author": "Laura Sánchez",
-          "role": "5th Grade Teacher",
-          "school": "Colegio San Miguel"
-        }
-      ],
-      "ambassador": {
-        "title": "Become a Mehmiro Ambassador",
-        "description": "Try Mehmiro with your class, share it with your school and help them adopt it. If your institution books a demo or starts a pilot, you receive a reward.",
-        "benefits": "Rewards for schools that move forward, training and recognition."
-      }
-    },
-    "support": {
-      "title": "Support",
-      "description": "Access technical help, quick guides and resources to resolve platform questions.",
-      "heroDescription": "Have questions? Find answers to the most common questions or contact our support team.",
-      "faqCategories": [
-        {
-          "category": "Account & Access",
-          "questions": [
-            {
-              "q": "How do I create an account on Mehmiro?",
-              "a": "Simply click 'Try it' on our main page and follow the steps. You only need an email and your institution's details."
-            },
-            {
-              "q": "What if I forgot my password?",
-              "a": "Click 'Forgot my password' on the login page. We'll send you an email to reset your password."
-            },
-            {
-              "q": "Can I use Mehmiro on multiple devices?",
-              "a": "Yes, Mehmiro is a progressive web app. You can access it from your computer, tablet or phone, and your data will sync automatically."
-            }
-          ]
-        },
-        {
-          "category": "Using the Platform",
-          "questions": [
-            {
-              "q": "How long does it take to record an observation?",
-              "a": "Recording a basic observation takes between 2-3 minutes. You can use voice notes that automatically convert to text, which speeds up the process."
-            },
-            {
-              "q": "What are early detection alerts?",
-              "a": "These are notifications the system generates when it detects patterns that could indicate a student needs more attention. These alerts are based on your observations and help you intervene in time."
-            },
-            {
-              "q": "How do I customize observation categories?",
-              "a": "You can access Settings > Categories from your dashboard. There you can create, edit or delete categories according to your institution's needs."
-            },
-            {
-              "q": "Can I export my observations?",
-              "a": "Yes, you can export your data in PDF or Excel format from the Reports section. You can also generate specific reports to share with families."
-            }
-          ]
-        },
-        {
-          "category": "Privacy & Security",
-          "questions": [
-            {
-              "q": "Is my students' data secure?",
-              "a": "Absolutely. We use end-to-end encryption and comply with the Argentine Personal Data Protection Law. The data belongs to your institution."
-            },
-            {
-              "q": "Who can see the observations I record?",
-              "a": "By default, only you and users from your institution with assigned permissions. You can configure granular permissions from the admin panel."
-            },
-            {
-              "q": "What if I want to delete my account?",
-              "a": "You can request deletion of your account and all associated data at any time. Contact us at support@mehmiro.com."
-            }
-          ]
-        },
-        {
-          "category": "Billing & Plans",
-          "questions": [
-            {
-              "q": "How much does Mehmiro cost?",
-              "a": "We have a free plan with basic features and paid plans for institutions that need more capacity. Visit our pricing page for more details."
-            },
-            {
-              "q": "Is there a discount for public educational institutions?",
-              "a": "Yes, we offer special terms for public schools and non-profits. Contact us to discuss the options."
-            },
-            {
-              "q": "Can I change plans at any time?",
-              "a": "Yes, you can upgrade or downgrade your plan at any time. Changes will apply on the next billing cycle."
-            }
-          ]
-        }
-      ],
-      "contactOptions": [
-        {
-          "title": "Live Chat",
-          "description": "Chat with our support team",
-          "availability": "Monday to Friday, 9am to 6pm",
-          "action": "Start chat"
-        },
-        {
-          "title": "Email",
-          "description": "Write to us and we'll respond in 24-48h",
-          "availability": "support@mehmiro.com",
-          "action": "Send email"
-        },
-        {
-          "title": "Phone",
-          "description": "Call us for urgent support",
-          "availability": "Monday to Friday, 9am to 6pm",
-          "action": "Call now"
-        }
-      ],
-      "resourcesTitle": "Available Resources",
-      "resourcesDescription": "Documentation, guides and tutorials to get the most out of Mehmiro",
-      "resources": [
-        {
-          "title": "Quick Start Guide",
-          "description": "Start using Mehmiro in 10 minutes",
-          "type": "PDF"
-        },
-        {
-          "title": "User Manual",
-          "description": "Complete documentation of all features",
-          "type": "Document"
-        },
-        {
-          "title": "Tutorial Videos",
-          "description": "Learn by watching how other teachers use it",
-          "type": "Video"
-        },
-        {
-          "title": "Frequently Asked Questions",
-          "description": "Answers to the most common questions",
-          "type": "FAQ"
-        }
-      ],
-      "faqTitle": "Frequently Asked Questions",
-      "stillNeedHelp": {
-        "title": "Still need help?",
-        "description": "Our team is ready to help you. Write to us and we'll respond as soon as possible.",
-        "button": "Contact support",
-        "secondaryButton": "View documentation"
-      },
-      "responseTimes": [
-        {
-          "value": "< 1h",
-          "label": "Chat response time"
-        },
-        {
-          "value": "24-48h",
-          "label": "Email response time"
-        },
-        {
-          "value": "98%",
-          "label": "User satisfaction"
+          "title": "Formative Assessment App",
+          "date": "March 10, 2025",
+          "description": "The formative observation approach that originated the product.",
+          "url": "https://www.linkedin.com/pulse/formative-assessment-app-ezequiel-gentile-montes-avwrf"
         }
       ]
     },
+    "community": {
+      "title": "Community",
+      "description": "Connect with other schools and teachers using Mehmiro: ambassador program and pilots.",
+      "heroDescription": "A space to connect, learn and grow together. Because education improves when teachers work in community.",
+      "currentTitle": "What is open today",
+      "currentDescription": "The community is organized around two concrete spaces: the ambassador program and school pilots. If you want to join, write to us and we will coordinate.",
+      "currentCta": "I want to join"
+    },
+    "support": {
+      "title": "Support",
+      "description": "Help using Mehmiro: access, product and data.",
+      "heroDescription": "Have questions? Start with the FAQs or write to us by email.",
+      "contactTitle": "Contact",
+      "contactDescription": "For now we support by email. Write to us and we will reply within 24-48 business hours.",
+      "emailCta": "Email support",
+      "resourcesTitle": "Resources",
+      "resourcesDescription": "Public material to understand the product and the method.",
+      "resourceLinks": [
+        {
+          "title": "Learn to use Mehmiro",
+          "description": "Step-by-step guides to set up your class and record observations.",
+          "url": "/learn",
+          "type": "Guides"
+        },
+        {
+          "title": "Evidence and method",
+          "description": "What Mehmiro can claim today, what it measures in a pilot and what it cannot.",
+          "url": "/evidencia",
+          "type": "Method"
+        },
+        {
+          "title": "Team and company",
+          "description": "Who is behind it, where we are and how to contact us.",
+          "url": "/about#equipo",
+          "type": "About"
+        }
+      ],
+      "faqTitle": "Frequently asked questions",
+      "faqCategories": [
+        {
+          "category": "Account and access",
+          "questions": [
+            {
+              "q": "How do I create an account?",
+              "a": "Click “Try it” and create your account with Google or email. Student data requires an institutional account."
+            },
+            {
+              "q": "How do I sign in without a password?",
+              "a": "Mehmiro uses access codes. Enter your email and we will send you a code."
+            },
+            {
+              "q": "Can I explore without an account?",
+              "a": "Yes. On the sign-in screen, choose “Explore without an account”."
+            }
+          ]
+        },
+        {
+          "category": "Product and data",
+          "questions": [
+            {
+              "q": "Is Mehmiro live?",
+              "a": "Yes. The app is in production and you can open it from mehmiro.com. The screenshots and video on the home page are from the real app."
+            },
+            {
+              "q": "Does AI decide for the teacher?",
+              "a": "No. Mehmiro identifies signals and offers suggestions; the teaching team reviews the evidence and decides."
+            },
+            {
+              "q": "Who can see student data?",
+              "a": "Access requires an institutional account and role-based permissions. The data belongs to the institution."
+            },
+            {
+              "q": "How do I request a demo or pilot?",
+              "a": "Write to info@mehmiro.com or leave your details in the contact form."
+            }
+          ]
+        }
+      ],
+      "stillNeedHelp": {
+        "title": "Still have questions?",
+        "description": "Write to us and we will reply by email.",
+        "button": "Email support",
+        "secondaryButton": "See guides"
+      },
+      "responseNote": "We reply by email within 24-48 business hours."
+    },
     "about": {
       "title": "About us",
-      "description": "Meet the team behind Mehmiro and our mission to support formative assessment in schools.",
+      "description": "Meet the founding team and our mission to support formative assessment in schools.",
       "mission": {
         "title": "Our Mission",
         "description": "Democratize access to formative assessment tools for schools in Argentina and Latin America. We want every teacher to detect in time when a student needs more support."
@@ -1446,7 +1344,7 @@
           "description": "We don't sell your information. The data belongs to your institution."
         },
         {
-          "title": "End-to-end encryption",
+          "title": "Encryption in transit and at rest",
           "description": "Your observations and analysis are protected with the highest standards."
         },
         {
@@ -1473,7 +1371,7 @@
         },
         {
           "title": "4. Data storage and security",
-          "content": "The security of your data is our absolute priority:\n\n• **Encryption**: All data is encrypted in transit (TLS/SSL) and at rest (AES-256) to guarantee that only you and your institution can access it.\n\n• **Secure servers**: Our servers are located in Argentina and comply with the best physical and digital security practices.\n\n• **Access control**: We implement strict access controls. Only authorized personnel can access the data, and always under security protocols.\n\n• **Backup**: We perform regular automatic backups to guarantee the availability of your data.\n\n• **Retention**: We keep data while your account is active or as necessary to provide services. You can request data deletion at any time."
+          "content": "The security of your data is our absolute priority:\n\n• **Encryption**: All data is encrypted in transit (TLS/SSL) and at rest (AES-256) to guarantee that only you and your institution can access it.\n\n• **Secure servers**: We apply access controls, backups and physical and digital security best practices.\n\n• **Access control**: We implement strict access controls. Only authorized personnel can access the data, and always under security protocols.\n\n• **Backup**: We perform regular automatic backups to guarantee the availability of your data.\n\n• **Retention**: We keep data while your account is active or as necessary to provide services. You can request data deletion at any time."
         },
         {
           "title": "5. Data sharing",
@@ -1582,7 +1480,7 @@
         },
         {
           "title": "15. Contact",
-          "content": "For any inquiries about these Terms:\n\n• **Email**: legal@mehmiro.com\n• **Address**: Buenos Aires, Argentina\n• **Contact form**: mehmiro.com/contacto\n\nWe will respond to your inquiry within 10 business days."
+          "content": "For any inquiries about these Terms:\n\n• **Email**: legal@mehmiro.com\n• **Address**: Buenos Aires, Argentina\n• **Contact form**: mehmiro.com/support\n\nWe will respond to your inquiry within 10 business days."
         }
       ],
       "lastUpdate": "Last updated: February 27, 2026",

@@ -553,6 +553,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid hsl(var(--accent)); o
   animation: school-float 9.5s ease-in-out infinite;
 }
 
+.audience-photo-frame--school img {
+  object-position: top;
+}
+
 .audience-photo-frame img {
   display: block;
   width: 100%;
